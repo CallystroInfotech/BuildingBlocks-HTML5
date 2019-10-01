@@ -1,0 +1,51 @@
+﻿{"frames": [
+
+{
+	"filename": "Symbol 8 instance 10000",
+	"frame": {"x":0,"y":0,"w":377,"h":49},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":377,"h":49},
+	"sourceSize": {"w":377,"h":49}
+}
+,{
+	"filename": "Symbol 8 instance 10001",
+	"frame": {"x":0,"y":49,"w":377,"h":49},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":377,"h":49},
+	"sourceSize": {"w":377,"h":49}
+}
+,{
+	"filename": "Symbol 8 instance 10002",
+	"frame": {"x":0,"y":98,"w":377,"h":49},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":377,"h":49},
+	"sourceSize": {"w":377,"h":49}
+}
+,{
+	"filename": "Symbol 8 instance 10003",
+	"frame": {"x":0,"y":147,"w":377,"h":49},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":377,"h":49},
+	"sourceSize": {"w":377,"h":49}
+}
+,{
+	"filename": "Symbol 8 instance 10004",
+	"frame": {"x":0,"y":196,"w":377,"h":49},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":377,"h":49},
+	"sourceSize": {"w":377,"h":49}
+}],
+"meta": {
+	"app": "Adobe Animate",
+	"version": "18.0.0.107",
+	"image": "K1.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":512},
+	"scale": "1"
+}
+}

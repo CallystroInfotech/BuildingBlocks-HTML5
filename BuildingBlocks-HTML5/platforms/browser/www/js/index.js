@@ -1,46 +1,52 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
 var app = {
+
     // Application Constructor
     initialize: function() {
-        document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+		document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
 
-    // deviceready Event Handler
-    //
-    // Bind any cordova events here. Common events are:
-    // 'pause', 'resume', etc.
-    onDeviceReady: function() {
+    onDeviceReady: function(e) {		
         this.receivedEvent('deviceready');
     },
 
-    // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
+       var game = new Phaser.Game(960,540,Phaser.CANVAS,'phaser_canvas',{preload:this.preload, create:this.create},false,true,null);
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+       game.state.add('boot',Game.boot);
+       game.state.add('langSelectScreen',Game.langSelectScreen);
+       game.state.add('preloader',Game.preloader);
+       game.state.add('userprogress',Game.userprogress);
+       game.state.add('userprogress2',Game.userprogress2);
+       
+    },
 
-        console.log('Received Event: ' + id);
-    }
+
+    preload:function(game)
+    {
+    	game.load.image('splash','assets/splash.jpg');
+    },
+
+    create:function(game)
+    {
+
+    	game.input.maxPointers = 1;
+
+		game.stage.disableVisibilityChange=true;
+		
+		//setting scale and orientation for the game.
+		game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+        game.scale.pageAlignHorizontally = true;
+        game.scale.pageAlignVertically = true;
+        game.scale.updateLayout(true);
+        //game.scale.forceOrientation(true, false);
+
+
+    	game.stage.backgroundColor = '#71c5cf';
+    	var splash = game.add.sprite(0,0,'splash');
+    	
+    },
+	
 };
+
 
 app.initialize();

@@ -1,0 +1,51 @@
+﻿{"frames": [
+
+{
+	"filename": "Symbol 44 instance 10000",
+	"frame": {"x":0,"y":0,"w":212,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":212,"h":45},
+	"sourceSize": {"w":212,"h":45}
+}
+,{
+	"filename": "Symbol 44 instance 10001",
+	"frame": {"x":0,"y":45,"w":212,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":212,"h":45},
+	"sourceSize": {"w":212,"h":45}
+}
+,{
+	"filename": "Symbol 44 instance 10002",
+	"frame": {"x":0,"y":90,"w":212,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":212,"h":45},
+	"sourceSize": {"w":212,"h":45}
+}
+,{
+	"filename": "Symbol 44 instance 10003",
+	"frame": {"x":0,"y":135,"w":212,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":212,"h":45},
+	"sourceSize": {"w":212,"h":45}
+}
+,{
+	"filename": "Symbol 44 instance 10004",
+	"frame": {"x":0,"y":180,"w":212,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":212,"h":45},
+	"sourceSize": {"w":212,"h":45}
+}],
+"meta": {
+	"app": "Adobe Animate",
+	"version": "18.0.0.107",
+	"image": "K2.png",
+	"format": "RGBA8888",
+	"size": {"w":256,"h":256},
+	"scale": "1"
+}
+}

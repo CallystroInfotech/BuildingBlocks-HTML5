@@ -1,0 +1,51 @@
+﻿{"frames": [
+
+{
+	"filename": "Symbol 43 instance 10000",
+	"frame": {"x":0,"y":0,"w":695,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":695,"h":122},
+	"sourceSize": {"w":695,"h":122}
+}
+,{
+	"filename": "Symbol 43 instance 10001",
+	"frame": {"x":0,"y":122,"w":695,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":695,"h":122},
+	"sourceSize": {"w":695,"h":122}
+}
+,{
+	"filename": "Symbol 43 instance 10002",
+	"frame": {"x":0,"y":244,"w":695,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":695,"h":122},
+	"sourceSize": {"w":695,"h":122}
+}
+,{
+	"filename": "Symbol 43 instance 10003",
+	"frame": {"x":0,"y":366,"w":695,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":695,"h":122},
+	"sourceSize": {"w":695,"h":122}
+}
+,{
+	"filename": "Symbol 43 instance 10004",
+	"frame": {"x":0,"y":488,"w":695,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":695,"h":122},
+	"sourceSize": {"w":695,"h":122}
+}],
+"meta": {
+	"app": "Adobe Animate",
+	"version": "18.0.0.107",
+	"image": "length 2.4 B.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1"
+}
+}
