@@ -10,7 +10,9 @@ var app = {
     },
 
     receivedEvent: function(id) {
-       var game = new Phaser.Game(960,540,Phaser.CANVAS,'phaser_canvas',{preload:this.preload, create:this.create},false,true,null);
+
+       screen.orientation.lock('portarait');
+       var game = new Phaser.Game(540,960,Phaser.CANVAS,'',{preload:this.preload, create:this.create},false,true,null);
 
        game.state.add('boot',Game.boot);
        game.state.add('langSelectScreen',Game.langSelectScreen);
@@ -23,7 +25,7 @@ var app = {
 
     preload:function(game)
     {
-    	game.load.image('splash','assets/splash.jpg');
+    	game.load.image('splash','assets/splash.png');
     },
 
     create:function(game)
@@ -42,8 +44,24 @@ var app = {
 
 
     	game.stage.backgroundColor = '#71c5cf';
-    	var splash = game.add.sprite(0,0,'splash');
-    	
+    	var splash = game.add.sprite(game.world.centerX,game.world.centerY,'splash');
+    	splash.scale.setTo(1);
+    	splash.anchor.setTo(0.5);  
+
+    	console.log(game);
+
+
+
+    	game.time.events.add(300, function(){
+			game.time.events.removeAll();
+			/*game.width = 960;
+    		game.height = 540;
+			console.log(game);
+
+			screen.orientation.lock('landscape');*/
+			game.state.start('registration',true,false);
+		},this); 
+
     },
 	
 };
