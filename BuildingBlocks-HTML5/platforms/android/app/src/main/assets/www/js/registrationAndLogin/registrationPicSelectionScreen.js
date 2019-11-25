@@ -16,7 +16,7 @@ Game.registrationPicSelectionScreen.prototype={
 
 	create:function(game)
 	{
-		
+		//Fullscreen.on();
 		var splash = game.add.sprite(game.world.centerX,game.world.centerY,'registrationbg');
     	splash.scale.setTo(1);
     	splash.anchor.setTo(0.5);
@@ -66,25 +66,27 @@ Game.registrationPicSelectionScreen.prototype={
     	fish.scale.setTo(0.8);
     	fish.anchor.setTo(0.5);
 
+
     	var butterfly = game.add.sprite(390,240,'butterfly');
     	butterfly.scale.setTo(0.8);
     	butterfly.anchor.setTo(0.5);
 
-    	var fish = game.add.sprite(150,440,'fish');
-    	fish.scale.setTo(0.8);
-    	fish.anchor.setTo(0.5);
+    	var flower = game.add.sprite(150,440,'flower');
+    	flower.scale.setTo(0.8);
+    	flower.anchor.setTo(0.5);
 
-    	var butterfly = game.add.sprite(390,440,'butterfly');
-    	butterfly.scale.setTo(0.8);
-    	butterfly.anchor.setTo(0.5);
+    	var parrot = game.add.sprite(390,440,'parrot');
+    	parrot.scale.setTo(0.8);
+    	parrot.anchor.setTo(0.5);
 
-    	var fish = game.add.sprite(150,640,'fish');
-    	fish.scale.setTo(0.8);
-    	fish.anchor.setTo(0.5);
+    	var sun = game.add.sprite(150,640,'sun');
+    	sun.scale.setTo(0.8);
+    	sun.anchor.setTo(0.5);
 
-    	var butterfly = game.add.sprite(390,640,'butterfly');
-    	butterfly.scale.setTo(0.8);
-    	butterfly.anchor.setTo(0.5);
+    	var tree = game.add.sprite(390,640,'tree');
+    	tree.scale.setTo(0.8);
+    	tree.anchor.setTo(0.5);
+    	
 
 
     	var regTickBtn = game.add.sprite(game.world.centerX,game.world.centerY+340,'regTickBtn');
@@ -92,8 +94,84 @@ Game.registrationPicSelectionScreen.prototype={
     	regTickBtn.anchor.setTo(0.5);
 
 
+    	fish.inputEnabled = true;
+    	fish.events.onInputDown.add(function(){
+    		this.deactivateAll(fish,butterfly,flower,parrot,sun,tree);
+    		fish.frame = 1;
+    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn);
+    	},this);
+
+
+    	butterfly.inputEnabled = true;
+    	butterfly.events.onInputDown.add(function(){
+    		this.deactivateAll(fish,butterfly,flower,parrot,sun,tree);
+    		butterfly.frame = 1;
+    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn);
+    	},this);
+
+    	flower.inputEnabled = true;
+    	flower.events.onInputDown.add(function(){
+    		this.deactivateAll(fish,butterfly,flower,parrot,sun,tree);
+    		flower.frame = 1;
+    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn);
+    	},this);
+
+    	parrot.inputEnabled = true;
+    	parrot.events.onInputDown.add(function(){
+    		this.deactivateAll(fish,butterfly,flower,parrot,sun,tree);
+    		parrot.frame = 1;
+    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn);
+    	},this);
+
+    	sun.inputEnabled = true;
+    	sun.events.onInputDown.add(function(){
+    		this.deactivateAll(fish,butterfly,flower,parrot,sun,tree);
+    		sun.frame = 1;
+    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn);
+    	},this);
+
+    	tree.inputEnabled = true;
+    	tree.events.onInputDown.add(function(){
+    		this.deactivateAll(fish,butterfly,flower,parrot,sun,tree);
+    		tree.frame = 1;
+    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn);
+    	},this);
+
+
 	},
 
+	deactivateAll:function(fish,butterfly,flower,parrot,sun,tree)
+	{
+		fish.frame = 0;
+		butterfly.frame = 0;
+		flower.frame = 0;
+		parrot.frame = 0;
+		sun.frame = 0;
+		tree.frame = 0;
+	},
+
+	checkActive:function(fish,butterfly,flower,parrot,sun,tree,regTickBtn)
+	{
+		if(fish.frame == 1 || butterfly.frame == 1 || flower.frame == 1 
+			|| parrot.frame == 1 || sun.frame == 1 || tree.frame == 1)
+		{
+			regTickBtn.frame = 1;
+			regTickBtn.inputEnabled = true;
+		}
+		else
+		{
+			regTickBtn.frame = 0;
+			regTickBtn.inputEnabled = false;
+		}
+		regTickBtn.events.onInputDown.removeAll();
+		regTickBtn.events.onInputDown.add(this.register,this);
+	},
+
+	register:function()
+	{
+		console.log(device.uuid);
+		console.log(device.serial);
+	},
 
 	createDropDownMenu:function(game, lang, i, x, y, grp, targetGpc, list, regTickBtn)
 	{

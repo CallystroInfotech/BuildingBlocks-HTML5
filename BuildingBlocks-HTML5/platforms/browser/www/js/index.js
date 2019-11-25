@@ -32,12 +32,12 @@ var app = {
       game.load.image('graphicBg','assets/graphicBg.png');
       game.load.image('carrotIcon','assets/carrotIcon.png');
       game.load.image('regBackArrow','assets/regBackArrow.png');
-      game.load.image('fish','assets/fish.jpg');
-      game.load.image('butterfly','assets/butterfly.jpg');
-      game.load.image('flower','assets/flower.jpg');
-      game.load.image('parrot','assets/parrot.jpg');
-      game.load.image('sun','assets/sun.jpg');
-      game.load.image('tree','assets/tree.jpg');
+      game.load.atlas('fish','assets/fish.png','assets/fish.json');
+      game.load.atlas('butterfly','assets/butterfly.png','assets/butterfly.json');
+      game.load.atlas('flower','assets/flower.png','assets/flower.json');
+      game.load.atlas('parrot','assets/parrot.png','assets/parrot.json');
+      game.load.atlas('sun','assets/sun.png','assets/sun.json');
+      game.load.atlas('tree','assets/tree.png','assets/tree.json');
       game.load.atlas('regTickBtn','assets/regTickBtn.png','assets/regTickBtn.json');
     },
 

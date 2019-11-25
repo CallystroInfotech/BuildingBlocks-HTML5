@@ -16,7 +16,8 @@ Game.registrationLangSelectionScreen.prototype={
 
 	create:function(game)
 	{
-		
+		//Fullscreen.off();
+
 		var splash = game.add.sprite(game.world.centerX,game.world.centerY,'registrationbg');
     	splash.scale.setTo(1);
     	splash.anchor.setTo(0.5);
