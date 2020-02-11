@@ -23,14 +23,6 @@ module.exports = [
         "runs": true
     },
     {
-        "file": "plugins/cordova-plugin-fullscreen/www/AndroidFullScreen.js",
-        "id": "cordova-plugin-fullscreen.AndroidFullScreen",
-        "pluginId": "cordova-plugin-fullscreen",
-        "clobbers": [
-            "AndroidFullScreen"
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-x-toast/www/Toast.js",
         "id": "cordova-plugin-x-toast.Toast",
         "pluginId": "cordova-plugin-x-toast",
@@ -295,6 +287,14 @@ module.exports = [
         "clobbers": [
             "window.navigator.share"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-fullscreen/www/AndroidFullScreen.js",
+        "id": "cordova-plugin-fullscreen.AndroidFullScreen",
+        "pluginId": "cordova-plugin-fullscreen",
+        "clobbers": [
+            "AndroidFullScreen"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -303,7 +303,6 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.3.4",
     "cordova-plugin-screen-orientation": "3.0.2",
     "cordova-plugin-device": "2.0.3",
-    "cordova-plugin-fullscreen": "1.1.0",
     "cordova-plugin-x-toast": "2.7.2",
     "cordova-plugin-network-information": "2.0.2",
     "cordova-sqlite-storage": "4.0.0",
@@ -311,7 +310,11 @@ module.exports.metadata =
     "cordova-plugin-file-transfer": "1.7.1",
     "com.jjdltc.cordova.plugin.zip": "1.1.0",
     "cordova-plugin-zip": "3.1.0",
-    "nl.madebymark.share": "0.1.1"
+    "nl.madebymark.share": "0.1.1",
+    "cordova-plugin-fullscreen": "1.1.0",
+    "cordova-plugin-androidx": "1.0.2",
+    "cordova-plugin-androidx-adapter": "1.1.0",
+    "cordova-plugin-firebasex": "7.0.2"
 }
 // BOTTOM OF METADATA
 });

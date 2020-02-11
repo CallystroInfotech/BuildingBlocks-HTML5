@@ -235,10 +235,6 @@ Game.preloader.prototype={
 		preloadGrp.x -= 105;
 		//preloadGrp.y += 150;
 
-
-
-
-
 		this.loadjscssfile("js/appconstants.js", "js"); 
 		this.loadjscssfile("js/videoSkip.js", "js"); 
 		this.loadjscssfile("js/gradeSelectionScreenJS/gameModeSelectionScreen.js", "js"); 

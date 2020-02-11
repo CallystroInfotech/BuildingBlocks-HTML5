@@ -10,9 +10,6 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
-    <feature name="AndroidFullScreen">
-        <param name="android-package" value="com.mesmotronic.plugins.FullScreenPlugin" />
-    </feature>
     <feature name="Toast">
         <param name="android-package" value="nl.xservices.plugins.Toast" />
     </feature>
@@ -35,6 +32,13 @@
     </feature>
     <feature name="Share">
         <param name="android-package" value="nl.madebymark.share.Share" />
+    </feature>
+    <feature name="AndroidFullScreen">
+        <param name="android-package" value="com.mesmotronic.plugins.FullScreenPlugin" />
+    </feature>
+    <feature name="FirebasePlugin">
+        <param name="android-package" value="org.apache.cordova.firebase.FirebasePlugin" />
+        <param name="onload" value="true" />
     </feature>
     <feature name="Zip">
         <param name="android-package" value="org.apache.cordova.Zip" />

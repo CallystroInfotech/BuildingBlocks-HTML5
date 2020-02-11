@@ -16,9 +16,6 @@
     "cordova-plugin-device": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
     },
-    "cordova-plugin-fullscreen": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
     "cordova-plugin-x-toast": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
     },
@@ -39,10 +36,25 @@
     },
     "nl.madebymark.share": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-fullscreen": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-firebasex": {
+      "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
+      "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
+      "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "true",
+      "PACKAGE_NAME": "io.cordova.hellocordova"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-file": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-androidx": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-androidx-adapter": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
     }
   }

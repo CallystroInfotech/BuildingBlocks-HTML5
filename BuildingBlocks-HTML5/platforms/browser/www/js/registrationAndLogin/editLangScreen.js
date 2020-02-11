@@ -42,8 +42,10 @@ Game.editLangScreen.prototype={
 
 	    regBackArrow.inputEnabled = true;
 	    regBackArrow.events.onInputDown.add(function(){
-	    	game.state.start('appLoginEditScreen',true,false);
+	    	game.state.start('appLoginEditScreen',true,false,_this.user);
 	    },this);
+
+	    document.addEventListener('backbutton', _this.goback, false);
 
 		var titleTxt = game.add.text(game.world.centerX-80,40,"Building Blocks");
 		titleTxt.anchor.setTo(0.5);
@@ -100,6 +102,11 @@ Game.editLangScreen.prototype={
 		},this);
 
 	},
+
+	goback:function(e) {
+		document.removeEventListener('backbutton', _this.goback, false);
+		    	_this.state.start('appLoginEditScreen',true,false,_this.user);
+		    },
 
 
 	createDropDownMenu:function(game, lang, i, x, y, grp, targetGpc, list, regTickBtn)
@@ -233,4 +240,9 @@ Game.editLangScreen.prototype={
 		console.log(error);
 		window.plugins.toast.show("something went wrong Try Again", 3000, "bottom");
 	},
+
+	shutdown:function()
+	{
+		document.removeEventListener('backbutton', _this.goback, false);
+	}
 };

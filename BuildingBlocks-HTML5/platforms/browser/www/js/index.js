@@ -14,7 +14,7 @@ var app = {
        bbreglogin.initializeDB();
 
        screen.orientation.lock('portarait');
-       var game = new Phaser.Game(540,960,Phaser.CANVAS,'',{preload:this.preload, create:this.create},false,true,null);
+       var game = new Phaser.Game(540,960,Phaser.CANVAS,'phaser_canvas',{preload:this.preload, create:this.create},false,true,null);
 
        game.state.add('boot',Game.boot);
        game.state.add('langSelectScreen',Game.langSelectScreen);

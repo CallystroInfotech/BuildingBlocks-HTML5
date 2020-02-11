@@ -82,6 +82,6 @@ var nativeApp =
         },
 
         onButtonShowPopupWindowClick:function() {
-
+            
         },
 };

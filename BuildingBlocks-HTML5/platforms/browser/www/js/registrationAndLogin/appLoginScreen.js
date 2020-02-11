@@ -16,8 +16,8 @@ Game.appLoginScreen.prototype={
 
 	create:function(game)
 	{
-		this.avatarName = ['fish','butterfly','flower','parrot','sun','tree'];
-		this.checkForLoginData();
+		_this.avatarName = ['Fish','ButterFly','Flower','Parrot','Sun','Tree'];
+		_this.checkForLoginData();
 
 		_this.userArray = [];
 		
@@ -37,6 +37,7 @@ Game.appLoginScreen.prototype={
 		var titleTxt = game.add.text(game.world.centerX-120,40,"Building Blocks");
 		titleTxt.anchor.setTo(0.5);
 		titleTxt.align = 'center';
+		//titleTxt.font = 'regfont';
 		titleTxt.fontSize = 32;
 		titleTxt.fontWeight = 'normal';
 		titleTxt.fill = '#FFFFFF';
@@ -55,6 +56,8 @@ Game.appLoginScreen.prototype={
 		selectPicTxt.fill = '#000000';
 		selectPicTxt.wordWrap = true;
 		selectPicTxt.wordWrapWidth = 500;
+
+		_this.pos = [[150,300],[390,300],[150,500],[390,500],[150,700],[390,700]];
 
 
 		_this.fish = game.add.sprite(150,300,'fish');
@@ -193,11 +196,14 @@ Game.appLoginScreen.prototype={
 			_this.loadEverything(_this);
 			for (var i = 0; i < result.rows.length; i++) 
 			{
-            	console.log(result.rows.item(i));
+				console.log(result.rows.item(i));
             	_this.userArray.push(result.rows.item(i));      	
 
             	_this[""+result.rows.item(i).name.toLowerCase()].visible = true;   
-            	_this[""+result.rows.item(i).name.toLowerCase()].inputEnabled = true;   
+            	_this[""+result.rows.item(i).name.toLowerCase()].inputEnabled = true; 
+            	_this[""+result.rows.item(i).name.toLowerCase()].x = _this.pos[i][0]; 
+            	_this[""+result.rows.item(i).name.toLowerCase()].y = _this.pos[i][1]; 
+
 
         	}
         	if(_this.userArray.length<6)
@@ -215,7 +221,7 @@ Game.appLoginScreen.prototype={
 		}
 		else
 		{
-			window.plugins.toast.show("Building Blocks is loading \n please wait", 5000, "center");
+			window.plugins.toast.show("Building Blocks is loading \n please wait", 2000, "center");
 			_this.checkOnlineForData();
 		}
 		
@@ -232,7 +238,9 @@ Game.appLoginScreen.prototype={
             	_this.userArray.push(result.rows.item(i));      	
 
             	_this[""+result.rows.item(i).name.toLowerCase()].visible = true;   
-            	_this[""+result.rows.item(i).name.toLowerCase()].inputEnabled = true;   
+            	_this[""+result.rows.item(i).name.toLowerCase()].inputEnabled = true;
+            	_this[""+result.rows.item(i).name.toLowerCase()].x = _this.pos[i][0]; 
+            	_this[""+result.rows.item(i).name.toLowerCase()].y = _this.pos[i][1];   
 
         	}
         	if(_this.userArray.length<6)
@@ -263,9 +271,10 @@ Game.appLoginScreen.prototype={
 
 	checkOnlineForData:function()
 	{
-		
-		//var jsondata = {name:this.avatarName[0],deviceid:device.serial+"_"+device.uuid};
-		var jsondata = {name:this.avatarName[0],deviceid:123456};
+		console.log(device.serial+"_"+device.uuid);
+		var jsondata = {name:_this.avatarName[0],deviceid:device.serial+"_"+device.uuid};
+		console.log(jsondata);
+		//var jsondata = {name:this.avatarName[0],deviceid:1234};
 
 		if(navigator.connection.type!="none" && navigator.connection.type!="unknown" && navigator.connection.type!=null && navigator.connection.type!="undefined")
 		{
@@ -320,8 +329,8 @@ Game.appLoginScreen.prototype={
 
 	checkOnlineForData2:function(acc_token)
 	{
-		//var jsondata = {name:this.avatarName[0],deviceid:device.serial+"_"+device.uuid};
-		var jsondata = {name:this.avatarName[0],deviceid:123456};
+		var jsondata = {name:_this.avatarName[0],deviceid:device.serial+"_"+device.uuid};
+		//var jsondata = {name:this.avatarName[0],deviceid:123456};
 
 		if(navigator.connection.type!="none" && navigator.connection.type!="unknown" && navigator.connection.type!=null && navigator.connection.type!="undefined")
 		{

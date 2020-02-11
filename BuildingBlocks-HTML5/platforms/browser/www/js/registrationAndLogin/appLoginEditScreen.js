@@ -109,19 +109,20 @@ Game.appLoginEditScreen.prototype={
 		titleBar.drawRect(0, 0, 540, 80);
 
 
-		var regBackArrow = game.add.sprite(40,40,'regBackArrow');
-	    regBackArrow.scale.setTo(0.5);
-	    regBackArrow.anchor.setTo(0.5);
+		_this.regBackArrow = game.add.sprite(40,40,'regBackArrow');
+	    _this.regBackArrow.scale.setTo(0.5);
+	    _this.regBackArrow.anchor.setTo(0.5);
 
 	    var regBackArrowGrph = game.add.graphics(0, 0);
 	    regBackArrowGrph.beginFill(0x4E342E, 0.05);
 		regBackArrowGrph.drawRect(-60, -60, 120, 120);
-		regBackArrow.addChild(regBackArrowGrph);
+		_this.regBackArrow.addChild(regBackArrowGrph);
 
-	    regBackArrow.inputEnabled = true;
-	    regBackArrow.events.onInputDown.add(function(){
-	    	game.state.start('appLoginScreen',true,false);
-	    },this);
+	    
+		document.addEventListener('backbutton', function(e) {
+		    	e.preventDefault();
+		    }, false);
+
 
 		var titleTxt = game.add.text(game.world.centerX-80,40,"Building Blocks");
 		titleTxt.anchor.setTo(0.5);
@@ -260,7 +261,7 @@ Game.appLoginEditScreen.prototype={
 		_this.progressPercentageTxt.wordWrapWidth = 500;
 
 
-		_this.progressPercentageTxt2 = _this.add.text(410,600,"0/100");
+		_this.progressPercentageTxt2 = _this.add.text(400,600,"0/100");
 		//_this.progressPercentageTxt2.anchor.setTo(0.5);
 		_this.progressPercentageTxt2.align = 'center';
 		_this.progressPercentageTxt2.fontSize = 28;
@@ -297,7 +298,6 @@ Game.appLoginEditScreen.prototype={
 				_this.checkIfAllAssetsPresent();
 			}, function(error){
 				console.log("file not present:download"+filename);
-				_this.displayMessageAndDownloadAgain();
 				_this.downloadFiles(filename);
 		});
 	},
@@ -310,6 +310,16 @@ Game.appLoginEditScreen.prototype={
 		else
 		{
 			//_this.checkFileSize();
+
+			_this.regBackArrow.inputEnabled = true;
+	    _this.regBackArrow.events.onInputDown.add(function(){
+	    	_this.state.start('appLoginScreen',true,false);
+	    },_this);
+
+	    document.addEventListener('backbutton', _this.goback, false);
+
+
+
 			_this.regandstsrtBtn.inputEnabled = true;
 			_this.regandstsrtBtn.events.onInputDown.add(function(){
 				_this.state.start('index2',true,false,_this.user,false);
@@ -318,24 +328,44 @@ Game.appLoginEditScreen.prototype={
 			     
 	},
 
+	goback:function(e) {
+		document.removeEventListener('backbutton', _this.goback, false);
+		    	_this.state.start('appLoginScreen',true,false);
+		    },
+
 	downloadFiles:function(filename)
 	{
 		if(navigator.connection.type!="none" && navigator.connection.type!="unknown" && navigator.connection.type!=null && navigator.connection.type!="undefined")
 		{
+			_this.displayMessageAndDownloadAgain();
+				
 			_this.baseUrl = "https://abbmath.klp.org.in/abbchmprm/assets/bb5_0_5/";
 			var fileTransfer = new FileTransfer();
 
 			fileTransfer.onprogress = function(progressEvent) {
 			    if (progressEvent.lengthComputable) {
 			        //loadingStatus.setPercentage(progressEvent.loaded / progressEvent.total);
-			        _this.regloding.frame = Math.round((progressEvent.loaded / progressEvent.total)*100);
+			        _this.regloding.frame = Math.round((progressEvent.loaded / progressEvent.total)*100)-1;
 			        _this.progressPercentageTxt.text = Math.round((progressEvent.loaded / progressEvent.total)*100)+"%";
 			        _this.progressPercentageTxt2.text = Math.round((progressEvent.loaded / progressEvent.total)*100)+"/100";
 
-			        /*if(filename!="English.zip" && filename!="Hindi.zip" && filename!="Kannada.zip" && filename!="Odiya.zip" && filename!="Gujarati.zip")
+			        if(filename!="English.zip" && filename!="Hindi.zip" && filename!="Kannada.zip" && filename!="Odiya.zip" && filename!="Gujarati.zip")
 			        {
+			        	if(filename=="Assets1.zip")
+			        		_this.noOfAssets.text = "1/6";
+			        	else if(filename=="Assets2.zip")
+			        		_this.noOfAssets.text = "2/6";
+			        	else if(filename=="Assets3.zip")
+			        		_this.noOfAssets.text = "3/6";
+			        	else if(filename=="Assets4.zip")
+			        		_this.noOfAssets.text = "4/6";
+			        	else if(filename=="Assets5.zip")
+			        		_this.noOfAssets.text = "5/6";
+			        	else if(filename=="Assets6.zip")
+			        		_this.noOfAssets.text = "6/6";
+
 			        	_this.noOfAssets.visible = true;
-			        }*/
+			        }
 			        console.log((progressEvent.loaded / progressEvent.total)*100);
 			    } else {
 			        //loadingStatus.increment();
@@ -356,6 +386,10 @@ Game.appLoginEditScreen.prototype={
 			        console.log("download error source " + error.source);
 			        console.log("download error target " + error.target);
 			        console.log("download error code" + error.code);
+			        _this.pleaseWaitTxt.text = "Download Failed";
+			        _this.downloadProgressTxt.text = "Something went wrong."
+
+					document.addEventListener("online", _this.checkNetwork, false);
 			        window.plugins.toast.show("something went wrong with download please try again", 3000, "bottom");
 			    }
 			);
@@ -364,13 +398,14 @@ Game.appLoginEditScreen.prototype={
 		{
 			window.plugins.toast.show("please check your internet connection and try again", 3000, "bottom");
 		    document.addEventListener("online", _this.checkNetwork, false);
+		    
 		}
 	},
 
 	checkNetwork:function()
 	{
 		document.removeEventListener("online", _this.checkNetwork, false);
-		_this.create();
+		_this.game.state.start('appLoginEditScreen',true,false,_this.user);
 	},
 
 	unzipFile:function(path,filename)
@@ -406,6 +441,11 @@ Game.appLoginEditScreen.prototype={
 				});
 			});		
 	},
+
+	shutdown:function()
+	{
+		document.removeEventListener('backbutton', _this.goback, false);
+	}
 
 	/*checkIfAllAssetsArePresent:function(fileCheck)
 	{

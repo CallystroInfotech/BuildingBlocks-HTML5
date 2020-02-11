@@ -23,14 +23,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "cordova-plugin-fullscreen.AndroidFullScreen",
-      "file": "plugins/cordova-plugin-fullscreen/www/AndroidFullScreen.js",
-      "pluginId": "cordova-plugin-fullscreen",
-      "clobbers": [
-        "AndroidFullScreen"
-      ]
-    },
-    {
       "id": "cordova-plugin-x-toast.Toast",
       "file": "plugins/cordova-plugin-x-toast/www/Toast.js",
       "pluginId": "cordova-plugin-x-toast",
@@ -275,6 +267,22 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "window.navigator.share"
       ]
+    },
+    {
+      "id": "cordova-plugin-fullscreen.AndroidFullScreen",
+      "file": "plugins/cordova-plugin-fullscreen/www/AndroidFullScreen.js",
+      "pluginId": "cordova-plugin-fullscreen",
+      "clobbers": [
+        "AndroidFullScreen"
+      ]
+    },
+    {
+      "id": "cordova-plugin-firebasex.FirebasePlugin",
+      "file": "plugins/cordova-plugin-firebasex/www/firebase.js",
+      "pluginId": "cordova-plugin-firebasex",
+      "clobbers": [
+        "FirebasePlugin"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -282,7 +290,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "es6-promise-plugin": "4.2.2",
     "cordova-plugin-screen-orientation": "3.0.2",
     "cordova-plugin-device": "2.0.3",
-    "cordova-plugin-fullscreen": "1.1.0",
     "cordova-plugin-x-toast": "2.7.2",
     "cordova-plugin-network-information": "2.0.2",
     "cordova-sqlite-storage": "4.0.0",
@@ -290,6 +297,10 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-file-transfer": "1.7.1",
     "com.jjdltc.cordova.plugin.zip": "1.1.0",
     "cordova-plugin-zip": "3.1.0",
-    "nl.madebymark.share": "0.1.1"
+    "nl.madebymark.share": "0.1.1",
+    "cordova-plugin-fullscreen": "1.1.0",
+    "cordova-plugin-androidx": "1.0.2",
+    "cordova-plugin-androidx-adapter": "1.1.0",
+    "cordova-plugin-firebasex": "7.0.2"
   };
 });

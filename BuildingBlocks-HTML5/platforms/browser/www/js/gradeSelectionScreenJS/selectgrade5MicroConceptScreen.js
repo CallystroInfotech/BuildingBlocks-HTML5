@@ -146,8 +146,9 @@ Game.selectgrade5MicroConceptScreen.prototype={
 
 			//this.microConceptTopics(game,180,250,"NUMBER SENSE",0);
 			//this.microConceptTopics(game,480,250,"NUMBER \nOPERATIONS",1);
-			this.microConceptTopics(game,330,250,selctedLang.McTopicText1,"NUMBER SENSE","tree1",0);
-			this.microConceptTopics(game,610,250,selctedLang.McTopicText3,"SHAPES","tree3",2);
+			this.microConceptTopics(game,230,250,selctedLang.McTopicText1,"NUMBER SENSE","tree1",0);
+			this.microConceptTopics(game,480,250,selctedLang.McTopicText5,"NUMBER OPERATIONS","tree3",1);
+			this.microConceptTopics(game,730,250,selctedLang.McTopicText3,"SHAPES","tree4",2);
 
 			/*this.downloadbg = _this.add.graphics(0, 0);
 			this.downloadbg.lineStyle(0, 0xFFFFFF, 0.8);

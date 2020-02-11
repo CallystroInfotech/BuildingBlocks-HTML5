@@ -11,6 +11,7 @@ Game.index2.prototype={
     init: function(user,flag) {
     	
     	//Fullscreen.on();
+    	window.user = user;
 		window.acctkn = user.uid;
 		window.avatarName = user.name;
 		window.deviceId = user.deviceId;
@@ -32,7 +33,7 @@ Game.index2.prototype={
     preload:function(game)
     {
 
-    	game.cache.destroy();	
+    	//game.cache.destroy();	
     	game.load.image('exitBg','assets/exitAssets/exitBg.png');
     	game.load.image('confirmBg','assets/exitAssets/confirmBg.png');
 
@@ -43,11 +44,10 @@ Game.index2.prototype={
 
     create: function(game) {
       
+      window.currScreen = "gameModeSelectionScreen";
        
        this.gamesVar = game;
 		
-		
-
 		if(localStorage.getItem("FirstTimeRate")==null)
         	localStorage.setItem("FirstTimeRate", "false");
 
@@ -238,7 +238,7 @@ Game.index2.prototype={
 		game.stage.backgroundColor = '#71c5cf';
     	document.addEventListener('backbutton', function(e) {
         
-        	if(window.prevScreen == "gameScreen")
+        	if((window.prevScreen == "gameScreen") || window.currScreen == "gameModeSelectionScreen")
     		{
 				e.preventDefault();
 				
@@ -354,7 +354,13 @@ Game.index2.prototype={
 		                 commonNavBar.mcIcon = null;
 		                 commonNavBar.speakerbtn = null;
 
-						game.state.start('gradeSelectionScreen',true,false);
+		                 if(window.currScreen == "gameModeSelectionScreen")
+		                 {
+		                 	navigator.app.exitApp();
+		                 }else{
+		                 	game.state.start('gradeSelectionScreen',true,false);
+		                 }
+
 					},game);
 
 					cancelBtn.inputEnabled = true;
@@ -369,10 +375,10 @@ Game.index2.prototype={
 		
 				}
 			}
-			else if(window.prevScreen == "gameModeSelectionScreen"&& window.currScreen == "gameModeSelectionScreen")
+			/*else if(window.prevScreen == "gameModeSelectionScreen"&& window.currScreen == "gameModeSelectionScreen")
 			{
-				//nativeApp.onButtonShowPopupWindowClick();
-			}
+				nativeApp.onButtonShowPopupWindowClick();
+			}*/
 			else
 			{
 				/*if(window.mode == "practice")

@@ -43,11 +43,15 @@ Game.registrationPicSelectionScreen.prototype={
 	    regBackArrow.inputEnabled = true;
 	    regBackArrow.events.onInputDown.add(function(){
 
-	    	if(_this.user.length>0)
+	    	if(_this.user)
 	    		game.state.start('registrationLangSelectionScreen',true,false,_this.user);
 	    	else
 	    		game.state.start('registrationLangSelectionScreen',true,false);
 	    },this);
+
+	    document.addEventListener('backbutton', _this.goback, false);
+
+	    
 
 		var titleTxt = game.add.text(game.world.centerX-80,40,"Building Blocks");
 		titleTxt.anchor.setTo(0.5);
@@ -166,40 +170,51 @@ Game.registrationPicSelectionScreen.prototype={
     	},this);
 
 
-    	for(var i=0;i<_this.user.length;i++)
+    	if(_this.user)
     	{
-    		if(_this.user[i].name.toLowerCase() == "fish")
-    		{
-    			fish.inputEnabled = false;
-    			fish.alpha = 0.5;
-    		}
-    		else if(_this.user[i].name.toLowerCase() == "butterfly")
-    		{
-    			butterfly.inputEnabled = false;
-    			butterfly.alpha = 0.5;
-    		}
-    		else if(_this.user[i].name.toLowerCase() == "parrot")
-    		{
-    			parrot.inputEnabled = false;
-    			parrot.alpha = 0.5;
-    		}
-    		else if(_this.user[i].name.toLowerCase() == "flower")
-    		{
-    			flower.inputEnabled = false;
-    			flower.alpha = 0.5;
-    		}
-    		else if(_this.user[i].name.toLowerCase() == "sun")
-    		{
-    			sun.inputEnabled = false;
-    			sun.alpha = 0.5;
-    		}
-    		else if(_this.user[i].name.toLowerCase() == "tree")
-    		{
-    			tree.inputEnabled = false;
-    			tree.alpha = 0.5;
-    		}
-    	}
+	    	for(var i=0;i<_this.user.length;i++)
+	    	{
+	    		if(_this.user[i].name.toLowerCase() == "fish")
+	    		{
+	    			fish.inputEnabled = false;
+	    			fish.alpha = 0.5;
+	    		}
+	    		else if(_this.user[i].name.toLowerCase() == "butterfly")
+	    		{
+	    			butterfly.inputEnabled = false;
+	    			butterfly.alpha = 0.5;
+	    		}
+	    		else if(_this.user[i].name.toLowerCase() == "parrot")
+	    		{
+	    			parrot.inputEnabled = false;
+	    			parrot.alpha = 0.5;
+	    		}
+	    		else if(_this.user[i].name.toLowerCase() == "flower")
+	    		{
+	    			flower.inputEnabled = false;
+	    			flower.alpha = 0.5;
+	    		}
+	    		else if(_this.user[i].name.toLowerCase() == "sun")
+	    		{
+	    			sun.inputEnabled = false;
+	    			sun.alpha = 0.5;
+	    		}
+	    		else if(_this.user[i].name.toLowerCase() == "tree")
+	    		{
+	    			tree.inputEnabled = false;
+	    			tree.alpha = 0.5;
+	    		}
+	    	}
+	    }
 	},
+
+	goback:function(e) {
+		document.removeEventListener('backbutton', _this.goback, false);
+		    if(_this.user)
+	    		_this.state.start('registrationLangSelectionScreen',true,false,_this.user);
+	    	else
+	    		_this.state.start('registrationLangSelectionScreen',true,false);
+		    },
 
 	deactivateAll:function(fish,butterfly,flower,parrot,sun,tree)
 	{
@@ -234,8 +249,8 @@ Game.registrationPicSelectionScreen.prototype={
 	register:function(target,avatarSelected)
 	{
 		target.inputEnabled = false;
-		//var jsondata = {name:avatarSelected,gender:null,schooltype:"0",geo:"77.580643,12.972442",grade:"1st Grade",deviceid:device.serial+"_"+device.uuid,language:this.language,organization:"Akshara"};
-		var jsondata = {name:avatarSelected,gender:null,schooltype:"0",geo:"77.580643,12.972442",grade:"1st Grade",deviceid:123456,language:_this.language,organization:"Akshara"};
+		var jsondata = {name:avatarSelected,gender:null,schooltype:"0",geo:"77.580643,12.972442",grade:"1st Grade",deviceid:device.serial+"_"+device.uuid,language:this.language,organization:"Akshara"};
+		//var jsondata = {name:avatarSelected,gender:null,schooltype:"0",geo:"77.580643,12.972442",grade:"1st Grade",deviceid:123456,language:_this.language,organization:"Akshara"};
 		
 		if(navigator.connection.type!="none" && navigator.connection.type!="unknown" && navigator.connection.type!=null && navigator.connection.type!="undefined")
 		{
@@ -279,8 +294,8 @@ Game.registrationPicSelectionScreen.prototype={
 	checkOnlineForData:function(avatarName)
 	{
 		
-		//var jsondata = {name:this.avatarName[0],deviceid:device.serial+"_"+device.uuid};
-		var jsondata = {name:avatarName,deviceid:123456};
+		var jsondata = {name:avatarName,deviceid:device.serial+"_"+device.uuid};
+		//var jsondata = {name:avatarName,deviceid:123456};
 
 		if(navigator.connection.type!="none" && navigator.connection.type!="unknown" && navigator.connection.type!=null && navigator.connection.type!="undefined")
 		{
@@ -322,8 +337,8 @@ Game.registrationPicSelectionScreen.prototype={
 
 	checkOnlineForData2:function(avatarName,acc_token)
 	{
-		//var jsondata = {name:this.avatarName[0],deviceid:device.serial+"_"+device.uuid};
-		var jsondata = {name:avatarName,deviceid:123456};
+		var jsondata = {name:avatarName,deviceid:device.serial+"_"+device.uuid};
+		//var jsondata = {name:avatarName,deviceid:123456};
 
 		if(navigator.connection.type!="none" && navigator.connection.type!="unknown" && navigator.connection.type!=null && navigator.connection.type!="undefined")
 		{
@@ -363,6 +378,11 @@ Game.registrationPicSelectionScreen.prototype={
 		    	window.plugins.toast.show("please check your internet connection and try again", 3000, "bottom");
 		    }
 	},
+
+	shutdown:function()
+	{
+		document.removeEventListener('backbutton', _this.goback, false);
+	}
 
 	
 };

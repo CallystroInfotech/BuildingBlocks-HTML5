@@ -46,6 +46,9 @@ Game.registrationLangSelectionScreen.prototype={
 	    		game.state.start('appLoginScreen',true,false);
 	    	},this);
 
+	    	document.addEventListener('backbutton', _this.goback, false);
+
+
 			var titleTxt = game.add.text(game.world.centerX-80,40,"Building Blocks");
 			titleTxt.anchor.setTo(0.5);
 			titleTxt.align = 'center';
@@ -113,6 +116,11 @@ Game.registrationLangSelectionScreen.prototype={
 
 	},
 
+	goback:function(e) {
+		document.removeEventListener('backbutton', _this.goback, false);
+		    	_this.state.start('appLoginScreen',true,false);
+		    },
+
 
 	createDropDownMenu:function(game, lang, i, x, y, grp, targetGpc, list, regTickBtn)
 	{
@@ -167,5 +175,10 @@ Game.registrationLangSelectionScreen.prototype={
 
 		grp.add(this["languagegraphicsBg"+i]);
 		grp.add(this["languageTxt"+i]);
+	},
+
+	shutdown:function()
+	{
+		document.removeEventListener('backbutton', _this.goback, false);
 	}
 };
