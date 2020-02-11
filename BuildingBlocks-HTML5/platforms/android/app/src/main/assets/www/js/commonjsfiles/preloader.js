@@ -169,6 +169,13 @@ Game.preloader.prototype={
 		window.grade5PV2_5 = false;
 		window.grade5PV3_5 = false;
 
+		window.longdivision1 = false;
+		window.longdivision2 = false;
+		window.longdivision3 = false;
+		window.longdivision4 = false;
+		window.longdivision5 = false;
+		window.longdivision6 = false;
+
 
 
 
@@ -261,9 +268,11 @@ Game.preloader.prototype={
 
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade4NumberSenseScreen.js", "js");
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade4MeasurementScreen.js", "js");
+		this.loadjscssfile("js/gradeSelectionScreenJS/grade4NumberOperationScreen.js", "js");
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade4ShapesScreen.js", "js");
 
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade5NumberSenseScreen.js", "js");
+		this.loadjscssfile("js/gradeSelectionScreenJS/grade5NumberOperationScreen.js", "js");
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade5ShapesScreen.js", "js");
 
 		/*this.loadjscssfile("js/gradeSelectionScreenJS/grade1levelSelectionScreen.js", "js");
@@ -811,6 +820,24 @@ Game.preloader.prototype={
 
 		this.loadjscssfile("js/gradejs/nsd6.5/level1.js", "js");
 		this.loadjscssfile("js/gradejs/nsd6.5/score.js", "js");
+
+		this.loadjscssfile("js/gradejs/longdivision1/level1.js", "js");
+		this.loadjscssfile("js/gradejs/longdivision1/score.js", "js");
+
+		this.loadjscssfile("js/gradejs/longdivision2/level1.js", "js");
+		this.loadjscssfile("js/gradejs/longdivision2/score.js", "js");
+
+		this.loadjscssfile("js/gradejs/longdivision3/level1.js", "js");
+		this.loadjscssfile("js/gradejs/longdivision3/score.js", "js");
+
+		this.loadjscssfile("js/gradejs/longdivision4/level1.js", "js");
+		this.loadjscssfile("js/gradejs/longdivision4/score.js", "js");
+
+		this.loadjscssfile("js/gradejs/longdivision5/level1.js", "js");
+		this.loadjscssfile("js/gradejs/longdivision5/score.js", "js");
+
+		this.loadjscssfile("js/gradejs/longdivision6/level1.js", "js");
+		this.loadjscssfile("js/gradejs/longdivision6/score.js", "js");
 
 		
 
@@ -1983,7 +2010,8 @@ Game.preloader.prototype={
 
         this.load.atlas('grade161_box2',window.baseUrl+'assets/gradeAssets/16.1/gameAssets/ans box2.png' ,window.baseUrl+'assets/gradeAssets/16.1/gameAssets/ans box2.json');
 
-		
+		this.load.image('longdivision','assets/newGames/longdivision.png');
+		this.load.image('longdivision','assets/newGames/longdivision.png');
 	},
 
 	loadNumberSense1Assets:function()
@@ -2329,6 +2357,14 @@ Game.preloader.prototype={
 		_this.load.image('pv3.4',window.baseUrl+'assets/gradeSelectionScreenAssets/pv3.4.png');
 		_this.load.image('pv3.5',window.baseUrl+'assets/gradeSelectionScreenAssets/pv3.5.png');
 
+
+		_this.load.image('longdivision1','assets/newGames/longdivision1.png');
+		_this.load.image('longdivision2','assets/newGames/longdivision2.png');
+		_this.load.image('longdivision3','assets/newGames/longdivision3.png');
+		_this.load.image('longdivision4','assets/newGames/longdivision4.png');
+		_this.load.image('longdivision5','assets/newGames/longdivision5.png');
+		_this.load.image('longdivision6','assets/newGames/longdivision6.png');
+
 	},
 
 	addgrade2SelectionAssets:function()
@@ -2394,7 +2430,7 @@ Game.preloader.prototype={
 		
 		this.load.image("shareIcon","assets/shareIcon.png");
 		this.load.image("timeIcon","assets/timeIcon.png");
-		this.load.image("userProgressIcon","../userProgressIcon.png");
+		this.load.image("userProgressIcon","assets/userProgressIcon.png");
 		_this.load.atlas("progressCircle","assets/progressCircle.png","assets/progressCircle.json");
 		
 		this.load.image("shareIconScore","assets/shareIconScore.png");
@@ -12444,9 +12480,11 @@ Game.preloader.prototype={
 
 		game.state.add('grade4NumberSense',Game.grade4NumberSense);
 		game.state.add('grade4Measurement',Game.grade4Measurement);
+		game.state.add('grade4NumberOperation',Game.grade4NumberOperation);
 		game.state.add('grade4Shapes',Game.grade4Shapes);
 
 		game.state.add('grade5NumberSense',Game.grade5NumberSense);
+		game.state.add('grade5NumberOperation',Game.grade5NumberOperation);
 		game.state.add('grade5Shapes',Game.grade5Shapes);
 		
         game.state.add('grade1levelSelectionScreen',Game.gradeSelectionScreen);
@@ -12871,6 +12909,24 @@ Game.preloader.prototype={
         game.state.add('unity17_3level1',Game.unity17_3level1);
         game.state.add('unity17_3Score',Game.unity17_3Score);
 
+        game.state.add('longdivision1',Game.longdivision1);
+        game.state.add('longdivision1Score',Game.longdivision1Score);
+
+        game.state.add('longdivision2',Game.longdivision2);
+        game.state.add('longdivision2Score',Game.longdivision2Score);
+
+        game.state.add('longdivision3',Game.longdivision3);
+        game.state.add('longdivision3Score',Game.longdivision3Score);
+
+        game.state.add('longdivision4',Game.longdivision4);
+        game.state.add('longdivision4Score',Game.longdivision4Score);
+
+        game.state.add('longdivision5',Game.longdivision5);
+        game.state.add('longdivision5Score',Game.longdivision5Score);
+
+        game.state.add('longdivision6',Game.longdivision6);
+        game.state.add('longdivision6Score',Game.longdivision6Score);
+
 
 
 
@@ -13242,9 +13298,6 @@ Game.preloader.prototype={
 		}else{
 			_this.state.start('gameModeSelectionScreen',true,false);
 		}
-
-		
-		
 
 	},
 

@@ -37,24 +37,19 @@ Game.boot.prototype={
       	
 	},
 
-	create:function(){
+	create:function(game){
 		_this.bg = _this.add.tileSprite(0,-80,_this.world.width,_this.world.height,'CommonAssets','commonBg');
 		_this.bg.scale.setTo(1,1.5);
 		
-		_this.game.input.maxPointers = 1;
+		game.input.maxPointers = 1;
 
-		//this.Input.MOUSE_OVERRIDES_TOUCH = 1;
-		//_this.game.input.multiInputOverride = Phaser.Input.TOUCH_OVERRIDES_MOUSE;
 
-		//_this.game.input.touch.preventDefault = true;
 
-		_this.game.stage.disableVisibilityChange=true;
+		screen.orientation.lock('landscape');
+		console.log(Phaser.game);
 		
-		//setting scale and orientation for the game.
-		_this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-        _this.scale.pageAlignHorizontally = true;
-        _this.scale.pageAlignVertically = true;
-        _this.scale.updateLayout(true);
+		_this.game.scale.setGameSize(960, 540);
+		
         _this.scale.forceOrientation(false, true);
 		
 		
@@ -84,15 +79,9 @@ Game.boot.prototype={
 		this.game.add.text(0, 0, "hack", {font:"1px myfont", fill:"#FFFFFF"});
 		this.game.add.text(0, 0, "hack", {font:"1px gradefont", fill:"#FFFFFF"});
 
-		//sounds = [ 'loadingSound' ];
+		_this.state.start('preloader',true,false);
 
-		//this.sound.setDecodedCallback(sounds, 
-		//	function()
-		//	{
-				_this.state.start('preloader',true,false);
-		//	}, this);
-					
-					
+				
 	},
 	
 	shutdown:function()

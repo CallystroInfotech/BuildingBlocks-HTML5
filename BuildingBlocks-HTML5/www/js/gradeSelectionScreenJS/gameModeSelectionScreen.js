@@ -82,7 +82,14 @@ Game.gameModeSelectionScreen.prototype={
         	this.clickSound.play();
 			//if(appConfig.cordova && !appConfig.browser)
 			//{
-				navigator.app.exitApp();
+				//document.removeEventListener('backbutton', _this.exitAppFull , false);
+				screen.orientation.lock('portrait');
+				console.log(Phaser.game);
+				
+				_this.game.scale.setGameSize(540, 960);
+				
+		        _this.scale.forceOrientation(true, false);
+				_this.state.start('appLoginEditScreen',true,false,window.user);
 			//}
 			
 		},this);

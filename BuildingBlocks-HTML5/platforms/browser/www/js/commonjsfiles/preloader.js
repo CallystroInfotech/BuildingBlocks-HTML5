@@ -261,9 +261,11 @@ Game.preloader.prototype={
 
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade4NumberSenseScreen.js", "js");
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade4MeasurementScreen.js", "js");
+		this.loadjscssfile("js/gradeSelectionScreenJS/grade4NumberOperationScreen.js", "js");
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade4ShapesScreen.js", "js");
 
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade5NumberSenseScreen.js", "js");
+		this.loadjscssfile("js/gradeSelectionScreenJS/grade5NumberOperationScreen.js", "js");
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade5ShapesScreen.js", "js");
 
 		/*this.loadjscssfile("js/gradeSelectionScreenJS/grade1levelSelectionScreen.js", "js");
@@ -1983,7 +1985,8 @@ Game.preloader.prototype={
 
         this.load.atlas('grade161_box2',window.baseUrl+'assets/gradeAssets/16.1/gameAssets/ans box2.png' ,window.baseUrl+'assets/gradeAssets/16.1/gameAssets/ans box2.json');
 
-		
+		this.load.image('longdivision','assets/newGames/longdivision.png');
+		this.load.image('longdivision','assets/newGames/longdivision.png');
 	},
 
 	loadNumberSense1Assets:function()
@@ -2394,7 +2397,7 @@ Game.preloader.prototype={
 		
 		this.load.image("shareIcon","assets/shareIcon.png");
 		this.load.image("timeIcon","assets/timeIcon.png");
-		this.load.image("userProgressIcon","../userProgressIcon.png");
+		this.load.image("userProgressIcon","assets/userProgressIcon.png");
 		_this.load.atlas("progressCircle","assets/progressCircle.png","assets/progressCircle.json");
 		
 		this.load.image("shareIconScore","assets/shareIconScore.png");
@@ -13242,9 +13245,6 @@ Game.preloader.prototype={
 		}else{
 			_this.state.start('gameModeSelectionScreen',true,false);
 		}
-
-		
-		
 
 	},
 

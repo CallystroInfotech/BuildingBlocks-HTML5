@@ -4,9 +4,10 @@ Game.registrationLangSelectionScreen=function(){
 
 Game.registrationLangSelectionScreen.prototype={
 	
-	init:function(game)
+	init:function(user)
 	{
-		
+		_this = this;
+		_this.user = user;
 	},
 
 	preload:function(game)
@@ -29,7 +30,7 @@ Game.registrationLangSelectionScreen.prototype={
 		titleBar.drawRect(0, 0, 540, 80);
 
 
-		if(this.showRegBackBtn)
+		if(_this.user)
 		{
 			var regBackArrow = game.add.sprite(40,40,'regBackArrow');
 	    	regBackArrow.scale.setTo(0.5);
@@ -42,8 +43,11 @@ Game.registrationLangSelectionScreen.prototype={
 
 	    	regBackArrow.inputEnabled = true;
 	    	regBackArrow.events.onInputDown.add(function(){
-	    		alert("hai");
+	    		game.state.start('appLoginScreen',true,false);
 	    	},this);
+
+	    	document.addEventListener('backbutton', _this.goback, false);
+
 
 			var titleTxt = game.add.text(game.world.centerX-80,40,"Building Blocks");
 			titleTxt.anchor.setTo(0.5);
@@ -98,7 +102,7 @@ Game.registrationLangSelectionScreen.prototype={
 
 			this.languageSelectedGrp = game.add.group();
 
-			var languageList = ["Select Language","English","Hindi","Kannada","Odiya","Gujarati"];
+			var languageList = ["Select Language","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી"];
 
 	    	var x = game.world.centerX-140;
 	    	var y = game.world.centerY-25;
@@ -111,6 +115,11 @@ Game.registrationLangSelectionScreen.prototype={
 		},this);
 
 	},
+
+	goback:function(e) {
+		document.removeEventListener('backbutton', _this.goback, false);
+		    	_this.state.start('appLoginScreen',true,false);
+		    },
 
 
 	createDropDownMenu:function(game, lang, i, x, y, grp, targetGpc, list, regTickBtn)
@@ -145,13 +154,31 @@ Game.registrationLangSelectionScreen.prototype={
 			{
 				regTickBtn.frame=1;
 				regTickBtn.inputEnabled = true;
-				regTickBtn.events.onInputDown.add(function(target){
-					game.state.start('registrationPicSelectionScreen',true,false);
+				regTickBtn.events.onInputDown.add(function(targets){
+					var lang = null;
+
+					if(target.name == "हिंदी")
+						lang = "Hindi"
+					else if(target.name == "ಕನ್ನಡ")
+						lang = "Kannada"
+					else if(target.name == "ଓଡ଼ିଆ")
+						lang = "Odiya"
+					else if(target.name == "ગુજરાતી")
+						lang = "Gujarati"
+					else
+						lang = "English"
+
+					game.state.start('registrationPicSelectionScreen',true,false,lang,_this.user);
 				},this);
 			}
 		},this);
 
 		grp.add(this["languagegraphicsBg"+i]);
 		grp.add(this["languageTxt"+i]);
+	},
+
+	shutdown:function()
+	{
+		document.removeEventListener('backbutton', _this.goback, false);
 	}
 };

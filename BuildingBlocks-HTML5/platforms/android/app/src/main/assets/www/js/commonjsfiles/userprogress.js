@@ -7,20 +7,25 @@ var _this;
 
 Game.userprogress.prototype={
 
+	init:function(user)
+	{
+		//window.avatarName = user;
+	},
+
 	preload:function(game){
 
-		if(window.avatarName == "Fish")
-			this.load.image("avatar","../fish.jpg");
-		else if(window.avatarName == "ButterFly")
-			this.load.image("avatar","../butterfly.jpg");
-		else if(window.avatarName == "Flower")
-			this.load.image("avatar","../flower.jpg");
-		else if(window.avatarName == "Parrot")
-			this.load.image("avatar","../parrot.jpg");
-		else if(window.avatarName == "Sun")
-			this.load.image("avatar","../sun.jpg");
-		else if(window.avatarName == "Tree")
-			this.load.image("avatar","../tree.jpg");
+		if(window.avatarName.toLowerCase() == "fish")
+			game.load.atlas('avatar','assets/fish.png','assets/fish.json');
+		else if(window.avatarName.toLowerCase() == "butterfly")
+			game.load.atlas('avatar','assets/butterfly.png','assets/butterfly.json');
+		else if(window.avatarName.toLowerCase() == "flower")
+			game.load.atlas('avatar','assets/flower.png','assets/flower.json');
+		else if(window.avatarName.toLowerCase() == "parrot")
+			game.load.atlas('avatar','assets/parrot.png','assets/parrot.json');
+		else if(window.avatarName.toLowerCase() == "sun")
+			game.load.atlas('avatar','assets/sun.png','assets/sun.json');
+		else if(window.avatarName.toLowerCase() == "tree")
+			game.load.atlas('avatar','assets/tree.png','assets/tree.json');
 
 		game.time.advancedTiming = true;
 	},

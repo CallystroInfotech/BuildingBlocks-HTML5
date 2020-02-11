@@ -4,9 +4,11 @@ Game.registrationPicSelectionScreen=function(){
 
 Game.registrationPicSelectionScreen.prototype={
 	
-	init:function(game)
+	init:function(lang,user)
 	{
-		
+		_this = this;
+		_this.language = lang;
+		_this.user = user;	
 	},
 
 	preload:function(game)
@@ -16,7 +18,8 @@ Game.registrationPicSelectionScreen.prototype={
 
 	create:function(game)
 	{
-		
+		var avatarSelected = null;
+		//Fullscreen.on();
 		var splash = game.add.sprite(game.world.centerX,game.world.centerY,'registrationbg');
     	splash.scale.setTo(1);
     	splash.anchor.setTo(0.5);
@@ -39,7 +42,11 @@ Game.registrationPicSelectionScreen.prototype={
 
 	    regBackArrow.inputEnabled = true;
 	    regBackArrow.events.onInputDown.add(function(){
-	    	game.state.start('registrationLangSelectionScreen',true,false);
+
+	    	if(_this.user.length>0)
+	    		game.state.start('registrationLangSelectionScreen',true,false,_this.user);
+	    	else
+	    		game.state.start('registrationLangSelectionScreen',true,false);
 	    },this);
 
 		var titleTxt = game.add.text(game.world.centerX-80,40,"Building Blocks");
@@ -51,8 +58,24 @@ Game.registrationPicSelectionScreen.prototype={
 		titleTxt.wordWrap = true;
 		titleTxt.wordWrapWidth = 500;
 
+		var textLang = "";
+		if(_this.language == "Hindi")
+		{
+			textLang = "अपनी प्रोफाइल पिक्चर सेट करो";
+		}else if(_this.language == "Kannada")
+		{
+			textLang = "ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ಚಿತ್ರವನ್ನು ಆರಿಸಿ";
+		}else if(_this.language == "Odiya")
+		{
+			textLang = "ପ୍ରୋଫାଇଲ ଫଟୋ ଲଗାନ୍ତୁ";
+		}else if(_this.language == "Gujarati")
+		{
+			textLang = "તમારૂં પ્રોફાઈલ પિક્ચર મૂકો";
+		}else{
+			textLang = "Set Your Profile Picture";
+		}
 
-    	var selectPicTxt = game.add.text(game.world.centerX,120,"Set Your Profile Picture");
+    	var selectPicTxt = game.add.text(game.world.centerX,120,textLang);
 		selectPicTxt.anchor.setTo(0.5);
 		selectPicTxt.align = 'center';
 		selectPicTxt.fontSize = 38;
@@ -65,8 +88,7 @@ Game.registrationPicSelectionScreen.prototype={
 		var fish = game.add.sprite(150,240,'fish');
     	fish.scale.setTo(0.8);
     	fish.anchor.setTo(0.5);
-
-
+    
     	var butterfly = game.add.sprite(390,240,'butterfly');
     	butterfly.scale.setTo(0.8);
     	butterfly.anchor.setTo(0.5);
@@ -98,7 +120,8 @@ Game.registrationPicSelectionScreen.prototype={
     	fish.events.onInputDown.add(function(){
     		this.deactivateAll(fish,butterfly,flower,parrot,sun,tree);
     		fish.frame = 1;
-    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn);
+    		avatarSelected = "fish";
+    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn,avatarSelected);
     	},this);
 
 
@@ -106,38 +129,76 @@ Game.registrationPicSelectionScreen.prototype={
     	butterfly.events.onInputDown.add(function(){
     		this.deactivateAll(fish,butterfly,flower,parrot,sun,tree);
     		butterfly.frame = 1;
-    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn);
+    		avatarSelected = "butterfly";
+    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn,avatarSelected);
     	},this);
 
     	flower.inputEnabled = true;
     	flower.events.onInputDown.add(function(){
     		this.deactivateAll(fish,butterfly,flower,parrot,sun,tree);
     		flower.frame = 1;
-    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn);
+    		avatarSelected = "flower";
+    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn,avatarSelected);
     	},this);
 
     	parrot.inputEnabled = true;
     	parrot.events.onInputDown.add(function(){
     		this.deactivateAll(fish,butterfly,flower,parrot,sun,tree);
     		parrot.frame = 1;
-    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn);
+    		avatarSelected = "parrot";
+    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn,avatarSelected);
     	},this);
 
     	sun.inputEnabled = true;
     	sun.events.onInputDown.add(function(){
     		this.deactivateAll(fish,butterfly,flower,parrot,sun,tree);
     		sun.frame = 1;
-    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn);
+    		avatarSelected = "sun";
+    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn,avatarSelected);
     	},this);
 
     	tree.inputEnabled = true;
     	tree.events.onInputDown.add(function(){
     		this.deactivateAll(fish,butterfly,flower,parrot,sun,tree);
     		tree.frame = 1;
-    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn);
+    		avatarSelected = "tree";
+    		this.checkActive(fish,butterfly,flower,parrot,sun,tree,regTickBtn,avatarSelected);
     	},this);
 
 
+    	for(var i=0;i<_this.user.length;i++)
+    	{
+    		if(_this.user[i].name.toLowerCase() == "fish")
+    		{
+    			fish.inputEnabled = false;
+    			fish.alpha = 0.5;
+    		}
+    		else if(_this.user[i].name.toLowerCase() == "butterfly")
+    		{
+    			butterfly.inputEnabled = false;
+    			butterfly.alpha = 0.5;
+    		}
+    		else if(_this.user[i].name.toLowerCase() == "parrot")
+    		{
+    			parrot.inputEnabled = false;
+    			parrot.alpha = 0.5;
+    		}
+    		else if(_this.user[i].name.toLowerCase() == "flower")
+    		{
+    			flower.inputEnabled = false;
+    			flower.alpha = 0.5;
+    		}
+    		else if(_this.user[i].name.toLowerCase() == "sun")
+    		{
+    			sun.inputEnabled = false;
+    			sun.alpha = 0.5;
+    		}
+    		else if(_this.user[i].name.toLowerCase() == "tree")
+    		{
+    			tree.inputEnabled = false;
+    			tree.alpha = 0.5;
+    		}
+    	}
 	},
 
 	deactivateAll:function(fish,butterfly,flower,parrot,sun,tree)
@@ -150,7 +211,7 @@ Game.registrationPicSelectionScreen.prototype={
 		tree.frame = 0;
 	},
 
-	checkActive:function(fish,butterfly,flower,parrot,sun,tree,regTickBtn)
+	checkActive:function(fish,butterfly,flower,parrot,sun,tree,regTickBtn,avatarSelected)
 	{
 		if(fish.frame == 1 || butterfly.frame == 1 || flower.frame == 1 
 			|| parrot.frame == 1 || sun.frame == 1 || tree.frame == 1)
@@ -162,56 +223,146 @@ Game.registrationPicSelectionScreen.prototype={
 		{
 			regTickBtn.frame = 0;
 			regTickBtn.inputEnabled = false;
+			avatarSelected = null;
 		}
 		regTickBtn.events.onInputDown.removeAll();
-		regTickBtn.events.onInputDown.add(this.register,this);
-	},
-
-	register:function()
-	{
-		console.log(device.uuid);
-		console.log(device.serial);
-	},
-
-	createDropDownMenu:function(game, lang, i, x, y, grp, targetGpc, list, regTickBtn)
-	{
-		this["languagegraphicsBg"+i] = game.add.graphics(0, 0);
-    	this["languagegraphicsBg"+i].anchor.setTo(0.5);
-    	this["languagegraphicsBg"+i].name = lang;
-		this["languagegraphicsBg"+i].lineStyle(2, 0x000000, 0.8);
-		this["languagegraphicsBg"+i].beginFill(0xFFFFFF, 1);
-		this["languagegraphicsBg"+i].drawRoundedRect(x, y, 280, 45, 10);
-
-		this["languageTxt"+i] = game.add.text(game.world.centerX,y+25,lang);
-		this["languageTxt"+i].anchor.setTo(0.5);
-		this["languageTxt"+i].align = 'center';
-		this["languageTxt"+i].fontSize = 26;
-		this["languageTxt"+i].fontWeight = 'normal';
-		this["languageTxt"+i].fill = '#000000';
-		this["languageTxt"+i].wordWrap = true;
-		this["languageTxt"+i].wordWrapWidth = 500;
-
-		this["languagegraphicsBg"+i].inputEnabled = true;
-		this["languagegraphicsBg"+i].events.onInputDown.add(function(target){
-			this.selectLanguageText.text = target.name;
-			target.events.onInputDown.removeAll();
-			grp.destroy();
-			targetGpc.inputEnabled = true;
-			regTickBtn.frame=0;
-			regTickBtn.inputEnabled = true;
-			regTickBtn.events.onInputDown.removeAll();
-
-			if(this.selectLanguageText.text !== list[0])
-			{
-				regTickBtn.frame=1;
-				regTickBtn.inputEnabled = true;
-				regTickBtn.events.onInputDown.add(function(target){
-					alert("added");
-				},this);
-			}
+		regTickBtn.events.onInputDown.add(function(target){
+			this.register(target,avatarSelected);
 		},this);
+	},
 
-		grp.add(this["languagegraphicsBg"+i]);
-		grp.add(this["languageTxt"+i]);
-	}
+	register:function(target,avatarSelected)
+	{
+		target.inputEnabled = false;
+		//var jsondata = {name:avatarSelected,gender:null,schooltype:"0",geo:"77.580643,12.972442",grade:"1st Grade",deviceid:device.serial+"_"+device.uuid,language:this.language,organization:"Akshara"};
+		var jsondata = {name:avatarSelected,gender:null,schooltype:"0",geo:"77.580643,12.972442",grade:"1st Grade",deviceid:123456,language:_this.language,organization:"Akshara"};
+		
+		if(navigator.connection.type!="none" && navigator.connection.type!="unknown" && navigator.connection.type!=null && navigator.connection.type!="undefined")
+		{
+				var apiurl = "https://abbmath.klp.org.in/abbchmprm/register";        		        
+		        $.ajax({
+		            url: apiurl,
+		            type: "POST",
+		            dataType: "json",
+		            // async:false, // set to false to perform a synchronous request
+		            data: JSON.stringify(jsondata),
+		            contentType: 'application/json; charset=UTF-8',
+		            accepts: 'application/json',
+		            success: function (jsonresp) {
+		            	console.log(jsonresp);
+		            	if(jsonresp.status == "success")
+		            	{
+		            		window.plugins.toast.show(jsonresp.status, 3000, "bottom");	
+		            		target.events.onInputDown.removeAll();
+		            		_this.checkOnlineForData(avatarSelected);          		
+		            	}
+		            	else
+		            	{
+		            		window.plugins.toast.show(jsonresp.status+"\n"+jsonresp.description, 3000, "bottom");
+		            	}
+		                 
+		            },
+		            error: function (error) {
+		            	window.plugins.toast.show(error, 3000, "bottom");
+		            	target.inputEnabled = true;
+		             }
+		            
+		        });
+		    }
+		    else
+		    {
+		    	window.plugins.toast.show("please check your internet connection and try again", 3000, "bottom");
+		    }
+
+	},
+
+	checkOnlineForData:function(avatarName)
+	{
+		
+		//var jsondata = {name:this.avatarName[0],deviceid:device.serial+"_"+device.uuid};
+		var jsondata = {name:avatarName,deviceid:123456};
+
+		if(navigator.connection.type!="none" && navigator.connection.type!="unknown" && navigator.connection.type!=null && navigator.connection.type!="undefined")
+		{
+				var apiurl = "https://abbmath.klp.org.in/abbchmprm/login";        		        
+		        $.ajax({
+		            url: apiurl,
+		            type: "POST",
+		            dataType: "json",
+		            // async:false, // set to false to perform a synchronous request
+		            data: JSON.stringify(jsondata),
+		            contentType: 'application/json; charset=UTF-8',
+		            accepts: 'application/json',
+		            success: function (jsonresp) {
+		            	console.log(jsonresp);
+		            	if(jsonresp.status == "success")
+		            	{
+		            		window.plugins.toast.show(jsonresp.status, 3000, "bottom");	
+		            	    _this.checkOnlineForData2(avatarName,jsonresp.description);
+		            	       		
+		            	}
+		            	else
+		            	{
+		            		
+		            	}
+		                 
+		            },
+		            error: function (error) {
+		            	window.plugins.toast.show(error, 1000, "bottom");		            	
+		             }
+		            
+		        });
+		    }
+		    else
+		    {
+		    	window.plugins.toast.show("please check your internet connection and try again", 3000, "bottom");
+		    	document.addEventListener("online", _this.checkNetwork, false);
+		    }
+	},
+
+	checkOnlineForData2:function(avatarName,acc_token)
+	{
+		//var jsondata = {name:this.avatarName[0],deviceid:device.serial+"_"+device.uuid};
+		var jsondata = {name:avatarName,deviceid:123456};
+
+		if(navigator.connection.type!="none" && navigator.connection.type!="unknown" && navigator.connection.type!=null && navigator.connection.type!="undefined")
+		{
+				var apiurl = "https://abbmath.klp.org.in/abbchmprm/getchild";        		        
+		        $.ajax({
+		            url: apiurl,
+		            type: "POST",
+		            dataType: "json",
+		            // async:false, // set to false to perform a synchronous request
+		            data: JSON.stringify(jsondata),
+		            contentType: 'application/json; charset=UTF-8',
+		            accepts: 'application/json',
+		            success: function (jsonresp) {
+		            	console.log(jsonresp);
+		            	if(jsonresp.status == "success")
+		            	{
+		            		window.plugins.toast.show(jsonresp.status, 3000, "bottom");	
+		            		bbreglogin.bbdbhandler.executeSql("insert into user(uid, name, language, deviceId) values (?,?,?,?)", [acc_token,jsonresp.name,jsonresp.language,jsonresp.deviceid], null, null);
+		            		jsonresp.uid = acc_token;
+		            		_this.state.start('appLoginEditScreen',true,false,jsonresp);     	    		
+		            	}
+		            	else
+		            	{
+		            		
+		            	}
+		                 
+		            },
+		            error: function (error) {
+		            	window.plugins.toast.show(error, 3000, "bottom");
+		            	
+		             }
+		            
+		        });
+		    }
+		    else
+		    {
+		    	window.plugins.toast.show("please check your internet connection and try again", 3000, "bottom");
+		    }
+	},
+
+	
 };

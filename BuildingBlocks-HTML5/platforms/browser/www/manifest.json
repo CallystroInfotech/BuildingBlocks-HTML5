@@ -1,11 +1,11 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "HelloCordova",
-  "short_name": "HelloCordova",
+  "name": "Building Blocks",
+  "short_name": "Building Blocks",
   "version": "io.cordova.hellocordova",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
-  "author": "Apache Cordova Team",
+  "description": "Maths Games Class 1-5 – Building Blocks by Akshara",
+  "author": "Akshara Foundation",
   "icons": [],
   "start_url": "index.html"
 }
