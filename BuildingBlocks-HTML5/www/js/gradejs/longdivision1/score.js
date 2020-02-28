@@ -48,11 +48,11 @@ Game.longdivision1Score.prototype={
 				_this.clickSound = _this.add.audio('ClickSound');
 	            _this.clickSound.play();
 				//_this.cache.destroy();
-				_this.state.start('longdivision2',true,false); 
+				_this.state.start('longdivision5',true,false); 
 			},_this);
 		//}
 
-        _this.nextBtn.visible = false;
+        //_this.nextBtn.visible = false;
         
                 
                 _this.replay = _this.add.button(_this.world.centerX+56,_this.world.centerY,'CommonReplayBtn',null,_this,0,1,2);

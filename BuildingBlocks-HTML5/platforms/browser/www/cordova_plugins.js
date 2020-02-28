@@ -295,6 +295,74 @@ module.exports = [
         "clobbers": [
             "AndroidFullScreen"
         ]
+    },
+    {
+        "file": "plugins/es6-promise-plugin/www/promise.js",
+        "id": "es6-promise-plugin.Promise",
+        "pluginId": "es6-promise-plugin",
+        "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
+        "id": "cordova-plugin-x-socialsharing.SocialSharing",
+        "pluginId": "cordova-plugin-x-socialsharing",
+        "clobbers": [
+            "window.plugins.socialsharing"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-native-spinner/www/SpinnerDialog.js",
+        "id": "cordova-plugin-native-spinner.SpinnerDialog",
+        "pluginId": "cordova-plugin-native-spinner",
+        "clobbers": [
+            "SpinnerDialog"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-android-permissions/www/permissions-dummy.js",
+        "id": "cordova-plugin-android-permissions.Permissions",
+        "pluginId": "cordova-plugin-android-permissions",
+        "clobbers": [
+            "cordova.plugins.permissions"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-facebook4/www/facebook-browser.js",
+        "id": "cordova-plugin-facebook4.FacebookConnectPluginBrowser",
+        "pluginId": "cordova-plugin-facebook4",
+        "clobbers": [
+            "facebookConnectPlugin"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-appsflyer-sdk/www/appsflyer.js",
+        "id": "cordova-plugin-appsflyer-sdk.appsflyer",
+        "pluginId": "cordova-plugin-appsflyer-sdk",
+        "clobbers": [
+            "window.plugins.appsFlyer"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-appsflyer-sdk/www/AppsFlyerError.js",
+        "id": "cordova-plugin-appsflyer-sdk.AppsFlyerError",
+        "pluginId": "cordova-plugin-appsflyer-sdk",
+        "clobbers": [
+            "AppsFlyerError"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "id": "cordova-plugin-statusbar.statusbar",
+        "pluginId": "cordova-plugin-statusbar",
+        "clobbers": [
+            "window.StatusBar"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-statusbar/src/browser/StatusBarProxy.js",
+        "id": "cordova-plugin-statusbar.StatusBarProxy",
+        "pluginId": "cordova-plugin-statusbar",
+        "runs": true
     }
 ];
 module.exports.metadata = 
@@ -314,7 +382,14 @@ module.exports.metadata =
     "cordova-plugin-fullscreen": "1.1.0",
     "cordova-plugin-androidx": "1.0.2",
     "cordova-plugin-androidx-adapter": "1.1.0",
-    "cordova-plugin-firebasex": "7.0.2"
+    "cordova-plugin-firebasex": "7.0.2",
+    "es6-promise-plugin": "4.2.2",
+    "cordova-plugin-x-socialsharing": "5.6.4",
+    "cordova-plugin-native-spinner": "1.1.3",
+    "cordova-plugin-android-permissions": "1.0.2",
+    "cordova-plugin-facebook4": "6.3.0",
+    "cordova-plugin-appsflyer-sdk": "4.4.22",
+    "cordova-plugin-statusbar": "2.4.3"
 }
 // BOTTOM OF METADATA
 });

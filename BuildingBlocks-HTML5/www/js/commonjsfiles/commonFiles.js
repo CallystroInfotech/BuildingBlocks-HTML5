@@ -5541,14 +5541,14 @@ timevents6=game.time.events.add(11000,function(){
         this.closebtn.events.onInputDown.add(function(){
             this.closebtn.visible=false;
             if(this.popupbg)
-            this.popupbg.visible=false;
+                this.popupbg.visible=false;
 
             this.background.visible=false;
             this.backgroundtransp.visible=false;
             if(this.video)
             {
                 this.somethingV.destroy();
-                //                this.video.destroy();
+                //this.video.destroy();
             }
 
             //Enable input key on close of HINT screen
@@ -5562,7 +5562,7 @@ timevents6=game.time.events.add(11000,function(){
                 this.popupHint.destroy();
 
             if(this.popuphint)
-            this.popuphint.visible=false;
+                this.popuphint.visible=false;
 
         },this);
     },

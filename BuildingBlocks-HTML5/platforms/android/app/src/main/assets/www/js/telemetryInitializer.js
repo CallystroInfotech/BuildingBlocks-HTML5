@@ -443,6 +443,24 @@ var telInitializer = {
             case "pv3_4":
             				gameID = "PV3";
             				break;
+            case "longdivison":
+            				gameID = "NOLDG1";
+            				break;
+            case "longmult":
+            				gameID = "NOLMG1";
+            				break;
+            case "DH1":
+            				gameID = "DHDCG1";
+            				break;
+            case "DH2":
+            				gameID = "DHDTG1";
+            				break;
+            case "NSN1":
+            				gameID = "NSNPG1.3";
+            				break;
+            case "NSN2":
+            				gameID = "NSNPG1.5";
+            				break;
 
 		}
 

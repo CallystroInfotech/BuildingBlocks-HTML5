@@ -84,7 +84,10 @@ Game.gameModeSelectionScreen.prototype={
 			//{
 				//document.removeEventListener('backbutton', _this.exitAppFull , false);
 				screen.orientation.lock('portrait');
-				console.log(Phaser.game);
+				AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
+				document.addEventListener('resume',function(){
+					AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
+				},false);
 				
 				_this.game.scale.setGameSize(540, 960);
 				

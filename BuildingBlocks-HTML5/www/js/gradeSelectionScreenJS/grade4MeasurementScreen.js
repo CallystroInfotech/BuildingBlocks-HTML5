@@ -291,7 +291,7 @@ Game.grade4Measurement.prototype={
 	{
 		_this.topicTxtBg = _this.add.graphics(100, 60);
 		_this.topicTxtBg.lineStyle(0, 0xFFFFFF, 0.8);
-		_this.topicTxtBg.beginFill(0xD957A0, 1);
+		_this.topicTxtBg.beginFill(0x139487, 1);
 		_this.topicTxtBg.drawRoundedRect(0,0,170,100,10);
 		_this.topicTxtBg.boundsPadding = 0;
 		
@@ -323,7 +323,7 @@ Game.grade4Measurement.prototype={
 		
 		_this.topicBg = _this.add.graphics(75, 100);
 		_this.topicBg.lineStyle(0, 0xFFFFFF, 0.8);
-		_this.topicBg.beginFill(0xD957A0, 1);
+		_this.topicBg.beginFill(0x139487, 1);
 		//topicBg.drawRoundedRect(0,0,805,400,30);
 		_this.topicBg.drawRoundedRect(0,0,850,600,30);
 		_this.topicBg.boundsPadding = 0;

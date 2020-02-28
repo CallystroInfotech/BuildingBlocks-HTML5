@@ -15,7 +15,7 @@ init:function(game)
         } 
        // _this.savedVar = absdsjsapi.saveGameplay(_this.saveGameplay);
         
-
+        telInitializer.gameIdInit("longmult",gradeSelected);
     },
 
     preload:function(game){
@@ -36,44 +36,47 @@ init:function(game)
             preloadGrp.add(_this.preloadBars);
 
             preloadGrp.x -= 105;
-            this.load.image('skipDemoVideos', 'assets/gradeAssets/skipArrow.png');
+            this.load.image('NOLMskipDemoVideos',window.baseUrl+'assets/NOLM/gradeAssets/skipArrow.png');
         
         //common for all games.
-        this.load.atlas('backbtn','assets/commonAssets/backbtn.png' ,'json/gradeJson/backbtn.json');
-        this.load.atlas('CommonSpeakerBtn','assets/commonAssets/speaker.png' ,'json/gradeJson/speaker.json');
-        this.load.atlas('starAnim','assets/commonAssets/starAnim.png','json/gradeJson/starAnim.json');
-        this.load.atlas('replay','assets/commonAssets/reply.png' ,'json/gradeJson/reply.json');
-        this.load.atlas('btn','assets/commonAssets/btn.png','json/gradeJson/btn.json');
+        this.load.atlas('NOLMbackNOLMbtn',window.baseUrl+'assets/NOLM/commonAssets/backbtn.png' ,window.baseUrl+'json/NOLM/gradeJson/backbtn.json');
+        this.load.atlas('NOLMCommonSpeakerNOLMbtn',window.baseUrl+'assets/NOLM/commonAssets/speaker.png' ,window.baseUrl+'json/NOLM/gradeJson/speaker.json');
+        this.load.atlas('NOLMstarAnim',window.baseUrl+'assets/NOLM/commonAssets/starAnim.png',window.baseUrl+'json/NOLM/gradeJson/starAnim.json');
+        this.load.atlas('NOLMreplay',window.baseUrl+'assets/NOLM/commonAssets/reply.png' ,window.baseUrl+'json/NOLM/gradeJson/reply.json');
+        this.load.atlas('NOLMbtn',window.baseUrl+'assets/NOLM/commonAssets/btn.png',window.baseUrl+'json/NOLM/gradeJson/btn.json');
         
-        this.load.image('background1','assets/commonAssets/bg1.png');
-        this.load.image('tittleBar','assets/commonAssets/tittleBar.png');
-        this.load.image('navBar','assets/commonAssets/navBar.png');
-        this.load.image('timebg','assets/commonAssets/timebg.png');
+        this.load.image('NOLMbackground1',window.baseUrl+'assets/NOLM/commonAssets/bg1.png');
+        this.load.image('NOLMtittleBar',window.baseUrl+'assets/NOLM/commonAssets/tittleBar.png');
+        this.load.image('NOLMnavBar',window.baseUrl+'assets/NOLM/commonAssets/navBar.png');
+        this.load.image('NOLMtimeNOLMbg',window.baseUrl+'assets/NOLM/commonAssets/timebg.png');
         
-        //this.load.atlas('mic','assets/commonAssets/mic.png','json/gradeJson/mic.json');
-        this.load.atlas('mesg','assets/commonAssets/callout btn.png','json/gradeJson/callout btn.json');
-        this.load.image('score','assets/commonAssets/scoreBg.png');
-        this.load.atlas('pointAnim','assets/commonAssets/whiteminusBg.png','json/gradeJson/whiteminusBg.json');
+        //this.load.atlas('mic',window.baseUrl+'assets/NOLM/commonAssets/mic.png',window.baseUrl+'json/NOLM/gradeJson/mic.json');
+        this.load.atlas('NOLMmesg',window.baseUrl+'assets/NOLM/commonAssets/callout btn.png',window.baseUrl+'json/NOLM/gradeJson/callout btn.json');
+        this.load.image('NOLMscore',window.baseUrl+'assets/NOLM/commonAssets/scoreBg.png');
+        this.load.atlas('NOLMpointAnim',window.baseUrl+'assets/NOLM/commonAssets/whiteminusBg.png',window.baseUrl+'json/NOLM/gradeJson/whiteminusBg.json');
        
         //game assets.
-        this.load.image('bg', 'assets/commonAssets/bg.png');
-        //this.load.image('box1', 'assets/gradeAssets/mainbox.png');
-        this.load.image('box1', 'assets/gradeAssets/mainbox1.png');
-        this.load.image('box2', 'assets/gradeAssets/questionbox.png');
-        this.load.image('box3', 'assets/gradeAssets/checkbox.png');
-        this.load.atlas('box4', 'assets/gradeAssets/ansbox.png', 'json/gradeJson/ansbox.json');
-        this.load.atlas('box5', 'assets/gradeAssets/box3.png', 'json/gradeJson/Box3.json');
-        this.load.atlas('num_box', 'assets/gradeAssets/ans box glow.png', 'json/gradeJson/ans box glow.json');
-        this.load.image('num_bg', 'assets/gradeAssets/b2.png');
-        this.load.atlas('numberpad', 'assets/gradeAssets/numberpad.png', 'json/gradeJson/numberpad.json');
-        this.load.atlas('eraser', 'assets/gradeAssets/erase.png', 'json/gradeJson/erase.json');
-        this.load.atlas('tick', 'assets/gradeAssets/tickMark.png', 'json/gradeJson/tickMark.json');
+        this.load.image('NOLMbg',window.baseUrl+'assets/NOLM/commonAssets/bg.png');
+        //this.load.image('NOLMbox1',window.baseUrl+'assets/NOLM/gradeAssets/mainbox.png');
+        this.load.image('NOLMbox1',window.baseUrl+'assets/NOLM/gradeAssets/mainbox1.png');
+        this.load.image('NOLMbox2',window.baseUrl+'assets/NOLM/gradeAssets/questionbox.png');
+        this.load.image('NOLMbox3',window.baseUrl+'assets/NOLM/gradeAssets/checkbox.png');
+        this.load.atlas('NOLMbox4',window.baseUrl+'assets/NOLM/gradeAssets/ansbox.png',window.baseUrl+'json/NOLM/gradeJson/ansbox.json');
+        this.load.atlas('NOLMbox5',window.baseUrl+'assets/NOLM/gradeAssets/Box3.png',window.baseUrl+'json/NOLM/gradeJson/Box3.json');
+        this.load.atlas('NOLMnum_box',window.baseUrl+'assets/NOLM/gradeAssets/ans box glow.png',window.baseUrl+'json/NOLM/gradeJson/ans box glow.json');
+        this.load.image('num_NOLMbg',window.baseUrl+'assets/NOLM/gradeAssets/b2.png');
+        this.load.atlas('NOLMnumberpad',window.baseUrl+'assets/NOLM/gradeAssets/numberpad.png',window.baseUrl+'json/NOLM/gradeJson/numberpad.json');
+        this.load.atlas('NOLMeraser',window.baseUrl+'assets/NOLM/gradeAssets/erase.png',window.baseUrl+'json/NOLM/gradeJson/erase.json');
+        this.load.atlas('NOLMtick',window.baseUrl+'assets/NOLM/gradeAssets/tickMark.png',window.baseUrl+'json/NOLM/gradeJson/tickMark.json');
     }
 
     },
     
 	create:function(game)
     {
+
+  
+
         _this.score1 = 0;
         _this.no1=0;
         _this.count1=0;
@@ -115,12 +118,12 @@ init:function(game)
         _this.physics.startSystem(Phaser.Physics.ARCADE);
         _this.physics.setBoundsToWorld();
 
-        _this.background = _this.add.tileSprite(-2,-2,_this.world.width,_this.world.height,'bg');
+        _this.background = _this.add.tileSprite(-2,-2,_this.world.width,_this.world.height,'NOLMbg');
         
-        _this.navBar = _this.add.sprite(0,0,'navBar');
+        _this.navBar = _this.add.sprite(0,0,'NOLMnavBar');
         _this.navBar.scale.setTo(1,1.1);
         
-        _this.backbtn = _this.add.sprite(10,7,'backbtn');
+        _this.backbtn = _this.add.sprite(10,7,'NOLMbackNOLMbtn');
         _this.backbtn.inputEnabled = true;
         _this.backbtn.events.onInputDown.add(function()
         {
@@ -136,7 +139,7 @@ init:function(game)
 
         },_this);
 
-        _this.speakerbtn = _this.add.button(575,7,'CommonSpeakerBtn',function(){},this,1,0,2);
+        _this.speakerbtn = _this.add.button(575,7,'NOLMCommonSpeakerNOLMbtn',function(){},this,1,0,2);
         _this.speakerbtn.events.onInputDown.add(function()
         { 
            _this.clickSound = _this.add.audio('ClickSound');
@@ -146,7 +149,7 @@ init:function(game)
             
         },_this);
         
-        _this.timebg = _this.add.sprite(305,9,'timebg');
+        _this.timebg = _this.add.sprite(305,9,'NOLMtimeNOLMbg');
         _this.timebg.name="common_timebg";
         //_this.timebg.scale.setTo(1,1);
 
@@ -158,10 +161,10 @@ init:function(game)
         //text.fontWeight = 'bold';
         _this.timeDisplay.fill = '#ADFF2F';
         
-        /*_this.mesg = _this.add.sprite(65,7,'mesg');
+        /*_this.mesg = _this.add.sprite(65,7,'NOLMmesg');
         _this.mesg.scale.setTo(1,1);
         
-        _this.score=this.add.sprite(800,7,'score');
+        _this.score=this.add.sprite(800,7,'NOLMscore');
         _this.score.scale.setTo(1,1);*/
         
         //Create the score label
@@ -190,22 +193,22 @@ init:function(game)
          _this.objGrp = _this.add.group();
          _this.graphicsGrp = _this.add.group();
          
-         _this.mainbox = _this.add.sprite(327,276,'box1');//290,250
+         _this.mainbox = _this.add.sprite(327,276,'NOLMbox1');//290,250
          _this.mainbox.anchor.setTo(0.5);
          
-         _this.box1 = _this.add.sprite(250,236,'box5');//252,235
+         _this.box1 = _this.add.sprite(250,236,'NOLMbox5');//252,235
          _this.box1.anchor.setTo(0.5);
          
-         _this.box2 = _this.add.sprite(409,236,'box5');//412,235
+         _this.box2 = _this.add.sprite(409,236,'NOLMbox5');//412,235
          _this.box2.anchor.setTo(0.5);
          
-         _this.box3 = _this.add.sprite(250,320,'box5');//252,322
+         _this.box3 = _this.add.sprite(250,320,'NOLMbox5');//252,322
          _this.box3.anchor.setTo(0.5);
          
-         _this.box4 = _this.add.sprite(409,320,'box5');//412,322
+         _this.box4 = _this.add.sprite(409,320,'NOLMbox5');//412,322
          _this.box4.anchor.setTo(0.5);
          
-         _this.num1 = _this.add.sprite(250,162,'num_box');
+         _this.num1 = _this.add.sprite(250,162,'NOLMnum_box');
          _this.num1.anchor.set(0.5);
          //_this.num1.inputEnabled=true;
          _this.num1.name="numbox1";
@@ -223,7 +226,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num2 = _this.add.sprite(410,162,'num_box');
+         _this.num2 = _this.add.sprite(410,162,'NOLMnum_box');
          _this.num2.anchor.set(0.5);
          //_this.num2.inputEnabled=true;
          _this.num2.name="numbox2";
@@ -241,7 +244,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num3 = _this.add.sprite(125,238,'num_box');
+         _this.num3 = _this.add.sprite(125,238,'NOLMnum_box');
          _this.num3.anchor.set(0.5);
          //_this.num3.inputEnabled=true;
          _this.num3.name="numbox3";
@@ -268,7 +271,7 @@ init:function(game)
                                } */
               },_this);
          
-         _this.num4 = _this.add.sprite(125,325,'num_box');
+         _this.num4 = _this.add.sprite(125,325,'NOLMnum_box');
          _this.num4.anchor.set(0.5);
          //_this.num4.inputEnabled=true;
          _this.num4.name="numbox4";
@@ -286,7 +289,7 @@ init:function(game)
                         _this.num4.frame=1;
               },_this);
          
-         _this.questionbox = _this.add.sprite(820,160,'box2');
+         _this.questionbox = _this.add.sprite(820,160,'NOLMbox2');
          _this.questionbox.anchor.setTo(0.5);
          
          _this.num = _this.add.text(-3,-3,"23 x 54");//818,157
@@ -338,7 +341,7 @@ init:function(game)
          _this.text1.fontWeight = 'Normal';
          _this.text1.fontSize = 40;
          
-         _this.b1 = _this.add.sprite(615,160,'box3');
+         _this.b1 = _this.add.sprite(615,160,'NOLMbox3');
          _this.b1.anchor.setTo(0.5);
          _this.b1.visible=false;
          _this.b1.addChild(_this.text1);
@@ -352,7 +355,7 @@ init:function(game)
          _this.text2.fontWeight = 'normal';
          _this.text2.fontSize = 40;
          
-         _this.b2 = _this.add.sprite(615,260,'box3');
+         _this.b2 = _this.add.sprite(615,260,'NOLMbox3');
          _this.b2.anchor.setTo(0.5);
          _this.b2.visible=false;
          _this.b2.addChild(_this.text2);
@@ -366,7 +369,7 @@ init:function(game)
          _this.text3.fontWeight = 'normal';
          _this.text3.fontSize = 40;
          
-         _this.b3 = _this.add.sprite(615,360,'box3');
+         _this.b3 = _this.add.sprite(615,360,'NOLMbox3');
          _this.b3.anchor.setTo(0.5);
          _this.b3.visible=false;
          _this.b3.addChild(_this.text3);
@@ -380,7 +383,7 @@ init:function(game)
          _this.text4.fontWeight = 'normal';
          _this.text4.fontSize = 40;
          
-         _this.b4 = _this.add.sprite(615,460,'box3');
+         _this.b4 = _this.add.sprite(615,460,'NOLMbox3');
          _this.b4.anchor.setTo(0.5);
          _this.b4.visible=false;
          _this.b4.addChild(_this.text4);
@@ -426,7 +429,7 @@ init:function(game)
          _this.text11.fontWeight = 'normal';
          _this.text11.fontSize = 40;
          
-         _this.b11 = _this.add.sprite(615,235,'box3');
+         _this.b11 = _this.add.sprite(615,235,'NOLMbox3');
          _this.b11.anchor.setTo(0.5);
          _this.b11.visible=false;
          _this.b11.addChild(_this.text11);
@@ -438,7 +441,7 @@ init:function(game)
          _this.text12.fontWeight = 'normal';
          _this.text12.fontSize = 40;
          
-         _this.b12 = _this.add.sprite(615,322,'box3');
+         _this.b12 = _this.add.sprite(615,322,'NOLMbox3');
          _this.b12.anchor.setTo(0.5);
          _this.b12.visible=false;
          _this.b12.addChild(_this.text12);
@@ -459,7 +462,7 @@ init:function(game)
          _this.equal.fontSize = 40;
          _this.equal.visible=false;
          
-         _this.b13 = _this.add.sprite(615,410,'box4');
+         _this.b13 = _this.add.sprite(615,410,'NOLMbox4');
          _this.b13.anchor.setTo(0.5);
          _this.b13.visible=false;
          
@@ -507,22 +510,22 @@ init:function(game)
          _this.objGrp = _this.add.group();
          _this.graphicsGrp = _this.add.group();
          
-         _this.mainbox = _this.add.sprite(327,276,'box1');//290,250
+         _this.mainbox = _this.add.sprite(327,276,'NOLMbox1');//290,250
          _this.mainbox.anchor.setTo(0.5);
          
-         _this.box1 = _this.add.sprite(250,236,'box5');//252,235
+         _this.box1 = _this.add.sprite(250,236,'NOLMbox5');//252,235
          _this.box1.anchor.setTo(0.5);
          
-         _this.box2 = _this.add.sprite(409,236,'box5');//412,235
+         _this.box2 = _this.add.sprite(409,236,'NOLMbox5');//412,235
          _this.box2.anchor.setTo(0.5);
          
-         _this.box3 = _this.add.sprite(250,320,'box5');//252,322
+         _this.box3 = _this.add.sprite(250,320,'NOLMbox5');//252,322
          _this.box3.anchor.setTo(0.5);
          
-         _this.box4 = _this.add.sprite(409,320,'box5');//412,322
+         _this.box4 = _this.add.sprite(409,320,'NOLMbox5');//412,322
          _this.box4.anchor.setTo(0.5);
          
-         _this.num1 = _this.add.sprite(250,162,'num_box');
+         _this.num1 = _this.add.sprite(250,162,'NOLMnum_box');
          _this.num1.anchor.set(0.5);
          //_this.num1.inputEnabled=true;
          _this.num1.name="numbox1";
@@ -540,7 +543,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num2 = _this.add.sprite(410,162,'num_box');
+         _this.num2 = _this.add.sprite(410,162,'NOLMnum_box');
          _this.num2.anchor.set(0.5);
          //_this.num2.inputEnabled=true;
          _this.num2.name="numbox2";
@@ -558,7 +561,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num3 = _this.add.sprite(125,238,'num_box');
+         _this.num3 = _this.add.sprite(125,238,'NOLMnum_box');
          _this.num3.anchor.set(0.5);
          //_this.num3.inputEnabled=true;
          _this.num3.name="numbox3";
@@ -576,7 +579,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num4 = _this.add.sprite(125,325,'num_box');
+         _this.num4 = _this.add.sprite(125,325,'NOLMnum_box');
          _this.num4.anchor.set(0.5);
          //_this.num4.inputEnabled=true;
          _this.num4.name="numbox4";
@@ -594,7 +597,7 @@ init:function(game)
                         _this.num4.frame=1;
               },_this);
          
-         _this.questionbox = _this.add.sprite(820,160,'box2');
+         _this.questionbox = _this.add.sprite(820,160,'NOLMbox2');
          _this.questionbox.anchor.setTo(0.5);
          
          _this.num = _this.add.text(-3,-3,"37 x 46");
@@ -646,7 +649,7 @@ init:function(game)
          _this.text1.fontWeight = 'normal';
          _this.text1.fontSize = 40;
          
-         _this.b1 = _this.add.sprite(615,160,'box3');
+         _this.b1 = _this.add.sprite(615,160,'NOLMbox3');
          _this.b1.anchor.setTo(0.5);
          _this.b1.visible=false;
          _this.b1.addChild(_this.text1);
@@ -660,7 +663,7 @@ init:function(game)
          _this.text2.fontWeight = 'normal';
          _this.text2.fontSize = 40;
          
-         _this.b2 = _this.add.sprite(615,260,'box3');
+         _this.b2 = _this.add.sprite(615,260,'NOLMbox3');
          _this.b2.anchor.setTo(0.5);
          _this.b2.visible=false;
          _this.b2.addChild(_this.text2);
@@ -674,7 +677,7 @@ init:function(game)
          _this.text3.fontWeight = 'normal';
          _this.text3.fontSize = 40;
          
-         _this.b3 = _this.add.sprite(615,360,'box3');
+         _this.b3 = _this.add.sprite(615,360,'NOLMbox3');
          _this.b3.anchor.setTo(0.5);
          _this.b3.visible=false;
          _this.b3.addChild(_this.text3);
@@ -688,7 +691,7 @@ init:function(game)
          _this.text4.fontWeight = 'normal';
          _this.text4.fontSize = 40;
          
-         _this.b4 = _this.add.sprite(615,460,'box3');
+         _this.b4 = _this.add.sprite(615,460,'NOLMbox3');
          _this.b4.anchor.setTo(0.5);
          _this.b4.visible=false;
          _this.b4.addChild(_this.text4);
@@ -734,7 +737,7 @@ init:function(game)
          _this.text11.fontWeight = 'normal';
          _this.text11.fontSize = 40;
          
-         _this.b11 = _this.add.sprite(615,235,'box3');
+         _this.b11 = _this.add.sprite(615,235,'NOLMbox3');
          _this.b11.anchor.setTo(0.5);
          _this.b11.visible=false;
          _this.b11.addChild(_this.text11);
@@ -746,7 +749,7 @@ init:function(game)
          _this.text12.fontWeight = 'normal';
          _this.text12.fontSize = 40;
          
-         _this.b12 = _this.add.sprite(615,322,'box3');
+         _this.b12 = _this.add.sprite(615,322,'NOLMbox3');
          _this.b12.anchor.setTo(0.5);
          _this.b12.visible=false;
          _this.b12.addChild(_this.text12);
@@ -767,7 +770,7 @@ init:function(game)
          _this.equal.fontSize = 40;
          _this.equal.visible=false;
          
-         _this.b13 = _this.add.sprite(615,410,'box4');
+         _this.b13 = _this.add.sprite(615,410,'NOLMbox4');
          _this.b13.anchor.setTo(0.5);
          _this.b13.visible=false;
          
@@ -815,22 +818,22 @@ init:function(game)
          _this.objGrp = _this.add.group();
          _this.graphicsGrp = _this.add.group();
          
-         _this.mainbox = _this.add.sprite(327,276,'box1');//290,250
+         _this.mainbox = _this.add.sprite(327,276,'NOLMbox1');//290,250
          _this.mainbox.anchor.setTo(0.5);
         
-         _this.box1 = _this.add.sprite(250,236,'box5');//252,235
+         _this.box1 = _this.add.sprite(250,236,'NOLMbox5');//252,235
          _this.box1.anchor.setTo(0.5);
          
-         _this.box2 = _this.add.sprite(409,236,'box5');//412,235
+         _this.box2 = _this.add.sprite(409,236,'NOLMbox5');//412,235
          _this.box2.anchor.setTo(0.5);
          
-         _this.box3 = _this.add.sprite(250,320,'box5');//252,322
+         _this.box3 = _this.add.sprite(250,320,'NOLMbox5');//252,322
          _this.box3.anchor.setTo(0.5);
          
-         _this.box4 = _this.add.sprite(409,320,'box5');//412,322
+         _this.box4 = _this.add.sprite(409,320,'NOLMbox5');//412,322
          _this.box4.anchor.setTo(0.5);
         
-         _this.num1 = _this.add.sprite(250,162,'num_box');
+         _this.num1 = _this.add.sprite(250,162,'NOLMnum_box');
          _this.num1.anchor.set(0.5);
          //_this.num1.inputEnabled=true;
          _this.num1.name="numbox1";
@@ -848,7 +851,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num2 = _this.add.sprite(410,162,'num_box');
+         _this.num2 = _this.add.sprite(410,162,'NOLMnum_box');
          _this.num2.anchor.set(0.5);
         //_this.num2.inputEnabled=true;
          _this.num2.name="numbox2";
@@ -866,7 +869,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num3 = _this.add.sprite(125,238,'num_box');
+         _this.num3 = _this.add.sprite(125,238,'NOLMnum_box');
          _this.num3.anchor.set(0.5);
          //_this.num3.inputEnabled=true;
          _this.num3.name="numbox3";
@@ -884,7 +887,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num4 = _this.add.sprite(125,325,'num_box');
+         _this.num4 = _this.add.sprite(125,325,'NOLMnum_box');
          _this.num4.anchor.set(0.5);
          //_this.num4.inputEnabled=true;
          _this.num4.name="numbox4";
@@ -902,7 +905,7 @@ init:function(game)
                         _this.num4.frame=1;
               },_this);
          
-         _this.questionbox = _this.add.sprite(820,160,'box2');
+         _this.questionbox = _this.add.sprite(820,160,'NOLMbox2');
          _this.questionbox.anchor.setTo(0.5);
         
          _this.num = _this.add.text(-3,-3,"25 x 42");
@@ -954,7 +957,7 @@ init:function(game)
          _this.text1.fontWeight = 'normal';
          _this.text1.fontSize = 40;
          
-         _this.b1 = _this.add.sprite(615,160,'box3');
+         _this.b1 = _this.add.sprite(615,160,'NOLMbox3');
          _this.b1.anchor.setTo(0.5);
          _this.b1.visible=false;
          _this.b1.addChild(_this.text1);
@@ -968,7 +971,7 @@ init:function(game)
          _this.text2.fontWeight = 'normal';
          _this.text2.fontSize = 40;
          
-         _this.b2 = _this.add.sprite(615,260,'box3');
+         _this.b2 = _this.add.sprite(615,260,'NOLMbox3');
          _this.b2.anchor.setTo(0.5);
          _this.b2.visible=false;
          _this.b2.addChild(_this.text2);
@@ -982,7 +985,7 @@ init:function(game)
          _this.text3.fontWeight = 'normal';
          _this.text3.fontSize = 40;
          
-         _this.b3 = _this.add.sprite(615,360,'box3');
+         _this.b3 = _this.add.sprite(615,360,'NOLMbox3');
          _this.b3.anchor.setTo(0.5);
          _this.b3.visible=false;
          _this.b3.addChild(_this.text3);
@@ -996,7 +999,7 @@ init:function(game)
          _this.text4.fontWeight = 'normal';
          _this.text4.fontSize = 40;
          
-         _this.b4 = _this.add.sprite(615,460,'box3');
+         _this.b4 = _this.add.sprite(615,460,'NOLMbox3');
          _this.b4.anchor.setTo(0.5);
          _this.b4.visible=false;
          _this.b4.addChild(_this.text4);
@@ -1042,7 +1045,7 @@ init:function(game)
          _this.text11.fontWeight = 'normal';
          _this.text11.fontSize = 40;
          
-         _this.b11 = _this.add.sprite(615,235,'box3');
+         _this.b11 = _this.add.sprite(615,235,'NOLMbox3');
          _this.b11.anchor.setTo(0.5);
          _this.b11.visible=false;
          _this.b11.addChild(_this.text11);
@@ -1054,7 +1057,7 @@ init:function(game)
          _this.text12.fontWeight = 'normal';
          _this.text12.fontSize = 40;
          
-         _this.b12 = _this.add.sprite(615,322,'box3');
+         _this.b12 = _this.add.sprite(615,322,'NOLMbox3');
          _this.b12.anchor.setTo(0.5);
          _this.b12.visible=false;
          _this.b12.addChild(_this.text12);
@@ -1075,7 +1078,7 @@ init:function(game)
          _this.equal.fontSize = 40;
          _this.equal.visible=false;
          
-         _this.b13 = _this.add.sprite(615,410,'box4');
+         _this.b13 = _this.add.sprite(615,410,'NOLMbox4');
          _this.b13.anchor.setTo(0.5);
          _this.b13.visible=false;
          
@@ -1124,22 +1127,22 @@ init:function(game)
          _this.objGrp = _this.add.group();
          _this.graphicsGrp = _this.add.group();
          
-         _this.mainbox = _this.add.sprite(327,276,'box1');//290,250
+         _this.mainbox = _this.add.sprite(327,276,'NOLMbox1');//290,250
          _this.mainbox.anchor.setTo(0.5);
          
-         _this.box1 = _this.add.sprite(250,236,'box5');//252,235
+         _this.box1 = _this.add.sprite(250,236,'NOLMbox5');//252,235
          _this.box1.anchor.setTo(0.5);
          
-         _this.box2 = _this.add.sprite(409,236,'box5');//412,235
+         _this.box2 = _this.add.sprite(409,236,'NOLMbox5');//412,235
          _this.box2.anchor.setTo(0.5);
          
-         _this.box3 = _this.add.sprite(250,320,'box5');//252,322
+         _this.box3 = _this.add.sprite(250,320,'NOLMbox5');//252,322
          _this.box3.anchor.setTo(0.5);
          
-         _this.box4 = _this.add.sprite(409,320,'box5');//412,322
+         _this.box4 = _this.add.sprite(409,320,'NOLMbox5');//412,322
          _this.box4.anchor.setTo(0.5);
          
-         _this.num1 = _this.add.sprite(250,162,'num_box');
+         _this.num1 = _this.add.sprite(250,162,'NOLMnum_box');
          _this.num1.anchor.set(0.5);
          //_this.num1.inputEnabled=true;
          _this.num1.name="numbox1";
@@ -1157,7 +1160,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num2 = _this.add.sprite(410,162,'num_box');
+         _this.num2 = _this.add.sprite(410,162,'NOLMnum_box');
          _this.num2.anchor.set(0.5);
          //_this.num2.inputEnabled=true;
          _this.num2.name="numbox2";
@@ -1175,7 +1178,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num3 = _this.add.sprite(125,238,'num_box');
+         _this.num3 = _this.add.sprite(125,238,'NOLMnum_box');
          _this.num3.anchor.set(0.5);
          //_this.num3.inputEnabled=true;
          _this.num3.name="numbox3";
@@ -1193,7 +1196,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num4 = _this.add.sprite(125,325,'num_box');
+         _this.num4 = _this.add.sprite(125,325,'NOLMnum_box');
          _this.num4.anchor.set(0.5);
          //_this.num4.inputEnabled=true;
          _this.num4.name="numbox4";
@@ -1211,7 +1214,7 @@ init:function(game)
                         _this.num4.frame=1;
               },_this);
          
-         _this.questionbox = _this.add.sprite(820,160,'box2');
+         _this.questionbox = _this.add.sprite(820,160,'NOLMbox2');
          _this.questionbox.anchor.setTo(0.5);
          
          _this.num = _this.add.text(-3,-3,"15 x 57");
@@ -1263,7 +1266,7 @@ init:function(game)
          _this.text1.fontWeight = 'normal';
          _this.text1.fontSize = 40;
          
-         _this.b1 = _this.add.sprite(615,160,'box3');
+         _this.b1 = _this.add.sprite(615,160,'NOLMbox3');
          _this.b1.anchor.setTo(0.5);
          _this.b1.visible=false;
          _this.b1.addChild(_this.text1);
@@ -1277,7 +1280,7 @@ init:function(game)
          _this.text2.fontWeight = 'normal';
          _this.text2.fontSize = 40;
          
-         _this.b2 = _this.add.sprite(615,260,'box3');
+         _this.b2 = _this.add.sprite(615,260,'NOLMbox3');
          _this.b2.anchor.setTo(0.5);
          _this.b2.visible=false;
          _this.b2.addChild(_this.text2);
@@ -1291,7 +1294,7 @@ init:function(game)
          _this.text3.fontWeight = 'normal';
          _this.text3.fontSize = 40;
          
-         _this.b3 = _this.add.sprite(615,360,'box3');
+         _this.b3 = _this.add.sprite(615,360,'NOLMbox3');
          _this.b3.anchor.setTo(0.5);
          _this.b3.visible=false;
          _this.b3.addChild(_this.text3);
@@ -1305,7 +1308,7 @@ init:function(game)
          _this.text4.fontWeight = 'normal';
          _this.text4.fontSize = 40;
          
-         _this.b4 = _this.add.sprite(615,460,'box3');
+         _this.b4 = _this.add.sprite(615,460,'NOLMbox3');
          _this.b4.anchor.setTo(0.5);
          _this.b4.visible=false;
          _this.b4.addChild(_this.text4);
@@ -1351,7 +1354,7 @@ init:function(game)
          _this.text11.fontWeight = 'normal';
          _this.text11.fontSize = 40;
          
-         _this.b11 = _this.add.sprite(615,235,'box3');
+         _this.b11 = _this.add.sprite(615,235,'NOLMbox3');
          _this.b11.anchor.setTo(0.5);
          _this.b11.visible=false;
          _this.b11.addChild(_this.text11);
@@ -1363,7 +1366,7 @@ init:function(game)
          _this.text12.fontWeight = 'normal';
          _this.text12.fontSize = 40;
          
-         _this.b12 = _this.add.sprite(615,322,'box3');
+         _this.b12 = _this.add.sprite(615,322,'NOLMbox3');
          _this.b12.anchor.setTo(0.5);
          _this.b12.visible=false;
          _this.b12.addChild(_this.text12);
@@ -1384,7 +1387,7 @@ init:function(game)
          _this.equal.fontSize = 40;
          _this.equal.visible=false;
          
-         _this.b13 = _this.add.sprite(615,410,'box4');
+         _this.b13 = _this.add.sprite(615,410,'NOLMbox4');
          _this.b13.anchor.setTo(0.5);
          _this.b13.visible=false;
          
@@ -1433,22 +1436,22 @@ init:function(game)
          _this.objGrp = _this.add.group();
          _this.graphicsGrp = _this.add.group();
          
-         _this.mainbox = _this.add.sprite(327,276,'box1');//290,250
+         _this.mainbox = _this.add.sprite(327,276,'NOLMbox1');//290,250
          _this.mainbox.anchor.setTo(0.5);
         
-         _this.box1 = _this.add.sprite(250,236,'box5');//252,235
+         _this.box1 = _this.add.sprite(250,236,'NOLMbox5');//252,235
          _this.box1.anchor.setTo(0.5);
          
-         _this.box2 = _this.add.sprite(409,236,'box5');//412,235
+         _this.box2 = _this.add.sprite(409,236,'NOLMbox5');//412,235
          _this.box2.anchor.setTo(0.5);
          
-         _this.box3 = _this.add.sprite(250,320,'box5');//252,322
+         _this.box3 = _this.add.sprite(250,320,'NOLMbox5');//252,322
          _this.box3.anchor.setTo(0.5);
          
-         _this.box4 = _this.add.sprite(409,320,'box5');//412,322
+         _this.box4 = _this.add.sprite(409,320,'NOLMbox5');//412,322
          _this.box4.anchor.setTo(0.5);
         
-         _this.num1 = _this.add.sprite(250,162,'num_box');
+         _this.num1 = _this.add.sprite(250,162,'NOLMnum_box');
          _this.num1.anchor.set(0.5);
          //_this.num1.inputEnabled=true;
          _this.num1.name="numbox1";
@@ -1466,7 +1469,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num2 = _this.add.sprite(410,162,'num_box');
+         _this.num2 = _this.add.sprite(410,162,'NOLMnum_box');
          _this.num2.anchor.set(0.5);
          //_this.num2.inputEnabled=true;
          _this.num2.name="numbox2";
@@ -1484,7 +1487,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num3 = _this.add.sprite(125,238,'num_box');
+         _this.num3 = _this.add.sprite(125,238,'NOLMnum_box');
          _this.num3.anchor.set(0.5);
          //_this.num3.inputEnabled=true;
          _this.num3.name="numbox3";
@@ -1502,7 +1505,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num4 = _this.add.sprite(125,325,'num_box');
+         _this.num4 = _this.add.sprite(125,325,'NOLMnum_box');
          _this.num4.anchor.set(0.5);
          //_this.num4.inputEnabled=true;
          _this.num4.name="numbox4";
@@ -1520,7 +1523,7 @@ init:function(game)
                         _this.num4.frame=1;
               },_this);
          
-         _this.questionbox = _this.add.sprite(820,160,'box2');
+         _this.questionbox = _this.add.sprite(820,160,'NOLMbox2');
          _this.questionbox.anchor.setTo(0.5);
         
          _this.num = _this.add.text(-3,-3,"28 x 39");
@@ -1572,7 +1575,7 @@ init:function(game)
          _this.text1.fontWeight = 'normal';
          _this.text1.fontSize = 40;
          
-         _this.b1 = _this.add.sprite(615,160,'box3');
+         _this.b1 = _this.add.sprite(615,160,'NOLMbox3');
          _this.b1.anchor.setTo(0.5);
          _this.b1.visible=false;
          _this.b1.addChild(_this.text1);
@@ -1586,7 +1589,7 @@ init:function(game)
          _this.text2.fontWeight = 'normal';
          _this.text2.fontSize = 40;
          
-         _this.b2 = _this.add.sprite(615,260,'box3');
+         _this.b2 = _this.add.sprite(615,260,'NOLMbox3');
          _this.b2.anchor.setTo(0.5);
          _this.b2.visible=false;
          _this.b2.addChild(_this.text2);
@@ -1600,7 +1603,7 @@ init:function(game)
          _this.text3.fontWeight = 'normal';
          _this.text3.fontSize = 40;
          
-         _this.b3 = _this.add.sprite(615,360,'box3');
+         _this.b3 = _this.add.sprite(615,360,'NOLMbox3');
          _this.b3.anchor.setTo(0.5);
          _this.b3.visible=false;
          _this.b3.addChild(_this.text3);
@@ -1614,7 +1617,7 @@ init:function(game)
          _this.text4.fontWeight = 'normal';
          _this.text4.fontSize = 40;
          
-         _this.b4 = _this.add.sprite(615,460,'box3');
+         _this.b4 = _this.add.sprite(615,460,'NOLMbox3');
          _this.b4.anchor.setTo(0.5);
          _this.b4.visible=false;
          _this.b4.addChild(_this.text4);
@@ -1660,7 +1663,7 @@ init:function(game)
          _this.text11.fontWeight = 'normal';
          _this.text11.fontSize = 40;
          
-         _this.b11 = _this.add.sprite(615,235,'box3');
+         _this.b11 = _this.add.sprite(615,235,'NOLMbox3');
          _this.b11.anchor.setTo(0.5);
          _this.b11.visible=false;
          _this.b11.addChild(_this.text11);
@@ -1672,7 +1675,7 @@ init:function(game)
          _this.text12.fontWeight = 'normal';
          _this.text12.fontSize = 40;
          
-         _this.b12 = _this.add.sprite(615,322,'box3');
+         _this.b12 = _this.add.sprite(615,322,'NOLMbox3');
          _this.b12.anchor.setTo(0.5);
          _this.b12.visible=false;
          _this.b12.addChild(_this.text12);
@@ -1693,7 +1696,7 @@ init:function(game)
          _this.equal.fontSize = 40;
          _this.equal.visible=false;
          
-         _this.b13 = _this.add.sprite(615,410,'box4');
+         _this.b13 = _this.add.sprite(615,410,'NOLMbox4');
          _this.b13.anchor.setTo(0.5);
          _this.b13.visible=false;
          
@@ -1741,22 +1744,22 @@ init:function(game)
          _this.objGrp = _this.add.group();
          _this.graphicsGrp = _this.add.group();
          
-         _this.mainbox = _this.add.sprite(327,276,'box1');//290,250
+         _this.mainbox = _this.add.sprite(327,276,'NOLMbox1');//290,250
          _this.mainbox.anchor.setTo(0.5);
         
-         _this.box1 = _this.add.sprite(250,236,'box5');//252,235
+         _this.box1 = _this.add.sprite(250,236,'NOLMbox5');//252,235
          _this.box1.anchor.setTo(0.5);
          
-         _this.box2 = _this.add.sprite(409,236,'box5');//412,235
+         _this.box2 = _this.add.sprite(409,236,'NOLMbox5');//412,235
          _this.box2.anchor.setTo(0.5);
          
-         _this.box3 = _this.add.sprite(250,320,'box5');//252,322
+         _this.box3 = _this.add.sprite(250,320,'NOLMbox5');//252,322
          _this.box3.anchor.setTo(0.5);
          
-         _this.box4 = _this.add.sprite(409,320,'box5');//412,322
+         _this.box4 = _this.add.sprite(409,320,'NOLMbox5');//412,322
          _this.box4.anchor.setTo(0.5);
         
-         _this.num1 = _this.add.sprite(250,162,'num_box');
+         _this.num1 = _this.add.sprite(250,162,'NOLMnum_box');
          _this.num1.anchor.set(0.5);
          //_this.num1.inputEnabled=true;
          _this.num1.name="numbox1";
@@ -1774,7 +1777,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num2 = _this.add.sprite(410,162,'num_box');
+         _this.num2 = _this.add.sprite(410,162,'NOLMnum_box');
          _this.num2.anchor.set(0.5);
          //_this.num2.inputEnabled=true;
          _this.num2.name="numbox2";
@@ -1792,7 +1795,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num3 = _this.add.sprite(125,238,'num_box');
+         _this.num3 = _this.add.sprite(125,238,'NOLMnum_box');
          _this.num3.anchor.set(0.5);
          //_this.num3.inputEnabled=true;
          _this.num3.name="numbox3";
@@ -1810,7 +1813,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num4 = _this.add.sprite(125,325,'num_box');
+         _this.num4 = _this.add.sprite(125,325,'NOLMnum_box');
          _this.num4.anchor.set(0.5);
          //_this.num4.inputEnabled=true;
          _this.num4.name="numbox4";
@@ -1828,7 +1831,7 @@ init:function(game)
                         _this.num4.frame=1;
               },_this);
          
-         _this.questionbox = _this.add.sprite(820,160,'box2');
+         _this.questionbox = _this.add.sprite(820,160,'NOLMbox2');
          _this.questionbox.anchor.setTo(0.5);
         
          _this.num = _this.add.text(-3,-3,"32 x 61");
@@ -1880,7 +1883,7 @@ init:function(game)
          _this.text1.fontWeight = 'normal';
          _this.text1.fontSize = 40;
          
-         _this.b1 = _this.add.sprite(615,160,'box3');
+         _this.b1 = _this.add.sprite(615,160,'NOLMbox3');
          _this.b1.anchor.setTo(0.5);
          _this.b1.visible=false;
          _this.b1.addChild(_this.text1);
@@ -1894,7 +1897,7 @@ init:function(game)
          _this.text2.fontWeight = 'normal';
          _this.text2.fontSize = 40;
          
-         _this.b2 = _this.add.sprite(615,260,'box3');
+         _this.b2 = _this.add.sprite(615,260,'NOLMbox3');
          _this.b2.anchor.setTo(0.5);
          _this.b2.visible=false;
          _this.b2.addChild(_this.text2);
@@ -1908,7 +1911,7 @@ init:function(game)
          _this.text3.fontWeight = 'normal';
          _this.text3.fontSize = 40;
          
-         _this.b3 = _this.add.sprite(615,360,'box3');
+         _this.b3 = _this.add.sprite(615,360,'NOLMbox3');
          _this.b3.anchor.setTo(0.5);
          _this.b3.visible=false;
          _this.b3.addChild(_this.text3);
@@ -1922,7 +1925,7 @@ init:function(game)
          _this.text4.fontWeight = 'normal';
          _this.text4.fontSize = 40;
          
-         _this.b4 = _this.add.sprite(615,460,'box3');
+         _this.b4 = _this.add.sprite(615,460,'NOLMbox3');
          _this.b4.anchor.setTo(0.5);
          _this.b4.visible=false;
          _this.b4.addChild(_this.text4);
@@ -1968,7 +1971,7 @@ init:function(game)
          _this.text11.fontWeight = 'normal';
          _this.text11.fontSize = 40;
          
-         _this.b11 = _this.add.sprite(615,235,'box3');
+         _this.b11 = _this.add.sprite(615,235,'NOLMbox3');
          _this.b11.anchor.setTo(0.5);
          _this.b11.visible=false;
          _this.b11.addChild(_this.text11);
@@ -1980,7 +1983,7 @@ init:function(game)
          _this.text12.fontWeight = 'normal';
          _this.text12.fontSize = 40;
          
-         _this.b12 = _this.add.sprite(615,322,'box3');
+         _this.b12 = _this.add.sprite(615,322,'NOLMbox3');
          _this.b12.anchor.setTo(0.5);
          _this.b12.visible=false;
          _this.b12.addChild(_this.text12);
@@ -2001,7 +2004,7 @@ init:function(game)
          _this.equal.fontSize = 40;
          _this.equal.visible=false;
          
-         _this.b13 = _this.add.sprite(615,410,'box4');
+         _this.b13 = _this.add.sprite(615,410,'NOLMbox4');
          _this.b13.anchor.setTo(0.5);
          _this.b13.visible=false;
          
@@ -2049,22 +2052,22 @@ init:function(game)
          _this.objGrp = _this.add.group();
          _this.graphicsGrp = _this.add.group();
          
-         _this.mainbox = _this.add.sprite(327,276,'box1');//290,250
+         _this.mainbox = _this.add.sprite(327,276,'NOLMbox1');//290,250
          _this.mainbox.anchor.setTo(0.5);
         
-         _this.box1 = _this.add.sprite(250,236,'box5');//252,235
+         _this.box1 = _this.add.sprite(250,236,'NOLMbox5');//252,235
          _this.box1.anchor.setTo(0.5);
          
-         _this.box2 = _this.add.sprite(409,236,'box5');//412,235
+         _this.box2 = _this.add.sprite(409,236,'NOLMbox5');//412,235
          _this.box2.anchor.setTo(0.5);
          
-         _this.box3 = _this.add.sprite(250,320,'box5');//252,322
+         _this.box3 = _this.add.sprite(250,320,'NOLMbox5');//252,322
          _this.box3.anchor.setTo(0.5);
          
-         _this.box4 = _this.add.sprite(409,320,'box5');//412,322
+         _this.box4 = _this.add.sprite(409,320,'NOLMbox5');//412,322
          _this.box4.anchor.setTo(0.5);
         
-         _this.num1 = _this.add.sprite(250,162,'num_box');
+         _this.num1 = _this.add.sprite(250,162,'NOLMnum_box');
          _this.num1.anchor.set(0.5);
          //_this.num1.inputEnabled=true;
          _this.num1.name="numbox1";
@@ -2082,7 +2085,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num2 = _this.add.sprite(410,162,'num_box');
+         _this.num2 = _this.add.sprite(410,162,'NOLMnum_box');
          _this.num2.anchor.set(0.5);
          //_this.num2.inputEnabled=true;
          _this.num2.name="numbox2";
@@ -2100,7 +2103,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num3 = _this.add.sprite(125,238,'num_box');
+         _this.num3 = _this.add.sprite(125,238,'NOLMnum_box');
          _this.num3.anchor.set(0.5);
          //_this.num3.inputEnabled=true;
          _this.num3.name="numbox3";
@@ -2118,7 +2121,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num4 = _this.add.sprite(125,325,'num_box');
+         _this.num4 = _this.add.sprite(125,325,'NOLMnum_box');
          _this.num4.anchor.set(0.5);
          //_this.num4.inputEnabled=true;
          _this.num4.name="numbox4";
@@ -2136,7 +2139,7 @@ init:function(game)
                         _this.num4.frame=1;
               },_this);
          
-         _this.questionbox = _this.add.sprite(820,160,'box2');
+         _this.questionbox = _this.add.sprite(820,160,'NOLMbox2');
          _this.questionbox.anchor.setTo(0.5);
         
          _this.num = _this.add.text(-3,-3,"19 x 55");
@@ -2188,7 +2191,7 @@ init:function(game)
          _this.text1.fontWeight = 'normal';
          _this.text1.fontSize = 40;
          
-         _this.b1 = _this.add.sprite(615,160,'box3');
+         _this.b1 = _this.add.sprite(615,160,'NOLMbox3');
          _this.b1.anchor.setTo(0.5);
          _this.b1.visible=false;
          _this.b1.addChild(_this.text1);
@@ -2202,7 +2205,7 @@ init:function(game)
          _this.text2.fontWeight = 'normal';
          _this.text2.fontSize = 40;
          
-         _this.b2 = _this.add.sprite(615,260,'box3');
+         _this.b2 = _this.add.sprite(615,260,'NOLMbox3');
          _this.b2.anchor.setTo(0.5);
          _this.b2.visible=false;
          _this.b2.addChild(_this.text2);
@@ -2216,7 +2219,7 @@ init:function(game)
          _this.text3.fontWeight = 'normal';
          _this.text3.fontSize = 40;
          
-         _this.b3 = _this.add.sprite(615,360,'box3');
+         _this.b3 = _this.add.sprite(615,360,'NOLMbox3');
          _this.b3.anchor.setTo(0.5);
          _this.b3.visible=false;
          _this.b3.addChild(_this.text3);
@@ -2230,7 +2233,7 @@ init:function(game)
          _this.text4.fontWeight = 'normal';
          _this.text4.fontSize = 40;
          
-         _this.b4 = _this.add.sprite(615,460,'box3');
+         _this.b4 = _this.add.sprite(615,460,'NOLMbox3');
          _this.b4.anchor.setTo(0.5);
          _this.b4.visible=false;
          _this.b4.addChild(_this.text4);
@@ -2276,7 +2279,7 @@ init:function(game)
          _this.text11.fontWeight = 'normal';
          _this.text11.fontSize = 40;
          
-         _this.b11 = _this.add.sprite(615,235,'box3');
+         _this.b11 = _this.add.sprite(615,235,'NOLMbox3');
          _this.b11.anchor.setTo(0.5);
          _this.b11.visible=false;
          _this.b11.addChild(_this.text11);
@@ -2288,7 +2291,7 @@ init:function(game)
          _this.text12.fontWeight = 'normal';
          _this.text12.fontSize = 40;
          
-         _this.b12 = _this.add.sprite(615,322,'box3');
+         _this.b12 = _this.add.sprite(615,322,'NOLMbox3');
          _this.b12.anchor.setTo(0.5);
          _this.b12.visible=false;
          _this.b12.addChild(_this.text12);
@@ -2309,7 +2312,7 @@ init:function(game)
          _this.equal.fontSize = 40;
          _this.equal.visible=false;
          
-         _this.b13 = _this.add.sprite(615,410,'box4');
+         _this.b13 = _this.add.sprite(615,410,'NOLMbox4');
          _this.b13.anchor.setTo(0.5);
          _this.b13.visible=false;
          
@@ -2357,22 +2360,22 @@ init:function(game)
          _this.objGrp = _this.add.group();
          _this.graphicsGrp = _this.add.group();
          
-         _this.mainbox = _this.add.sprite(327,276,'box1');//290,250
+         _this.mainbox = _this.add.sprite(327,276,'NOLMbox1');//290,250
          _this.mainbox.anchor.setTo(0.5);
          
-         _this.box1 = _this.add.sprite(250,236,'box5');//252,235
+         _this.box1 = _this.add.sprite(250,236,'NOLMbox5');//252,235
          _this.box1.anchor.setTo(0.5);
          
-         _this.box2 = _this.add.sprite(409,236,'box5');//412,235
+         _this.box2 = _this.add.sprite(409,236,'NOLMbox5');//412,235
          _this.box2.anchor.setTo(0.5);
          
-         _this.box3 = _this.add.sprite(250,320,'box5');//252,322
+         _this.box3 = _this.add.sprite(250,320,'NOLMbox5');//252,322
          _this.box3.anchor.setTo(0.5);
          
-         _this.box4 = _this.add.sprite(409,320,'box5');//412,322
+         _this.box4 = _this.add.sprite(409,320,'NOLMbox5');//412,322
          _this.box4.anchor.setTo(0.5);
          
-         _this.num1 = _this.add.sprite(250,162,'num_box');
+         _this.num1 = _this.add.sprite(250,162,'NOLMnum_box');
          _this.num1.anchor.set(0.5);
          //_this.num1.inputEnabled=true;
          _this.num1.name="numbox1";
@@ -2390,7 +2393,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num2 = _this.add.sprite(410,162,'num_box');
+         _this.num2 = _this.add.sprite(410,162,'NOLMnum_box');
          _this.num2.anchor.set(0.5);
          //_this.num2.inputEnabled=true;
          _this.num2.name="numbox2";
@@ -2408,7 +2411,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num3 = _this.add.sprite(125,238,'num_box');
+         _this.num3 = _this.add.sprite(125,238,'NOLMnum_box');
          _this.num3.anchor.set(0.5);
          //_this.num3.inputEnabled=true;
          _this.num3.name="numbox3";
@@ -2426,7 +2429,7 @@ init:function(game)
                         _this.num4.frame=0;
               },_this);
          
-         _this.num4 = _this.add.sprite(125,325,'num_box');
+         _this.num4 = _this.add.sprite(125,325,'NOLMnum_box');
          _this.num4.anchor.set(0.5);
          //_this.num4.inputEnabled=true;
          _this.num4.name="numbox4";
@@ -2444,7 +2447,7 @@ init:function(game)
                         _this.num4.frame=1;
               },_this);
          
-         _this.questionbox = _this.add.sprite(820,160,'box2');
+         _this.questionbox = _this.add.sprite(820,160,'NOLMbox2');
          _this.questionbox.anchor.setTo(0.5);
          
          _this.num = _this.add.text(-3,-3,"24 x 34");
@@ -2496,7 +2499,7 @@ init:function(game)
          _this.text1.fontWeight = 'normal';
          _this.text1.fontSize = 40;
          
-         _this.b1 = _this.add.sprite(615,160,'box3');
+         _this.b1 = _this.add.sprite(615,160,'NOLMbox3');
          _this.b1.anchor.setTo(0.5);
          _this.b1.visible=false;
          _this.b1.addChild(_this.text1);
@@ -2510,7 +2513,7 @@ init:function(game)
          _this.text2.fontWeight = 'normal';
          _this.text2.fontSize = 40;
          
-         _this.b2 = _this.add.sprite(615,260,'box3');
+         _this.b2 = _this.add.sprite(615,260,'NOLMbox3');
          _this.b2.anchor.setTo(0.5);
          _this.b2.visible=false;
          _this.b2.addChild(_this.text2);
@@ -2524,7 +2527,7 @@ init:function(game)
          _this.text3.fontWeight = 'normal';
          _this.text3.fontSize = 40;
          
-         _this.b3 = _this.add.sprite(615,360,'box3');
+         _this.b3 = _this.add.sprite(615,360,'NOLMbox3');
          _this.b3.anchor.setTo(0.5);
          _this.b3.visible=false;
          _this.b3.addChild(_this.text3);
@@ -2538,7 +2541,7 @@ init:function(game)
          _this.text4.fontWeight = 'normal';
          _this.text4.fontSize = 40;
          
-         _this.b4 = _this.add.sprite(615,460,'box3');
+         _this.b4 = _this.add.sprite(615,460,'NOLMbox3');
          _this.b4.anchor.setTo(0.5);
          _this.b4.visible=false;
          _this.b4.addChild(_this.text4);
@@ -2584,7 +2587,7 @@ init:function(game)
          _this.text11.fontWeight = 'normal';
          _this.text11.fontSize = 40;
          
-         _this.b11 = _this.add.sprite(615,235,'box3');
+         _this.b11 = _this.add.sprite(615,235,'NOLMbox3');
          _this.b11.anchor.setTo(0.5);
          _this.b11.visible=false;
          _this.b11.addChild(_this.text11);
@@ -2596,7 +2599,7 @@ init:function(game)
          _this.text12.fontWeight = 'normal';
          _this.text12.fontSize = 40;
          
-         _this.b12 = _this.add.sprite(615,322,'box3');
+         _this.b12 = _this.add.sprite(615,322,'NOLMbox3');
          _this.b12.anchor.setTo(0.5);
          _this.b12.visible=false;
          _this.b12.addChild(_this.text12);
@@ -2617,7 +2620,7 @@ init:function(game)
          _this.equal.fontSize = 40;
          _this.equal.visible=false;
          
-         _this.b13 = _this.add.sprite(615,410,'box4');
+         _this.b13 = _this.add.sprite(615,410,'NOLMbox4');
          _this.b13.anchor.setTo(0.5);
          _this.b13.visible=false;
          
@@ -2659,7 +2662,7 @@ init:function(game)
     },
 
     addNumberPad:function(target){
-      _this.numBackground = _this.add.sprite(480,505,'num_bg');
+      _this.numBackground = _this.add.sprite(480,505,'num_NOLMbg');
       _this.numBackground.anchor.setTo(0.5);
       _this.numGroup = _this.add.group();
       _this.numGroup.add(_this.numBackground);
@@ -2669,7 +2672,7 @@ init:function(game)
         for(var i=1;i<11;i++)
         {
            
-            _this.numbg = _this.numGroup.create(_this.x,505,'numberpad');  
+            _this.numbg = _this.numGroup.create(_this.x,505,'NOLMnumberpad');  
             _this.numbg.anchor.setTo(0.5);
            // _this.numbg.scale.setTo(0.6,0.6);
             _this.numbg.name = i;
@@ -2741,7 +2744,7 @@ init:function(game)
         _this.numText4.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
         _this.num4.addChild(_this.numText4);
         
-        _this.eraser = _this.numGroup.create(_this.x+10,508,'eraser');
+        _this.eraser = _this.numGroup.create(_this.x+10,508,'NOLMeraser');
         _this.eraser.anchor.setTo(0.5);
         _this.eraser.scale.setTo(0.5,0.5);
         _this.eraser.inputEnabled = true;
@@ -2802,7 +2805,7 @@ init:function(game)
       },this);
       },this);
 
-        _this.rightbtn =_this.numGroup.create(_this.x+90,513,'tick');
+        _this.rightbtn =_this.numGroup.create(_this.x+90,513,'NOLMtick');
         _this.rightbtn.anchor.setTo(0.5);
         _this.rightbtn.name = "rightbtn";
         _this.rightbtn.inputEnabled = true;
@@ -3043,7 +3046,7 @@ init:function(game)
                 
                  for(var i=0;i<_this.boxGrp.length;i++)
             {
-                if(_this.checkOverlap(target,_this.graphicsGrp.getChildAt(i)) && (_this.boxGrp.getChildAt(i).key == 'box5'))
+                if(_this.checkOverlap(target,_this.graphicsGrp.getChildAt(i)) && (_this.boxGrp.getChildAt(i).key == 'NOLMbox5'))
                 { 
                     _this.change++;
                     
@@ -3098,7 +3101,7 @@ init:function(game)
         
         for(var i=0;i<_this.boxGrp.length;i++)
         {
-            if(_this.checkOverlap(target,_this.graphicsGrp.getChildAt(i)) && (_this.boxGrp.getChildAt(i).key == 'box5'))
+            if(_this.checkOverlap(target,_this.graphicsGrp.getChildAt(i)) && (_this.boxGrp.getChildAt(i).key == 'NOLMbox5'))
             { 
                 target.input.disableDrag();
                 target.events.onInputDown.removeAll();
@@ -3117,7 +3120,7 @@ init:function(game)
 
                 //target.visible = false;
                 target.removeChildAt(0);
-                target.loadTexture('box5',0,false);
+                target.loadTexture('NOLMbox5',0,false);
                 //target.events.input.removeAll();
 
                 _this.boxGrp.getChildAt(i).inputEnabled = true;
@@ -3150,7 +3153,7 @@ init:function(game)
                 
                 target.events.onInputDown.removeAll();
                 target.removeChildAt(0);
-                target.loadTexture('box5',0,false);
+                target.loadTexture('NOLMbox5',0,false);
 
                 break;
             }
@@ -3216,7 +3219,7 @@ init:function(game)
                         _this.change=0;
                 for(var j=0;j<_this.objGrp.length;j++)
                 {
-                        _this.boxGrp.getChildAt(j).loadTexture('box5',0,false);
+                        _this.boxGrp.getChildAt(j).loadTexture('NOLMbox5',0,false);
                         _this.boxGrp.getChildAt(j).removeChildAt(0);
                         _this.objGrp.getChildAt(j).visible = true;
                         _this.objGrp.getChildAt(j).inputEnabled = true;
@@ -3229,7 +3232,7 @@ init:function(game)
     
     addNumberPad1:function(){
         
-      _this.numBackground = _this.add.sprite(480,505,'num_bg');
+      _this.numBackground = _this.add.sprite(480,505,'num_NOLMbg');
       _this.numBackground.anchor.setTo(0.5);
       _this.numGroup = _this.add.group();
       _this.numGroup.add(_this.numBackground);
@@ -3238,7 +3241,7 @@ init:function(game)
         
         for(var i=1;i<11;i++)
         {
-            _this.numbg = _this.numGroup.create(_this.x,505,'numberpad');  
+            _this.numbg = _this.numGroup.create(_this.x,505,'NOLMnumberpad');  
             _this.numbg.anchor.setTo(0.5);
            // _this.numbg.scale.setTo(0.6,0.6);
             _this.numbg.name = i;
@@ -3271,14 +3274,14 @@ init:function(game)
          _this.b13.frame = 1;
          _this.b13.name = "txtbox4";
       
-        _this.wrongbtn = _this.numGroup.create(_this.x+10,508,'eraser');
+        _this.wrongbtn = _this.numGroup.create(_this.x+10,508,'NOLMeraser');
         _this.wrongbtn.anchor.setTo(0.5);
         _this.wrongbtn.scale.setTo(0.5,0.5);
         _this.wrongbtn.name = "wrongbtn";
         _this.wrongbtn.inputEnabled = true;
         _this.wrongbtn.input.useHandCursor = true;
        
-        _this.rightbtn = _this.numGroup.create(_this.x+90,513,'tick');
+        _this.rightbtn = _this.numGroup.create(_this.x+90,513,'NOLMtick');
         _this.rightbtn.anchor.setTo(0.5);
         _this.rightbtn.scale.setTo(1.05,1.05);
         _this.rightbtn.name = "rightbtn";
@@ -3359,7 +3362,7 @@ init:function(game)
                 //_this.stopvoice();
        
                 _this.shake.shake(10, _this.objGroup);
-                _this.noofAttempts++;
+                //_this.noofAttempts++;
                //_this.currentTime = window.timeSaveFunc();
                _this.interactEvent = 
                { 
@@ -3424,7 +3427,7 @@ init:function(game)
         //_this.stopvoice();
 
         
-        _this.noofAttempts++;
+        //_this.noofAttempts++;
          //_this.currentTime = window.timeSaveFunc();
          _this.interactEvent = 
                { 
@@ -3482,6 +3485,14 @@ init:function(game)
         
         //target.events.onInputDown.removeAll(); 
         _this.time.events.add(1000, _this.removeEverthing, _this);
+
+        if(_this.timer)
+                    {
+                        _this.timer.stop();
+                       _this.timer = null; 
+                    }
+                    _this.sceneCount++;
+       telInitializer.tele_saveAssessment(1,"yes",_this.AnsTimerCount,_this.noofAttempts,_this.sceneCount);
         
     },
 
@@ -3523,17 +3534,23 @@ init:function(game)
        getQuestion:function(target)
      {
         _this.noofAttempts = 0;
-        /*_this.AnsTimerCount = 0;
+        _this.AnsTimerCount = 0;
+
+        if(_this.timer)
+        {
+            _this.timer.stop();
+            _this.timer = null;
+        }
         _this.timer = _this.time.create(false);
         
         //  Set a TimerEvent to occur after 2 seconds
-        _this.timer.loop(200, function(){
+        _this.timer.loop(1000, function(){
             _this.AnsTimerCount++;
-        }, _this);*/
+        }, _this);
 
         //  Start the _this.timer running - _this is important!
         //  It won't start automatically, allowing you to hook it to button events and the like.
-        //_this.timer.start();
+        _this.timer.start();
 
 
         _this.timer1 = this.time.create(false);
@@ -3612,7 +3629,7 @@ init:function(game)
         for (var i = 0; i < count; i++)
         {
     
-            _this.starsGroup.create(_this.world.centerX-30, 12, 'starAnim');
+            _this.starsGroup.create(_this.world.centerX-30, 12, 'NOLMstarAnim');
             
             for(var j =0;j<i;j++)
             {
@@ -3684,19 +3701,19 @@ init:function(game)
                     {
                     if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/English/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/English/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/English/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/English/nolmg1.4_4.mp3");
                     }
                 break;
                     }
@@ -3704,19 +3721,19 @@ init:function(game)
                     {
                      if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Hindi/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Hindi/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Hindi/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Hindi/nolmg1.4_4.mp3");
                     }
                 break;
                     }
@@ -3724,19 +3741,19 @@ init:function(game)
                     {
                      if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Kannada/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Kannada/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Kannada/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Kannada/nolmg1.4_4.mp3");
                     }
                 break;
                     }
@@ -3744,19 +3761,19 @@ init:function(game)
                     {
                      if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujarati/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Gujarati/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujarati/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Gujarati/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujarati/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Gujarati/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujarati/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Gujarati/nolmg1.4_4.mp3");
                     }
                 break;
                     }
@@ -3764,19 +3781,19 @@ init:function(game)
                     {
                      if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Marathi/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Marathi/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Marathi/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Marathi/nolmg1.4_4.mp3");
                     }
                 break;
                     }
@@ -3784,19 +3801,19 @@ init:function(game)
                     {
                      if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Odiya/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Odiya/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Odiya/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Odiya/nolmg1.4_4.mp3");
                     }
                       _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);  
                 break;
@@ -3805,19 +3822,19 @@ init:function(game)
                     {
                      if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Tamil/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Tamil/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Tamil/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Tamil/nolmg1.4_4.mp3");
                     }
                       _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);  
                 break;
@@ -3826,19 +3843,19 @@ init:function(game)
                     {
                      if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Telugu/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Telugu/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Telugu/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Telugu/nolmg1.4_4.mp3");
                     }
                       _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);  
                    break;
@@ -3847,19 +3864,19 @@ init:function(game)
                     {
                      if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Urdu/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Urdu/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Urdu/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Urdu/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Urdu/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Urdu/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Urdu/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Urdu/nolmg1.4_4.mp3");
                     }
                       _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);  
                 break;

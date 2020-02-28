@@ -30,10 +30,12 @@ var grade4NumberSenseSelected = false;
 var grade4MeasurementSelected = false;
 var grade4NumberOperationSelected = false;
 var grade4ShapesSenseSelected  = false;
+var grade4DataHandlingSelected  = false;
 
 var grade5NumberSenseSelected = false;
 var grade5NumberOperationSelected = false;
 var grade5ShapesSenseSelected  = false;
+var grade5DataHandlingSelected  = false;
 
 Game.practiceModegradeSelectionScreen.prototype={
 	

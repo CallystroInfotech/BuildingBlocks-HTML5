@@ -15,7 +15,7 @@ init:function(game)
         } 
        // _this.savedVar = absdsjsapi.saveGameplay(_this.saveGameplay);
         
-
+       telInitializer.gameIdInit("longdivison",gradeSelected);
     },
 
     preload:function(game){
@@ -36,57 +36,62 @@ init:function(game)
             preloadGrp.add(_this.preloadBars);
 
             preloadGrp.x -= 105;
-            this.load.atlas('sg7_1_2backbtn','assets/commonAssets/backbtn.png' ,'json/gradeJson/NOLDG1_4_5/backbtn.json');
-        this.load.atlas('sg7_1_2CommonSpeakerBtn','assets/commonAssets/speaker.png' ,'json/gradeJson/NOLDG1_4_5/speaker.json');
-        this.load.atlas('sg7_1_2starAnim','assets/commonAssets/starAnim.png','json/gradeJson/NOLDG1_4_5/starAnim.json');
-        this.load.atlas('sg7_1_2replay','assets/commonAssets/reply.png' ,'json/gradeJson/NOLDG1_4_5/reply.json');
-        this.load.atlas('sg7_1_2btn','assets/commonAssets/btn.png','json/gradeJson/NOLDG1_4_5/btn.json');
+            this.load.atlas('NOLDGbackbtn',window.baseUrl+'assets/NOLD/commonAssets/backbtn.png' ,window.baseUrl+'json/gradeJson/NOLDG1_4_5/backbtn.json');
+        this.load.atlas('NOLDGCommonSpeakerBtn',window.baseUrl+'assets/NOLD/commonAssets/speaker.png' ,window.baseUrl+'json/gradeJson/NOLDG1_4_5/speaker.json');
+        this.load.atlas('NOLDGstarAnim',window.baseUrl+'assets/NOLD/commonAssets/starAnim.png',window.baseUrl+'json/gradeJson/NOLDG1_4_5/starAnim.json');
+        this.load.atlas('NOLDGreplay',window.baseUrl+'assets/NOLD/commonAssets/reply.png' ,window.baseUrl+'json/gradeJson/NOLDG1_4_5/reply.json');
+        this.load.atlas('NOLDGbtn',window.baseUrl+'assets/NOLD/commonAssets/btn.png',window.baseUrl+'json/gradeJson/NOLDG1_4_5/btn.json');
         
-        this.load.atlas('numpadNum','assets/commonAssets/numpadNum.png','json/gradeJson/NOLDG1_4_5/numpadNum.json');
-        this.load.atlas('rightmark','assets/commonAssets/rightmark.png','json/gradeJson/NOLDG1_4_5/rightmark.json');
-        this.load.atlas('erase','assets/commonAssets/erase.png','json/gradeJson/NOLDG1_4_5/erase.json');
+        this.load.atlas('NOLDGnumpadNum',window.baseUrl+'assets/NOLD/commonAssets/numpadNum.png',window.baseUrl+'json/gradeJson/NOLDG1_4_5/numpadNum.json');
+        this.load.atlas('NOLDGrightmark',window.baseUrl+'assets/NOLD/commonAssets/rightmark.png',window.baseUrl+'json/gradeJson/NOLDG1_4_5/rightmark.json');
+        this.load.atlas('NOLDGerase',window.baseUrl+'assets/NOLD/commonAssets/erase.png',window.baseUrl+'json/gradeJson/NOLDG1_4_5/erase.json');
         
-        this.load.image('numbg','assets/commonAssets/numbg.png');
-        this.load.image('NOLDhand','assets/commonAssets/hand.png');
-        this.load.image('sg7_1_2background1','assets/commonAssets/bg1.png');
-        this.load.image('sg7_1_2tittleBar','assets/commonAssets/tittleBar.png');
-        this.load.image('sg7_1_2navBar','assets/commonAssets/navBar.png');
-        this.load.image('sg7_1_2timebg','assets/commonAssets/timebg.png');
-        this.load.image('skipDemoVideos','assets/commonAssets/skipArrow.png');
-       // this.load.image('sg7_1_2topicOutline','assets/commonAssets/topicOutline.png');
+        this.load.image('NOLDGnumbg',window.baseUrl+'assets/NOLD/commonAssets/numbg.png');
+        this.load.image('NOLDhand',window.baseUrl+'assets/NOLD/commonAssets/hand.png');
+        this.load.image('NOLDGNOLDGsg7_1_2background1',window.baseUrl+'assets/NOLD/commonAssets/bg1.png');
+        this.load.image('NOLDGsg7_1_2tittleBar',window.baseUrl+'assets/NOLD/commonAssets/tittleBar.png');
+        this.load.image('NOLDGsg7_1_2navBar',window.baseUrl+'assets/NOLD/commonAssets/navBar.png');
+        this.load.image('NOLDGsg7_1_2timebg',window.baseUrl+'assets/NOLD/commonAssets/timebg.png');
+        this.load.image('NOLDGskipDemoVideos',window.baseUrl+'assets/NOLD/commonAssets/skipArrow.png');
+       // this.load.image('sg7_1_2topicOutline',window.baseUrl+'assets/NOLD/commonAssets/topicOutline.png');
 
         //game assets.
-        this.load.image('sg7_1_2background', 'assets/commonAssets/Bg.png');
+        this.load.image('NOLDGsg7_1_2background',window.baseUrl+'assets/NOLD/commonAssets/Bg.png');
               
-        this.load.atlas('sg7_1_2tick', 'assets/commonAssets/tickBtn.png','json/gradeJson/NOLDG1_4_5/tickBtn.json');
+        this.load.atlas('NOLDGsg7_1_2tick',window.baseUrl+'assets/NOLD/commonAssets/tickBtn.png',window.baseUrl+'json/gradeJson/NOLDG1_4_5/tickBtn.json');
         
-        this.load.atlas('NOLDGblueCoin1to10', 'assets/gradeAssets/NOLDG1_4_5/blueCoin1to10.png','json/gradeJson/NOLDG1_4_5/blueCoin1to10.json');
-        this.load.atlas('NOLDGblueCoinDrop', 'assets/gradeAssets/NOLDG1_4_5/blueCoinDrop.png','json/gradeJson/NOLDG1_4_5/blueCoinDrop.json');
-        this.load.atlas('NOLDGnumbers', 'assets/gradeAssets/NOLDG1_4_5/numbers.png','json/gradeJson/NOLDG1_4_5/numbers.json');
-        this.load.atlas('NOLDGyellowCoin1to10', 'assets/gradeAssets/NOLDG1_4_5/yellowCoin1to10.png','json/gradeJson/NOLDG1_4_5/yellowCoin1to10.json');
-        this.load.atlas('NOLDGyellowCoin1to25', 'assets/gradeAssets/NOLDG1_4_5/yellowCoin1to25.png','json/gradeJson/NOLDG1_4_5/yellowCoin1to25.json');
-        this.load.atlas('NOLDGyellowCoinDrop', 'assets/gradeAssets/NOLDG1_4_5/yellowCoinDrop.png','json/gradeJson/NOLDG1_4_5/yellowCoinDrop.json');
-        this.load.atlas('numberBlue', 'assets/gradeAssets/NOLDG1_4_5/numberBlue.png','json/gradeJson/NOLDG1_4_5/numberBlue.json');
-        this.load.atlas('NOLDGglowCoin', 'assets/gradeAssets/NOLDG1_4_5/glowCoin.png','json/gradeJson/NOLDG1_4_5/glowCoin.json');
-        this.load.atlas('NOLDGwhiteTextBox', 'assets/gradeAssets/NOLDG1_4_5/whiteTextBox.png','json/gradeJson/NOLDG1_4_5/whiteTextBox.json');
-        this.load.image('NOLDGboard', 'assets/gradeAssets/NOLDG1_4_5/board.png');
-        this.load.image('NOLDGangle', 'assets/gradeAssets/NOLDG1_4_5/angle.png');
-        this.load.image('NOLDGblueCoin', 'assets/gradeAssets/NOLDG1_4_5/blueCoin.png');
-        this.load.image('NOLDGdragObject', 'assets/gradeAssets/NOLDG1_4_5/dragObject.png');
-        this.load.image('NOLDGdragObject1', 'assets/gradeAssets/NOLDG1_4_5/dragObject1.png');
-        this.load.image('NOLDGdragObject2', 'assets/gradeAssets/NOLDG1_4_5/dragObject2.png');
-        this.load.image('NOLDGyellowCoin', 'assets/gradeAssets/NOLDG1_4_5/yellowCoin.png');
-       // this.load.image('NOLDGwhiteTextBox', 'assets/gradeAssets/NOLDG1_4_5/whiteTextBox.png');
-        this.load.image('NOLDGunderLine', 'assets/gradeAssets/NOLDG1_4_5/underLine.png');
-        this.load.image('NOLDblueCoinCut', 'assets/gradeAssets/NOLDG1_4_5/blueCoinCut.png');
-        this.load.image('NOLDyellowCoinCut', 'assets/gradeAssets/NOLDG1_4_5/yellowCoinCut.png');
-        this.load.image('NOLDdownArrow', 'assets/gradeAssets/NOLDG1_4_5/downArrow.png');
+        this.load.atlas('NOLDGblueCoin1to10',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/blueCoin1to10.png',window.baseUrl+'json/gradeJson/NOLDG1_4_5/blueCoin1to10.json');
+        this.load.atlas('NOLDGblueCoinDrop',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/blueCoinDrop.png',window.baseUrl+'json/gradeJson/NOLDG1_4_5/blueCoinDrop.json');
+        this.load.atlas('NOLDGnumbers',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/numbers.png',window.baseUrl+'json/gradeJson/NOLDG1_4_5/numbers.json');
+        this.load.atlas('NOLDGyellowCoin1to10',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/yellowCoin1to10.png',window.baseUrl+'json/gradeJson/NOLDG1_4_5/yellowCoin1to10.json');
+        this.load.atlas('NOLDGyellowCoin1to25',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/yellowCoin1to25.png',window.baseUrl+'json/gradeJson/NOLDG1_4_5/yellowCoin1to25.json');
+        this.load.atlas('NOLDGyellowCoinDrop',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/yellowCoinDrop.png',window.baseUrl+'json/gradeJson/NOLDG1_4_5/yellowCoinDrop.json');
+        this.load.atlas('numberBlue',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/numberBlue.png',window.baseUrl+'json/gradeJson/NOLDG1_4_5/numberBlue.json');
+        this.load.atlas('NOLDGglowCoin',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/glowCoin.png',window.baseUrl+'json/gradeJson/NOLDG1_4_5/glowCoin.json');
+        this.load.atlas('NOLDGwhiteTextBox',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/whiteTextBox.png',window.baseUrl+'json/gradeJson/NOLDG1_4_5/whiteTextBox.json');
+        this.load.image('NOLDGboard',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/board.png');
+        this.load.image('NOLDGangle',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/angle.png');
+        this.load.image('NOLDGblueCoin',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/blueCoin.png');
+        this.load.image('NOLDGdragObject',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/dragObject.png');
+        this.load.image('NOLDGdragObject1',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/dragObject1.png');
+        this.load.image('NOLDGdragObject2',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/dragObject2.png');
+        this.load.image('NOLDGyellowCoin',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/yellowCoin.png');
+       // this.load.image('NOLDGwhiteTextBox',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/whiteTextBox.png');
+        this.load.image('NOLDGunderLine',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/underLine.png');
+        this.load.image('NOLDblueCoinCut',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/blueCoinCut.png');
+        this.load.image('NOLDyellowCoinCut',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/yellowCoinCut.png');
+        this.load.image('NOLDdownArrow',window.baseUrl+'assets/NOLD/gradeAssets/NOLDG1_4_5/downArrow.png');
 
     }
 
     },
     
 	create:function(game){
+
+
+        noofAttempts=0;
+        AnsTimerCount=0;
+        _this.sceneCount = 0;
         
         _this.minutes=0;
         _this.seconds=0;
@@ -143,15 +148,15 @@ init:function(game)
        _this.physics.startSystem(Phaser.Physics.ARCADE);
        _this.physics.setBoundsToWorld();
 
-       _this.bg1 = _this.add.tileSprite(0,-2,_this.world.width,_this.world.height,'sg7_1_2background');
+       _this.bg1 = _this.add.tileSprite(0,-2,_this.world.width,_this.world.height,'NOLDGsg7_1_2background');
         //_this.bg1.scale.setTo(1.05,1.12);
 		
         
-        _this.TopBar=this.add.sprite(0,0,'sg7_1_2navBar');
-        _this.TopBar.name="sg7_1_2navBar";
+        _this.TopBar=this.add.sprite(0,0,'NOLDGsg7_1_2navBar');
+        _this.TopBar.name="NOLDGsg7_1_2navBar";
         _this.TopBar.scale.setTo(1,1.1);
         
-        _this.backbtn = this.add.button(10,7,'sg7_1_2backbtn',function(){console.log("here");},_this,0,1,2);
+        _this.backbtn = this.add.button(10,7,'NOLDGbackbtn',function(){console.log("here");},_this,0,1,2);
         //_this.backbtn = _this.add.sprite(5,1,'CommonBackBtn');
         _this.backbtn.inputEnabled = true;
 
@@ -169,7 +174,7 @@ init:function(game)
 
         },_this);
 
-         _this.speakerbtn = this.add.button(600,6,'sg7_1_2CommonSpeakerBtn',function(){},this,1,0,2);
+         _this.speakerbtn = this.add.button(600,6,'NOLDGCommonSpeakerBtn',function(){},this,1,0,2);
        //_this.speakerbtn = _this.add.sprite(908,1,'CommonSpeakerBtn');
       // _this.speakerbtn.inputEnabled = true;
         _this.speakerbtn.events.onInputDown.add(function()
@@ -183,7 +188,7 @@ init:function(game)
         },_this);
 
         
-        _this.timebg=this.add.sprite(305,6,'sg7_1_2timebg');
+        _this.timebg=this.add.sprite(305,6,'NOLDGsg7_1_2timebg');
         _this.timebg.name="common_timebg";
         //_this.timebg.scale.setTo(1.2,1);
 
@@ -227,11 +232,17 @@ init:function(game)
 
     getQuestion:function(target)
     {  
+
+        noofAttempts = 0;
+         AnsTimerCount=0;
+         _this.sceneCount++;
+
+         
         _this.timer = _this.time.create(false);
 
           //  Set a TimerEvent to occur after 2 seconds
           _this.timer.loop(1000, function(){
-               _this.AnsTimerCount++;
+               AnsTimerCount++;
           }, this);
           //  Start the timer running - this is important!
           //  It won't start automatically, allowing you to hook it to button events and the like.
@@ -1815,7 +1826,7 @@ init:function(game)
         for (var i = 0; i < count; i++)
         {
     
-            _this.starsGroup.create(_this.world.centerX-30, 12, 'sg7_1_2starAnim');
+            _this.starsGroup.create(_this.world.centerX-30, 12, 'NOLDGstarAnim');
             
             for(var j =0;j<i;j++)
             {
@@ -1847,7 +1858,7 @@ init:function(game)
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Kannada/distcoinequally.mp3");
                             }
-                            else if(window.languageSelected == "Gujarathi")
+                            else if(window.languageSelected == "Gujarati")
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Gujarathi/distcoinequally.mp3");
                             }
@@ -1881,7 +1892,7 @@ init:function(game)
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Kannada/howmanytens.mp3");
                             }
-                            else if(window.languageSelected == "Gujarathi")
+                            else if(window.languageSelected == "Gujarati")
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Gujarathi/howmanytens.mp3");
                             }
@@ -1915,7 +1926,7 @@ init:function(game)
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Kannada/howmanytotal.mp3");
                             }
-                            else if(window.languageSelected == "Gujarathi")
+                            else if(window.languageSelected == "Gujarati")
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Gujarathi/howmanytotal.mp3");
                             }
@@ -1949,7 +1960,7 @@ init:function(game)
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Kannada/howmanyremain.mp3");
                             }
-                            else if(window.languageSelected == "Gujarathi")
+                            else if(window.languageSelected == "Gujarati")
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Gujarathi/howmanyremain.mp3");
                             }
@@ -1983,7 +1994,7 @@ init:function(game)
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Kannada/exchangeremaining.mp3");
                             }
-                            else if(window.languageSelected == "Gujarathi")
+                            else if(window.languageSelected == "Gujarati")
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Gujarathi/exchangeremaining.mp3");
                             }
@@ -2017,7 +2028,7 @@ init:function(game)
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Kannada/howmanyones.mp3");
                             }
-                            else if(window.languageSelected == "Gujarathi")
+                            else if(window.languageSelected == "Gujarati")
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Gujarathi/howmanyones.mp3");
                             }
@@ -2051,7 +2062,7 @@ init:function(game)
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Kannada/distributeallones.mp3");
                             }
-                            else if(window.languageSelected == "Gujarathi")
+                            else if(window.languageSelected == "Gujarati")
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Gujarathi/distributeallones.mp3");
                             }
@@ -2085,7 +2096,7 @@ init:function(game)
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Kannada/howmanyonesdisteach.mp3");
                             }
-                            else if(window.languageSelected == "Gujarathi")
+                            else if(window.languageSelected == "Gujarati")
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Gujarathi/howmanyonesdisteach.mp3");
                             }
@@ -2119,7 +2130,7 @@ init:function(game)
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Kannada/howmanytotalonesdist.mp3");
                             }
-                            else if(window.languageSelected == "Gujarathi")
+                            else if(window.languageSelected == "Gujarati")
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Gujarathi/howmanytotalonesdist.mp3");
                             }
@@ -2153,7 +2164,7 @@ init:function(game)
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Kannada/howmanyonesareremai.mp3");
                             }
-                            else if(window.languageSelected == "Gujarathi")
+                            else if(window.languageSelected == "Gujarati")
                             {
                                 _this.src.setAttribute("src", "questionSounds/NOLDG1_4_5/Gujarathi/howmanyonesareremai.mp3");
                             }
@@ -2233,7 +2244,7 @@ amplifyMedia:function(mediaElem, multiplier) {
     },
 addNumberPad:function(){
         
-        _this.numBackground = this.add.sprite(480,510,'numbg');
+        _this.numBackground = this.add.sprite(480,510,'NOLDGnumbg');
         _this.numBackground.anchor.setTo(0.5);
         _this.numGroup = _this.add.group();
          _this.numGroup.add(_this.numBackground);
@@ -2241,7 +2252,7 @@ addNumberPad:function(){
         _this.x = 80;
         for(var i=0;i<10;i++)
         {
-            _this.numbg = _this.numGroup.create(_this.x,510,'numpadNum');  
+            _this.numbg = _this.numGroup.create(_this.x,510,'NOLDGnumpadNum');  
             _this.numbg.scale.setTo(0.6,0.6);
             _this.numbg.anchor.setTo(0.5);
             if(i<9)
@@ -2270,7 +2281,7 @@ addNumberPad:function(){
             
             _this.x+=70;
         }
-        _this.eraser = _this.numGroup.create(_this.x+30,510,'erase');
+        _this.eraser = _this.numGroup.create(_this.x+30,510,'NOLDGerase');
         _this.eraser.anchor.setTo(0.5);
         //_this.eraser.scale.setTo(0.5);
         _this.eraser.name = "eraser";
@@ -2278,7 +2289,7 @@ addNumberPad:function(){
         _this.eraser.input.useHandCursor = true;
        
         
-        _this.rightbtn = _this.numGroup.create(_this.x+90,510,'rightmark');
+        _this.rightbtn = _this.numGroup.create(_this.x+90,510,'NOLDGrightmark');
         _this.rightbtn.anchor.setTo(0.5);
         _this.rightbtn.name = "rightbtn";
         _this.rightbtn.name = "eraser";
@@ -2336,6 +2347,7 @@ addNumberPad:function(){
         
          _this.rightbtn.events.onInputDown.add(function(target){
 
+            noofAttempts++;
             _this.clickSound = _this.add.audio('ClickSound');
              _this.clickSound.play();
              _this.rightbtn.frame = 1;
@@ -2434,6 +2446,8 @@ addNumberPad:function(){
                 }
              else
                  {
+                    this.wmusic = this.add.audio('waudio');
+        this.wmusic.play();
                     
                      if(_this.quotientBox1Pressed)
                          {
@@ -2559,6 +2573,14 @@ addNumberPad:function(){
        _this.anim4.play();
 
        _this.count1++;
+
+       if(_this.timer)
+                    {
+                        _this.timer.stop();
+                       _this.timer = null; 
+                    }
+
+       telInitializer.tele_saveAssessment(1,"yes",AnsTimerCount,noofAttempts,_this.sceneCount);
 
        _this.time.events.add(500, function(){_this.removeEverthing();},_this);            
           

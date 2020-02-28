@@ -11,7 +11,7 @@ Game.boot.prototype={
 		_this = this;
 		//_this.cache.destroy();		
 		
-		_this.load.json('translations', 'assets/newAssets/lang.json');
+		_this.load.json('translations',window.baseUrl+'assets/newAssets/lang.json');
 				
 		_this.load.image('prgressbarOutLine',window.baseUrl+'assets/commonAssets/prgressbarOutLine.png');
 		_this.load.image('preloadBar',window.baseUrl+'assets/commonAssets/prgressbar.png');
@@ -46,7 +46,9 @@ Game.boot.prototype={
 
 
 		screen.orientation.lock('landscape');
-		console.log(Phaser.game);
+		AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN, null, null);
+		//AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN | AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
+
 		
 		_this.game.scale.setGameSize(960, 540);
 		
@@ -76,8 +78,7 @@ Game.boot.prototype={
 		{
 			window.selctedLang = translations.en;
 		}
-		this.game.add.text(0, 0, "hack", {font:"1px myfont", fill:"#FFFFFF"});
-		this.game.add.text(0, 0, "hack", {font:"1px gradefont", fill:"#FFFFFF"});
+		
 
 		_this.state.start('preloader',true,false);
 

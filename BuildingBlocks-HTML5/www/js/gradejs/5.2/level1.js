@@ -110,13 +110,13 @@ Game.grade5_2level1.prototype={
          this.load.atlas('Level52_friday',window.baseUrl+'assets/gradeAssets/5.2/commonAssets/friday.png',window.baseUrl+'json/gradeJson/5.2/friday.json');
          this.load.atlas('Level52_saturday',window.baseUrl+'assets/gradeAssets/5.2/commonAssets/saturday.png',window.baseUrl+'json/gradeJson/5.2/saturday.json');
          */
-         this.load.atlas('Level52_sunday','assets/newAssets/07.png','assets/newAssets/07.json');
-         this.load.atlas('Level52_monday','assets/newAssets/01.png','assets/newAssets/01.json');
-         this.load.atlas('Level52_tuesday','assets/newAssets/02.png','assets/newAssets/02.json');
-         this.load.atlas('Level52_wednesday','assets/newAssets/03.png','assets/newAssets/03.json');
-         this.load.atlas('Level52_thursday','assets/newAssets/04.png','assets/newAssets/04.json');
-         this.load.atlas('Level52_friday','assets/newAssets/05.png','assets/newAssets/05.json');
-         this.load.atlas('Level52_saturday','assets/newAssets/06.png','assets/newAssets/06.json');
+         this.load.atlas('Level52_sunday',window.baseUrl+'assets/newAssets/07.png',window.baseUrl+'assets/newAssets/07.json');
+         this.load.atlas('Level52_monday',window.baseUrl+'assets/newAssets/01.png',window.baseUrl+'assets/newAssets/01.json');
+         this.load.atlas('Level52_tuesday',window.baseUrl+'assets/newAssets/02.png',window.baseUrl+'assets/newAssets/02.json');
+         this.load.atlas('Level52_wednesday',window.baseUrl+'assets/newAssets/03.png',window.baseUrl+'assets/newAssets/03.json');
+         this.load.atlas('Level52_thursday',window.baseUrl+'assets/newAssets/04.png',window.baseUrl+'assets/newAssets/04.json');
+         this.load.atlas('Level52_friday',window.baseUrl+'assets/newAssets/05.png',window.baseUrl+'assets/newAssets/05.json');
+         this.load.atlas('Level52_saturday',window.baseUrl+'assets/newAssets/06.png',window.baseUrl+'assets/newAssets/06.json');
          
         
          this.load.image('Level52_wed1',window.baseUrl+'assets/gradeAssets/5.2/Slide1/wed1.png');

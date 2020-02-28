@@ -52,7 +52,7 @@ Game.longdivision2Score.prototype={
 			},_this);
 		//}
 
-        _this.nextBtn.visible = false;
+        //_this.nextBtn.visible = false;
         
                 
                 _this.replay = _this.add.button(_this.world.centerX+56,_this.world.centerY,'CommonReplayBtn',null,_this,0,1,2);

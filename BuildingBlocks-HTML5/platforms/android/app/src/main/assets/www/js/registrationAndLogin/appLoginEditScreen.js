@@ -13,7 +13,16 @@ Game.appLoginEditScreen.prototype={
 
 	preload:function(game)
 	{
-
+		/*var bmd = game.add.bitmapData(800,600);                
+    	bmd.ctx.beginPath();        
+    	bmd.ctx.lineWidth = "4";        
+    	bmd.ctx.strokeStyle = 'white';        
+    	bmd.ctx.setLineDash([2,3]);        
+    	bmd.ctx.moveTo(10, 10);        
+    	bmd.ctx.lineTo(400 , 400);        
+    	bmd.ctx.stroke();        
+    	bmd.ctx.closePath();        
+    	var sprite = game.add.sprite(200, 400, bmd);*/
 	},
 
 	create:function(game)
@@ -22,7 +31,7 @@ Game.appLoginEditScreen.prototype={
 
 		_this.i = 0;
 
-		_this.basePath = cordova.file.externalRootDirectory+"Android/data/io.cordova.hellocordova/files/Download/gameFilesBBV5_0_5/www/";
+		_this.basePath = cordova.file.externalRootDirectory+"Android/data/com.buildingblocks.test/files/Download/gameFilesBBV5_0_5/www/";
 
 		_this.fullSize = 121195371;
 
@@ -45,7 +54,8 @@ Game.appLoginEditScreen.prototype={
 			[_this.basePath+"assets/gradeAssets/1.1A","Assets3.zip"],
 			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
 			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
-			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"]
+			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
+			[_this.basePath+"assets/DH1","Assets6New.zip"]
 			];	
 	    }
 	    else if(_this.user.language == "Hindi")
@@ -57,7 +67,8 @@ Game.appLoginEditScreen.prototype={
 			[_this.basePath+"assets/gradeAssets/1.1A","Assets3.zip"],
 			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
 			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
-			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"]
+			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
+			[_this.basePath+"assets/DH1","Assets6New.zip"]
 			];	
 	    }
 	    else if(_this.user.language == "Kannada")
@@ -69,7 +80,8 @@ Game.appLoginEditScreen.prototype={
 			[_this.basePath+"assets/gradeAssets/1.1A","Assets3.zip"],
 			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
 			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
-			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"]
+			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
+			[_this.basePath+"assets/DH1","Assets6New.zip"]
 			];	
 	    }
 	    else if(_this.user.language == "Odiya")
@@ -81,7 +93,8 @@ Game.appLoginEditScreen.prototype={
 			[_this.basePath+"assets/gradeAssets/1.1A","Assets3.zip"],
 			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
 			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
-			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"]
+			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
+			[_this.basePath+"assets/DH1","Assets6New.zip"]
 			];	
 	    }
 	    else if(_this.user.language == "Gujarati")
@@ -93,14 +106,15 @@ Game.appLoginEditScreen.prototype={
 			[_this.basePath+"assets/gradeAssets/1.1A","Assets3.zip"],
 			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
 			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
-			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"]
+			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
+			[_this.basePath+"assets/DH1","Assets6New.zip"]
 			];	
 	    }
 
 
-	    var splash = game.add.sprite(game.world.centerX,game.world.centerY,'registrationbg');
-    	splash.scale.setTo(1);
-    	splash.anchor.setTo(0.5);
+	    _this.splash = game.add.sprite(game.world.centerX,game.world.centerY,'registrationbg');
+    	_this.splash.scale.setTo(1);
+    	_this.splash.anchor.setTo(0.5);
 
     	var titleBar = game.add.graphics(0, 0);
     	titleBar.anchor.setTo(0.5);
@@ -110,12 +124,12 @@ Game.appLoginEditScreen.prototype={
 
 
 		_this.regBackArrow = game.add.sprite(40,40,'regBackArrow');
-	    _this.regBackArrow.scale.setTo(0.5);
+	    _this.regBackArrow.scale.setTo(0.35);
 	    _this.regBackArrow.anchor.setTo(0.5);
 
 	    var regBackArrowGrph = game.add.graphics(0, 0);
 	    regBackArrowGrph.beginFill(0x4E342E, 0.05);
-		regBackArrowGrph.drawRect(-60, -60, 120, 120);
+		regBackArrowGrph.drawRect(-60, -60, 200, 200);
 		_this.regBackArrow.addChild(regBackArrowGrph);
 
 	    
@@ -124,21 +138,23 @@ Game.appLoginEditScreen.prototype={
 		    }, false);
 
 
-		var titleTxt = game.add.text(game.world.centerX-80,40,"Building Blocks");
-		titleTxt.anchor.setTo(0.5);
-		titleTxt.align = 'center';
-		titleTxt.fontSize = 32;
-		titleTxt.fontWeight = 'normal';
-		titleTxt.fill = '#FFFFFF';
-		titleTxt.wordWrap = true;
-		titleTxt.wordWrapWidth = 500;
+		var titleTxt = game.add.text(game.world.centerX-80,45,"Building Blocks");
+		titleTxt.x = Math.round(titleTxt.x);
+			titleTxt.anchor.setTo(0.5);
+			titleTxt.align = 'center';
+			titleTxt.font = 'regfont4';
+			titleTxt.fontSize = '22pt';
+			titleTxt.fontWeight = 500;
+			titleTxt.fill = '#FFFFFF';
+			titleTxt.wordWrap = true;
+			titleTxt.wordWrapWidth = 500;
 
 		var avatar = game.add.sprite(game.world.centerX,game.world.centerY,_this.user.name.toLowerCase());
     	avatar.scale.setTo(0.8);
     	avatar.anchor.setTo(0.5);
 
     	_this.regandstsrtBtn = _this.add.sprite(game.world.centerX,game.world.centerY+150,'regandstsrtBtn');
-    	_this.regandstsrtBtn.scale.setTo(0.4,0.5);
+    	_this.regandstsrtBtn.scale.setTo(0.8,1);
     	_this.regandstsrtBtn.anchor.setTo(0.5);
 
 
@@ -156,14 +172,17 @@ Game.appLoginEditScreen.prototype={
 		{
 			textLang = "શરૂ કરો";
 		}else{
-			textLang = "Start";
+			textLang = "START";
 		}
 
-    	_this.regandstsrtBtnTxt = _this.add.text(game.world.centerX,game.world.centerY+150,textLang);
+    	_this.regandstsrtBtnTxt = _this.add.text(game.world.centerX,game.world.centerY+152,textLang);
+		_this.regandstsrtBtnTxt.x = Math.round(_this.regandstsrtBtnTxt.x);
 		_this.regandstsrtBtnTxt.anchor.setTo(0.5);
 		_this.regandstsrtBtnTxt.align = 'center';
-		_this.regandstsrtBtnTxt.fontSize = 32;
-		_this.regandstsrtBtnTxt.fontWeight = 'normal';
+		_this.regandstsrtBtnTxt.font = 'regfont1';
+		_this.regandstsrtBtnTxt.letterSpacing = 15;
+		_this.regandstsrtBtnTxt.fontSize = '16pt';
+		_this.regandstsrtBtnTxt.fontWeight = 500;
 		_this.regandstsrtBtnTxt.fill = '#FFFFFF';
 		_this.regandstsrtBtnTxt.wordWrap = true;
 		_this.regandstsrtBtnTxt.wordWrapWidth = 500;
@@ -218,62 +237,75 @@ Game.appLoginEditScreen.prototype={
 
 	displayMessageAndDownloadAgain:function()
 	{
+
+		_this.splash.alpha = 0.5;
+
 		_this.progressGroup = _this.add.group();
 		
 		_this.graphics = _this.add.graphics(10, 50);
-		_this.graphics.lineStyle(1, 0x000000, 1);
+		_this.graphics.lineStyle(1, 0x000000, 0);
 		_this.graphics.beginFill(0xFFFFFF,1);
-    	_this.graphics.drawRect(10, 350, 500, 260);
+    	_this.graphics.drawRoundedRect(10, 350, 500, 260, 5);
     	_this.graphics.inputEnabled = true;
     	_this.graphics.events.onInputDown.add(function(){
     		//do nothing
     	},_this);
 
-    	_this.pleaseWaitTxt = _this.add.text(50,420,"Please wait");
+    	_this.pleaseWaitTxt = _this.add.text(55,430,"Please wait..");
+    	_this.pleaseWaitTxt.x = Math.round(_this.pleaseWaitTxt.x);
 		//_this.pleaseWaitTxt.anchor.setTo(0.5);
 		_this.pleaseWaitTxt.align = 'center';
-		_this.pleaseWaitTxt.fontSize = 36;
+		_this.pleaseWaitTxt.font = 'regfont4';
+		_this.pleaseWaitTxt.fontSize = '22pt';
 		_this.pleaseWaitTxt.fontWeight = 'normal';
 		_this.pleaseWaitTxt.fill = '#000000';
 		_this.pleaseWaitTxt.wordWrap = true;
 		_this.pleaseWaitTxt.wordWrapWidth = 500;
 
-		_this.downloadProgressTxt = _this.add.text(50,470,"Download in progress...");
+		_this.downloadProgressTxt = _this.add.text(55,470,"Download in progress");
+		_this.downloadProgressTxt.x = Math.round(_this.downloadProgressTxt.x);
 		//_this.downloadProgressTxt.anchor.setTo(0.5);
 		_this.downloadProgressTxt.align = 'center';
-		_this.downloadProgressTxt.fontSize = 28;
+		_this.downloadProgressTxt.font = 'regfont3';
+		_this.downloadProgressTxt.fontSize = '16pt';
 		_this.downloadProgressTxt.fontWeight = 'normal';
 		_this.downloadProgressTxt.fill = '#000000';
 		_this.downloadProgressTxt.wordWrap = true;
 		_this.downloadProgressTxt.wordWrapWidth = 500;
 
 		_this.regloding = _this.add.sprite(50,580,"regloding");
-		_this.regloding.scale.setTo(1.1);
+		_this.regloding.scale.setTo(0.48,0.5);
 		_this.regloding.frame = 0;
 
 		_this.progressPercentageTxt = _this.add.text(50,600,"0%");
+		_this.progressPercentageTxt.x = Math.round(_this.progressPercentageTxt.x);
 		//_this.downloadProgressTxt.anchor.setTo(0.5);
 		_this.progressPercentageTxt.align = 'center';
-		_this.progressPercentageTxt.fontSize = 28;
+		_this.progressPercentageTxt.font = 'regfont4';
+		_this.progressPercentageTxt.fontSize = '16pt';
 		_this.progressPercentageTxt.fontWeight = 'normal';
 		_this.progressPercentageTxt.fill = '#000000';
 		_this.progressPercentageTxt.wordWrap = true;
 		_this.progressPercentageTxt.wordWrapWidth = 500;
 
 
-		_this.progressPercentageTxt2 = _this.add.text(400,600,"0/100");
+		_this.progressPercentageTxt2 = _this.add.text(420,600,"0/100");
+		_this.progressPercentageTxt2.x = Math.round(_this.progressPercentageTxt2.x);
 		//_this.progressPercentageTxt2.anchor.setTo(0.5);
 		_this.progressPercentageTxt2.align = 'center';
-		_this.progressPercentageTxt2.fontSize = 28;
+		_this.progressPercentageTxt2.font = 'regfont3';
+		_this.progressPercentageTxt2.fontSize = '16pt';
 		_this.progressPercentageTxt2.fontWeight = 'normal';
 		_this.progressPercentageTxt2.fill = '#000000';
 		_this.progressPercentageTxt2.wordWrap = true;
 		_this.progressPercentageTxt2.wordWrapWidth = 500;
 
-		_this.noOfAssets = _this.add.text(450,530,"1/6");
+		_this.noOfAssets = _this.add.text(300,470,"1/6");
+		_this.noOfAssets.x = Math.round(_this.noOfAssets.x);
 		//_this.progressPercentageTxt2.anchor.setTo(0.5);
 		_this.noOfAssets.align = 'center';
-		_this.noOfAssets.fontSize = 28;
+		_this.noOfAssets.font = 'regfont3';
+		_this.noOfAssets.fontSize = '16pt';
 		_this.noOfAssets.fontWeight = 'normal';
 		_this.noOfAssets.fill = '#000000';
 		_this.noOfAssets.wordWrap = true;
@@ -322,6 +354,7 @@ Game.appLoginEditScreen.prototype={
 
 			_this.regandstsrtBtn.inputEnabled = true;
 			_this.regandstsrtBtn.events.onInputDown.add(function(){
+				FirebasePlugin.logEvent("Button_click_start", {Button_click_start: "", item_id: ""});
 				_this.state.start('index2',true,false,_this.user,false);
 			},_this);
 		}
@@ -362,6 +395,8 @@ Game.appLoginEditScreen.prototype={
 			        	else if(filename=="Assets5.zip")
 			        		_this.noOfAssets.text = "5/6";
 			        	else if(filename=="Assets6.zip")
+			        		_this.noOfAssets.text = "6/6";
+			        	else if(filename=="Assets6New.zip")
 			        		_this.noOfAssets.text = "6/6";
 
 			        	_this.noOfAssets.visible = true;
@@ -433,6 +468,7 @@ Game.appLoginEditScreen.prototype={
 				fileEntry.remove(function (file) {
 					console.log("file removed!");
 					_this.progressGroup.destroy();
+					_this.splash.alpha = 1;
 					_this.checkIfAllAssetsPresent();
 				}, function (error) {
 					console.log("error occurred: " + error.code);

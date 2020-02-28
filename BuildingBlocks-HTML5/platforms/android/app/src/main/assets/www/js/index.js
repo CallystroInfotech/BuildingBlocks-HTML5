@@ -11,9 +11,53 @@ var app = {
 
     receivedEvent: function(id) {
 
+      var onSuccess = function(result) {
+        // handle result  
+        console.log(result);
+        };
+
+        var onError = function(err) {
+        // handle error
+        console.log(err);
+        }
+
+        var options = {
+            devKey: 'LW6HqaFQY7CtGB2MKz4nWE',
+            isDebug: false
+        };
+
+        console.log(window.plugins.appsFlyer);
+
+        window.plugins.appsFlyer.initSdk(options, onSuccess, onError);
+
+        facebookConnectPlugin.activateApp(onSuccess, onError);
+
+        FirebasePlugin.setCrashlyticsCollectionEnabled();
+
+        
+
        bbreglogin.initializeDB();
 
        screen.orientation.lock('portarait');
+
+       FirebasePlugin.onMessageReceived(function(message) {
+          console.log("Message type: " + message.messageType);
+          if(message.messageType === "notification"){
+              console.log("Notification message received");
+              if(message.tap){
+                  console.log("Tapped in " + message.tap);
+              }
+          }
+          console.dir(message);
+      }, function(error) {
+          console.error(error);
+      });
+
+
+
+
+
+
        var game = new Phaser.Game(540,960,Phaser.CANVAS,'phaser_canvas',{preload:this.preload, create:this.create},false,true,null);
 
        game.state.add('boot',Game.boot);
@@ -49,6 +93,8 @@ var app = {
       game.load.atlas('regTickBtn','assets/regTickBtn.png','assets/regTickBtn.json');
       game.load.atlas('regandstsrtBtn','assets/regandstsrtBtn.png','assets/regandstsrtBtn.json');
       game.load.atlas('regloding','assets/loding.png','assets/loding.json');
+      
+      game.load.bitmapFont('regFont', 'regFont.png', 'regFont.xml');
     },
 
     create:function(game)
@@ -73,6 +119,13 @@ var app = {
 
     	console.log(game);
 
+      this.game.add.text(0, 0, "hack", {font:"1px myfont", fill:"#FFFFFF"});
+    this.game.add.text(0, 0, "hack", {font:"1px gradefont", fill:"#FFFFFF"});
+    this.game.add.text(0, 0, "hack", {font:"1px regfont1", fill:"#FFFFFF"});
+    this.game.add.text(0, 0, "hack", {font:"1px regfont2", fill:"#FFFFFF"});
+    this.game.add.text(0, 0, "hack", {font:"1px regfont3", fill:"#FFFFFF"});
+    this.game.add.text(0, 0, "hack", {font:"1px regfont4", fill:"#FFFFFF"});
+
 
 
     	game.time.events.add(300, function(){
@@ -82,6 +135,9 @@ var app = {
 			console.log(game);
 
 			screen.orientation.lock('landscape');*/
+
+      
+
 			game.state.start('appLoginScreen',true,false);
 		},this); 
 

@@ -283,6 +283,62 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "FirebasePlugin"
       ]
+    },
+    {
+      "id": "cordova-plugin-x-socialsharing.SocialSharing",
+      "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
+      "pluginId": "cordova-plugin-x-socialsharing",
+      "clobbers": [
+        "window.plugins.socialsharing"
+      ]
+    },
+    {
+      "id": "cordova-plugin-native-spinner.SpinnerDialog",
+      "file": "plugins/cordova-plugin-native-spinner/www/SpinnerDialog.js",
+      "pluginId": "cordova-plugin-native-spinner",
+      "clobbers": [
+        "SpinnerDialog"
+      ]
+    },
+    {
+      "id": "cordova-plugin-android-permissions.Permissions",
+      "file": "plugins/cordova-plugin-android-permissions/www/permissions.js",
+      "pluginId": "cordova-plugin-android-permissions",
+      "clobbers": [
+        "cordova.plugins.permissions"
+      ]
+    },
+    {
+      "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
+      "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
+      "pluginId": "cordova-plugin-facebook4",
+      "clobbers": [
+        "facebookConnectPlugin"
+      ]
+    },
+    {
+      "id": "cordova-plugin-appsflyer-sdk.appsflyer",
+      "file": "plugins/cordova-plugin-appsflyer-sdk/www/appsflyer.js",
+      "pluginId": "cordova-plugin-appsflyer-sdk",
+      "clobbers": [
+        "window.plugins.appsFlyer"
+      ]
+    },
+    {
+      "id": "cordova-plugin-appsflyer-sdk.AppsFlyerError",
+      "file": "plugins/cordova-plugin-appsflyer-sdk/www/AppsFlyerError.js",
+      "pluginId": "cordova-plugin-appsflyer-sdk",
+      "clobbers": [
+        "AppsFlyerError"
+      ]
+    },
+    {
+      "id": "cordova-plugin-statusbar.statusbar",
+      "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+      "pluginId": "cordova-plugin-statusbar",
+      "clobbers": [
+        "window.StatusBar"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -301,6 +357,12 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-fullscreen": "1.1.0",
     "cordova-plugin-androidx": "1.0.2",
     "cordova-plugin-androidx-adapter": "1.1.0",
-    "cordova-plugin-firebasex": "7.0.2"
+    "cordova-plugin-firebasex": "7.0.2",
+    "cordova-plugin-x-socialsharing": "5.6.4",
+    "cordova-plugin-native-spinner": "1.1.3",
+    "cordova-plugin-android-permissions": "1.0.2",
+    "cordova-plugin-facebook4": "6.3.0",
+    "cordova-plugin-appsflyer-sdk": "4.4.22",
+    "cordova-plugin-statusbar": "2.4.3"
   };
 });

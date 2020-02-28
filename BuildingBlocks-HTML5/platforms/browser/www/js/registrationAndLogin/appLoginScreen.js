@@ -16,6 +16,18 @@ Game.appLoginScreen.prototype={
 
 	create:function(game)
 	{
+
+		//AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
+		//AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN | AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
+		_this.checkPermission();
+
+		
+		
+
+	},
+
+	startGame:function()
+	{
 		_this.avatarName = ['Fish','ButterFly','Flower','Parrot','Sun','Tree'];
 		_this.checkForLoginData();
 
@@ -23,37 +35,86 @@ Game.appLoginScreen.prototype={
 		
 		
 		//Fullscreen.on();
-		var splash = game.add.sprite(game.world.centerX,game.world.centerY,'registrationbg');
+		var splash = _this.add.sprite(_this.world.centerX,_this.world.centerY,'registrationbg');
     	splash.scale.setTo(1);
     	splash.anchor.setTo(0.5);
 
-    	var titleBar = game.add.graphics(0, 0);
+    	
+
+    	var titleBar = _this.add.graphics(0, 0);
     	titleBar.anchor.setTo(0.5);
     	titleBar.lineStyle(2, 0x000000, 0.8);
 		titleBar.beginFill(0x4E342E, 1);
 		titleBar.drawRect(0, 0, 540, 80);
 
 
-		var titleTxt = game.add.text(game.world.centerX-120,40,"Building Blocks");
+		var titleTxt = _this.add.text(_this.world.centerX-140,45,"Building Blocks");
+		titleTxt.x = Math.round(titleTxt.x);
 		titleTxt.anchor.setTo(0.5);
 		titleTxt.align = 'center';
-		//titleTxt.font = 'regfont';
-		titleTxt.fontSize = 32;
-		titleTxt.fontWeight = 'normal';
+		titleTxt.font = 'regfont4';
+		titleTxt.fontSize = '22pt';
+		titleTxt.fontWeight = 500;
 		titleTxt.fill = '#FFFFFF';
 		titleTxt.wordWrap = true;
 		titleTxt.wordWrapWidth = 500;
+	},
 
+	checkPermission:function()
+	{
+		var permissions = cordova.plugins.permissions;
+		permissions.checkPermission(permissions.READ_PHONE_STATE, function( status ){
+		  if ( status.hasPermission ) {
+		    console.log("Yes :D ");
+		    _this.startGame();
+		  }
+		  else {
+		    console.warn("No :( ");
+		    permissions.requestPermission(permissions.READ_PHONE_STATE, function( status ){
+			  if ( status.hasPermission ) {
+			    console.log("Yes :D ");
+
+			    _this.startGame();
+			  }
+			  else {
+			    console.warn("No :( ");
+			    _this.checkPermission();
+			  }
+			},function(error){
+					console.log(error);
+				});
+		  }
+		},function(error){
+			console.log(error);
+		});
+
+		
 	},
 
 	loadEverything:function(game)
 	{
-		var selectPicTxt = game.add.text(game.world.centerX,150,"Sign in by selecting \n your avatar");
+		var selectPicTxt = game.add.text(game.world.centerX,150,"Sign in by Selecting \n your Avatar");
+		//var selectPicTxt = game.add.bitmapText(200, 100, 'regFont',"Sign in by Selecting \n your Avatar",64);
+		//alert(window.devicePixelRatio);
+
+		selectPicTxt.x = Math.round(selectPicTxt.x);
 		selectPicTxt.anchor.setTo(0.5);
 		selectPicTxt.align = 'center';
-		selectPicTxt.fontSize = 38;
-		selectPicTxt.fontWeight = 'normal';
-		selectPicTxt.fill = '#000000';
+		selectPicTxt.font = 'regfont3';
+
+		/*if(window.devicePixelRatio >=2.5 && window.devicePixelRatio<3)
+			selectPicTxt.fontSize = 31;
+		else if(window.devicePixelRatio >=3 && window.devicePixelRatio<=3.5)
+			selectPicTxt.fontSize = 36;
+		else if(window.devicePixelRatio >=3 && window.devicePixelRatio<=4)
+			selectPicTxt.fontSize = 36;
+		else if(window.devicePixelRatio >=3 && window.devicePixelRatio<=4)
+			selectPicTxt.fontSize = 36;*/
+
+		selectPicTxt.fontSize = '26pt';
+
+		selectPicTxt.fontWeight = 0;
+		selectPicTxt.fill = '#494949';
 		selectPicTxt.wordWrap = true;
 		selectPicTxt.wordWrapWidth = 500;
 
@@ -158,29 +219,62 @@ Game.appLoginScreen.prototype={
     			} 
     		}
     	},this);
+    	
 
-    	var orTxt = game.add.text(game.world.centerX,820,"------------- Or -------------");
+
+    	/*var bmd = game.add.bitmapData(800,600);                
+    	bmd.ctx.beginPath();        
+    	bmd.ctx.lineWidth = "4";        
+    	bmd.ctx.strokeStyle = '#000000';        
+    	bmd.ctx.setLineDash([2,3]);        
+    	bmd.ctx.moveTo(10, 10);        
+    	bmd.ctx.lineTo(100 , 100);
+    	ctx.moveTo(100, 10);
+		ctx.quadraticCurveTo(230, 150, 250, 20);        
+    	bmd.ctx.stroke();        
+    	bmd.ctx.closePath();        
+    	var sprite = game.add.sprite(200, 400, bmd);*/
+
+    	var orline1=game.add.graphics(0,0);
+		  //var graphics=game.add.graphics(line.start.x,line.start.y);//if you have a static line
+		  orline1.lineStyle(2.5, 0x000000, 1);
+		  orline1.moveTo(70,820);//moving position of graphic if you draw mulitple lines
+		  orline1.lineTo(240,820);
+		  orline1.endFill();
+
+    	var orTxt = game.add.text(game.world.centerX,820,"or");
 		orTxt.anchor.setTo(0.5);
 		orTxt.align = 'center';
-		orTxt.fontSize = 38;
+		orTxt.font = 'regfont3';
+		orTxt.fontSize = '24pt';
 		orTxt.fontWeight = 'normal';
-		orTxt.fill = '#000000';
+		orTxt.fill = '#494949';
 		orTxt.wordWrap = true;
 		orTxt.wordWrapWidth = 500;
 
+		var orline2=game.add.graphics(0,0);
+		  //var graphics=game.add.graphics(line.start.x,line.start.y);//if you have a static line
+		  orline2.lineStyle(2.5, 0x000000, 1);
+		  orline2.moveTo(300,820);//moving position of graphic if you draw mulitple lines
+		  orline2.lineTo(470,820);
+		  orline2.endFill();
+
 		_this.regandstsrtBtn = _this.add.sprite(game.world.centerX,880,'regandstsrtBtn');
-    	_this.regandstsrtBtn.scale.setTo(0.4,0.5);
+    	_this.regandstsrtBtn.scale.setTo(0.9,1);
     	_this.regandstsrtBtn.anchor.setTo(0.5);
 
-    	_this.regandstsrtBtnTxt = _this.add.text(game.world.centerX,880,"Register");
+    	_this.regandstsrtBtnTxt = _this.add.text(game.world.centerX,882,"REGISTER");
+    	_this.regandstsrtBtnTxt.x = Math.round(_this.regandstsrtBtnTxt.x);
 		_this.regandstsrtBtnTxt.anchor.setTo(0.5);
 		_this.regandstsrtBtnTxt.align = 'center';
-		_this.regandstsrtBtnTxt.fontSize = 32;
-		_this.regandstsrtBtnTxt.fontWeight = 'normal';
+		_this.regandstsrtBtnTxt.font = 'regfont1';
+		_this.regandstsrtBtnTxt.letterSpacing = 15;
+		_this.regandstsrtBtnTxt.fontSize = '16pt';
+		_this.regandstsrtBtnTxt.fontWeight = 500;
 		_this.regandstsrtBtnTxt.fill = '#FFFFFF';
 		_this.regandstsrtBtnTxt.wordWrap = true;
 		_this.regandstsrtBtnTxt.wordWrapWidth = 500;
-
+		
 		
 	},
 
@@ -191,6 +285,7 @@ Game.appLoginScreen.prototype={
 
 	localdatasuccess:function(result)
 	{
+		SpinnerDialog.hide();
 		if(result.rows.length>0)
 		{
 			_this.loadEverything(_this);
@@ -221,7 +316,8 @@ Game.appLoginScreen.prototype={
 		}
 		else
 		{
-			window.plugins.toast.show("Building Blocks is loading \n please wait", 2000, "center");
+			//window.plugins.toast.show("Building Blocks is loading \n please wait", 2000, "center");
+			SpinnerDialog.show(null, "Building Blocks is loading..", true);
 			_this.checkOnlineForData();
 		}
 		
@@ -229,6 +325,7 @@ Game.appLoginScreen.prototype={
 
 	localdatasuccess2:function(result)
 	{
+		SpinnerDialog.hide();
 		if(result.rows.length>0)
 		{
 			_this.loadEverything(_this);

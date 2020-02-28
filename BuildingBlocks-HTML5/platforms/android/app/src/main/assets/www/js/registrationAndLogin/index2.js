@@ -18,26 +18,25 @@ Game.index2.prototype={
 		window.languageSelected = user.language;
 		window.gradeSelected = user.grade;
 		window.selctedLang = null;
-		window.baseUrl = cordova.file.externalRootDirectory+"Android/data/io.cordova.hellocordova/files/Download/gameFilesBBV5_0_5/www/";
+		window.baseUrl = cordova.file.externalRootDirectory+"Android/data/com.buildingblocks.test/files/Download/gameFilesBBV5_0_5/www/";
 		window.score = 50;
 		window.mcIcon = null;
 		window.userProgress = flag;
 
 		window.rateCount = 0;
 
-
+		document.addEventListener('resume',function(){
+			AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN, null, null);
+		},false);
 
     },
 
 
     preload:function(game)
     {
-
     	//game.cache.destroy();	
     	game.load.image('exitBg','assets/exitAssets/exitBg.png');
-    	game.load.image('confirmBg','assets/exitAssets/confirmBg.png');
-
-    	 
+    	game.load.image('confirmBg','assets/exitAssets/confirmBg.png');  	 
     },
 
 
@@ -236,6 +235,8 @@ Game.index2.prototype={
 		};
 
 		game.stage.backgroundColor = '#71c5cf';
+
+
     	document.addEventListener('backbutton', function(e) {
         
         	if((window.prevScreen == "gameScreen") || window.currScreen == "gameModeSelectionScreen")

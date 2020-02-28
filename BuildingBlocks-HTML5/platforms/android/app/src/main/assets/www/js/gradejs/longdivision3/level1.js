@@ -14,7 +14,7 @@ init:function(game)
             start_time:_this.currentTime
         } 
        // _this.savedVar = absdsjsapi.saveGameplay(_this.saveGameplay);
-        
+        telInitializer.gameIdInit("DH2",gradeSelected);
 
     },
 
@@ -36,61 +36,72 @@ init:function(game)
             preloadGrp.add(_this.preloadBars);
 
             preloadGrp.x -= 105;
-            this.load.image('bgA','assets/commonAssets/BG2.png');
-        this.load.image('bg3','assets/commonAssets/bg3.png');
-        this.load.image('tittleBaar','assets/commonAssets/tittleBaar.png');
-        this.load.image('Topbar','assets/commonAssets/navBar.png');
-        this.load.image('timer','assets/commonAssets/timer.png');
-        this.load.image('footer','assets/commonAssets/footer.png');
-        this.load.image('skipDemoVideos','assets/commonAssets/skipArrow.png');
+            this.load.image('Dhg1_5_bgA',window.baseUrl+'assets/DH2/commonAssets/BG2.png');
+        this.load.image('Dhg1_5_bg3',window.baseUrl+'assets/DH2/commonAssets/bg3.png');
+        this.load.image('Dhg1_5_tittleBaar',window.baseUrl+'assets/DH2/commonAssets/tittleBaar.png');
+        this.load.image('Dhg1_5_Topbar',window.baseUrl+'assets/DH2/commonAssets/navBar.png');
+        this.load.image('Dhg1_5_timer',window.baseUrl+'assets/DH2/commonAssets/timer.png');
+        this.load.image('Dhg1_5_footer',window.baseUrl+'assets/DH2/commonAssets/footer.png');
+        this.load.image('Dhg1_5_skipDemoVideos',window.baseUrl+'assets/DH2/commonAssets/skipArrow.png');
         
-        this.load.atlas('Backbtn','assets/commonAssets/backbtn.png' ,'json/backbtn.json');
-        this.load.atlas('btn','assets/commonAssets/btn.png' ,'json/btn.json');
-        this.load.atlas('rightbtn','assets/commonAssets/1.png' ,'json/1.json');
-        this.load.atlas('wrongbtn','assets/commonAssets/2.png' ,'json/2.json');
-        this.load.atlas('speaker','assets/commonAssets/speaker.png' ,'json/speaker.json');
-        this.load.atlas('starAnim','assets/commonAssets/starAnim.png' ,'json/starAnim.json');
-        this.load.atlas('replay','assets/commonAssets/reply.png' ,'json/reply.json');
+        this.load.atlas('Dhg1_5_BackDhg1_5_btn',window.baseUrl+'assets/DH2/commonAssets/backbtn.png' ,window.baseUrl+'json/DH2/backbtn.json');
+        this.load.atlas('Dhg1_5_btn',window.baseUrl+'assets/DH2/commonAssets/btn.png' ,window.baseUrl+'json/DH2/btn.json');
+        this.load.atlas('rightDhg1_5_btn',window.baseUrl+'assets/DH2/commonAssets/1.png' ,window.baseUrl+'json/DH2/1.json');
+        this.load.atlas('wrongDhg1_5_btn',window.baseUrl+'assets/DH2/commonAssets/2.png' ,window.baseUrl+'json/DH2/2.json');
+        this.load.atlas('Dhg1_5_speaker',window.baseUrl+'assets/DH2/commonAssets/speaker.png' ,window.baseUrl+'json/DH2/speaker.json');
+        this.load.atlas('Dhg1_5_starAnim',window.baseUrl+'assets/DH2/commonAssets/starAnim.png' ,window.baseUrl+'json/DH2/starAnim.json');
+        this.load.atlas('Dhg1_5_replay',window.baseUrl+'assets/DH2/commonAssets/reply.png' ,window.baseUrl+'json/DH2/reply.json');
         
         //game assets
         
-        this.load.image('Dhg1_5_Box1','assets/gameAssets/new box 1.png');
-        this.load.image('Dhg1_5_Box3','assets/gameAssets/new box 2.png');
-        this.load.image('Dhg1_5_Box2','assets/gameAssets/box 9.png');
-        this.load.image('Dhg1_5_Box4','assets/gameAssets/box 10.png');
-        this.load.atlas('Dhg1_5_circle','assets/gameAssets/A1.png','json/gameAssets/A1.json');
-        this.load.atlas('Dhg1_5_square','assets/gameAssets/A2.png','json/gameAssets/A2.json');
-        this.load.atlas('Dhg1_5_triangle','assets/gameAssets/A3.png','json/gameAssets/A3.json');
-        this.load.atlas('Dhg1_5_oval','assets/gameAssets/A4.png','json/gameAssets/A4.json');
-        this.load.atlas('Dhg1_5_papaya','assets/gameAssets/A5.png','json/gameAssets/A5.json');
-        this.load.atlas('Dhg1_5_cherry','assets/gameAssets/A6.png','json/gameAssets/A6.json');
-        this.load.atlas('Dhg1_5_carrot','assets/gameAssets/A7.png','json/gameAssets/A7.json');
-        this.load.atlas('Dhg1_5_watermelon','assets/gameAssets/A8.png','json/gameAssets/A8.json');
-        this.load.atlas('Dhg1_5_orange','assets/gameAssets/A9.png','json/gameAssets/A9.json');
-        this.load.atlas('Dhg1_5_basketball','assets/gameAssets/A10.png','json/gameAssets/A10.json');
-        this.load.atlas('Dhg1_5_boot','assets/gameAssets/A11.png','json/gameAssets/A11.json');
-        this.load.atlas('Dhg1_5_flower','assets/gameAssets/A12.png','json/gameAssets/A12.json');
-        this.load.atlas('Dhg1_5_ballon','assets/gameAssets/A13.png','json/gameAssets/A13.json');
-        this.load.atlas('Dhg1_5_ball','assets/gameAssets/A14.png','json/gameAssets/A14.json');
+        this.load.image('Dhg1_5_Box1',window.baseUrl+'assets/DH2/gameAssets/new box 1.png');
+        this.load.image('Dhg1_5_Box3',window.baseUrl+'assets/DH2/gameAssets/new box 2.png');
+        this.load.image('Dhg1_5_Box2',window.baseUrl+'assets/DH2/gameAssets/box 9.png');
+        this.load.image('Dhg1_5_Box4',window.baseUrl+'assets/DH2/gameAssets/box 10.png');
+        this.load.atlas('Dhg1_5_circle',window.baseUrl+'assets/DH2/gameAssets/A1.png',window.baseUrl+'json/DH2/gameAssets/A1.json');
+        this.load.atlas('Dhg1_5_square',window.baseUrl+'assets/DH2/gameAssets/A2.png',window.baseUrl+'json/DH2/gameAssets/A2.json');
+        this.load.atlas('Dhg1_5_triangle',window.baseUrl+'assets/DH2/gameAssets/A3.png',window.baseUrl+'json/DH2/gameAssets/A3.json');
+        this.load.atlas('Dhg1_5_oval',window.baseUrl+'assets/DH2/gameAssets/A4.png',window.baseUrl+'json/DH2/gameAssets/A4.json');
+        this.load.atlas('Dhg1_5_papaya',window.baseUrl+'assets/DH2/gameAssets/A5.png',window.baseUrl+'json/DH2/gameAssets/A5.json');
+        this.load.atlas('Dhg1_5_cherry',window.baseUrl+'assets/DH2/gameAssets/A6.png',window.baseUrl+'json/DH2/gameAssets/A6.json');
+        this.load.atlas('Dhg1_5_carrot',window.baseUrl+'assets/DH2/gameAssets/A7.png',window.baseUrl+'json/DH2/gameAssets/A7.json');
+        this.load.atlas('Dhg1_5_watermelon',window.baseUrl+'assets/DH2/gameAssets/A8.png',window.baseUrl+'json/DH2/gameAssets/A8.json');
+        this.load.atlas('Dhg1_5_orange',window.baseUrl+'assets/DH2/gameAssets/A9.png',window.baseUrl+'json/DH2/gameAssets/A9.json');
+        this.load.atlas('Dhg1_5_basketball',window.baseUrl+'assets/DH2/gameAssets/A10.png',window.baseUrl+'json/DH2/gameAssets/A10.json');
+        this.load.atlas('Dhg1_5_boot',window.baseUrl+'assets/DH2/gameAssets/A11.png',window.baseUrl+'json/DH2/gameAssets/A11.json');
+        this.load.atlas('Dhg1_5_flower',window.baseUrl+'assets/DH2/gameAssets/A12.png',window.baseUrl+'json/DH2/gameAssets/A12.json');
+        this.load.atlas('Dhg1_5_ballon',window.baseUrl+'assets/DH2/gameAssets/A13.png',window.baseUrl+'json/DH2/gameAssets/A13.json');
+        this.load.atlas('Dhg1_5_ball',window.baseUrl+'assets/DH2/gameAssets/A14.png',window.baseUrl+'json/DH2/gameAssets/A14.json');
         
-        this.load.atlas('Roman_num','assets/gameAssets/Nu 12345.png','json/gameAssets/Nu 12345.json');
-        this.load.atlas('Dhg1_5_textbox','assets/gameAssets/textbox.png','json/gameAssets/textbox.json');
-        this.load.atlas('Dhg1_5_numpad','assets/gameAssets/calNum.png','json/gameAssets/calNum.json');
-        this.load.atlas('Dhg1_5_plus','assets/gameAssets/P.png','json/gameAssets/P.json');
-        this.load.atlas('Dhg1_5_minus','assets/gameAssets/M.png','json/gameAssets/M.json');
+        this.load.atlas('Roman_num',window.baseUrl+'assets/DH2/gameAssets/Nu 12345.png',window.baseUrl+'json/DH2/gameAssets/Nu 12345.json');
+        this.load.atlas('Dhg1_5_textbox',window.baseUrl+'assets/DH2/gameAssets/textbox.png',window.baseUrl+'json/DH2/gameAssets/textbox.json');
+        this.load.atlas('Dhg1_5_numpad',window.baseUrl+'assets/DH2/gameAssets/calNum.png',window.baseUrl+'json/DH2/gameAssets/calNum.json');
+        this.load.atlas('Dhg1_5_plus',window.baseUrl+'assets/DH2/gameAssets/P.png',window.baseUrl+'json/DH2/gameAssets/P.json');
+        this.load.atlas('Dhg1_5_minus',window.baseUrl+'assets/DH2/gameAssets/M.png',window.baseUrl+'json/DH2/gameAssets/M.json');
         
-        this.load.atlas('Dhg1_5_green_bar','assets/gameAssets/z1.png','json/gameAssets/z1.json');
-        this.load.atlas('Dhg1_5_red_bar','assets/gameAssets/z2.png','json/gameAssets/z2.json');
-        this.load.atlas('Dhg1_5_yellow_bar','assets/gameAssets/z3.png','json/gameAssets/z3.json');
-        this.load.atlas('Dhg1_5_blue_bar','assets/gameAssets/z4.png','json/gameAssets/z4.json');
+        this.load.atlas('Dhg1_5_green_bar',window.baseUrl+'assets/DH2/gameAssets/z1.png',window.baseUrl+'json/DH2/gameAssets/z1.json');
+        this.load.atlas('Dhg1_5_red_bar',window.baseUrl+'assets/DH2/gameAssets/z2.png',window.baseUrl+'json/DH2/gameAssets/z2.json');
+        this.load.atlas('Dhg1_5_yellow_bar',window.baseUrl+'assets/DH2/gameAssets/z3.png',window.baseUrl+'json/DH2/gameAssets/z3.json');
+        this.load.atlas('Dhg1_5_blue_bar',window.baseUrl+'assets/DH2/gameAssets/z4.png',window.baseUrl+'json/DH2/gameAssets/z4.json');
         
-        this.load.atlas('Dhg1_5_silver_bar','assets/gameAssets/s1.png','json/gameAssets/s1.json');
+        this.load.atlas('Dhg1_5_silver_bar',window.baseUrl+'assets/DH2/gameAssets/s1.png',window.baseUrl+'json/DH2/gameAssets/s1.json');
 
     }
 
     },
     
 	create:function(game){
+
+    _this.numberIncGreen = 0
+_this.numberIncRed = 0
+_this.numberIncYellow = 0
+_this.numberIncBlue = 0
+
+    _this.noofAttempts = 0;
+        _this.AnsTimerCount = 0;
+        _this.sceneCount = 0;
+
+
         _this.bg1=null;
 _this.starsGroup=0;
 _this.no1=0;
@@ -135,12 +146,12 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
         this.physics.startSystem(Phaser.Physics.ARCADE);
         this.physics.setBoundsToWorld();
 
-         _this.bg1 = this.add.sprite(0,0, 'bgA');
-        _this.TopBar=this.add.sprite(0,0,'Topbar');
+         _this.bg1 = this.add.sprite(0,0, 'Dhg1_5_bgA');
+        _this.TopBar=this.add.sprite(0,0,'Dhg1_5_Topbar');
     
     _this.TopBar.scale.setTo(1,1.1);
 
-    _this.backbtn = this.add.sprite(10,7,'Backbtn');
+    _this.backbtn = this.add.sprite(10,7,'Dhg1_5_BackDhg1_5_btn');
     _this.backbtn.inputEnabled = true;
     _this.backbtn.events.onInputDown.add(function()
         {
@@ -156,7 +167,7 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
 
         },_this);
       
-   _this.timebg=this.add.sprite(305,6,'timer');
+   _this.timebg=this.add.sprite(305,6,'Dhg1_5_timer');
     _this.timebg.scale.setTo(1.2,1);
         
     _this.timeDisplay = this.add.text(336,22,_this.minutes + ' : '+ _this.seconds);
@@ -168,7 +179,7 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
     _this.timeDisplay.fontWeight = 'Normal';
     _this.timeDisplay.fill = '#ADFF2F';
         
-        _this.speaker = this.add.sprite(600,6,'speaker');
+        _this.speaker = this.add.sprite(600,6,'Dhg1_5_speaker');
         _this.speaker.inputEnabled = true;
         _this.speaker.events.onInputDown.add(function()
         {
@@ -193,6 +204,23 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
     /***********************************getquestion************************/
     getQuestion:function(target)
     {
+
+      _this.noofAttempts = 0;
+         _this.AnsTimerCount = 0;
+         //_this.sceneCount++;
+    
+        _this.timer = _this.time.create(false);
+
+        //  Set a TimerEvent to occur after 2 seconds
+        _this.timer.loop(1000, function(){
+            _this.AnsTimerCount++;
+        }, _this);
+
+        //  Start the timer running - this is important!
+        //  It won't start automatically, allowing you to hook it to button events and the like.
+        _this.timer.start();
+
+
         _this.timer1 = this.time.create(false);
         _this.timer1.loop(1000, function(){
                   this.updateTimer();
@@ -1236,10 +1264,10 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
        _this.green_textbox.frame=0;
       
         _this.numGroup = this.add.group();
-         _this.footer = this.add.sprite(0,475,'footer');
+         _this.footer = this.add.sprite(0,475,'Dhg1_5_footer');
         _this.numGroup.add(_this.footer);
         _this.numGroup.visible=true;
-        var x = 120;
+        var x = 80;
 
         for(var i=0;i<10;i++)
         {
@@ -1247,13 +1275,13 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
             _this.numbg.frame=i;
             _this.grpnum.push(_this.numbg);
             _this.numbg.anchor.setTo(0.5);
-            _this.numbg.scale.setTo(0.5,0.5);
+            _this.numbg.scale.setTo(0.6,0.6);
             _this.numbg.name = i;
             _this.numbg.inputEnabled = true;
          //   numbg.input.useHandCursor = false;
              
             _this.numbg.events.onInputDown.add(this.numClicked,this);
-            x+=60;
+            x+=70;
         }
       
         _this.counterText1 = this.add.text(25,25, _this.selectedAns1="");
@@ -1295,12 +1323,12 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
         _this.counterText4.fill = '#65B4C3';
         _this.counterText4.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
         _this.blue_textbox.addChild(_this.counterText4);
-        _this.wrongbtn = _this.numGroup.create(x+60,510,'wrongbtn');
+        _this.wrongbtn = _this.numGroup.create(x+30,510,'wrongDhg1_5_btn');
         _this.wrongbtn.anchor.setTo(0.5);
        _this.wrongbtn.scale.setTo(0.5,0.5);
         _this.wrongbtn.name = "wrongbtn";
 
-        _this.rightbtn =_this.numGroup.create(x+110,510,'rightbtn');
+        _this.rightbtn =_this.numGroup.create(x+100,510,'rightDhg1_5_btn');
         _this.rightbtn.anchor.setTo(0.5);
         _this.rightbtn.scale.setTo(0.5,0.5);
         _this.rightbtn.name = "rightbtn";
@@ -1466,7 +1494,9 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
             else 
             {
                  
-                waudio.play();
+                _this.wSound = _this.add.audio('waudio');
+     
+     _this.wSound.play();
                   
                 _this.flag;
                     _this.selectedAns1 = "";
@@ -1496,13 +1526,259 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
        
     },
     
+     addIncTextToGreenBox:function()
+    {
+       
+        _this.numberIncGreen++;
+         console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"+ _this.numberIncGreen,_this.displayNumb1);
+        if(_this.displayNumb1 == null)
+            {
+                 //alert();
+                _this.displayNumb1 = this.add.text(585,400,_this.numberIncGreen);
+                _this.displayNumb1.anchor.setTo(0.5);
+                _this.displayNumb1.align = 'center';
+                _this.displayNumb1.font = 'myfont';
+                _this.displayNumb1.fontSize = 20;
+                _this.displayNumb1.fontWeight = 'Normal';
+                _this.displayNumb1.fill = '#ffffff'; 
+                _this.box2_group.add(_this.displayNumb1);
+            }
+        if(_this.no1<3)
+            {
+                _this.displayNumb1.y = _this.displayNumb1.y-7.5;
+            }
+        else{
+                _this.displayNumb1.y = _this.displayNumb1.y-7;
+            }
+        _this.displayNumb1.setText(_this.numberIncGreen);
+    },
+    addDecTextToGreenBox:function()
+    {
+        _this.numberIncGreen--;
+        if(_this.numberIncGreen <=0)
+            {
+                _this.numberIncGreen = 0;
+                if(_this.displayNumb1)
+                  _this.displayNumb1.y = 400;
+            }
+        if(_this.displayNumb1 == null)
+            {
+                _this.displayNumb1 = this.add.text(585,400,_this.numberIncGreen);
+                _this.displayNumb1.anchor.setTo(0.5);
+                _this.displayNumb1.align = 'center';
+                _this.displayNumb1.font = 'myfont';
+                _this.displayNumb1.fontSize = 20;
+                _this.displayNumb1.fontWeight = 'Normal';
+                _this.displayNumb1.fill = '#ffffff'; 
+                _this.box2_group.add(_this.displayNumb1);
+            }
+        if(_this.no1<3)
+            {
+                if(_this.numberIncGreen != 0)
+                    _this.displayNumb1.y = _this.displayNumb1.y+7.3;
+            }
+        else
+            {
+                _this.displayNumb1.y = _this.displayNumb1.y+7;
+            }
+        _this.displayNumb1.setText(_this.numberIncGreen);
+        if(_this.numberIncGreen == 0)
+            _this.displayNumb1.setText('');
+        
+         if(_this.numberIncGreen <=0)
+            {
+                _this.numberIncGreen = 0;
+                if(_this.displayNumb1)
+                  _this.displayNumb1.y = 400;
+            }
+    }, 
+    addIncTextToRedBox:function()
+    {
+        _this.numberIncRed++;
+        
+        if(_this.displayNumb2 == null)
+            {
+                _this.displayNumb2 = this.add.text(640,400,_this.numberIncRed);
+                _this.displayNumb2.anchor.setTo(0.5);
+                _this.displayNumb2.align = 'center';
+                _this.displayNumb2.font = 'myfont';
+                _this.displayNumb2.fontSize = 20;
+                _this.displayNumb2.fontWeight = 'Normal';
+                _this.displayNumb2.fill = '#ffffff';
+                _this.box2_group.add(_this.displayNumb2);
+            }
+        if(_this.no1<3)
+            {
+                _this.displayNumb2.y = _this.displayNumb2.y-7.5;
+            }
+        else{
+                _this.displayNumb2.y = _this.displayNumb2.y-7;
+            }
+        _this.displayNumb2.setText(_this.numberIncRed);
+    },
+    addDecTextToRedBox:function()
+    {
+        _this.numberIncRed--;
+        if(_this.numberIncRed <=0)
+            {
+                _this.numberIncRed = 0;
+            }
+        if(_this.displayNumb2 == null)
+            {
+                _this.displayNumb2 = this.add.text(640,400,_this.numberIncRed);
+                _this.displayNumb2.anchor.setTo(0.5);
+                _this.displayNumb2.align = 'center';
+                _this.displayNumb2.font = 'myfont';
+                _this.displayNumb2.fontSize = 20;
+                _this.displayNumb2.fontWeight = 'Normal';
+                _this.displayNumb2.fill = '#ffffff';
+                _this.box2_group.add(_this.displayNumb2);
+            }
+        if(_this.no1<3)
+            {
+                if(_this.numberIncRed != 0)
+                    _this.displayNumb2.y = _this.displayNumb2.y+7.3;
+            }
+        else{
+                _this.displayNumb2.y = _this.displayNumb2.y+7;
+            }
+        _this.displayNumb2.setText(_this.numberIncRed);
+        if(_this.numberIncRed == 0)
+            _this.displayNumb2.setText('');
+        if(_this.numberIncRed <=0)
+            {
+                if(_this.displayNumb2)
+                 _this.displayNumb2.y = 400;
+            }
+    },
+    addIncTextToYellowBox:function()
+    {
+        _this.numberIncYellow++;
+        
+        if(_this.displayNumb3 == null)
+            {
+                _this.displayNumb3 = this.add.text(695,400,_this.numberIncYellow);
+                _this.displayNumb3.anchor.setTo(0.5);
+                _this.displayNumb3.align = 'center';
+                _this.displayNumb3.font = 'myfont';
+                _this.displayNumb3.fontSize = 20;
+                _this.displayNumb3.fontWeight = 'Normal';
+                _this.displayNumb3.fill = '#ffffff'; 
+                _this.box2_group.add(_this.displayNumb3);
+            }
+        if(_this.no1<3)
+            {
+                _this.displayNumb3.y = _this.displayNumb3.y-7.5;
+            }
+        else
+            {
+                _this.displayNumb3.y = _this.displayNumb3.y-7;
+            }
+        _this.displayNumb3.setText(_this.numberIncYellow);
+    },
+    addDecTextToYellowBox:function()
+    {
+        _this.numberIncYellow--;
+        if(_this.numberIncYellow <=0)
+            {
+                _this.numberIncYellow = 0;
+            }
+        if(_this.displayNumb3 == null)
+            {
+                _this.displayNumb3 = this.add.text(695,400,_this.numberIncYellow);
+                _this.displayNumb3.anchor.setTo(0.5);
+                _this.displayNumb3.align = 'center';
+                _this.displayNumb3.font = 'myfont';
+                _this.displayNumb3.fontSize = 20;
+                _this.displayNumb3.fontWeight = 'Normal';
+                _this.displayNumb3.fill = '#ffffff';
+                _this.box2_group.add(_this.displayNumb3);
+            }
+        if(_this.no1<3)
+            {
+                if(_this.numberIncYellow != 0)
+                    _this.displayNumb3.y = _this.displayNumb3.y+7.3;
+            }
+        else
+            {
+                _this.displayNumb3.y = _this.displayNumb3.y+7;
+            }
+        _this.displayNumb3.setText(_this.numberIncYellow);
+        if(_this.numberIncYellow == 0)
+            _this.displayNumb3.setText('');
+         if(_this.numberIncYellow <=0)
+            {
+                if(_this.displayNumb3)
+                    _this.displayNumb3.y = 400;
+            }
+    },
+    addIncTextToBlueBox:function()
+    {
+        _this.numberIncBlue++;
+        
+        if(_this.displayNumb4 == null)
+            {
+                _this.displayNumb4 = this.add.text(750,400,_this.numberIncBlue);
+                _this.displayNumb4.anchor.setTo(0.5);
+                _this.displayNumb4.align = 'center';
+                _this.displayNumb4.font = 'myfont';
+                _this.displayNumb4.fontSize = 20;
+                _this.displayNumb4.fontWeight = 'Normal';
+                _this.displayNumb4.fill = '#ffffff';
+                _this.box2_group.add(_this.displayNumb4);
+            }
+         if(_this.no1<3)
+            {
+                _this.displayNumb4.y = _this.displayNumb4.y-7.5;
+            }
+        else
+            {
+                _this.displayNumb4.y = _this.displayNumb4.y-7;
+            }
+        _this.displayNumb4.setText(_this.numberIncBlue);
+    },
+    addDecTextToBlueBox:function()
+    {
+        _this.numberIncBlue--;
+        if(_this.numberIncBlue <=0)
+            {
+                _this.numberIncBlue = 0;
+            }
+        if(_this.displayNumb4 == null)
+            {
+                _this.displayNumb4 = this.add.text(750,400,_this.numberIncBlue);
+                _this.displayNumb4.anchor.setTo(0.5);
+                _this.displayNumb4.align = 'center';
+                _this.displayNumb4.font = 'myfont';
+                _this.displayNumb4.fontSize = 20;
+                _this.displayNumb4.fontWeight = 'Normal';
+                _this.displayNumb4.fill = '#ffffff';
+                _this.box2_group.add(_this.displayNumb4);
+            }
+        if(_this.no1<3)
+            {
+                if(_this.numberIncBlue != 0)
+                    _this.displayNumb4.y = _this.displayNumb4.y+7.3;
+            }
+        else{
+                _this.displayNumb4.y = _this.displayNumb4.y+7;
+         }
+        _this.displayNumb4.setText(_this.numberIncBlue);
+        if(_this.numberIncBlue == 0)
+            _this.displayNumb4.setText('');
+        if(_this.numberIncBlue <=0)
+            {
+                if(_this.displayNumb4)
+                    _this.displayNumb4.y = 400;
+            }
+    },
     bar_chart:function()
     {  
         _this.box2_group=_this.add.group();
         _this.box2=_this.add.sprite(500,100,'Dhg1_5_Box2');
         _this.box2.scale.setTo(0.9);
         
-        _this.checkbtn =_this.add.sprite(870,360,'rightbtn');
+        _this.checkbtn =_this.add.sprite(870,360,'rightDhg1_5_btn');
         _this.checkbtn.anchor.setTo(0.5);
         _this.checkbtn.scale.setTo(0.5,0.5);
         _this.checkbtn.inputEnabled=true;
@@ -1512,7 +1788,7 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
         _this.green_minus.inputEnabled=true;
         _this.green_minus.events.onInputUp.add(function(target){ target.frame=0;},this);
         _this.green_minus.events.onInputDown.add(function(target){
-           _this.clickSound = _this.add.audio('ClickSound');
+            _this.clickSound = _this.add.audio('ClickSound');
      
      _this.clickSound.play();
             target.frame=1;
@@ -1522,6 +1798,7 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                 {
                     _this.green_bar.frame=0;
                 }
+            _this.addDecTextToGreenBox();
         },this);
         
         _this.green_plus=_this.add.sprite(586,423,'Dhg1_5_plus');
@@ -1541,6 +1818,11 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
             else
                 {
                   target.inputEnabled=true; 
+                  
+                }
+            if(_this.green_bar.frame<26)
+                {
+                    _this.addIncTextToGreenBox();
                 }
         },this);
         
@@ -1548,7 +1830,7 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
         _this.red_minus.inputEnabled=true;
         _this.red_minus.events.onInputUp.add(function(target){ target.frame=0;},this);
         _this.red_minus.events.onInputDown.add(function(target){
-           _this.clickSound = _this.add.audio('ClickSound');
+            _this.clickSound = _this.add.audio('ClickSound');
      
      _this.clickSound.play();
             target.frame=1;
@@ -1558,13 +1840,14 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                 {
                     _this.red_bar.frame=0;
                 }
+            _this.addDecTextToRedBox();
         },this);
         
         _this.red_plus=_this.add.sprite(643,423,'Dhg1_5_plus');
         _this.red_plus.inputEnabled=true;
         _this.red_plus.events.onInputUp.add(function(target){ target.frame=0;},this);
         _this.red_plus.events.onInputDown.add(function(target){
-            _this.clickSound = _this.add.audio('ClickSound');
+           _this.clickSound = _this.add.audio('ClickSound');
      
      _this.clickSound.play();
             target.frame=1;
@@ -1578,13 +1861,17 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                 {
                   target.inputEnabled=true; 
                 }
+            if(_this.red_bar.frame<26)
+                {
+                    _this.addIncTextToRedBox();
+                }
         },this);
         
         _this.yellow_minus=_this.add.sprite(672,431,'Dhg1_5_minus');
         _this.yellow_minus.inputEnabled=true;
         _this.yellow_minus.events.onInputUp.add(function(target){ target.frame=0;},this);
         _this.yellow_minus.events.onInputDown.add(function(target){
-           _this.clickSound = _this.add.audio('ClickSound');
+            _this.clickSound = _this.add.audio('ClickSound');
      
      _this.clickSound.play();
             target.frame=1;
@@ -1594,6 +1881,7 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                 {
                     _this.yellow_bar.frame=0;
                 }
+            _this.addDecTextToYellowBox();
         },this);
         
         _this.yellow_plus=_this.add.sprite(699,423,'Dhg1_5_plus');
@@ -1614,13 +1902,17 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                 {
                   target.inputEnabled=true; 
                 }
+            if(_this.yellow_bar.frame<26)
+                {
+                    _this.addIncTextToYellowBox();
+                }
         },this);
         
         _this.blue_minus=_this.add.sprite(728,431,'Dhg1_5_minus');
         _this.blue_minus.inputEnabled=true;
         _this.blue_minus.events.onInputUp.add(function(target){ target.frame=0;},this);
         _this.blue_minus.events.onInputDown.add(function(target){
-           _this.clickSound = _this.add.audio('ClickSound');
+            _this.clickSound = _this.add.audio('ClickSound');
      
      _this.clickSound.play();
             target.frame=1;
@@ -1630,6 +1922,7 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                 {
                     _this.blue_bar.frame=0;
                 }
+            _this.addDecTextToBlueBox();
         },this);
         
         _this.blue_plus=_this.add.sprite(755,423,'Dhg1_5_plus');
@@ -1649,6 +1942,10 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
             else
                 {
                   target.inputEnabled=true; 
+                }
+            if(_this.blue_bar.frame<26)
+                {
+                    _this.addIncTextToBlueBox();
                 }
         },this);
         
@@ -1688,7 +1985,7 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
         _this.box2=_this.add.sprite(500,100,'Dhg1_5_Box4');
         _this.box2.scale.setTo(0.9);
         
-        _this.checkbtn =_this.add.sprite(870,360,'rightbtn');
+        _this.checkbtn =_this.add.sprite(870,360,'rightDhg1_5_btn');
         _this.checkbtn.anchor.setTo(0.5);
         _this.checkbtn.scale.setTo(0.5,0.5);
         _this.checkbtn.inputEnabled=true;
@@ -1708,6 +2005,7 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                 {
                     _this.green_bar.frame=0;
                 }
+            _this.addDecTextToGreenBox();
         },this);
         
         _this.green_plus=_this.add.sprite(582,430,'Dhg1_5_plus');
@@ -1728,13 +2026,17 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                 {
                   target.inputEnabled=true; 
                 }
+            if(_this.green_bar.frame<41)
+                {
+                    _this.addIncTextToGreenBox();
+                }
         },this);
         
         _this.red_minus=_this.add.sprite(613,439,'Dhg1_5_minus');
         _this.red_minus.inputEnabled=true;
         _this.red_minus.events.onInputUp.add(function(target){ target.frame=0;},this);
         _this.red_minus.events.onInputDown.add(function(target){
-            _this.clickSound = _this.add.audio('ClickSound');
+           _this.clickSound = _this.add.audio('ClickSound');
      
      _this.clickSound.play();
             target.frame=1;
@@ -1744,6 +2046,7 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                 {
                     _this.red_bar.frame=0;
                 }
+            _this.addDecTextToRedBox();
         },this);
         
         _this.red_plus=_this.add.sprite(639,430,'Dhg1_5_plus');
@@ -1764,6 +2067,10 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                 {
                   target.inputEnabled=true; 
                 }
+            if(_this.red_bar.frame<41)
+                {
+                    _this.addIncTextToRedBox();
+                }
         },this);
         
         _this.yellow_minus=_this.add.sprite(669,439,'Dhg1_5_minus');
@@ -1780,6 +2087,7 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                 {
                     _this.yellow_bar.frame=0;
                 }
+            _this.addDecTextToYellowBox();
         },this);
         
         _this.yellow_plus=_this.add.sprite(695,430,'Dhg1_5_plus');
@@ -1800,6 +2108,10 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                 {
                   target.inputEnabled=true; 
                 }
+            if(_this.yellow_bar.frame<41)
+                {
+                    _this.addIncTextToYellowBox();
+                }
         },this);
         
         _this.blue_minus=_this.add.sprite(725,439,'Dhg1_5_minus');
@@ -1816,6 +2128,7 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                 {
                     _this.blue_bar.frame=0;
                 }
+            _this.addDecTextToBlueBox();
         },this);
         
         _this.blue_plus=_this.add.sprite(751,430,'Dhg1_5_plus');
@@ -1835,6 +2148,10 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
             else
                 {
                   target.inputEnabled=true; 
+                }
+            if(_this.blue_bar.frame<41)
+                {
+                    _this.addIncTextToBlueBox();
                 }
         },this);
         
@@ -1961,6 +2278,8 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
     
     LeastSelect:function()
     {
+
+      _this.noofAttempts++;
                      
                      _this.green_bar.events.onInputDown.add(function(){
                         if((_this.green_bar.frame<=_this.red_bar.frame)&&(_this.green_bar.frame<=_this.yellow_bar.frame)&&(_this.green_bar.frame<=_this.blue_bar.frame))
@@ -2016,6 +2335,7 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
     },
     MostSelect:function()
     {
+      _this.noofAttempts++;
                     
                      _this.green_bar.events.onInputDown.add(function(){
                         if((_this.green_bar.frame>=_this.red_bar.frame)&&(_this.green_bar.frame>=_this.yellow_bar.frame)&&(_this.green_bar.frame>=_this.blue_bar.frame))
@@ -2087,14 +2407,38 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
         _this.rightbtn.events.onInputDown.removeAll();
         _this.checkbtn.events.onInputDown.removeAll();
         _this.wrongbtn.events.onInputDown.removeAll();
+
+         if(_this.timer)
+                    {
+                        _this.timer.stop();
+                       _this.timer = null; 
+                    }
+                    _this.sceneCount++;
+       telInitializer.tele_saveAssessment(1,"yes",_this.AnsTimerCount,_this.noofAttempts,_this.sceneCount);
     },
 
     removeCelebration:function()
     {
+
+      _this.numberIncGreen = 0;
+        _this.numberIncRed = 0; 
+        _this.numberIncYellow = 0; 
+        _this.numberIncBlue = 0;
         
         console.log("remove everythg");
         console.log("removeCeleb");
         _this.celebration = false;
+
+        _this.displayNumb1.destroy();
+        _this.displayNumb2.destroy();
+        _this.displayNumb3.destroy();
+        _this.displayNumb4.destroy();
+        _this.displayNumb1 = null;
+        _this.displayNumb2 = null;
+        _this.displayNumb3 = null;
+        _this.displayNumb4 = null;
+
+        
         _this.box2_group.destroy();
 //        _this.box_group.destroy();
         _this.numGroup.destroy();
@@ -2132,140 +2476,140 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
             {
                 if(window.languageSelected == "English")
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/dhdtg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/English/dhdtg1.4_1.mp3");
                     }
                     else if(window.languageSelected == "Hindi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/dhdtg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Hindi/dhdtg1.4_1.mp3");
                     }
                     else if(window.languageSelected == "Kannada")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/dhdtg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Kannada/dhdtg1.4_1.mp3");
                     }
-                    else if(window.languageSelected == "Gujrati")
+                    else if(window.languageSelected == "Gujarati")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujrati/dhdtg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Gujrati/dhdtg1.4_1.mp3");
                     }
                     else if(window.languageSelected == "Marathi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/dhdtg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Marathi/dhdtg1.4_1.mp3");
                     }
                     else if(window.languageSelected == "Telugu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/dhdtg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Telugu/dhdtg1.4_1.mp3");
                     }
                     else if(window.languageSelected == "Tamil")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/dhdtg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Tamil/dhdtg1.4_1.mp3");
                     }
                     else
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/dhdtg1.4_1.mp3");  
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Odiya/dhdtg1.4_1.mp3");  
                     }
             }
             else if(_this.voice2==1)
             {
                 if(window.languageSelected == "English")
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/dhdtg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/English/dhdtg1.4_2.mp3");
                     }
                     else if(window.languageSelected == "Hindi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/dhdtg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Hindi/dhdtg1.4_2.mp3");
                     }
                     else if(window.languageSelected == "Kannada")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/dhdtg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Kannada/dhdtg1.4_2.mp3");
                     }
-                    else if(window.languageSelected == "Gujrati")
+                    else if(window.languageSelected == "Gujarati")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujrati/dhdtg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Gujrati/dhdtg1.4_2.mp3");
                     }
                     else if(window.languageSelected == "Marathi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/dhdtg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Marathi/dhdtg1.4_2.mp3");
                     }
                     else if(window.languageSelected == "Telugu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/dhdtg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Telugu/dhdtg1.4_2.mp3");
                     }
                     else if(window.languageSelected == "Tamil")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/dhdtg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Tamil/dhdtg1.4_2.mp3");
                     }
                     else
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/dhdtg1.4_2.mp3");  
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Odiya/dhdtg1.4_2.mp3");  
                     }
             }
             else if(_this.voice3==1)
             {
                 if(window.languageSelected == "English")
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/which_is_least.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/English/which_is_least.mp3");
                     }
                     else if(window.languageSelected == "Hindi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/which_is_least.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Hindi/which_is_least.mp3");
                     }
                     else if(window.languageSelected == "Kannada")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/which_is_least.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Kannada/which_is_least.mp3");
                     }
-                    else if(window.languageSelected == "Gujrati")
+                    else if(window.languageSelected == "Gujarati")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujrati/which_is_least.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Gujrati/which_is_least.mp3");
                     }
                     else if(window.languageSelected == "Marathi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/which_is_least.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Marathi/which_is_least.mp3");
                     }
                     else if(window.languageSelected == "Telugu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/which_is_least.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Telugu/which_is_least.mp3");
                     }
                     else if(window.languageSelected == "Tamil")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/which_is_least.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Tamil/which_is_least.mp3");
                     }
                     else
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/which_is_least.mp3");  
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Odiya/which_is_least.mp3");  
                     }
             }
             else if(_this.voice4==1)
             {
                 if(window.languageSelected == "English")
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/Which_are_most.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/English/Which_are_most.mp3");
                     }
                     else if(window.languageSelected == "Hindi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/Which_are_most.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Hindi/Which_are_most.mp3");
                     }
                     else if(window.languageSelected == "Kannada")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/Which_are_most.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Kannada/Which_are_most.mp3");
                     }
-                    else if(window.languageSelected == "Gujrati")
+                    else if(window.languageSelected == "Gujarati")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujrati/Which_are_most.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Gujrati/Which_are_most.mp3");
                     }
                     else if(window.languageSelected == "Marathi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/Which_are_most.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Marathi/Which_are_most.mp3");
                     }
                     else if(window.languageSelected == "Telugu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/Which_are_most.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Telugu/Which_are_most.mp3");
                     }
                     else if(window.languageSelected == "Tamil")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/Which_are_most.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Tamil/Which_are_most.mp3");
                     }
                     else
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/Which_are_most.mp3");  
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Odiya/Which_are_most.mp3");  
                     }
             }
         
@@ -2332,7 +2676,7 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
         for (var i = 0; i < count; i++)
         {
     
-            _this.starsGroup.create(_this.world.centerX-15, 10, 'starAnim');
+            _this.starsGroup.create(_this.world.centerX-15, 10, 'Dhg1_5_starAnim');
             for(var j =0;j<i;j++)
             {
                 if(_this.starsGroup.getChildAt(j))

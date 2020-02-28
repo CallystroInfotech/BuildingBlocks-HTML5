@@ -58,6 +58,10 @@ Game.selectgrade4MicroConceptScreen.prototype={
 		{
 			this.state.start('grade4NumberSense',true,false);
 		}
+		else if(grade4DataHandlingSelected)
+		{
+			this.state.start('grade4DataHandling',true,false);
+		}
 		else
 		{
 
@@ -158,10 +162,11 @@ Game.selectgrade4MicroConceptScreen.prototype={
 			//this.microConceptTopics(game,610,250,selctedLang.McTopicText3,"SHAPES","tree4",1);
 
 
-			this.microConceptTopics(game,150,220,window.selctedLang.McTopicText1,"NUMBER SENSE","tree1",0);
-			this.microConceptTopics(game,380,320,window.selctedLang.McTopicText2,"MEASUREMENT","tree2",1);
-			this.microConceptTopics(game,600,220,window.selctedLang.McTopicText5,"NUMBER OPERATIONS","tree3",2);
-			this.microConceptTopics(game,820,320,window.selctedLang.McTopicText3,"SHAPES","tree4",3);
+			this.microConceptTopics(game,100,220,window.selctedLang.McTopicText1,"NUMBER SENSE","tree1",0);
+			this.microConceptTopics(game,290,320,window.selctedLang.McTopicText2,"MEASUREMENT","tree2",1);
+			this.microConceptTopics(game,480,220,window.selctedLang.McTopicText5,"NUMBER OPERATIONS","tree3",2);
+			this.microConceptTopics(game,670,320,window.selctedLang.McTopicText3,"SHAPES","tree4",3);
+			this.microConceptTopics(game,860,220,window.selctedLang.McTopicText4,"DATA HANDLING","tree4",4);
 
 			/*this.downloadbg = _this.add.graphics(0, 0);
 			this.downloadbg.lineStyle(0, 0xFFFFFF, 0.8);
@@ -206,7 +211,7 @@ Game.selectgrade4MicroConceptScreen.prototype={
 		this.gradeTree[arrIndex] = game.add.sprite(x,y,'MicroConceptTree');
 
 		this.gradeTree[arrIndex].anchor.setTo(0.5);
-		this.gradeTree[arrIndex].scale.setTo(1.3);
+		this.gradeTree[arrIndex].scale.setTo(1.15);
 		this.gradeTree[arrIndex].name = name;
 		this.gradeTree[arrIndex].frame = arrIndex;
 		this.gradeTree[arrIndex].inputEnabled = true;
@@ -220,7 +225,7 @@ Game.selectgrade4MicroConceptScreen.prototype={
 		
 				
 		//this.gradeTreeTxt[arrIndex].font = 'Ariel';
-		this.gradeTreeTxt[arrIndex].fontSize = 22;
+		this.gradeTreeTxt[arrIndex].fontSize = 21;
 		this.gradeTreeTxt[arrIndex].fontWeight = 'normal';
 		this.gradeTreeTxt[arrIndex].fill = '#FFFFFF';
 
@@ -271,10 +276,15 @@ Game.selectgrade4MicroConceptScreen.prototype={
 		{
 			this.state.start('grade4Shapes',true,false);
 		}
+		else if(target.name=="DATA HANDLING")
+		{
+			this.state.start('grade4DataHandling',true,false);
+		}
 		else
 		{
 			this.state.start('grade4NumberOperation',true,false);
 		}
+
 
 		//if(target.name=="NUMBER SENSE")
 		//{

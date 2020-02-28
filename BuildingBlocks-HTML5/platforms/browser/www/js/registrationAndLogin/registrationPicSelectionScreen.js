@@ -32,12 +32,12 @@ Game.registrationPicSelectionScreen.prototype={
 
 
 		var regBackArrow = game.add.sprite(40,40,'regBackArrow');
-	    regBackArrow.scale.setTo(0.5);
+	    regBackArrow.scale.setTo(0.35);
 	    regBackArrow.anchor.setTo(0.5);
 
 	    var regBackArrowGrph = game.add.graphics(0, 0);
 	    regBackArrowGrph.beginFill(0x4E342E, 0.05);
-		regBackArrowGrph.drawRect(-60, -60, 120, 120);
+		regBackArrowGrph.drawRect(-60, -60, 200, 200);
 		regBackArrow.addChild(regBackArrowGrph);
 
 	    regBackArrow.inputEnabled = true;
@@ -53,14 +53,16 @@ Game.registrationPicSelectionScreen.prototype={
 
 	    
 
-		var titleTxt = game.add.text(game.world.centerX-80,40,"Building Blocks");
-		titleTxt.anchor.setTo(0.5);
-		titleTxt.align = 'center';
-		titleTxt.fontSize = 32;
-		titleTxt.fontWeight = 'normal';
-		titleTxt.fill = '#FFFFFF';
-		titleTxt.wordWrap = true;
-		titleTxt.wordWrapWidth = 500;
+		var titleTxt = game.add.text(game.world.centerX-80,45,"Building Blocks");
+		titleTxt.x = Math.round(titleTxt.x);
+			titleTxt.anchor.setTo(0.5);
+			titleTxt.align = 'center';
+			titleTxt.font = 'regfont4';
+			titleTxt.fontSize = '22pt';
+			titleTxt.fontWeight = 500;
+			titleTxt.fill = '#FFFFFF';
+			titleTxt.wordWrap = true;
+			titleTxt.wordWrapWidth = 500;
 
 		var textLang = "";
 		if(_this.language == "Hindi")
@@ -80,11 +82,13 @@ Game.registrationPicSelectionScreen.prototype={
 		}
 
     	var selectPicTxt = game.add.text(game.world.centerX,120,textLang);
+		selectPicTxt.x = Math.round(selectPicTxt.x);
 		selectPicTxt.anchor.setTo(0.5);
 		selectPicTxt.align = 'center';
-		selectPicTxt.fontSize = 38;
-		selectPicTxt.fontWeight = 'normal';
-		selectPicTxt.fill = '#000000';
+		selectPicTxt.font = 'regfont3';
+		selectPicTxt.fontSize = '26pt';
+		selectPicTxt.fontWeight = 0;
+		selectPicTxt.fill = '#494949';
 		selectPicTxt.wordWrap = true;
 		selectPicTxt.wordWrapWidth = 500;
 

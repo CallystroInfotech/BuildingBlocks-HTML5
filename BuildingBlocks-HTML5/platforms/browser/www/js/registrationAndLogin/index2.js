@@ -25,7 +25,9 @@ Game.index2.prototype={
 
 		window.rateCount = 0;
 
-
+		document.addEventListener('resume',function(){
+			AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN, null, null);
+		},false);
 
     },
 
@@ -236,6 +238,8 @@ Game.index2.prototype={
 		};
 
 		game.stage.backgroundColor = '#71c5cf';
+
+
     	document.addEventListener('backbutton', function(e) {
         
         	if((window.prevScreen == "gameScreen") || window.currScreen == "gameModeSelectionScreen")

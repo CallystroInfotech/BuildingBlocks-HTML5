@@ -14,7 +14,7 @@ init:function(game)
             start_time:_this.currentTime
         } 
        // _this.savedVar = absdsjsapi.saveGameplay(_this.saveGameplay);
-        
+        telInitializer.gameIdInit("NSN1",gradeSelected);
 
     },
 
@@ -36,207 +36,207 @@ init:function(game)
             preloadGrp.add(_this.preloadBars);
 
             preloadGrp.x -= 105;
-            this.load.image('skipDemoVideos','assets/commonAssets/skipArrow.png');
+            this.load.image('nsnpg1_3skipDemoVideos',window.baseUrl+'assets/NSN1/commonAssets/skipArrow.png');
         //common for all games.
-        this.load.atlas('nsnpg1_3backbtn','assets/commonAssets/backbtn.png' ,'json/gradeJson/backbtn.json');
-        this.load.atlas('nsnpg1_3CommonSpeakerBtn','assets/commonAssets/speaker.png' ,'json/gradeJson/speaker.json');
-        this.load.atlas('nsnpg1_3starAnim','assets/commonAssets/starAnim.png','json/gradeJson/starAnim.json');
-        this.load.atlas('nsnpg1_3replay','assets/commonAssets/reply.png' ,'json/gradeJson/reply.json');
-        this.load.atlas('nsnpg1_3btn','assets/commonAssets/btn.png','json/gradeJson/btn.json');
+        this.load.atlas('nsnpg1_3backbtn',window.baseUrl+'assets/NSN1/commonAssets/backbtn.png' ,window.baseUrl+'json/NSN1/gradeJson/backbtn.json');
+        this.load.atlas('nsnpg1_3CommonSpeakerBtn',window.baseUrl+'assets/NSN1/commonAssets/speaker.png' ,window.baseUrl+'json/NSN1/gradeJson/speaker.json');
+        this.load.atlas('nsnpg1_3starAnim',window.baseUrl+'assets/NSN1/commonAssets/starAnim.png',window.baseUrl+'json/NSN1/gradeJson/starAnim.json');
+        this.load.atlas('nsnpg1_3replay',window.baseUrl+'assets/NSN1/commonAssets/reply.png' ,window.baseUrl+'json/NSN1/gradeJson/reply.json');
+        this.load.atlas('nsnpg1_3btn',window.baseUrl+'assets/NSN1/commonAssets/btn.png',window.baseUrl+'json/NSN1/gradeJson/btn.json');
         
-        this.load.image('nsnpg1_3background1','assets/commonAssets/bg1.png');
-        this.load.image('nsnpg1_3tittleBar','assets/commonAssets/tittleBar.png');
-        this.load.image('nsnpg1_3navBar','assets/commonAssets/navBar.png');
-        this.load.image('nsnpg1_3timebg','assets/commonAssets/timebg.png');
+        this.load.image('nsnpg1_3background1',window.baseUrl+'assets/NSN1/commonAssets/bg1.png');
+        this.load.image('nsnpg1_3tittleBar',window.baseUrl+'assets/NSN1/commonAssets/tittleBar.png');
+        this.load.image('nsnpg1_3navBar',window.baseUrl+'assets/NSN1/commonAssets/navBar.png');
+        this.load.image('nsnpg1_3timebg',window.baseUrl+'assets/NSN1/commonAssets/timebg.png');
         
-        this.load.atlas('nsnpg1_3_erase','assets/commonAssets/erase.png' ,'json/gradeJson/erase.json');
-        this.load.atlas('nsnpg1_3_rightmark','assets/commonAssets/rightmark.png' ,'json/gradeJson/rightmark.json');
-        this.load.image('nsnpg1_3_numBG','assets/commonAssets/b2.png');
-        this.load.atlas('nsnpg1_3_numberpad', 'assets/commonAssets/calNum.png','json/gradeJson/calNum.json');
-        this.load.atlas('nsnpg1_3_numbers1','assets/commonAssets/numbers1.png','json/gradeJson/numbers1.json');
+        this.load.atlas('nsnpg1_3_erase',window.baseUrl+'assets/NSN1/commonAssets/erase.png' ,window.baseUrl+'json/NSN1/gradeJson/erase.json');
+        this.load.atlas('nsnpg1_3_rightmark',window.baseUrl+'assets/NSN1/commonAssets/rightmark.png' ,window.baseUrl+'json/NSN1/gradeJson/rightmark.json');
+        this.load.image('nsnpg1_3_numBG',window.baseUrl+'assets/NSN1/commonAssets/b2.png');
+        this.load.atlas('nsnpg1_3_numberpad',window.baseUrl+'assets/NSN1/commonAssets/calNum.png',window.baseUrl+'json/NSN1/gradeJson/calNum.json');
+        this.load.atlas('nsnpg1_3_numbers1',window.baseUrl+'assets/NSN1/commonAssets/numbers1.png',window.baseUrl+'json/NSN1/gradeJson/numbers1.json');
        
         //game assets.
-        this.load.image('nsnpg1_3background', 'assets/gradeAssets/Bg.png');
+        this.load.image('nsnpg1_3background',window.baseUrl+'assets/NSN1/gradeAssets/Bg.png');
                      
-        this.load.atlas('nsnpg1_3imageBox','assets/gradeAssets/imageBox.png','json/gradeJson/imageBox.json');
-        this.load.image('nsnpg1_3whiteBox','assets/gradeAssets/whiteBox.png');
-        this.load.atlas('nsnpg1_3numberBox', 'assets/gradeAssets/numberBox.png','json/gradeJson/numberBox.json');
+        this.load.atlas('nsnpg1_3imageBox',window.baseUrl+'assets/NSN1/gradeAssets/imageBox.png',window.baseUrl+'json/NSN1/gradeJson/imageBox.json');
+        this.load.image('nsnpg1_3whiteBox',window.baseUrl+'assets/NSN1/gradeAssets/whiteBox.png');
+        this.load.atlas('nsnpg1_3numberBox',window.baseUrl+'assets/NSN1/gradeAssets/numberBox.png',window.baseUrl+'json/NSN1/gradeJson/numberBox.json');
         
-        this.load.image('nsnpg1_3fullimage1', 'assets/gradeAssets/image1Shapes/full image1.png');
-        this.load.image('nsnpg1_3shape1_1', 'assets/gradeAssets/image1Shapes/shape1.png');
-        this.load.image('nsnpg1_3shape2_1', 'assets/gradeAssets/image1Shapes/shape2.png');
-        this.load.image('nsnpg1_3shape3_1', 'assets/gradeAssets/image1Shapes/shape3.png');
-        this.load.image('nsnpg1_3shape4_1', 'assets/gradeAssets/image1Shapes/shape4.png');
-        this.load.image('nsnpg1_3shape5_1', 'assets/gradeAssets/image1Shapes/shape5.png');
-        this.load.image('nsnpg1_3shape6_1', 'assets/gradeAssets/image1Shapes/shape6.png');
-        this.load.image('nsnpg1_3shape7_1', 'assets/gradeAssets/image1Shapes/shape7.png');
-        this.load.image('nsnpg1_3shape8_1', 'assets/gradeAssets/image1Shapes/shape8.png');
-        this.load.image('nsnpg1_3shape9_1', 'assets/gradeAssets/image1Shapes/shape9.png');
+        this.load.image('nsnpg1_3fullimage1',window.baseUrl+'assets/NSN1/gradeAssets/image1Shapes/full image1.png');
+        this.load.image('nsnpg1_3shape1_1',window.baseUrl+'assets/NSN1/gradeAssets/image1Shapes/shape1.png');
+        this.load.image('nsnpg1_3shape2_1',window.baseUrl+'assets/NSN1/gradeAssets/image1Shapes/shape2.png');
+        this.load.image('nsnpg1_3shape3_1',window.baseUrl+'assets/NSN1/gradeAssets/image1Shapes/shape3.png');
+        this.load.image('nsnpg1_3shape4_1',window.baseUrl+'assets/NSN1/gradeAssets/image1Shapes/shape4.png');
+        this.load.image('nsnpg1_3shape5_1',window.baseUrl+'assets/NSN1/gradeAssets/image1Shapes/shape5.png');
+        this.load.image('nsnpg1_3shape6_1',window.baseUrl+'assets/NSN1/gradeAssets/image1Shapes/shape6.png');
+        this.load.image('nsnpg1_3shape7_1',window.baseUrl+'assets/NSN1/gradeAssets/image1Shapes/shape7.png');
+        this.load.image('nsnpg1_3shape8_1',window.baseUrl+'assets/NSN1/gradeAssets/image1Shapes/shape8.png');
+        this.load.image('nsnpg1_3shape9_1',window.baseUrl+'assets/NSN1/gradeAssets/image1Shapes/shape9.png');
         
-        this.load.image('nsnpg1_3fullimage2', 'assets/gradeAssets/image2Shapes/full image2.png');
-        this.load.image('nsnpg1_3shape1_2', 'assets/gradeAssets/image2Shapes/shape1.png');
-        this.load.image('nsnpg1_3shape2_2', 'assets/gradeAssets/image2Shapes/shape2.png');
-        this.load.image('nsnpg1_3shape3_2', 'assets/gradeAssets/image2Shapes/shape3.png');
-        this.load.image('nsnpg1_3shape4_2', 'assets/gradeAssets/image2Shapes/shape4.png');
-        this.load.image('nsnpg1_3shape5_2', 'assets/gradeAssets/image2Shapes/shape5.png');
-        this.load.image('nsnpg1_3shape6_2', 'assets/gradeAssets/image2Shapes/shape6.png');
-        this.load.image('nsnpg1_3shape7_2', 'assets/gradeAssets/image2Shapes/shape7.png');
-        this.load.image('nsnpg1_3shape8_2', 'assets/gradeAssets/image2Shapes/shape8.png');
-        this.load.image('nsnpg1_3shape9_2', 'assets/gradeAssets/image2Shapes/shape9.png');
+        this.load.image('nsnpg1_3fullimage2',window.baseUrl+'assets/NSN1/gradeAssets/image2Shapes/full image2.png');
+        this.load.image('nsnpg1_3shape1_2',window.baseUrl+'assets/NSN1/gradeAssets/image2Shapes/shape1.png');
+        this.load.image('nsnpg1_3shape2_2',window.baseUrl+'assets/NSN1/gradeAssets/image2Shapes/shape2.png');
+        this.load.image('nsnpg1_3shape3_2',window.baseUrl+'assets/NSN1/gradeAssets/image2Shapes/shape3.png');
+        this.load.image('nsnpg1_3shape4_2',window.baseUrl+'assets/NSN1/gradeAssets/image2Shapes/shape4.png');
+        this.load.image('nsnpg1_3shape5_2',window.baseUrl+'assets/NSN1/gradeAssets/image2Shapes/shape5.png');
+        this.load.image('nsnpg1_3shape6_2',window.baseUrl+'assets/NSN1/gradeAssets/image2Shapes/shape6.png');
+        this.load.image('nsnpg1_3shape7_2',window.baseUrl+'assets/NSN1/gradeAssets/image2Shapes/shape7.png');
+        this.load.image('nsnpg1_3shape8_2',window.baseUrl+'assets/NSN1/gradeAssets/image2Shapes/shape8.png');
+        this.load.image('nsnpg1_3shape9_2',window.baseUrl+'assets/NSN1/gradeAssets/image2Shapes/shape9.png');
         
-        this.load.image('nsnpg1_3fullimage3', 'assets/gradeAssets/image3Shapes/full image3.png');
-        this.load.image('nsnpg1_3shape1_3', 'assets/gradeAssets/image3Shapes/shape1.png');
-        this.load.image('nsnpg1_3shape2_3', 'assets/gradeAssets/image3Shapes/shape2.png');
-        this.load.image('nsnpg1_3shape3_3', 'assets/gradeAssets/image3Shapes/shape3.png');
-        this.load.image('nsnpg1_3shape4_3', 'assets/gradeAssets/image3Shapes/shape4.png');
-        this.load.image('nsnpg1_3shape5_3', 'assets/gradeAssets/image3Shapes/shape5.png');
-        this.load.image('nsnpg1_3shape6_3', 'assets/gradeAssets/image3Shapes/shape6.png');
-        this.load.image('nsnpg1_3shape7_3', 'assets/gradeAssets/image3Shapes/shape7.png');
-        this.load.image('nsnpg1_3shape8_3', 'assets/gradeAssets/image3Shapes/shape8.png');
-        this.load.image('nsnpg1_3shape9_3', 'assets/gradeAssets/image3Shapes/shape9.png');
+        this.load.image('nsnpg1_3fullimage3',window.baseUrl+'assets/NSN1/gradeAssets/image3Shapes/full image3.png');
+        this.load.image('nsnpg1_3shape1_3',window.baseUrl+'assets/NSN1/gradeAssets/image3Shapes/shape1.png');
+        this.load.image('nsnpg1_3shape2_3',window.baseUrl+'assets/NSN1/gradeAssets/image3Shapes/shape2.png');
+        this.load.image('nsnpg1_3shape3_3',window.baseUrl+'assets/NSN1/gradeAssets/image3Shapes/shape3.png');
+        this.load.image('nsnpg1_3shape4_3',window.baseUrl+'assets/NSN1/gradeAssets/image3Shapes/shape4.png');
+        this.load.image('nsnpg1_3shape5_3',window.baseUrl+'assets/NSN1/gradeAssets/image3Shapes/shape5.png');
+        this.load.image('nsnpg1_3shape6_3',window.baseUrl+'assets/NSN1/gradeAssets/image3Shapes/shape6.png');
+        this.load.image('nsnpg1_3shape7_3',window.baseUrl+'assets/NSN1/gradeAssets/image3Shapes/shape7.png');
+        this.load.image('nsnpg1_3shape8_3',window.baseUrl+'assets/NSN1/gradeAssets/image3Shapes/shape8.png');
+        this.load.image('nsnpg1_3shape9_3',window.baseUrl+'assets/NSN1/gradeAssets/image3Shapes/shape9.png');
         
-        this.load.image('nsnpg1_3fullimage4', 'assets/gradeAssets/image4Shapes/full image4.png');
-        this.load.image('nsnpg1_3shape1_4', 'assets/gradeAssets/image4Shapes/shape1.png');
-        this.load.image('nsnpg1_3shape2_4', 'assets/gradeAssets/image4Shapes/shape2.png');
-        this.load.image('nsnpg1_3shape3_4', 'assets/gradeAssets/image4Shapes/shape3.png');
-        this.load.image('nsnpg1_3shape4_4', 'assets/gradeAssets/image4Shapes/shape4.png');
-        this.load.image('nsnpg1_3shape5_4', 'assets/gradeAssets/image4Shapes/shape5.png');
-        this.load.image('nsnpg1_3shape6_4', 'assets/gradeAssets/image4Shapes/shape6.png');
-        this.load.image('nsnpg1_3shape7_4', 'assets/gradeAssets/image4Shapes/shape7.png');
-        this.load.image('nsnpg1_3shape8_4', 'assets/gradeAssets/image4Shapes/shape8.png');
-        this.load.image('nsnpg1_3shape9_4', 'assets/gradeAssets/image4Shapes/shape9.png');
+        this.load.image('nsnpg1_3fullimage4',window.baseUrl+'assets/NSN1/gradeAssets/image4Shapes/full image4.png');
+        this.load.image('nsnpg1_3shape1_4',window.baseUrl+'assets/NSN1/gradeAssets/image4Shapes/shape1.png');
+        this.load.image('nsnpg1_3shape2_4',window.baseUrl+'assets/NSN1/gradeAssets/image4Shapes/shape2.png');
+        this.load.image('nsnpg1_3shape3_4',window.baseUrl+'assets/NSN1/gradeAssets/image4Shapes/shape3.png');
+        this.load.image('nsnpg1_3shape4_4',window.baseUrl+'assets/NSN1/gradeAssets/image4Shapes/shape4.png');
+        this.load.image('nsnpg1_3shape5_4',window.baseUrl+'assets/NSN1/gradeAssets/image4Shapes/shape5.png');
+        this.load.image('nsnpg1_3shape6_4',window.baseUrl+'assets/NSN1/gradeAssets/image4Shapes/shape6.png');
+        this.load.image('nsnpg1_3shape7_4',window.baseUrl+'assets/NSN1/gradeAssets/image4Shapes/shape7.png');
+        this.load.image('nsnpg1_3shape8_4',window.baseUrl+'assets/NSN1/gradeAssets/image4Shapes/shape8.png');
+        this.load.image('nsnpg1_3shape9_4',window.baseUrl+'assets/NSN1/gradeAssets/image4Shapes/shape9.png');
         
-        this.load.image('nsnpg1_3fullimage5', 'assets/gradeAssets/image5Shapes/full image5.png');
-        this.load.image('nsnpg1_3shape1_5', 'assets/gradeAssets/image5Shapes/shape1.png');
-        this.load.image('nsnpg1_3shape2_5', 'assets/gradeAssets/image5Shapes/shape2.png');
-        this.load.image('nsnpg1_3shape3_5', 'assets/gradeAssets/image5Shapes/shape3.png');
-        this.load.image('nsnpg1_3shape4_5', 'assets/gradeAssets/image5Shapes/shape4.png');
-        this.load.image('nsnpg1_3shape5_5', 'assets/gradeAssets/image5Shapes/shape5.png');
-        this.load.image('nsnpg1_3shape6_5', 'assets/gradeAssets/image5Shapes/shape6.png');
-        this.load.image('nsnpg1_3shape7_5', 'assets/gradeAssets/image5Shapes/shape7.png');
-        this.load.image('nsnpg1_3shape8_5', 'assets/gradeAssets/image5Shapes/shape8.png');
-        this.load.image('nsnpg1_3shape9_5', 'assets/gradeAssets/image5Shapes/shape9.png');
+        this.load.image('nsnpg1_3fullimage5',window.baseUrl+'assets/NSN1/gradeAssets/image5Shapes/full image5.png');
+        this.load.image('nsnpg1_3shape1_5',window.baseUrl+'assets/NSN1/gradeAssets/image5Shapes/shape1.png');
+        this.load.image('nsnpg1_3shape2_5',window.baseUrl+'assets/NSN1/gradeAssets/image5Shapes/shape2.png');
+        this.load.image('nsnpg1_3shape3_5',window.baseUrl+'assets/NSN1/gradeAssets/image5Shapes/shape3.png');
+        this.load.image('nsnpg1_3shape4_5',window.baseUrl+'assets/NSN1/gradeAssets/image5Shapes/shape4.png');
+        this.load.image('nsnpg1_3shape5_5',window.baseUrl+'assets/NSN1/gradeAssets/image5Shapes/shape5.png');
+        this.load.image('nsnpg1_3shape6_5',window.baseUrl+'assets/NSN1/gradeAssets/image5Shapes/shape6.png');
+        this.load.image('nsnpg1_3shape7_5',window.baseUrl+'assets/NSN1/gradeAssets/image5Shapes/shape7.png');
+        this.load.image('nsnpg1_3shape8_5',window.baseUrl+'assets/NSN1/gradeAssets/image5Shapes/shape8.png');
+        this.load.image('nsnpg1_3shape9_5',window.baseUrl+'assets/NSN1/gradeAssets/image5Shapes/shape9.png');
         
-        this.load.image('nsnpg1_3fullimage6', 'assets/gradeAssets/image6Shapes/full image6.png');
-        this.load.image('nsnpg1_3shape1_6', 'assets/gradeAssets/image6Shapes/shape1.png');
-        this.load.image('nsnpg1_3shape2_6', 'assets/gradeAssets/image6Shapes/shape2.png');
-        this.load.image('nsnpg1_3shape3_6', 'assets/gradeAssets/image6Shapes/shape3.png');
-        this.load.image('nsnpg1_3shape4_6', 'assets/gradeAssets/image6Shapes/shape4.png');
-        this.load.image('nsnpg1_3shape5_6', 'assets/gradeAssets/image6Shapes/shape5.png');
-        this.load.image('nsnpg1_3shape6_6', 'assets/gradeAssets/image6Shapes/shape6.png');
-        this.load.image('nsnpg1_3shape7_6', 'assets/gradeAssets/image6Shapes/shape7.png');
-        this.load.image('nsnpg1_3shape8_6', 'assets/gradeAssets/image6Shapes/shape8.png');
-        this.load.image('nsnpg1_3shape9_6', 'assets/gradeAssets/image6Shapes/shape9.png');
+        this.load.image('nsnpg1_3fullimage6',window.baseUrl+'assets/NSN1/gradeAssets/image6Shapes/full image6.png');
+        this.load.image('nsnpg1_3shape1_6',window.baseUrl+'assets/NSN1/gradeAssets/image6Shapes/shape1.png');
+        this.load.image('nsnpg1_3shape2_6',window.baseUrl+'assets/NSN1/gradeAssets/image6Shapes/shape2.png');
+        this.load.image('nsnpg1_3shape3_6',window.baseUrl+'assets/NSN1/gradeAssets/image6Shapes/shape3.png');
+        this.load.image('nsnpg1_3shape4_6',window.baseUrl+'assets/NSN1/gradeAssets/image6Shapes/shape4.png');
+        this.load.image('nsnpg1_3shape5_6',window.baseUrl+'assets/NSN1/gradeAssets/image6Shapes/shape5.png');
+        this.load.image('nsnpg1_3shape6_6',window.baseUrl+'assets/NSN1/gradeAssets/image6Shapes/shape6.png');
+        this.load.image('nsnpg1_3shape7_6',window.baseUrl+'assets/NSN1/gradeAssets/image6Shapes/shape7.png');
+        this.load.image('nsnpg1_3shape8_6',window.baseUrl+'assets/NSN1/gradeAssets/image6Shapes/shape8.png');
+        this.load.image('nsnpg1_3shape9_6',window.baseUrl+'assets/NSN1/gradeAssets/image6Shapes/shape9.png');
         
-        this.load.image('nsnpg1_3fullimage7', 'assets/gradeAssets/image7Shapes/full image7.png');
-        this.load.image('nsnpg1_3shape1_7', 'assets/gradeAssets/image7Shapes/shape1.png');
-        this.load.image('nsnpg1_3shape2_7', 'assets/gradeAssets/image7Shapes/shape2.png');
-        this.load.image('nsnpg1_3shape3_7', 'assets/gradeAssets/image7Shapes/shape3.png');
-        this.load.image('nsnpg1_3shape4_7', 'assets/gradeAssets/image7Shapes/shape4.png');
-        this.load.image('nsnpg1_3shape5_7', 'assets/gradeAssets/image7Shapes/shape5.png');
-        this.load.image('nsnpg1_3shape6_7', 'assets/gradeAssets/image7Shapes/shape6.png');
-        this.load.image('nsnpg1_3shape7_7', 'assets/gradeAssets/image7Shapes/shape7.png');
-        this.load.image('nsnpg1_3shape8_7', 'assets/gradeAssets/image7Shapes/shape8.png');
-        this.load.image('nsnpg1_3shape9_7', 'assets/gradeAssets/image7Shapes/shape9.png');
+        this.load.image('nsnpg1_3fullimage7',window.baseUrl+'assets/NSN1/gradeAssets/image7Shapes/full image7.png');
+        this.load.image('nsnpg1_3shape1_7',window.baseUrl+'assets/NSN1/gradeAssets/image7Shapes/shape1.png');
+        this.load.image('nsnpg1_3shape2_7',window.baseUrl+'assets/NSN1/gradeAssets/image7Shapes/shape2.png');
+        this.load.image('nsnpg1_3shape3_7',window.baseUrl+'assets/NSN1/gradeAssets/image7Shapes/shape3.png');
+        this.load.image('nsnpg1_3shape4_7',window.baseUrl+'assets/NSN1/gradeAssets/image7Shapes/shape4.png');
+        this.load.image('nsnpg1_3shape5_7',window.baseUrl+'assets/NSN1/gradeAssets/image7Shapes/shape5.png');
+        this.load.image('nsnpg1_3shape6_7',window.baseUrl+'assets/NSN1/gradeAssets/image7Shapes/shape6.png');
+        this.load.image('nsnpg1_3shape7_7',window.baseUrl+'assets/NSN1/gradeAssets/image7Shapes/shape7.png');
+        this.load.image('nsnpg1_3shape8_7',window.baseUrl+'assets/NSN1/gradeAssets/image7Shapes/shape8.png');
+        this.load.image('nsnpg1_3shape9_7',window.baseUrl+'assets/NSN1/gradeAssets/image7Shapes/shape9.png');
         
-        this.load.image('nsnpg1_3fullimage8', 'assets/gradeAssets/image8Shapes/full image8.png');
-        this.load.image('nsnpg1_3shape1_8', 'assets/gradeAssets/image8Shapes/shape1.png');
-        this.load.image('nsnpg1_3shape2_8', 'assets/gradeAssets/image8Shapes/shape2.png');
-        this.load.image('nsnpg1_3shape3_8', 'assets/gradeAssets/image8Shapes/shape3.png');
-        this.load.image('nsnpg1_3shape4_8', 'assets/gradeAssets/image8Shapes/shape4.png');
-        this.load.image('nsnpg1_3shape5_8', 'assets/gradeAssets/image8Shapes/shape5.png');
-        this.load.image('nsnpg1_3shape6_8', 'assets/gradeAssets/image8Shapes/shape6.png');
-        this.load.image('nsnpg1_3shape7_8', 'assets/gradeAssets/image8Shapes/shape7.png');
-        this.load.image('nsnpg1_3shape8_8', 'assets/gradeAssets/image8Shapes/shape8.png');
-        this.load.image('nsnpg1_3shape9_8', 'assets/gradeAssets/image8Shapes/shape9.png');
+        this.load.image('nsnpg1_3fullimage8',window.baseUrl+'assets/NSN1/gradeAssets/image8Shapes/full image8.png');
+        this.load.image('nsnpg1_3shape1_8',window.baseUrl+'assets/NSN1/gradeAssets/image8Shapes/shape1.png');
+        this.load.image('nsnpg1_3shape2_8',window.baseUrl+'assets/NSN1/gradeAssets/image8Shapes/shape2.png');
+        this.load.image('nsnpg1_3shape3_8',window.baseUrl+'assets/NSN1/gradeAssets/image8Shapes/shape3.png');
+        this.load.image('nsnpg1_3shape4_8',window.baseUrl+'assets/NSN1/gradeAssets/image8Shapes/shape4.png');
+        this.load.image('nsnpg1_3shape5_8',window.baseUrl+'assets/NSN1/gradeAssets/image8Shapes/shape5.png');
+        this.load.image('nsnpg1_3shape6_8',window.baseUrl+'assets/NSN1/gradeAssets/image8Shapes/shape6.png');
+        this.load.image('nsnpg1_3shape7_8',window.baseUrl+'assets/NSN1/gradeAssets/image8Shapes/shape7.png');
+        this.load.image('nsnpg1_3shape8_8',window.baseUrl+'assets/NSN1/gradeAssets/image8Shapes/shape8.png');
+        this.load.image('nsnpg1_3shape9_8',window.baseUrl+'assets/NSN1/gradeAssets/image8Shapes/shape9.png');
         
-        this.load.image('nsnpg1_3fullimage9', 'assets/gradeAssets/image9Shapes/full image9.png');
-        this.load.image('nsnpg1_3shape1_9', 'assets/gradeAssets/image9Shapes/shape1.png');
-        this.load.image('nsnpg1_3shape2_9', 'assets/gradeAssets/image9Shapes/shape2.png');
-        this.load.image('nsnpg1_3shape3_9', 'assets/gradeAssets/image9Shapes/shape3.png');
-        this.load.image('nsnpg1_3shape4_9', 'assets/gradeAssets/image9Shapes/shape4.png');
-        this.load.image('nsnpg1_3shape5_9', 'assets/gradeAssets/image9Shapes/shape5.png');
-        this.load.image('nsnpg1_3shape6_9', 'assets/gradeAssets/image9Shapes/shape6.png');
-        this.load.image('nsnpg1_3shape7_9', 'assets/gradeAssets/image9Shapes/shape7.png');
-        this.load.image('nsnpg1_3shape8_9', 'assets/gradeAssets/image9Shapes/shape8.png');
-        this.load.image('nsnpg1_3shape9_9', 'assets/gradeAssets/image9Shapes/shape9.png');
+        this.load.image('nsnpg1_3fullimage9',window.baseUrl+'assets/NSN1/gradeAssets/image9Shapes/full image9.png');
+        this.load.image('nsnpg1_3shape1_9',window.baseUrl+'assets/NSN1/gradeAssets/image9Shapes/shape1.png');
+        this.load.image('nsnpg1_3shape2_9',window.baseUrl+'assets/NSN1/gradeAssets/image9Shapes/shape2.png');
+        this.load.image('nsnpg1_3shape3_9',window.baseUrl+'assets/NSN1/gradeAssets/image9Shapes/shape3.png');
+        this.load.image('nsnpg1_3shape4_9',window.baseUrl+'assets/NSN1/gradeAssets/image9Shapes/shape4.png');
+        this.load.image('nsnpg1_3shape5_9',window.baseUrl+'assets/NSN1/gradeAssets/image9Shapes/shape5.png');
+        this.load.image('nsnpg1_3shape6_9',window.baseUrl+'assets/NSN1/gradeAssets/image9Shapes/shape6.png');
+        this.load.image('nsnpg1_3shape7_9',window.baseUrl+'assets/NSN1/gradeAssets/image9Shapes/shape7.png');
+        this.load.image('nsnpg1_3shape8_9',window.baseUrl+'assets/NSN1/gradeAssets/image9Shapes/shape8.png');
+        this.load.image('nsnpg1_3shape9_9',window.baseUrl+'assets/NSN1/gradeAssets/image9Shapes/shape9.png');
         
-        this.load.image('nsnpg1_3fullimage10', 'assets/gradeAssets/image10Shapes/full image10.png');
-        this.load.image('nsnpg1_3shape1_10', 'assets/gradeAssets/image10Shapes/shape1.png');
-        this.load.image('nsnpg1_3shape2_10', 'assets/gradeAssets/image10Shapes/shape2.png');
-        this.load.image('nsnpg1_3shape3_10', 'assets/gradeAssets/image10Shapes/shape3.png');
-        this.load.image('nsnpg1_3shape4_10', 'assets/gradeAssets/image10Shapes/shape4.png');
-        this.load.image('nsnpg1_3shape5_10', 'assets/gradeAssets/image10Shapes/shape5.png');
-        this.load.image('nsnpg1_3shape6_10', 'assets/gradeAssets/image10Shapes/shape6.png');
-        this.load.image('nsnpg1_3shape7_10', 'assets/gradeAssets/image10Shapes/shape7.png');
-        this.load.image('nsnpg1_3shape8_10', 'assets/gradeAssets/image10Shapes/shape8.png');
-        this.load.image('nsnpg1_3shape9_10', 'assets/gradeAssets/image10Shapes/shape9.png');
+        this.load.image('nsnpg1_3fullimage10',window.baseUrl+'assets/NSN1/gradeAssets/image10Shapes/full image10.png');
+        this.load.image('nsnpg1_3shape1_10',window.baseUrl+'assets/NSN1/gradeAssets/image10Shapes/shape1.png');
+        this.load.image('nsnpg1_3shape2_10',window.baseUrl+'assets/NSN1/gradeAssets/image10Shapes/shape2.png');
+        this.load.image('nsnpg1_3shape3_10',window.baseUrl+'assets/NSN1/gradeAssets/image10Shapes/shape3.png');
+        this.load.image('nsnpg1_3shape4_10',window.baseUrl+'assets/NSN1/gradeAssets/image10Shapes/shape4.png');
+        this.load.image('nsnpg1_3shape5_10',window.baseUrl+'assets/NSN1/gradeAssets/image10Shapes/shape5.png');
+        this.load.image('nsnpg1_3shape6_10',window.baseUrl+'assets/NSN1/gradeAssets/image10Shapes/shape6.png');
+        this.load.image('nsnpg1_3shape7_10',window.baseUrl+'assets/NSN1/gradeAssets/image10Shapes/shape7.png');
+        this.load.image('nsnpg1_3shape8_10',window.baseUrl+'assets/NSN1/gradeAssets/image10Shapes/shape8.png');
+        this.load.image('nsnpg1_3shape9_10',window.baseUrl+'assets/NSN1/gradeAssets/image10Shapes/shape9.png');
         
-        this.load.image('nsnpg1_3fullimage11', 'assets/gradeAssets/image11Shapes/full image11.png');
-        this.load.image('nsnpg1_3shape1_11', 'assets/gradeAssets/image11Shapes/shape1.png');
-        this.load.image('nsnpg1_3shape2_11', 'assets/gradeAssets/image11Shapes/shape2.png');
-        this.load.image('nsnpg1_3shape3_11', 'assets/gradeAssets/image11Shapes/shape3.png');
-        this.load.image('nsnpg1_3shape4_11', 'assets/gradeAssets/image11Shapes/shape4.png');
-        this.load.image('nsnpg1_3shape5_11', 'assets/gradeAssets/image11Shapes/shape5.png');
-        this.load.image('nsnpg1_3shape6_11', 'assets/gradeAssets/image11Shapes/shape6.png');
-        this.load.image('nsnpg1_3shape7_11', 'assets/gradeAssets/image11Shapes/shape7.png');
-        this.load.image('nsnpg1_3shape8_11', 'assets/gradeAssets/image11Shapes/shape8.png');
-        this.load.image('nsnpg1_3shape9_11', 'assets/gradeAssets/image11Shapes/shape9.png');
+        this.load.image('nsnpg1_3fullimage11',window.baseUrl+'assets/NSN1/gradeAssets/image11Shapes/full image11.png');
+        this.load.image('nsnpg1_3shape1_11',window.baseUrl+'assets/NSN1/gradeAssets/image11Shapes/shape1.png');
+        this.load.image('nsnpg1_3shape2_11',window.baseUrl+'assets/NSN1/gradeAssets/image11Shapes/shape2.png');
+        this.load.image('nsnpg1_3shape3_11',window.baseUrl+'assets/NSN1/gradeAssets/image11Shapes/shape3.png');
+        this.load.image('nsnpg1_3shape4_11',window.baseUrl+'assets/NSN1/gradeAssets/image11Shapes/shape4.png');
+        this.load.image('nsnpg1_3shape5_11',window.baseUrl+'assets/NSN1/gradeAssets/image11Shapes/shape5.png');
+        this.load.image('nsnpg1_3shape6_11',window.baseUrl+'assets/NSN1/gradeAssets/image11Shapes/shape6.png');
+        this.load.image('nsnpg1_3shape7_11',window.baseUrl+'assets/NSN1/gradeAssets/image11Shapes/shape7.png');
+        this.load.image('nsnpg1_3shape8_11',window.baseUrl+'assets/NSN1/gradeAssets/image11Shapes/shape8.png');
+        this.load.image('nsnpg1_3shape9_11',window.baseUrl+'assets/NSN1/gradeAssets/image11Shapes/shape9.png');
         
-        this.load.image('nsnpg1_3fullimage12', 'assets/gradeAssets/image12Shapes/full image12.png');
-        this.load.image('nsnpg1_3shape1_12', 'assets/gradeAssets/image12Shapes/shape1.png');
-        this.load.image('nsnpg1_3shape2_12', 'assets/gradeAssets/image12Shapes/shape2.png');
-        this.load.image('nsnpg1_3shape3_12', 'assets/gradeAssets/image12Shapes/shape3.png');
-        this.load.image('nsnpg1_3shape4_12', 'assets/gradeAssets/image12Shapes/shape4.png');
-        this.load.image('nsnpg1_3shape5_12', 'assets/gradeAssets/image12Shapes/shape5.png');
-        this.load.image('nsnpg1_3shape6_12', 'assets/gradeAssets/image12Shapes/shape6.png');
-        this.load.image('nsnpg1_3shape7_12', 'assets/gradeAssets/image12Shapes/shape7.png');
-        this.load.image('nsnpg1_3shape8_12', 'assets/gradeAssets/image12Shapes/shape8.png');
-        this.load.image('nsnpg1_3shape9_12', 'assets/gradeAssets/image12Shapes/shape9.png');
+        this.load.image('nsnpg1_3fullimage12',window.baseUrl+'assets/NSN1/gradeAssets/image12Shapes/full image12.png');
+        this.load.image('nsnpg1_3shape1_12',window.baseUrl+'assets/NSN1/gradeAssets/image12Shapes/shape1.png');
+        this.load.image('nsnpg1_3shape2_12',window.baseUrl+'assets/NSN1/gradeAssets/image12Shapes/shape2.png');
+        this.load.image('nsnpg1_3shape3_12',window.baseUrl+'assets/NSN1/gradeAssets/image12Shapes/shape3.png');
+        this.load.image('nsnpg1_3shape4_12',window.baseUrl+'assets/NSN1/gradeAssets/image12Shapes/shape4.png');
+        this.load.image('nsnpg1_3shape5_12',window.baseUrl+'assets/NSN1/gradeAssets/image12Shapes/shape5.png');
+        this.load.image('nsnpg1_3shape6_12',window.baseUrl+'assets/NSN1/gradeAssets/image12Shapes/shape6.png');
+        this.load.image('nsnpg1_3shape7_12',window.baseUrl+'assets/NSN1/gradeAssets/image12Shapes/shape7.png');
+        this.load.image('nsnpg1_3shape8_12',window.baseUrl+'assets/NSN1/gradeAssets/image12Shapes/shape8.png');
+        this.load.image('nsnpg1_3shape9_12',window.baseUrl+'assets/NSN1/gradeAssets/image12Shapes/shape9.png');
         
-        this.load.image('nsnpg1_3fullimage13', 'assets/gradeAssets/image13Shapes/full image13.png');
-        this.load.image('nsnpg1_3shape1_13', 'assets/gradeAssets/image13Shapes/shape1.png');
-        this.load.image('nsnpg1_3shape2_13', 'assets/gradeAssets/image13Shapes/shape2.png');
-        this.load.image('nsnpg1_3shape3_13', 'assets/gradeAssets/image13Shapes/shape3.png');
-        this.load.image('nsnpg1_3shape4_13', 'assets/gradeAssets/image13Shapes/shape4.png');
-        this.load.image('nsnpg1_3shape5_13', 'assets/gradeAssets/image13Shapes/shape5.png');
-        this.load.image('nsnpg1_3shape6_13', 'assets/gradeAssets/image13Shapes/shape6.png');
-        this.load.image('nsnpg1_3shape7_13', 'assets/gradeAssets/image13Shapes/shape7.png');
-        this.load.image('nsnpg1_3shape8_13', 'assets/gradeAssets/image13Shapes/shape8.png');
-        this.load.image('nsnpg1_3shape9_13', 'assets/gradeAssets/image13Shapes/shape9.png');
+        this.load.image('nsnpg1_3fullimage13',window.baseUrl+'assets/NSN1/gradeAssets/image13Shapes/full image13.png');
+        this.load.image('nsnpg1_3shape1_13',window.baseUrl+'assets/NSN1/gradeAssets/image13Shapes/shape1.png');
+        this.load.image('nsnpg1_3shape2_13',window.baseUrl+'assets/NSN1/gradeAssets/image13Shapes/shape2.png');
+        this.load.image('nsnpg1_3shape3_13',window.baseUrl+'assets/NSN1/gradeAssets/image13Shapes/shape3.png');
+        this.load.image('nsnpg1_3shape4_13',window.baseUrl+'assets/NSN1/gradeAssets/image13Shapes/shape4.png');
+        this.load.image('nsnpg1_3shape5_13',window.baseUrl+'assets/NSN1/gradeAssets/image13Shapes/shape5.png');
+        this.load.image('nsnpg1_3shape6_13',window.baseUrl+'assets/NSN1/gradeAssets/image13Shapes/shape6.png');
+        this.load.image('nsnpg1_3shape7_13',window.baseUrl+'assets/NSN1/gradeAssets/image13Shapes/shape7.png');
+        this.load.image('nsnpg1_3shape8_13',window.baseUrl+'assets/NSN1/gradeAssets/image13Shapes/shape8.png');
+        this.load.image('nsnpg1_3shape9_13',window.baseUrl+'assets/NSN1/gradeAssets/image13Shapes/shape9.png');
         
-        this.load.image('nsnpg1_3fullimage14', 'assets/gradeAssets/image14Shapes/full image14.png');
-        this.load.image('nsnpg1_3shape1_14', 'assets/gradeAssets/image14Shapes/shape1.png');
-        this.load.image('nsnpg1_3shape2_14', 'assets/gradeAssets/image14Shapes/shape2.png');
-        this.load.image('nsnpg1_3shape3_14', 'assets/gradeAssets/image14Shapes/shape3.png');
-        this.load.image('nsnpg1_3shape4_14', 'assets/gradeAssets/image14Shapes/shape4.png');
-        this.load.image('nsnpg1_3shape5_14', 'assets/gradeAssets/image14Shapes/shape5.png');
-        this.load.image('nsnpg1_3shape6_14', 'assets/gradeAssets/image14Shapes/shape6.png');
-        this.load.image('nsnpg1_3shape7_14', 'assets/gradeAssets/image14Shapes/shape7.png');
-        this.load.image('nsnpg1_3shape8_14', 'assets/gradeAssets/image14Shapes/shape8.png');
-        this.load.image('nsnpg1_3shape9_14', 'assets/gradeAssets/image14Shapes/shape9.png');
+        this.load.image('nsnpg1_3fullimage14',window.baseUrl+'assets/NSN1/gradeAssets/image14Shapes/full image14.png');
+        this.load.image('nsnpg1_3shape1_14',window.baseUrl+'assets/NSN1/gradeAssets/image14Shapes/shape1.png');
+        this.load.image('nsnpg1_3shape2_14',window.baseUrl+'assets/NSN1/gradeAssets/image14Shapes/shape2.png');
+        this.load.image('nsnpg1_3shape3_14',window.baseUrl+'assets/NSN1/gradeAssets/image14Shapes/shape3.png');
+        this.load.image('nsnpg1_3shape4_14',window.baseUrl+'assets/NSN1/gradeAssets/image14Shapes/shape4.png');
+        this.load.image('nsnpg1_3shape5_14',window.baseUrl+'assets/NSN1/gradeAssets/image14Shapes/shape5.png');
+        this.load.image('nsnpg1_3shape6_14',window.baseUrl+'assets/NSN1/gradeAssets/image14Shapes/shape6.png');
+        this.load.image('nsnpg1_3shape7_14',window.baseUrl+'assets/NSN1/gradeAssets/image14Shapes/shape7.png');
+        this.load.image('nsnpg1_3shape8_14',window.baseUrl+'assets/NSN1/gradeAssets/image14Shapes/shape8.png');
+        this.load.image('nsnpg1_3shape9_14',window.baseUrl+'assets/NSN1/gradeAssets/image14Shapes/shape9.png');
         
-        this.load.image('nsnpg1_3fullimage15', 'assets/gradeAssets/image15Shapes/full image15.png');
-        this.load.image('nsnpg1_3shape1_15', 'assets/gradeAssets/image15Shapes/shape1.png');
-        this.load.image('nsnpg1_3shape2_15', 'assets/gradeAssets/image15Shapes/shape2.png');
-        this.load.image('nsnpg1_3shape3_15', 'assets/gradeAssets/image15Shapes/shape3.png');
-        this.load.image('nsnpg1_3shape4_15', 'assets/gradeAssets/image15Shapes/shape4.png');
-        this.load.image('nsnpg1_3shape5_15', 'assets/gradeAssets/image15Shapes/shape5.png');
-        this.load.image('nsnpg1_3shape6_15', 'assets/gradeAssets/image15Shapes/shape6.png');
-        this.load.image('nsnpg1_3shape7_15', 'assets/gradeAssets/image15Shapes/shape7.png');
-        this.load.image('nsnpg1_3shape8_15', 'assets/gradeAssets/image15Shapes/shape8.png');
-        this.load.image('nsnpg1_3shape9_15', 'assets/gradeAssets/image15Shapes/shape9.png');
+        this.load.image('nsnpg1_3fullimage15',window.baseUrl+'assets/NSN1/gradeAssets/image15Shapes/full image15.png');
+        this.load.image('nsnpg1_3shape1_15',window.baseUrl+'assets/NSN1/gradeAssets/image15Shapes/shape1.png');
+        this.load.image('nsnpg1_3shape2_15',window.baseUrl+'assets/NSN1/gradeAssets/image15Shapes/shape2.png');
+        this.load.image('nsnpg1_3shape3_15',window.baseUrl+'assets/NSN1/gradeAssets/image15Shapes/shape3.png');
+        this.load.image('nsnpg1_3shape4_15',window.baseUrl+'assets/NSN1/gradeAssets/image15Shapes/shape4.png');
+        this.load.image('nsnpg1_3shape5_15',window.baseUrl+'assets/NSN1/gradeAssets/image15Shapes/shape5.png');
+        this.load.image('nsnpg1_3shape6_15',window.baseUrl+'assets/NSN1/gradeAssets/image15Shapes/shape6.png');
+        this.load.image('nsnpg1_3shape7_15',window.baseUrl+'assets/NSN1/gradeAssets/image15Shapes/shape7.png');
+        this.load.image('nsnpg1_3shape8_15',window.baseUrl+'assets/NSN1/gradeAssets/image15Shapes/shape8.png');
+        this.load.image('nsnpg1_3shape9_15',window.baseUrl+'assets/NSN1/gradeAssets/image15Shapes/shape9.png');
         
-        this.load.image('nsnpg1_3fullimage16', 'assets/gradeAssets/image16Shapes/full image16.png');
-        this.load.image('nsnpg1_3shape1_16', 'assets/gradeAssets/image16Shapes/shape1.png');
-        this.load.image('nsnpg1_3shape2_16', 'assets/gradeAssets/image16Shapes/shape2.png');
-        this.load.image('nsnpg1_3shape3_16', 'assets/gradeAssets/image16Shapes/shape3.png');
-        this.load.image('nsnpg1_3shape4_16', 'assets/gradeAssets/image16Shapes/shape4.png');
-        this.load.image('nsnpg1_3shape5_16', 'assets/gradeAssets/image16Shapes/shape5.png');
-        this.load.image('nsnpg1_3shape6_16', 'assets/gradeAssets/image16Shapes/shape6.png');
-        this.load.image('nsnpg1_3shape7_16', 'assets/gradeAssets/image16Shapes/shape7.png');
-        this.load.image('nsnpg1_3shape8_16', 'assets/gradeAssets/image16Shapes/shape8.png');
-        this.load.image('nsnpg1_3shape9_16', 'assets/gradeAssets/image16Shapes/shape9.png');
+        this.load.image('nsnpg1_3fullimage16',window.baseUrl+'assets/NSN1/gradeAssets/image16Shapes/full image16.png');
+        this.load.image('nsnpg1_3shape1_16',window.baseUrl+'assets/NSN1/gradeAssets/image16Shapes/shape1.png');
+        this.load.image('nsnpg1_3shape2_16',window.baseUrl+'assets/NSN1/gradeAssets/image16Shapes/shape2.png');
+        this.load.image('nsnpg1_3shape3_16',window.baseUrl+'assets/NSN1/gradeAssets/image16Shapes/shape3.png');
+        this.load.image('nsnpg1_3shape4_16',window.baseUrl+'assets/NSN1/gradeAssets/image16Shapes/shape4.png');
+        this.load.image('nsnpg1_3shape5_16',window.baseUrl+'assets/NSN1/gradeAssets/image16Shapes/shape5.png');
+        this.load.image('nsnpg1_3shape6_16',window.baseUrl+'assets/NSN1/gradeAssets/image16Shapes/shape6.png');
+        this.load.image('nsnpg1_3shape7_16',window.baseUrl+'assets/NSN1/gradeAssets/image16Shapes/shape7.png');
+        this.load.image('nsnpg1_3shape8_16',window.baseUrl+'assets/NSN1/gradeAssets/image16Shapes/shape8.png');
+        this.load.image('nsnpg1_3shape9_16',window.baseUrl+'assets/NSN1/gradeAssets/image16Shapes/shape9.png');
 
     }
 
@@ -439,7 +439,7 @@ init:function(game)
         _this.timer = _this.time.create(false);
 
         //  Set a TimerEvent to occur after 2 seconds
-        _this.timer.loop(200, function(){
+        _this.timer.loop(1000, function(){
       _this.AnsTimerCount++;
     }, _this);
 
@@ -8606,6 +8606,16 @@ init:function(game)
 
         _this.time.events.add(3000, _this.removeEverthing, _this);
 
+        if(_this.timer)
+                    {
+                        _this.timer.stop();
+                       _this.timer = null; 
+                    }
+
+                    _this.sceneCount++;
+
+       telInitializer.tele_saveAssessment(1,"yes",_this.AnsTimerCount,_this.noofAttempts,_this.sceneCount);
+
      },    
   
  removeEverthing:function() 
@@ -8686,39 +8696,39 @@ init:function(game)
             case 15:
             case 16: if(window.languageSelected=="English")
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/Fill_the_boxes.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/English/Fill_the_boxes.mp3");
                     }
                     else if(window.languageSelected=="Hindi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/Fill_the_boxes.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/Hindi/Fill_the_boxes.mp3");
                     }
                     else if(window.languageSelected=="Kannada")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/Fill_the_boxes.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/Kannada/Fill_the_boxes.mp3");
                     }
                     else if(window.languageSelected=="Gujarati")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujarati/Fill_the_boxes.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/Gujarati/Fill_the_boxes.mp3");
                     }
                     else if(window.languageSelected=="Marathi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/Fill_the_boxes.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/Marathi/Fill_the_boxes.mp3");
                     }
                     else if(window.languageSelected=="Odiya")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/Fill_the_boxes.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/Odiya/Fill_the_boxes.mp3");
                     }
                     else if(window.languageSelected=="Tamil")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/Fill_the_boxes.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/Tamil/Fill_the_boxes.mp3");
                     }
                     else if(window.languageSelected=="Telugu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/Fill_the_boxes.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/Telugu/Fill_the_boxes.mp3");
                     }
                     else if(window.languageSelected=="Urdu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Urdu/Fill_the_boxes.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/Urdu/Fill_the_boxes.mp3");
                         _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
                     }
                     break;
@@ -8755,39 +8765,39 @@ init:function(game)
             case 15:
             case 16: if(window.languageSelected=="English")
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/Drag_the_pictures.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/English/Drag_the_pictures.mp3");
                     }
                     else if(window.languageSelected=="Hindi") 
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/Drag_the_pictures.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/Hindi/Drag_the_pictures.mp3");
                     }
                     else if(window.languageSelected=="Kannada") 
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/Drag_the_pictures.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/Kannada/Drag_the_pictures.mp3");
                     }
                     else if(window.languageSelected=="Gujarati")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujarati/Drag_the_pictures.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/Gujarati/Drag_the_pictures.mp3");
                     }
                     else if(window.languageSelected=="Marathi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/Drag_the_pictures.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/Marathi/Drag_the_pictures.mp3");
                     }
                     else if(window.languageSelected=="Odiya")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/Drag_the_pictures.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/Odiya/Drag_the_pictures.mp3");
                     }
                     else if(window.languageSelected=="Tamil")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/Drag_the_pictures.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/Tamil/Drag_the_pictures.mp3");
                     }
                     else if(window.languageSelected=="Telugu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/Drag_the_pictures.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/Telugu/Drag_the_pictures.mp3");
                     }
                     else if(window.languageSelected=="Urdu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Urdu/Drag_the_pictures.mp3");
+                        _this.src.setAttribute("src", "questionSounds/NSN1/Urdu/Drag_the_pictures.mp3");
                         _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
                     }
                     break;

@@ -76,7 +76,7 @@ Game.grade6_2level1.prototype={
         this.load.atlas('Level62_whiteNum', window.baseUrl+'assets/gradeAssets/6.2/whiteNum.png', window.baseUrl+'json/gradeJson/6.2/whiteNum.json');
         
         //this.load.atlas('Level62_months', window.baseUrl+'assets/gradeAssets/6.2/months.png', window.baseUrl+'json/gradeJson/6.2/months.json'); 
-        this.load.atlas('Level62_months', 'assets/newAssets/months.png', 'assets/newAssets/months.json');  
+        this.load.atlas('Level62_months',window.baseUrl+'assets/newAssets/months.png',window.baseUrl+'assets/newAssets/months.json');  
          
         
         this.load.image('Level62_year', window.baseUrl+'assets/gradeAssets/6.2/year.png');
@@ -90,13 +90,13 @@ Game.grade6_2level1.prototype={
         this.load.atlas('Level62_saturday',window.baseUrl+'assets/gradeAssets/6.2/saturday.png',window.baseUrl+'json/gradeJson/6.2/saturday.json');
         this.load.atlas('Level62_sunday',window.baseUrl+'assets/gradeAssets/6.2/sunday.png',window.baseUrl+'json/gradeJson/6.2/sunday.json');*/
 
-        this.load.atlas('Level62_monday','assets/newAssets/1.png','assets/newAssets/1.json');
-        this.load.atlas('Level62_Tuesday','assets/newAssets/2.png','assets/newAssets/2.json');
-        this.load.atlas('Level62_wednesday','assets/newAssets/3.png','assets/newAssets/3.json');
-        this.load.atlas('Level62_thusday','assets/newAssets/4.png','assets/newAssets/4.json');
-        this.load.atlas('Level62_friday','assets/newAssets/5.png','assets/newAssets/5.json');
-        this.load.atlas('Level62_saturday','assets/newAssets/6.png','assets/newAssets/6.json');
-        this.load.atlas('Level62_sunday','assets/newAssets/7.png','assets/newAssets/7.json');
+        this.load.atlas('Level62_monday',window.baseUrl+'assets/newAssets/1.png',window.baseUrl+'assets/newAssets/1.json');
+        this.load.atlas('Level62_Tuesday',window.baseUrl+'assets/newAssets/2.png',window.baseUrl+'assets/newAssets/2.json');
+        this.load.atlas('Level62_wednesday',window.baseUrl+'assets/newAssets/3.png',window.baseUrl+'assets/newAssets/3.json');
+        this.load.atlas('Level62_thusday',window.baseUrl+'assets/newAssets/4.png',window.baseUrl+'assets/newAssets/4.json');
+        this.load.atlas('Level62_friday',window.baseUrl+'assets/newAssets/5.png',window.baseUrl+'assets/newAssets/5.json');
+        this.load.atlas('Level62_saturday',window.baseUrl+'assets/newAssets/6.png',window.baseUrl+'assets/newAssets/6.json');
+        this.load.atlas('Level62_sunday',window.baseUrl+'assets/newAssets/7.png',window.baseUrl+'assets/newAssets/7.json');
 
         this.load.atlas('anim1', window.baseUrl+'assets/gradeAssets/6.2/anim1.png', window.baseUrl+'json/gradeJson/6.2/anim1.json');
         this.load.atlas('anim2', window.baseUrl+'assets/gradeAssets/6.2/anim2.png', window.baseUrl+'json/gradeJson/6.2/anim2.json');

@@ -266,10 +266,12 @@ Game.preloader.prototype={
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade4MeasurementScreen.js", "js");
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade4NumberOperationScreen.js", "js");
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade4ShapesScreen.js", "js");
+		this.loadjscssfile("js/gradeSelectionScreenJS/grade4DataHandlingScreen.js", "js");
 
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade5NumberSenseScreen.js", "js");
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade5NumberOperationScreen.js", "js");
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade5ShapesScreen.js", "js");
+		this.loadjscssfile("js/gradeSelectionScreenJS/grade5DataHandlingScreen.js", "js");
 
 		/*this.loadjscssfile("js/gradeSelectionScreenJS/grade1levelSelectionScreen.js", "js");
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade2levelSelectionScreen.js", "js");
@@ -2354,12 +2356,12 @@ Game.preloader.prototype={
 		_this.load.image('pv3.5',window.baseUrl+'assets/gradeSelectionScreenAssets/pv3.5.png');
 
 
-		_this.load.image('longdivision1','assets/newGames/longdivision1.png');
-		_this.load.image('longdivision2','assets/newGames/longdivision2.png');
-		_this.load.image('longdivision3','assets/newGames/longdivision3.png');
-		_this.load.image('longdivision4','assets/newGames/longdivision4.png');
-		_this.load.image('longdivision5','assets/newGames/longdivision5.png');
-		_this.load.image('longdivision6','assets/newGames/longdivision6.png');
+		_this.load.image('longdivision1',window.baseUrl+'assets/newGames/longdivision1.png');
+		_this.load.image('longdivision2',window.baseUrl+'assets/newGames/longdivision2.png');
+		_this.load.image('longdivision3',window.baseUrl+'assets/newGames/longdivision3.png');
+		_this.load.image('longdivision4',window.baseUrl+'assets/newGames/longdivision4.png');
+		_this.load.image('longdivision5',window.baseUrl+'assets/newGames/longdivision5.png');
+		_this.load.image('longdivision6',window.baseUrl+'assets/newGames/longdivision6.png');
 
 	},
 
@@ -2458,10 +2460,10 @@ Game.preloader.prototype={
 		_this.load.image('bottomBar',window.baseUrl+'assets/commonAssets/bottomBar.png');
 
 		//_this.load.atlas('game32d_popup',window.baseUrl+'assets/commonAssets/popup.png',window.baseUrl+'assets/commonAssets/popup.json');
-		_this.load.atlas('game32d_popup','assets/newAssets/K1.png','assets/newAssets/K1.json');
+		_this.load.atlas('game32d_popup',window.baseUrl+'assets/newAssets/K1.png',window.baseUrl+'assets/newAssets/K1.json');
 
 		//_this.load.atlas('game24b_popup2',window.baseUrl+'assets/commonAssets/popup2.png',window.baseUrl+'assets/commonAssets/popup2.json');
-		_this.load.atlas('game24b_popup2','assets/newAssets/K2.png','assets/newAssets/K2.json');
+		_this.load.atlas('game24b_popup2',window.baseUrl+'assets/newAssets/K2.png',window.baseUrl+'assets/newAssets/K2.json');
 		
 		
 		_this.load.atlas('grade11_backbtn', window.baseUrl+'assets/commonAssets/grade11_backbtn.png',window.baseUrl+'json/commonJson/grade11_backbtn.json');
@@ -12478,10 +12480,12 @@ Game.preloader.prototype={
 		game.state.add('grade4Measurement',Game.grade4Measurement);
 		game.state.add('grade4NumberOperation',Game.grade4NumberOperation);
 		game.state.add('grade4Shapes',Game.grade4Shapes);
+		game.state.add('grade4DataHandling',Game.grade4DataHandling);
 
 		game.state.add('grade5NumberSense',Game.grade5NumberSense);
 		game.state.add('grade5NumberOperation',Game.grade5NumberOperation);
 		game.state.add('grade5Shapes',Game.grade5Shapes);
+		game.state.add('grade5DataHandling',Game.grade5DataHandling);
 		
         game.state.add('grade1levelSelectionScreen',Game.gradeSelectionScreen);
 

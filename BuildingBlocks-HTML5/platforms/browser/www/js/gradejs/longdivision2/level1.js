@@ -14,7 +14,7 @@ init:function(game)
             start_time:_this.currentTime
         } 
        // _this.savedVar = absdsjsapi.saveGameplay(_this.saveGameplay);
-        
+        telInitializer.gameIdInit("DH1",gradeSelected);
 
     },
 
@@ -36,62 +36,62 @@ init:function(game)
             preloadGrp.add(_this.preloadBars);
 
             preloadGrp.x -= 105;
-            this.load.video('demo_dhdcg1_4','assets/demoVideos/DHDCG1_4.mp4');
-        this.load.image('skipDemoVideos','assets/commonAssets/skipArrow.png');
+            this.load.video('demo_dhdcg1_4',window.baseUrl+'assets/DH1/demoVideos/DHDCG1_4.mp4');
+        this.load.image('dhdcg1_4skipDemoVideos',window.baseUrl+'assets/DH1/commonAssets/skipArrow.png');
         //common for all games.
-        this.load.atlas('dhdcg1_4backbtn','assets/commonAssets/backbtn.png' ,'json/gradeJson/backbtn.json');
-        this.load.atlas('dhdcg1_4CommonSpeakerBtn','assets/commonAssets/speaker.png' ,'json/gradeJson/speaker.json');
-        this.load.atlas('dhdcg1_4starAnim','assets/commonAssets/starAnim.png','json/gradeJson/starAnim.json');
-        this.load.atlas('dhdcg1_4replay','assets/commonAssets/reply.png' ,'json/gradeJson/reply.json');
-        this.load.atlas('dhdcg1_4btn','assets/commonAssets/btn.png','json/gradeJson/btn.json');
+        this.load.atlas('dhdcg1_4backbtn',window.baseUrl+'assets/DH1/commonAssets/backbtn.png' ,window.baseUrl+'json/DH1/gradeJson/backbtn.json');
+        this.load.atlas('dhdcg1_4CommonSpeakerBtn',window.baseUrl+'assets/DH1/commonAssets/speaker.png' ,window.baseUrl+'json/DH1/gradeJson/speaker.json');
+        this.load.atlas('dhdcg1_4starAnim',window.baseUrl+'assets/DH1/commonAssets/starAnim.png',window.baseUrl+'json/DH1/gradeJson/starAnim.json');
+        this.load.atlas('dhdcg1_4replay',window.baseUrl+'assets/DH1/commonAssets/reply.png' ,window.baseUrl+'json/DH1/gradeJson/reply.json');
+        this.load.atlas('dhdcg1_4btn',window.baseUrl+'assets/DH1/commonAssets/btn.png',window.baseUrl+'json/DH1/gradeJson/btn.json');
         
-        this.load.image('dhdcg1_4background1','assets/commonAssets/bg1.png');
-        this.load.image('dhdcg1_4tittleBar','assets/commonAssets/tittleBar.png');
-        this.load.image('dhdcg1_4navBar','assets/commonAssets/navBar.png');
-        this.load.image('dhdcg1_4timebg','assets/commonAssets/timebg.png');
+        this.load.image('dhdcg1_4background1',window.baseUrl+'assets/DH1/commonAssets/bg1.png');
+        this.load.image('dhdcg1_4tittleBar',window.baseUrl+'assets/DH1/commonAssets/tittleBar.png');
+        this.load.image('dhdcg1_4navBar',window.baseUrl+'assets/DH1/commonAssets/navBar.png');
+        this.load.image('dhdcg1_4timebg',window.baseUrl+'assets/DH1/commonAssets/timebg.png');
         
-        this.load.atlas('dhdcg1_4_erase','assets/commonAssets/erase.png' ,'json/gradeJson/erase.json');
-        this.load.atlas('dhdcg1_4_rightmark','assets/commonAssets/rightmark.png' ,'json/gradeJson/rightmark.json');
-        this.load.image('dhdcg1_4_numBG','assets/commonAssets/b2.png');
-        this.load.atlas('dhdcg1_4_numberpad', 'assets/commonAssets/calNum.png','json/gradeJson/calNum.json');
-        this.load.atlas('dhdcg1_4_numbers1','assets/commonAssets/numbers1.png','json/gradeJson/numbers1.json');
+        this.load.atlas('dhdcg1_4_erase',window.baseUrl+'assets/DH1/commonAssets/erase.png' ,window.baseUrl+'json/DH1/gradeJson/erase.json');
+        this.load.atlas('dhdcg1_4_rightmark',window.baseUrl+'assets/DH1/commonAssets/rightmark.png' ,window.baseUrl+'json/DH1/gradeJson/rightmark.json');
+        this.load.image('dhdcg1_4_numBG',window.baseUrl+'assets/DH1/commonAssets/b2.png');
+        this.load.atlas('dhdcg1_4_numberpad',window.baseUrl+'assets/DH1/commonAssets/calNum.png',window.baseUrl+'json/DH1/gradeJson/calNum.json');
+        this.load.atlas('dhdcg1_4_numbers1',window.baseUrl+'assets/DH1/commonAssets/numbers1.png',window.baseUrl+'json/DH1/gradeJson/numbers1.json');
        
         //game assets.
-        this.load.image('dhdcg1_4background', 'assets/gradeAssets/BG2.png');
+        this.load.image('dhdcg1_4background',window.baseUrl+'assets/DH1/gradeAssets/BG2.png');
                      
-        this.load.atlas('dhdcg1_4ball','assets/gradeAssets/ball.png','json/gradeJson/assets/ball.json');
-        this.load.atlas('dhdcg1_4smallBall','assets/gradeAssets/smallBall.png','json/gradeJson/assets/smallBall.json');
-        this.load.atlas('dhdcg1_4balloon', 'assets/gradeAssets/balloon.png','json/gradeJson/assets/balloon.json');
-        this.load.atlas('dhdcg1_4carrot', 'assets/gradeAssets/carrot.png','json/gradeJson/assets/carrot.json');
-        this.load.atlas('dhdcg1_4cherry', 'assets/gradeAssets/cherry.png','json/gradeJson/assets/cherry.json');
-        this.load.atlas('dhdcg1_4flower','assets/gradeAssets/flower.png','json/gradeJson/assets/flower.json');
-        this.load.atlas('dhdcg1_4orange', 'assets/gradeAssets/orange.png','json/gradeJson/assets/orange.json');
-        this.load.atlas('dhdcg1_4papaya', 'assets/gradeAssets/papaya.png','json/gradeJson/assets/papaya.json');
-        this.load.atlas('dhdcg1_4shoe', 'assets/gradeAssets/shoe.png','json/gradeJson/assets/shoe.json');
-        this.load.atlas('dhdcg1_4watermelon', 'assets/gradeAssets/watermelon.png','json/gradeJson/assets/watermelon.json');
+        this.load.atlas('dhdcg1_4ball',window.baseUrl+'assets/DH1/gradeAssets/ball.png',window.baseUrl+'json/DH1/gradeJson/assets/ball.json');
+        this.load.atlas('dhdcg1_4smallBall',window.baseUrl+'assets/DH1/gradeAssets/smallBall.png',window.baseUrl+'json/DH1/gradeJson/assets/smallBall.json');
+        this.load.atlas('dhdcg1_4balloon',window.baseUrl+'assets/DH1/gradeAssets/balloon.png',window.baseUrl+'json/DH1/gradeJson/assets/balloon.json');
+        this.load.atlas('dhdcg1_4carrot',window.baseUrl+'assets/DH1/gradeAssets/carrot.png',window.baseUrl+'json/DH1/gradeJson/assets/carrot.json');
+        this.load.atlas('dhdcg1_4cherry',window.baseUrl+'assets/DH1/gradeAssets/cherry.png',window.baseUrl+'json/DH1/gradeJson/assets/cherry.json');
+        this.load.atlas('dhdcg1_4flower',window.baseUrl+'assets/DH1/gradeAssets/flower.png',window.baseUrl+'json/DH1/gradeJson/assets/flower.json');
+        this.load.atlas('dhdcg1_4orange',window.baseUrl+'assets/DH1/gradeAssets/orange.png',window.baseUrl+'json/DH1/gradeJson/assets/orange.json');
+        this.load.atlas('dhdcg1_4papaya',window.baseUrl+'assets/DH1/gradeAssets/papaya.png',window.baseUrl+'json/DH1/gradeJson/assets/papaya.json');
+        this.load.atlas('dhdcg1_4shoe',window.baseUrl+'assets/DH1/gradeAssets/shoe.png',window.baseUrl+'json/DH1/gradeJson/assets/shoe.json');
+        this.load.atlas('dhdcg1_4watermelon',window.baseUrl+'assets/DH1/gradeAssets/watermelon.png',window.baseUrl+'json/DH1/gradeJson/assets/watermelon.json');
         
-        this.load.atlas('dhdcg1_4circle', 'assets/gradeAssets/circle.png','json/gradeJson/assets/circle.json');
-        this.load.atlas('dhdcg1_4oval', 'assets/gradeAssets/oval.png','json/gradeJson/assets/oval.json');
-        this.load.atlas('dhdcg1_4square', 'assets/gradeAssets/square.png','json/gradeJson/assets/square.json');
-        this.load.atlas('dhdcg1_4triangle', 'assets/gradeAssets/triangle.png','json/gradeJson/assets/triangle.json');
+        this.load.atlas('dhdcg1_4circle',window.baseUrl+'assets/DH1/gradeAssets/circle.png',window.baseUrl+'json/DH1/gradeJson/assets/circle.json');
+        this.load.atlas('dhdcg1_4oval',window.baseUrl+'assets/DH1/gradeAssets/oval.png',window.baseUrl+'json/DH1/gradeJson/assets/oval.json');
+        this.load.atlas('dhdcg1_4square',window.baseUrl+'assets/DH1/gradeAssets/square.png',window.baseUrl+'json/DH1/gradeJson/assets/square.json');
+        this.load.atlas('dhdcg1_4triangle',window.baseUrl+'assets/DH1/gradeAssets/triangle.png',window.baseUrl+'json/DH1/gradeJson/assets/triangle.json');
         
-        this.load.atlas('dhdcg1_4blueGraph', 'assets/gradeAssets/blueGraph.png','json/gradeJson/assets/blueGraph.json');
-        this.load.atlas('dhdcg1_4greenGraph', 'assets/gradeAssets/greenGraph.png','json/gradeJson/assets/greenGraph.json');
-        this.load.atlas('dhdcg1_4redGraph', 'assets/gradeAssets/redGraph.png','json/gradeJson/assets/redGraph.json');
-        this.load.atlas('dhdcg1_4yellowGraph', 'assets/gradeAssets/yellowGraph.png','json/gradeJson/assets/yellowGraph.json');
-        this.load.atlas('dhdcg1_4emptyGraph', 'assets/gradeAssets/emptyGraph.png','json/gradeJson/assets/emptyGraph.json');
-        this.load.atlas('dhdcg1_4plus', 'assets/gradeAssets/P.png','json/gradeJson/assets/P.json');
-        this.load.atlas('dhdcg1_4minus', 'assets/gradeAssets/M.png','json/gradeJson/assets/M.json');
-        this.load.atlas('dhdcg1_4glow', 'assets/gradeAssets/glow.png','json/gradeJson/assets/glow.json');
+        this.load.atlas('dhdcg1_4blueGraph',window.baseUrl+'assets/DH1/gradeAssets/blueGraph.png',window.baseUrl+'json/DH1/gradeJson/assets/blueGraph.json');
+        this.load.atlas('dhdcg1_4greenGraph',window.baseUrl+'assets/DH1/gradeAssets/greenGraph.png',window.baseUrl+'json/DH1/gradeJson/assets/greenGraph.json');
+        this.load.atlas('dhdcg1_4redGraph',window.baseUrl+'assets/DH1/gradeAssets/redGraph.png',window.baseUrl+'json/DH1/gradeJson/assets/redGraph.json');
+        this.load.atlas('dhdcg1_4yellowGraph',window.baseUrl+'assets/DH1/gradeAssets/yellowGraph.png',window.baseUrl+'json/DH1/gradeJson/assets/yellowGraph.json');
+        this.load.atlas('dhdcg1_4emptyGraph',window.baseUrl+'assets/DH1/gradeAssets/emptyGraph.png',window.baseUrl+'json/DH1/gradeJson/assets/emptyGraph.json');
+        this.load.atlas('dhdcg1_4plus',window.baseUrl+'assets/DH1/gradeAssets/P.png',window.baseUrl+'json/DH1/gradeJson/assets/P.json');
+        this.load.atlas('dhdcg1_4minus',window.baseUrl+'assets/DH1/gradeAssets/M.png',window.baseUrl+'json/DH1/gradeJson/assets/M.json');
+        this.load.atlas('dhdcg1_4glow',window.baseUrl+'assets/DH1/gradeAssets/glow.png',window.baseUrl+'json/DH1/gradeJson/assets/glow.json');
         
-        this.load.image('dhdcg1_4emptyBox', 'assets/gradeAssets/box1.png');
-        this.load.image('dhdcg1_4colorBox', 'assets/gradeAssets/box2.png');
-        this.load.image('dhdcg1_4shapeBox', 'assets/gradeAssets/box3.png');
-        this.load.image('dhdcg1_4emptyBoard', 'assets/gradeAssets/box4.png');
-        this.load.image('dhdcg1_4shapeBoard', 'assets/gradeAssets/box5.png');
-        this.load.image('dhdcg1_4colorBoard', 'assets/gradeAssets/box6.png');
+        this.load.image('dhdcg1_4emptyBox',window.baseUrl+'assets/DH1/gradeAssets/box1.png');
+        this.load.image('dhdcg1_4colorBox',window.baseUrl+'assets/DH1/gradeAssets/box2.png');
+        this.load.image('dhdcg1_4shapeBox',window.baseUrl+'assets/DH1/gradeAssets/box3.png');
+        this.load.image('dhdcg1_4emptyBoard',window.baseUrl+'assets/DH1/gradeAssets/box4.png');
+        this.load.image('dhdcg1_4shapeBoard',window.baseUrl+'assets/DH1/gradeAssets/box5.png');
+        this.load.image('dhdcg1_4colorBoard',window.baseUrl+'assets/DH1/gradeAssets/box6.png');
         
-        this.load.atlas('dhdcg1_4numberBox', 'assets/gradeAssets/b1.png','json/gradeJson/assets/b1.json'); 
+        this.load.atlas('dhdcg1_4numberBox',window.baseUrl+'assets/DH1/gradeAssets/b1.png',window.baseUrl+'json/DH1/gradeJson/assets/b1.json'); 
 
     }
 
@@ -329,7 +329,7 @@ init:function(game)
         _this.timer = _this.time.create(false);
 
         //  Set a TimerEvent to occur after 2 seconds
-        _this.timer.loop(200, function(){
+        _this.timer.loop(1000, function(){
             _this.AnsTimerCount++;
         }, _this);
 
@@ -6558,7 +6558,7 @@ init:function(game)
         console.log("correct Answer");
         //console.log("_this.questionNo :"+_this.questionNo);
         //_this.stopvoice();
-        _this.noofAttempts++;
+        //_this.noofAttempts++;
        
         _this.starAnim = _this.starsGroup.getChildAt(_this.count1);
             console.log(_this.starAnim);
@@ -6643,6 +6643,14 @@ init:function(game)
         
             _this.time.events.add(3000, _this.removeEverthing, _this);
 
+            if(_this.timer)
+                    {
+                        _this.timer.stop();
+                       _this.timer = null; 
+                    }
+                    _this.sceneCount++;
+       telInitializer.tele_saveAssessment(1,"yes",_this.AnsTimerCount,_this.noofAttempts,_this.sceneCount);
+
            // telInitializer.tele_saveAssessment(_this.questionid,"yes",_this.AnsTimerCount,_this.noofAttempts,_this.sceneCount);
      },
     
@@ -6681,39 +6689,39 @@ init:function(game)
             case 5:
             case 6: if(window.languageSelected=="English")
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/Drag_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/English/Drag_objects.mp3");
                     }
                     else if(window.languageSelected=="Hindi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/Drag_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Hindi/Drag_objects.mp3");
                     }
                     else if(window.languageSelected=="Kannada")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/Drag_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Kannada/Drag_objects.mp3");
                     }
                     else if(window.languageSelected=="Gujarati")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujarati/Drag_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Gujarati/Drag_objects.mp3");
                     }
                     else if(window.languageSelected=="Marathi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/Drag_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Marathi/Drag_objects.mp3");
                     }
                     else if(window.languageSelected=="Odiya")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/Drag_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Odiya/Drag_objects.mp3");
                     }
                     else if(window.languageSelected=="Tamil")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/Drag_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Tamil/Drag_objects.mp3");
                     }
                     else if(window.languageSelected=="Telugu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/Drag_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Telugu/Drag_objects.mp3");
                     }
                     else if(window.languageSelected=="Urdu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Urdu/Drag_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Urdu/Drag_objects.mp3");
                         _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
                     }
                     break;
@@ -6739,39 +6747,39 @@ init:function(game)
             case 5:
             case 6: if(window.languageSelected=="English")
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/How_many_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/English/How_many_objects.mp3");
                     }
                     else if(window.languageSelected=="Hindi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/How_many_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Hindi/How_many_objects.mp3");
                     }
                     else if(window.languageSelected=="Kannada")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/How_many_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Kannada/How_many_objects.mp3");
                     }
                     else if(window.languageSelected=="Gujarati")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujarati/How_many_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Gujarati/How_many_objects.mp3");
                     }
                     else if(window.languageSelected=="Marathi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/How_many_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Marathi/How_many_objects.mp3");
                     }
                     else if(window.languageSelected=="Odiya")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/How_many_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Odiya/How_many_objects.mp3");
                     }
                     else if(window.languageSelected=="Tamil")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/How_many_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Tamil/How_many_objects.mp3");
                     }
                     else if(window.languageSelected=="Telugu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/How_many_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Telugu/How_many_objects.mp3");
                     }
                     else if(window.languageSelected=="Urdu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Urdu/How_many_objects.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Urdu/How_many_objects.mp3");
                         _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
                     }
                     break;
@@ -6797,39 +6805,39 @@ init:function(game)
             case 5:
             case 6: if(window.languageSelected=="English")
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/Represent_in_graph.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/English/Represent_in_graph.mp3");
                     }
                     else if(window.languageSelected=="Hindi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/Represent_in_graph.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Hindi/Represent_in_graph.mp3");
                     }
                     else if(window.languageSelected=="Kannada")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/Represent_in_graph.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Kannada/Represent_in_graph.mp3");
                     }
                     else if(window.languageSelected=="Gujarati")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujarati/Represent_in_graph.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Gujarati/Represent_in_graph.mp3");
                     }
                     else if(window.languageSelected=="Marathi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/Represent_in_graph.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Marathi/Represent_in_graph.mp3");
                     }
                     else if(window.languageSelected=="Odiya")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/Represent_in_graph.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Odiya/Represent_in_graph.mp3");
                     }
                     else if(window.languageSelected=="Tamil")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/Represent_in_graph.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Tamil/Represent_in_graph.mp3");
                     }
                     else if(window.languageSelected=="Telugu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/Represent_in_graph.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Telugu/Represent_in_graph.mp3");
                     }
                     else if(window.languageSelected=="Urdu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Urdu/Represent_in_graph.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Urdu/Represent_in_graph.mp3");
                         _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
                     }
                     break;
@@ -6851,117 +6859,117 @@ init:function(game)
             case 1:
             case 5: if(window.languageSelected=="English")
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/Which_is_least.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/English/Which_is_least.mp3");
                     }
                     else if(window.languageSelected=="Hindi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/Which_is_least.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Hindi/Which_is_least.mp3");
                     }
                     else if(window.languageSelected=="Kannada")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/Which_is_least.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Kannada/Which_is_least.mp3");
                     }
                     else if(window.languageSelected=="Gujarati")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujarati/Which_is_least.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Gujarati/Which_is_least.mp3");
                     }
                     else if(window.languageSelected=="Marathi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/Which_is_least.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Marathi/Which_is_least.mp3");
                     }
                     else if(window.languageSelected=="Odiya")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/Which_is_least.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Odiya/Which_is_least.mp3");
                     }
                     else if(window.languageSelected=="Tamil")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/Which_is_least.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Tamil/Which_is_least.mp3");
                     }
                     else if(window.languageSelected=="Telugu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/Which_is_least.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Telugu/Which_is_least.mp3");
                     }
                     else if(window.languageSelected=="Urdu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Urdu/Which_is_least.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Urdu/Which_is_least.mp3");
                         _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
                     }
                     break;
             case 3:
             case 4: if(window.languageSelected=="English")
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/Which_is_most.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/English/Which_is_most.mp3");
                     }
                     else if(window.languageSelected=="Hindi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/Which_is_most.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Hindi/Which_is_most.mp3");
                     }
                     else if(window.languageSelected=="Kannada")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/Which_is_most.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Kannada/Which_is_most.mp3");
                     }
                     else if(window.languageSelected=="Gujarati")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujarati/Which_is_most.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Gujarati/Which_is_most.mp3");
                     }
                     else if(window.languageSelected=="Marathi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/Which_is_most.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Marathi/Which_is_most.mp3");
                     }
                     else if(window.languageSelected=="Odiya")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/Which_is_most.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Odiya/Which_is_most.mp3");
                     }
                     else if(window.languageSelected=="Tamil")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/Which_is_most.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Tamil/Which_is_most.mp3");
                     }
                     else if(window.languageSelected=="Telugu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/Which_is_most.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Telugu/Which_is_most.mp3");
                     }
                     else if(window.languageSelected=="Urdu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Urdu/Which_is_most.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Urdu/Which_is_most.mp3");
                         _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
                     }
                     break;
             case 2:    
             case 6: if(window.languageSelected=="English")
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/Which_are_equal.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/English/Which_are_equal.mp3");
                     }
                     else if(window.languageSelected=="Hindi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/Which_are_equal.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Hindi/Which_are_equal.mp3");
                     }
                     else if(window.languageSelected=="Kannada")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/Which_are_equal.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Kannada/Which_are_equal.mp3");
                     }
                     else if(window.languageSelected=="Gujarati")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujarati/Which_are_equal.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Gujarati/Which_are_equal.mp3");
                     }
                     else if(window.languageSelected=="Marathi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/Which_are_equal.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Marathi/Which_are_equal.mp3");
                     }
                     else if(window.languageSelected=="Odiya")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/Which_are_equal.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Odiya/Which_are_equal.mp3");
                     }
                     else if(window.languageSelected=="Tamil")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/Which_are_equal.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Tamil/Which_are_equal.mp3");
                     }
                     else if(window.languageSelected=="Telugu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/Which_are_equal.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Telugu/Which_are_equal.mp3");
                     }
                     else if(window.languageSelected=="Urdu")
                     {
-                        _this.src.setAttribute("src", "questionSounds/Urdu/Which_are_equal.mp3");
+                        _this.src.setAttribute("src", "questionSounds/DH1/Urdu/Which_are_equal.mp3");
                         _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
                     }
                     break;    

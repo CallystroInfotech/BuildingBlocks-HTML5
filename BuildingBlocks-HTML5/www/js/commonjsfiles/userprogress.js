@@ -27,15 +27,19 @@ Game.userprogress.prototype={
 		else if(window.avatarName.toLowerCase() == "tree")
 			game.load.atlas('avatar','assets/tree.png','assets/tree.json');
 
+		game.load.image('scrollWhite','assets/scrollWhite.png');
+		game.load.image('scrollBlack','assets/scrollBlack.png');
+
 		game.time.advancedTiming = true;
 	},
 
 	create:function(game){
 
 		this.numberSenseTotal = 92;
-		this.numberoperationTotal = 42;
+		this.numberoperationTotal = 46;
 		this.measurementTotal = 39;
 		this.shapesTotal = 32;
+		this.datahandlingTotal = 4;
 
 		this.cnumberSenseTotal = 22;
 		this.cnumberoperationTotal = 17;
@@ -93,6 +97,8 @@ Game.userprogress.prototype={
 
 		
 		this.gameModeBg = game.add.image(0,0,'gameModeBg');
+
+		console.log(window.deviceId);
 
 		var jsondata = {name:window.avatarName,deviceid:window.deviceId};
 
@@ -242,6 +248,7 @@ Game.userprogress.prototype={
 		this.measurementPersent = Math.round((parseInt(this.responseData.PM)/this.measurementTotal)*100);
 		this.numberoperationPersent = Math.round((parseInt(this.responseData.PNO)/this.numberoperationTotal)*100);
 		this.shapesPersent = Math.round((parseInt(this.responseData.PSG)/this.shapesTotal)*100);
+		this.datahandlingPersent = Math.round((parseInt(this.responseData.PDH)/this.datahandlingTotal)*100);
 
 
 		this.cnumbersensePersent = Math.round((parseInt(this.responseData.CNS)/this.cnumberSenseTotal)*100);
@@ -345,7 +352,7 @@ Game.userprogress.prototype={
 
 		//alert("here");
 
-		this.getchallengemodevalue();
+		this.getchallengemodevalue(game);
 
 
 		var practiceText = "Practice";
@@ -495,202 +502,7 @@ Game.userprogress.prototype={
 
 
 
-    	this.numberSenseTree = game.add.sprite(140,180,'MicroConceptTree');
-    	this.numberSenseTree.frame = 0;
-    	this.numberSenseTree.anchor.setTo(0.5);
-    	this.numberSenseTree.scale.setTo(0.6,0.38);
-    	this.numberSenseTree.inputEnabled = true;
-    	this.numberSenseTree.events.onInputDown.add(function(){
-    		this.clickSound = this.add.audio('ClickSound');
-        	this.clickSound.play();
-    		this.state.start('userprogress2',true,false,"NumberSense",this.responseData,this.responseData);
-    	},this);
-
-    	this.numberSenseTreeTxt = this.add.text(140, 170, window.selctedLang.McTopicText1);
-		this.numberSenseTreeTxt.anchor.setTo(0.5);
-		this.numberSenseTreeTxt.align = 'center';
-		this.numberSenseTreeTxt.fontSize = 12;
-		this.numberSenseTreeTxt.fontWeight = 'normal';
-		this.numberSenseTreeTxt.fill = '#FFFFFF';
-		this.numberSenseTreeTxt.wordWrap = true;
-		this.numberSenseTreeTxt.wordWrapWidth = 500;
-
-    	this.measurementTree = game.add.sprite(140,280,'MicroConceptTree');
-    	this.measurementTree.frame = 1;
-    	this.measurementTree.anchor.setTo(0.5);
-    	this.measurementTree.scale.setTo(0.6,0.38);
-    	this.measurementTree.inputEnabled = true;
-    	this.measurementTree.events.onInputDown.add(function(){
-    		this.clickSound = this.add.audio('ClickSound');
-        	this.clickSound.play();
-    		this.state.start('userprogress2',true,false,"Measurement",this.responseData,this.responseData);
-    	},this);
-
-    	this.measurementTreeTxt = this.add.text(140, 270, window.selctedLang.McTopicText2);
-		this.measurementTreeTxt.anchor.setTo(0.5);
-		this.measurementTreeTxt.align = 'center';
-		this.measurementTreeTxt.fontSize = 12;
-		this.measurementTreeTxt.fontWeight = 'normal';
-		this.measurementTreeTxt.fill = '#FFFFFF';
-		this.measurementTreeTxt.wordWrap = true;
-		this.measurementTreeTxt.wordWrapWidth = 500;
-
-    	this.numberoperationTree = game.add.sprite(140,380,'MicroConceptTree');
-    	this.numberoperationTree.frame = 2;
-    	this.numberoperationTree.anchor.setTo(0.5);
-    	this.numberoperationTree.scale.setTo(0.6,0.38);
-    	this.numberoperationTree.inputEnabled = true;
-    	this.numberoperationTree.events.onInputDown.add(function(){
-    		this.clickSound = this.add.audio('ClickSound');
-        	this.clickSound.play();
-    		this.state.start('userprogress2',true,false,"NumberOperation",this.responseData,this.responseData);
-    	},this);
-
-    	this.numberoperationTreeTxt = this.add.text(140, 370, window.selctedLang.McTopicText5);
-		this.numberoperationTreeTxt.anchor.setTo(0.5);
-		this.numberoperationTreeTxt.align = 'center';
-		this.numberoperationTreeTxt.fontSize = 12;
-		this.numberoperationTreeTxt.fontWeight = 'normal';
-		this.numberoperationTreeTxt.fill = '#FFFFFF';
-		this.numberoperationTreeTxt.wordWrap = true;
-		this.numberoperationTreeTxt.wordWrapWidth = 500;
-		this.numberoperationTreeTxt.lineSpacing = -10;
-
-    	this.shapesTree = game.add.sprite(140,480,'MicroConceptTree');
-    	this.shapesTree.frame = 3;
-    	this.shapesTree.anchor.setTo(0.5);
-    	this.shapesTree.scale.setTo(0.6,0.38);
-
-    	this.shapesTreeTxt = this.add.text(140, 470, window.selctedLang.McTopicText3);
-		this.shapesTreeTxt.anchor.setTo(0.5);
-		this.shapesTreeTxt.align = 'center';
-		this.shapesTreeTxt.fontSize = 12;
-		this.shapesTreeTxt.fontWeight = 'normal';
-		this.shapesTreeTxt.fill = '#FFFFFF';
-		this.shapesTreeTxt.wordWrap = true;
-		this.shapesTreeTxt.wordWrapWidth = 500;
-
-		this.completedTxt = this.add.text(320, 140,completedText);
-		this.completedTxt.anchor.setTo(0.5);
-		this.completedTxt.align = 'center';
-		this.completedTxt.fontSize = 14;
-		this.completedTxt.fontWeight = 'normal';
-		this.completedTxt.fill = '#000000';
-		this.completedTxt.wordWrap = true;
-		this.completedTxt.wordWrapWidth = 500;
-
-		this.numbersensePrgress = game.add.sprite(320,180,'progressCircle');
-    	this.numbersensePrgress.frame = this.numbersensePersent-1;
-    	this.numbersensePrgress.anchor.setTo(0.5);
-    	this.numbersensePrgress.scale.setTo(1.5);
-
-
-    	this.numbersensePrgress.inputEnabled = true;
-    	this.numbersensePrgress.events.onInputDown.add(function(){
-    		this.clickSound = this.add.audio('ClickSound');
-        	this.clickSound.play();
-    		this.state.start('userprogress2',true,false,"NumberSense",this.responseData,this.responseData);
-    	},this);
-
-    	this.numbersensePrgressTxt = this.add.text(320, 180, this.numbersensePersent+'%');
-		this.numbersensePrgressTxt.anchor.setTo(0.5);
-		this.numbersensePrgressTxt.align = 'center';
-		this.numbersensePrgressTxt.fontSize = 20;
-		this.numbersensePrgressTxt.fontWeight = 'normal';
-		this.numbersensePrgressTxt.fill = '#000000';
-		this.numbersensePrgressTxt.wordWrap = true;
-		this.numbersensePrgressTxt.wordWrapWidth = 500;
-
-		this.numbersensePrgressTotalTxt = this.add.text(390, 180, this.responseData.PNS+'/'+this.numberSenseTotal);
-		this.numbersensePrgressTotalTxt.anchor.setTo(0.5);
-		this.numbersensePrgressTotalTxt.align = 'center';
-		this.numbersensePrgressTotalTxt.fontSize = 20;
-		this.numbersensePrgressTotalTxt.fontWeight = 'normal';
-		this.numbersensePrgressTotalTxt.fill = '#000000';
-		this.numbersensePrgressTotalTxt.wordWrap = true;
-		this.numbersensePrgressTotalTxt.wordWrapWidth = 500;
-
-    	this.measurementPrgress = game.add.sprite(320,280,'progressCircle');
-    	this.measurementPrgress.frame = this.measurementPersent-1;
-    	this.measurementPrgress.anchor.setTo(0.5);
-    	this.measurementPrgress.scale.setTo(1.5);
-    	this.measurementPrgress.inputEnabled = true;
-    	this.measurementPrgress.events.onInputDown.add(function(){
-    		this.clickSound = this.add.audio('ClickSound');
-        	this.clickSound.play();
-    		this.state.start('userprogress2',true,false,"Measurement",this.responseData,this.responseData);
-    	},this);
-
-    	this.measurementPrgressTxt = this.add.text(320, 280, this.measurementPersent+'%');
-		this.measurementPrgressTxt.anchor.setTo(0.5);
-		this.measurementPrgressTxt.align = 'center';
-		this.measurementPrgressTxt.fontSize = 20;
-		this.measurementPrgressTxt.fontWeight = 'normal';
-		this.measurementPrgressTxt.fill = '#000000';
-		this.measurementPrgressTxt.wordWrap = true;
-		this.measurementPrgressTxt.wordWrapWidth = 500;
-
-		this.measurementPrgressTotalTxt = this.add.text(390, 280, this.responseData.PM+'/'+this.measurementTotal);
-		this.measurementPrgressTotalTxt.anchor.setTo(0.5);
-		this.measurementPrgressTotalTxt.align = 'center';
-		this.measurementPrgressTotalTxt.fontSize = 20;
-		this.measurementPrgressTotalTxt.fontWeight = 'normal';
-		this.measurementPrgressTotalTxt.fill = '#000000';
-		this.measurementPrgressTotalTxt.wordWrap = true;
-		this.measurementPrgressTotalTxt.wordWrapWidth = 500;
-
-    	this.numberoperationPrgress = game.add.sprite(320,380,'progressCircle');
-    	this.numberoperationPrgress.frame = this.numberoperationPersent-1;
-    	this.numberoperationPrgress.anchor.setTo(0.5);
-    	this.numberoperationPrgress.scale.setTo(1.5);
-
-    	this.numberoperationPrgress.inputEnabled = true;
-    	this.numberoperationPrgress.events.onInputDown.add(function(){
-    		this.clickSound = this.add.audio('ClickSound');
-        	this.clickSound.play();
-    		this.state.start('userprogress2',true,false,"NumberOperation",this.responseData,this.responseData);
-    	},this);
-
-    	this.numberoperationPrgressTxt = this.add.text(320, 380, this.numberoperationPersent+'%');
-		this.numberoperationPrgressTxt.anchor.setTo(0.5);
-		this.numberoperationPrgressTxt.align = 'center';
-		this.numberoperationPrgressTxt.fontSize = 20;
-		this.numberoperationPrgressTxt.fontWeight = 'normal';
-		this.numberoperationPrgressTxt.fill = '#000000';
-		this.numberoperationPrgressTxt.wordWrap = true;
-		this.numberoperationPrgressTxt.wordWrapWidth = 500;
-
-		this.numberoperationPrgressTotalTxt = this.add.text(390, 380, this.responseData.PNO+'/'+this.numberoperationTotal);
-		this.numberoperationPrgressTotalTxt.anchor.setTo(0.5);
-		this.numberoperationPrgressTotalTxt.align = 'center';
-		this.numberoperationPrgressTotalTxt.fontSize = 20;
-		this.numberoperationPrgressTotalTxt.fontWeight = 'normal';
-		this.numberoperationPrgressTotalTxt.fill = '#000000';
-		this.numberoperationPrgressTotalTxt.wordWrap = true;
-		this.numberoperationPrgressTotalTxt.wordWrapWidth = 500;
-
-    	this.shapesPrgress = game.add.sprite(320,480,'progressCircle');
-    	this.shapesPrgress.frame = this.shapesPersent-1;
-    	this.shapesPrgress.anchor.setTo(0.5);
-    	this.shapesPrgress.scale.setTo(1.5);
-
-    	this.shapesPrgressTxt = this.add.text(320, 480, this.shapesPersent+'%');
-		this.shapesPrgressTxt.anchor.setTo(0.5);
-		this.shapesPrgressTxt.align = 'center';
-		this.shapesPrgressTxt.fontSize = 20;
-		this.shapesPrgressTxt.fontWeight = 'normal';
-		this.shapesPrgressTxt.fill = '#000000';
-		this.shapesPrgressTxt.wordWrap = true;
-		this.shapesPrgressTxt.wordWrapWidth = 500;
-
-		this.shapesPrgressTotalTxt = this.add.text(390, 480, this.responseData.PSG+'/'+this.shapesTotal);
-		this.shapesPrgressTotalTxt.anchor.setTo(0.5);
-		this.shapesPrgressTotalTxt.align = 'center';
-		this.shapesPrgressTotalTxt.fontSize = 20;
-		this.shapesPrgressTotalTxt.fontWeight = 'normal';
-		this.shapesPrgressTotalTxt.fill = '#000000';
-		this.shapesPrgressTotalTxt.wordWrap = true;
-		this.shapesPrgressTotalTxt.wordWrapWidth = 500;
+    	this.addScrollingtouserprogress(game, completedText);
 
 
     	this.cnumberSenseTree = game.add.sprite(580,180,'MicroConceptTree');
@@ -925,6 +737,348 @@ Game.userprogress.prototype={
 		this.cnumberoperationPrgressScoreTxt.wordWrap = true;
 		this.cnumberoperationPrgressScoreTxt.wordWrapWidth = 500;
 
+	},
+
+	addScrollingtouserprogress:function(game, completedText)
+	{
+
+
+		_this.groupScroll = _this.add.group();
+
+		this.numberSenseTree = game.add.sprite(140,180,'MicroConceptTree');
+    	this.numberSenseTree.frame = 0;
+    	this.numberSenseTree.anchor.setTo(0.5);
+    	this.numberSenseTree.scale.setTo(0.6,0.38);
+    	this.numberSenseTree.inputEnabled = true;
+    	this.numberSenseTree.events.onInputDown.add(function(){
+    		this.clickSound = this.add.audio('ClickSound');
+        	this.clickSound.play();
+    		this.state.start('userprogress2',true,false,"NumberSense",this.responseData,this.responseData);
+    	},this);
+
+    	this.numberSenseTreeTxt = this.add.text(140, 170, window.selctedLang.McTopicText1);
+		this.numberSenseTreeTxt.anchor.setTo(0.5);
+		this.numberSenseTreeTxt.align = 'center';
+		this.numberSenseTreeTxt.fontSize = 12;
+		this.numberSenseTreeTxt.fontWeight = 'normal';
+		this.numberSenseTreeTxt.fill = '#FFFFFF';
+		this.numberSenseTreeTxt.wordWrap = true;
+		this.numberSenseTreeTxt.wordWrapWidth = 500;
+
+    	this.measurementTree = game.add.sprite(140,280,'MicroConceptTree');
+    	this.measurementTree.frame = 1;
+    	this.measurementTree.anchor.setTo(0.5);
+    	this.measurementTree.scale.setTo(0.6,0.38);
+    	this.measurementTree.inputEnabled = true;
+    	this.measurementTree.events.onInputDown.add(function(){
+    		this.clickSound = this.add.audio('ClickSound');
+        	this.clickSound.play();
+    		this.state.start('userprogress2',true,false,"Measurement",this.responseData,this.responseData);
+    	},this);
+
+    	this.measurementTreeTxt = this.add.text(140, 270, window.selctedLang.McTopicText2);
+		this.measurementTreeTxt.anchor.setTo(0.5);
+		this.measurementTreeTxt.align = 'center';
+		this.measurementTreeTxt.fontSize = 12;
+		this.measurementTreeTxt.fontWeight = 'normal';
+		this.measurementTreeTxt.fill = '#FFFFFF';
+		this.measurementTreeTxt.wordWrap = true;
+		this.measurementTreeTxt.wordWrapWidth = 500;
+
+    	this.numberoperationTree = game.add.sprite(140,380,'MicroConceptTree');
+    	this.numberoperationTree.frame = 2;
+    	this.numberoperationTree.anchor.setTo(0.5);
+    	this.numberoperationTree.scale.setTo(0.6,0.38);
+    	this.numberoperationTree.inputEnabled = true;
+    	this.numberoperationTree.events.onInputDown.add(function(){
+    		this.clickSound = this.add.audio('ClickSound');
+        	this.clickSound.play();
+    		this.state.start('userprogress2',true,false,"NumberOperation",this.responseData,this.responseData);
+    	},this);
+
+    	this.numberoperationTreeTxt = this.add.text(140, 370, window.selctedLang.McTopicText5);
+		this.numberoperationTreeTxt.anchor.setTo(0.5);
+		this.numberoperationTreeTxt.align = 'center';
+		this.numberoperationTreeTxt.fontSize = 12;
+		this.numberoperationTreeTxt.fontWeight = 'normal';
+		this.numberoperationTreeTxt.fill = '#FFFFFF';
+		this.numberoperationTreeTxt.wordWrap = true;
+		this.numberoperationTreeTxt.wordWrapWidth = 500;
+		this.numberoperationTreeTxt.lineSpacing = -10;
+
+    	this.shapesTree = game.add.sprite(140,480,'MicroConceptTree');
+    	this.shapesTree.frame = 3;
+    	this.shapesTree.anchor.setTo(0.5);
+    	this.shapesTree.scale.setTo(0.6,0.38);
+
+    	this.shapesTreeTxt = this.add.text(140, 470, window.selctedLang.McTopicText3);
+		this.shapesTreeTxt.anchor.setTo(0.5);
+		this.shapesTreeTxt.align = 'center';
+		this.shapesTreeTxt.fontSize = 12;
+		this.shapesTreeTxt.fontWeight = 'normal';
+		this.shapesTreeTxt.fill = '#FFFFFF';
+		this.shapesTreeTxt.wordWrap = true;
+		this.shapesTreeTxt.wordWrapWidth = 500;
+
+		this.datahandlingTree = game.add.sprite(140,580,'MicroConceptTree');
+    	this.datahandlingTree.frame = 4;
+    	this.datahandlingTree.anchor.setTo(0.5);
+    	this.datahandlingTree.scale.setTo(0.6,0.38);
+
+    	this.datahandlingTreeTxt = this.add.text(140, 570, window.selctedLang.McTopicText4);
+		this.datahandlingTreeTxt.anchor.setTo(0.5);
+		this.datahandlingTreeTxt.align = 'center';
+		this.datahandlingTreeTxt.fontSize = 12;
+		this.datahandlingTreeTxt.fontWeight = 'normal';
+		this.datahandlingTreeTxt.fill = '#FFFFFF';
+		this.datahandlingTreeTxt.wordWrap = true;
+		this.datahandlingTreeTxt.wordWrapWidth = 500;
+
+		this.completedTxt = this.add.text(320, 140,completedText);
+		this.completedTxt.anchor.setTo(0.5);
+		this.completedTxt.align = 'center';
+		this.completedTxt.fontSize = 14;
+		this.completedTxt.fontWeight = 'normal';
+		this.completedTxt.fill = '#000000';
+		this.completedTxt.wordWrap = true;
+		this.completedTxt.wordWrapWidth = 500;
+
+		this.numbersensePrgress = game.add.sprite(320,180,'progressCircle');
+    	this.numbersensePrgress.frame = this.numbersensePersent-1;
+    	this.numbersensePrgress.anchor.setTo(0.5);
+    	this.numbersensePrgress.scale.setTo(1.5);
+
+
+    	this.numbersensePrgress.inputEnabled = true;
+    	this.numbersensePrgress.events.onInputDown.add(function(){
+    		this.clickSound = this.add.audio('ClickSound');
+        	this.clickSound.play();
+    		this.state.start('userprogress2',true,false,"NumberSense",this.responseData,this.responseData);
+    	},this);
+
+    	this.numbersensePrgressTxt = this.add.text(320, 180, this.numbersensePersent+'%');
+		this.numbersensePrgressTxt.anchor.setTo(0.5);
+		this.numbersensePrgressTxt.align = 'center';
+		this.numbersensePrgressTxt.fontSize = 20;
+		this.numbersensePrgressTxt.fontWeight = 'normal';
+		this.numbersensePrgressTxt.fill = '#000000';
+		this.numbersensePrgressTxt.wordWrap = true;
+		this.numbersensePrgressTxt.wordWrapWidth = 500;
+
+		this.numbersensePrgressTotalTxt = this.add.text(390, 180, this.responseData.PNS+'/'+this.numberSenseTotal);
+		this.numbersensePrgressTotalTxt.anchor.setTo(0.5);
+		this.numbersensePrgressTotalTxt.align = 'center';
+		this.numbersensePrgressTotalTxt.fontSize = 20;
+		this.numbersensePrgressTotalTxt.fontWeight = 'normal';
+		this.numbersensePrgressTotalTxt.fill = '#000000';
+		this.numbersensePrgressTotalTxt.wordWrap = true;
+		this.numbersensePrgressTotalTxt.wordWrapWidth = 500;
+
+    	this.measurementPrgress = game.add.sprite(320,280,'progressCircle');
+    	this.measurementPrgress.frame = this.measurementPersent-1;
+    	this.measurementPrgress.anchor.setTo(0.5);
+    	this.measurementPrgress.scale.setTo(1.5);
+    	this.measurementPrgress.inputEnabled = true;
+    	this.measurementPrgress.events.onInputDown.add(function(){
+    		this.clickSound = this.add.audio('ClickSound');
+        	this.clickSound.play();
+    		this.state.start('userprogress2',true,false,"Measurement",this.responseData,this.responseData);
+    	},this);
+
+    	this.measurementPrgressTxt = this.add.text(320, 280, this.measurementPersent+'%');
+		this.measurementPrgressTxt.anchor.setTo(0.5);
+		this.measurementPrgressTxt.align = 'center';
+		this.measurementPrgressTxt.fontSize = 20;
+		this.measurementPrgressTxt.fontWeight = 'normal';
+		this.measurementPrgressTxt.fill = '#000000';
+		this.measurementPrgressTxt.wordWrap = true;
+		this.measurementPrgressTxt.wordWrapWidth = 500;
+
+		this.measurementPrgressTotalTxt = this.add.text(390, 280, this.responseData.PM+'/'+this.measurementTotal);
+		this.measurementPrgressTotalTxt.anchor.setTo(0.5);
+		this.measurementPrgressTotalTxt.align = 'center';
+		this.measurementPrgressTotalTxt.fontSize = 20;
+		this.measurementPrgressTotalTxt.fontWeight = 'normal';
+		this.measurementPrgressTotalTxt.fill = '#000000';
+		this.measurementPrgressTotalTxt.wordWrap = true;
+		this.measurementPrgressTotalTxt.wordWrapWidth = 500;
+
+    	this.numberoperationPrgress = game.add.sprite(320,380,'progressCircle');
+    	this.numberoperationPrgress.frame = this.numberoperationPersent-1;
+    	this.numberoperationPrgress.anchor.setTo(0.5);
+    	this.numberoperationPrgress.scale.setTo(1.5);
+
+    	this.numberoperationPrgress.inputEnabled = true;
+    	this.numberoperationPrgress.events.onInputDown.add(function(){
+    		this.clickSound = this.add.audio('ClickSound');
+        	this.clickSound.play();
+    		this.state.start('userprogress2',true,false,"NumberOperation",this.responseData,this.responseData);
+    	},this);
+
+    	this.numberoperationPrgressTxt = this.add.text(320, 380, this.numberoperationPersent+'%');
+		this.numberoperationPrgressTxt.anchor.setTo(0.5);
+		this.numberoperationPrgressTxt.align = 'center';
+		this.numberoperationPrgressTxt.fontSize = 20;
+		this.numberoperationPrgressTxt.fontWeight = 'normal';
+		this.numberoperationPrgressTxt.fill = '#000000';
+		this.numberoperationPrgressTxt.wordWrap = true;
+		this.numberoperationPrgressTxt.wordWrapWidth = 500;
+
+		this.numberoperationPrgressTotalTxt = this.add.text(390, 380, this.responseData.PNO+'/'+this.numberoperationTotal);
+		this.numberoperationPrgressTotalTxt.anchor.setTo(0.5);
+		this.numberoperationPrgressTotalTxt.align = 'center';
+		this.numberoperationPrgressTotalTxt.fontSize = 20;
+		this.numberoperationPrgressTotalTxt.fontWeight = 'normal';
+		this.numberoperationPrgressTotalTxt.fill = '#000000';
+		this.numberoperationPrgressTotalTxt.wordWrap = true;
+		this.numberoperationPrgressTotalTxt.wordWrapWidth = 500;
+
+    	this.shapesPrgress = game.add.sprite(320,480,'progressCircle');
+    	this.shapesPrgress.frame = this.shapesPersent-1;
+    	this.shapesPrgress.anchor.setTo(0.5);
+    	this.shapesPrgress.scale.setTo(1.5);
+
+    	this.shapesPrgressTxt = this.add.text(320, 480, this.shapesPersent+'%');
+		this.shapesPrgressTxt.anchor.setTo(0.5);
+		this.shapesPrgressTxt.align = 'center';
+		this.shapesPrgressTxt.fontSize = 20;
+		this.shapesPrgressTxt.fontWeight = 'normal';
+		this.shapesPrgressTxt.fill = '#000000';
+		this.shapesPrgressTxt.wordWrap = true;
+		this.shapesPrgressTxt.wordWrapWidth = 500;
+
+		this.shapesPrgressTotalTxt = this.add.text(390, 480, this.responseData.PSG+'/'+this.shapesTotal);
+		this.shapesPrgressTotalTxt.anchor.setTo(0.5);
+		this.shapesPrgressTotalTxt.align = 'center';
+		this.shapesPrgressTotalTxt.fontSize = 20;
+		this.shapesPrgressTotalTxt.fontWeight = 'normal';
+		this.shapesPrgressTotalTxt.fill = '#000000';
+		this.shapesPrgressTotalTxt.wordWrap = true;
+		this.shapesPrgressTotalTxt.wordWrapWidth = 500;
+
+		this.datahandlingPrgress = game.add.sprite(320,580,'progressCircle');
+    	this.datahandlingPrgress.frame = this.datahandlingPersent-1;
+    	this.datahandlingPrgress.anchor.setTo(0.5);
+    	this.datahandlingPrgress.scale.setTo(1.5);
+
+    	this.datahandlingPrgressTxt = this.add.text(320, 580, this.datahandlingPersent+'%');
+		this.datahandlingPrgressTxt.anchor.setTo(0.5);
+		this.datahandlingPrgressTxt.align = 'center';
+		this.datahandlingPrgressTxt.fontSize = 20;
+		this.datahandlingPrgressTxt.fontWeight = 'normal';
+		this.datahandlingPrgressTxt.fill = '#000000';
+		this.datahandlingPrgressTxt.wordWrap = true;
+		this.datahandlingPrgressTxt.wordWrapWidth = 500;
+
+		this.datahandlingPrgressTotalTxt = this.add.text(390, 580, this.responseData.PDH+'/'+this.datahandlingTotal);
+		this.datahandlingPrgressTotalTxt.anchor.setTo(0.5);
+		this.datahandlingPrgressTotalTxt.align = 'center';
+		this.datahandlingPrgressTotalTxt.fontSize = 20;
+		this.datahandlingPrgressTotalTxt.fontWeight = 'normal';
+		this.datahandlingPrgressTotalTxt.fill = '#000000';
+		this.datahandlingPrgressTotalTxt.wordWrap = true;
+		this.datahandlingPrgressTotalTxt.wordWrapWidth = 500;
+
+
+		_this.swipeUpFlag = true;
+		_this.swipeDownFlag = false;
+
+		_this.graphicsBg = _this.add.graphics(0, 0);
+		_this.graphicsBg.lineStyle(0, 0xFFFFFF, 0.8);
+		_this.graphicsBg.beginFill(0xA24098, 0);
+		_this.graphicsBg.drawRect(70, 10, 350, 800);
+		_this.graphicsBg.boundsPadding = 0;
+
+		_this.mask = _this.add.graphics(10, 135);
+		_this.mask.lineStyle(0, 0xFFFFFF, 0);
+		_this.mask.beginFill(0xA24098, 1);
+		_this.mask.drawRect(70, 10, 360, 375);
+		_this.mask.boundsPadding = 0;
+
+		_this.graphicsBg.mask = _this.mask;
+
+		
+
+		
+
+		_this.graphicsBg.addChild(this.numberSenseTree);
+		_this.graphicsBg.addChild(this.numberSenseTreeTxt);
+		_this.graphicsBg.addChild(this.measurementTree);
+		_this.graphicsBg.addChild(this.measurementTreeTxt);
+		_this.graphicsBg.addChild(this.numberoperationTree);
+		_this.graphicsBg.addChild(this.numberoperationTreeTxt);
+		_this.graphicsBg.addChild(this.shapesTree);
+		_this.graphicsBg.addChild(this.shapesTreeTxt);
+		_this.graphicsBg.addChild(this.datahandlingTree);
+		_this.graphicsBg.addChild(this.datahandlingTreeTxt);
+		_this.graphicsBg.addChild(this.numbersensePrgress);
+		_this.graphicsBg.addChild(this.numbersensePrgressTxt);
+		_this.graphicsBg.addChild(this.numbersensePrgressTotalTxt);
+		_this.graphicsBg.addChild(this.measurementPrgress);
+		_this.graphicsBg.addChild(this.measurementPrgressTxt);
+		_this.graphicsBg.addChild(this.measurementPrgressTotalTxt);
+		_this.graphicsBg.addChild(this.numberoperationPrgress);
+		_this.graphicsBg.addChild(this.numberoperationPrgressTxt);
+		_this.graphicsBg.addChild(this.numberoperationPrgressTotalTxt);
+		_this.graphicsBg.addChild(this.shapesPrgress);
+		_this.graphicsBg.addChild(this.shapesPrgressTxt);
+		_this.graphicsBg.addChild(this.shapesPrgressTotalTxt);
+		_this.graphicsBg.addChild(this.datahandlingPrgress);
+		_this.graphicsBg.addChild(this.datahandlingPrgressTxt);
+		_this.graphicsBg.addChild(this.datahandlingPrgressTotalTxt);
+
+
+		_this.scrollWhite = _this.add.sprite(425,130,'scrollWhite');
+		_this.scrollBlack = _this.add.sprite(428,135,'scrollBlack');
+
+		_this.graphicsBg.inputEnabled = true;
+		_this.graphicsBg.input.enableDrag();
+		_this.graphicsBg.input.allowHorizontalDrag = false;
+		_this.graphicsBg.events.onDragUpdate.add(function(target){
+			console.log(_this.graphicsBg.y);
+
+			if(_this.graphicsBg.y>0)
+				_this.graphicsBg.y = 0;
+			if(_this.graphicsBg.y<-95)
+				_this.graphicsBg.y = -95;
+
+			/*if(_this.scrollBlack.y>-47){
+				_this.scrollBlack.y = 210;
+				_this.graphicsBg.y = -95;
+			}
+			else if(_this.scrollBlack.y<-47){
+				_this.scrollBlack.y = 135;
+				_this.graphicsBg.y = 0;
+			}*/
+
+		},true);
+
+		_this.scrollBlack.inputEnabled = true;
+
+    	_this.scrollBlack.input.enableDrag();
+		_this.scrollBlack.input.allowHorizontalDrag = false;
+		_this.scrollBlack.events.onDragUpdate.add(function(target){
+			console.log(_this.scrollBlack.y);
+			
+			
+			if(_this.scrollBlack.y<135)
+				_this.scrollBlack.y = 135;
+
+			if(_this.scrollBlack.y>210)
+				_this.scrollBlack.y = 210;
+
+			if(_this.scrollBlack.y>172){
+				_this.scrollBlack.y = 210;
+				_this.graphicsBg.y = -95;
+			}
+			else if(_this.scrollBlack.y<172){
+				_this.scrollBlack.y = 135;
+				_this.graphicsBg.y = 0;
+			}
+
+
+		},true);
+		
 	},
 
 	getchallengemodevalue:function(game){

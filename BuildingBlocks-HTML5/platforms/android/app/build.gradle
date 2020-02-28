@@ -99,6 +99,7 @@ ext {
 
 // PLUGIN GRADLE EXTENSIONS START
 apply from: "../cordova-plugin-firebasex/hellocordova-build.gradle"
+apply from: "../cordova-plugin-appsflyer-sdk/hellocordova-cordovaAF.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()
@@ -302,6 +303,8 @@ dependencies {
     implementation "com.google.firebase:firebase-auth:19.1.0"
     implementation "com.crashlytics.sdk.android:crashlytics:2.10.1"
     implementation "com.crashlytics.sdk.android:crashlytics-ndk:2.1.1"
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+    implementation "com.facebook.android:facebook-android-sdk:5.13.0"
     // SUB-PROJECT DEPENDENCIES END
 }
 

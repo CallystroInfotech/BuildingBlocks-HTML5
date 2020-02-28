@@ -103,6 +103,22 @@
     "is_top_level": true,
     "variables": {}
   },
+  "cordova-plugin-androidx": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-androidx"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-androidx-adapter": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-androidx-adapter@^1.1.0"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
   "cordova-plugin-firebasex": {
     "source": {
       "type": "registry",
@@ -124,20 +140,55 @@
       "ANDROID_CRASHLYTICS_NDK_VERSION": "2.1.1"
     }
   },
-  "cordova-plugin-androidx": {
+  "cordova-plugin-x-socialsharing": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-androidx@^1.0.2"
+      "id": "cordova-plugin-x-socialsharing"
     },
-    "is_top_level": false,
+    "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-androidx-adapter": {
+  "cordova-plugin-native-spinner": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-androidx-adapter@^1.1.0"
+      "id": "cordova-plugin-native-spinner@^1.1.3"
     },
-    "is_top_level": false,
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-android-permissions": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-android-permissions"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-facebook4": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-facebook4"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID": "284648352510790",
+      "APP_NAME": "Building Blocks"
+    }
+  },
+  "cordova-plugin-appsflyer-sdk": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-appsflyer-sdk"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-statusbar": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-statusbar@2.4.3"
+    },
+    "is_top_level": true,
     "variables": {}
   }
 }

@@ -33,12 +33,12 @@ Game.registrationLangSelectionScreen.prototype={
 		if(_this.user)
 		{
 			var regBackArrow = game.add.sprite(40,40,'regBackArrow');
-	    	regBackArrow.scale.setTo(0.5);
+	    	regBackArrow.scale.setTo(0.35);
 	    	regBackArrow.anchor.setTo(0.5);
 
 	    	var regBackArrowGrph = game.add.graphics(0, 0);
 	    	regBackArrowGrph.beginFill(0x4E342E, 0.05);
-			regBackArrowGrph.drawRect(-60, -60, 120, 120);
+			regBackArrowGrph.drawRect(-60, -60, 200, 200);
 			regBackArrow.addChild(regBackArrowGrph);
 
 	    	regBackArrow.inputEnabled = true;
@@ -49,22 +49,26 @@ Game.registrationLangSelectionScreen.prototype={
 	    	document.addEventListener('backbutton', _this.goback, false);
 
 
-			var titleTxt = game.add.text(game.world.centerX-80,40,"Building Blocks");
+			var titleTxt = game.add.text(game.world.centerX-80,45,"Building Blocks");
+			titleTxt.x = Math.round(titleTxt.x);
 			titleTxt.anchor.setTo(0.5);
 			titleTxt.align = 'center';
-			titleTxt.fontSize = 32;
-			titleTxt.fontWeight = 'normal';
+			titleTxt.font = 'regfont4';
+			titleTxt.fontSize = '22pt';
+			titleTxt.fontWeight = 500;
 			titleTxt.fill = '#FFFFFF';
 			titleTxt.wordWrap = true;
 			titleTxt.wordWrapWidth = 500;
 		}
 		else
 		{
-			var titleTxt = game.add.text(game.world.centerX-120,40,"Building Blocks");
+			var titleTxt = game.add.text(game.world.centerX-140,45,"Building Blocks");
+			titleTxt.x = Math.round(titleTxt.x);
 			titleTxt.anchor.setTo(0.5);
 			titleTxt.align = 'center';
-			titleTxt.fontSize = 32;
-			titleTxt.fontWeight = 'normal';
+			titleTxt.font = 'regfont4';
+			titleTxt.fontSize = '22pt';
+			titleTxt.fontWeight = 500;
 			titleTxt.fill = '#FFFFFF';
 			titleTxt.wordWrap = true;
 			titleTxt.wordWrapWidth = 500;
@@ -76,7 +80,7 @@ Game.registrationLangSelectionScreen.prototype={
     	graphicBg.anchor.setTo(0.5);
 
     	var carrotIcon = game.add.sprite(game.world.centerX+110,game.world.centerY-50,'carrotIcon');
-    	carrotIcon.scale.setTo(0.8);
+    	carrotIcon.scale.setTo(0.7);
     	carrotIcon.anchor.setTo(0.5);
 
 
@@ -85,10 +89,12 @@ Game.registrationLangSelectionScreen.prototype={
     	regTickBtn.anchor.setTo(0.5);
 
 
-    	this.selectLanguageText = game.add.text(game.world.centerX-10,game.world.centerY-50,"Select Language");
+    	this.selectLanguageText = game.add.text(game.world.centerX-10,game.world.centerY-47,"Select Language");
+		this.selectLanguageText.x = Math.round(this.selectLanguageText.x);
 		this.selectLanguageText.anchor.setTo(0.5);
 		this.selectLanguageText.align = 'center';
-		this.selectLanguageText.fontSize = 26;
+		this.selectLanguageText.font = 'regfont1';
+		this.selectLanguageText.fontSize = '17pt';
 		this.selectLanguageText.fontWeight = 'normal';
 		this.selectLanguageText.fill = '#000000';
 		this.selectLanguageText.wordWrap = true;
@@ -103,13 +109,14 @@ Game.registrationLangSelectionScreen.prototype={
 			this.languageSelectedGrp = game.add.group();
 
 			var languageList = ["Select Language","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી"];
+			//var languageList = ["Select Language"];
 
 	    	var x = game.world.centerX-140;
-	    	var y = game.world.centerY-25;
+	    	var y = game.world.centerY-70;
 
 	    	for(var i=0; i<languageList.length; i++){
 	    		if(i!=0)
-	    			y=y+45;
+	    			y=y+55;
 	    		this.createDropDownMenu(game,languageList[i],i,x,y,this.languageSelectedGrp,target, languageList, regTickBtn);
 	    	}
 		},this);
@@ -127,14 +134,34 @@ Game.registrationLangSelectionScreen.prototype={
 		this["languagegraphicsBg"+i] = game.add.graphics(0, 0);
     	this["languagegraphicsBg"+i].anchor.setTo(0.5);
     	this["languagegraphicsBg"+i].name = lang;
-		this["languagegraphicsBg"+i].lineStyle(2, 0x000000, 0.8);
+		//this["languagegraphicsBg"+i].lineStyle(2, 0x000000, 0.8);
 		this["languagegraphicsBg"+i].beginFill(0xFFFFFF, 1);
-		this["languagegraphicsBg"+i].drawRoundedRect(x, y, 280, 45, 10);
+		//this["languagegraphicsBg"+i].drawRoundedRect(x, y, 280, 45, 10);
+		this["languagegraphicsBg"+i].drawRect(x, y, 280, 55);
 
-		this["languageTxt"+i] = game.add.text(game.world.centerX,y+25,lang);
+		if((i+1) < 6)
+		{
+			this["bdm"+i] = game.add.bitmapData(800,600);                
+	    	this["bdm"+i].ctx.beginPath();        
+	    	this["bdm"+i].ctx.lineWidth = "5";        
+	    	this["bdm"+i].ctx.strokeStyle = '#000000';        
+	    	this["bdm"+i].ctx.setLineDash([2,3]);        
+	    	this["bdm"+i].ctx.moveTo(0, 0);        
+	    	this["bdm"+i].ctx.lineTo(280 , 0);
+	    	//ctx.moveTo(100, 10);
+			//ctx.quadraticCurveTo(230, 150, 250, 20);        
+	    	this["bdm"+i].ctx.stroke();        
+	    	this["bdm"+i].ctx.closePath();        
+	    	this["sprite"+i] = game.add.sprite(x, y+52, this["bdm"+i]);
+		}
+		
+
+		this["languageTxt"+i] = game.add.text(game.world.centerX,y+28,lang);
+		this["languageTxt"+i].x = Math.round(this["languageTxt"+i].x);
 		this["languageTxt"+i].anchor.setTo(0.5);
 		this["languageTxt"+i].align = 'center';
-		this["languageTxt"+i].fontSize = 26;
+		this["languageTxt"+i].font = 'regfont1';
+		this["languageTxt"+i].fontSize = '17pt';
 		this["languageTxt"+i].fontWeight = 'normal';
 		this["languageTxt"+i].fill = '#000000';
 		this["languageTxt"+i].wordWrap = true;
@@ -174,7 +201,11 @@ Game.registrationLangSelectionScreen.prototype={
 		},this);
 
 		grp.add(this["languagegraphicsBg"+i]);
+		if((i+1) < 6)
+			grp.add(this["sprite"+i]);	
 		grp.add(this["languageTxt"+i]);
+
+		
 	},
 
 	shutdown:function()

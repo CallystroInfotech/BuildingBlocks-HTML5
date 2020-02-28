@@ -145,7 +145,7 @@ Game.grade2_4Blevel1.prototype={
         _this.load.atlas('Level24B_gate',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/gate.png' ,window.baseUrl+'json/gradeJson/2.4A/gate.json');
 
          //_this.load.atlas('DisplayScale',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/DisplayScale.png' ,window.baseUrl+'json/gradeJson/2.4A/DisplayScale.json');
-         _this.load.atlas('DisplayScale','assets/newAssets/DisplayScale.png' ,'assets/newAssets/DisplayScale.json');
+         _this.load.atlas('DisplayScale',window.baseUrl+'assets/newAssets/DisplayScale.png' ,window.baseUrl+'assets/newAssets/DisplayScale.json');
        
 
     }

@@ -51,6 +51,14 @@ Game.selectgrade5MicroConceptScreen.prototype={
 		{
 			this.state.start('grade5NumberSense',true,false);
 		}
+		else if(grade5NumberOperationSelected)
+		{
+			this.state.start('grade5NumberOperation',true,false);
+		}
+		else if(grade5DataHandlingSelected)
+		{
+			this.state.start('grade5DataHandling',true,false);
+		}
 		else
 		{
 
@@ -146,9 +154,10 @@ Game.selectgrade5MicroConceptScreen.prototype={
 
 			//this.microConceptTopics(game,180,250,"NUMBER SENSE",0);
 			//this.microConceptTopics(game,480,250,"NUMBER \nOPERATIONS",1);
-			this.microConceptTopics(game,230,250,selctedLang.McTopicText1,"NUMBER SENSE","tree1",0);
-			this.microConceptTopics(game,480,250,selctedLang.McTopicText5,"NUMBER OPERATIONS","tree3",1);
-			this.microConceptTopics(game,730,250,selctedLang.McTopicText3,"SHAPES","tree4",2);
+			this.microConceptTopics(game,150,220,window.selctedLang.McTopicText1,"NUMBER SENSE","tree1",0);
+			this.microConceptTopics(game,380,320,window.selctedLang.McTopicText5,"NUMBER OPERATIONS","tree4",2);
+			this.microConceptTopics(game,600,220,window.selctedLang.McTopicText3,"SHAPES","tree5",1);
+			this.microConceptTopics(game,820,320,window.selctedLang.McTopicText4,"DATA HANDLING","tree2",3);
 
 			/*this.downloadbg = _this.add.graphics(0, 0);
 			this.downloadbg.lineStyle(0, 0xFFFFFF, 0.8);
@@ -257,6 +266,10 @@ Game.selectgrade5MicroConceptScreen.prototype={
 		else if(target.name=="SHAPES")
 		{
 			this.state.start('grade5Shapes',true,false);
+		}
+		else if(target.name=="DATA HANDLING")
+		{
+			this.state.start('grade5DataHandling',true,false);
 		}
 		else
 		{
