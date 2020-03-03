@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.buildingblocks.test;
+package com.akshara.easymath;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

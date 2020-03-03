@@ -2206,6 +2206,7 @@ init:function(game)
         _this.tickMark = _this.add.sprite(900,265,'dhdcg1_4_rightmark');
         _this.tickMark.anchor.setTo(0.5);
         _this.tickMark.scale.setTo(1);
+        _this.tickMark.visible = false;
         
         _this.boxGroup = _this.add.group();
         
@@ -2516,6 +2517,7 @@ init:function(game)
         _this.tickMark = _this.add.sprite(900,265,'dhdcg1_4_rightmark');
         _this.tickMark.anchor.setTo(0.5);
         _this.tickMark.scale.setTo(1);
+        _this.tickMark.visible = false;
         
         _this.boxGroup = _this.add.group();
         
@@ -2827,6 +2829,7 @@ init:function(game)
         _this.tickMark = _this.add.sprite(900,265,'dhdcg1_4_rightmark');
         _this.tickMark.anchor.setTo(0.5);
         _this.tickMark.scale.setTo(1);
+        _this.tickMark.visible = false;
         
         _this.boxGroup = _this.add.group();
         
@@ -3129,6 +3132,7 @@ init:function(game)
     _this.tickMark = _this.add.sprite(900,265,'dhdcg1_4_rightmark');
     _this.tickMark.anchor.setTo(0.5);
     _this.tickMark.scale.setTo(1);
+    _this.tickMark.visible = false;
 
     _this.boxGroup = _this.add.group();
 
@@ -3448,6 +3452,7 @@ init:function(game)
     _this.tickMark = _this.add.sprite(900,265,'dhdcg1_4_rightmark');
     _this.tickMark.anchor.setTo(0.5);
     _this.tickMark.scale.setTo(1);
+    _this.tickMark.visible = false;
 
     _this.boxGroup = _this.add.group();
 
@@ -3766,6 +3771,7 @@ init:function(game)
     _this.tickMark = _this.add.sprite(900,265,'dhdcg1_4_rightmark');
     _this.tickMark.anchor.setTo(0.5);
     _this.tickMark.scale.setTo(1);
+    _this.tickMark.visible = false;
 
     _this.boxGroup = _this.add.group();
 
@@ -5998,6 +6004,7 @@ init:function(game)
    },    
     
    checkAns2:function(){
+    _this.tickMark.visible = true;
     _this.tickMark.inputEnabled=true;  
     _this.tickMark.events.onInputDown.add(function(target){
     _this.tickMark.frame=1;

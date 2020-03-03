@@ -31,7 +31,7 @@ Game.appLoginEditScreen.prototype={
 
 		_this.i = 0;
 
-		_this.basePath = cordova.file.externalRootDirectory+"Android/data/com.buildingblocks.test/files/Download/gameFilesBBV5_0_5/www/";
+		_this.basePath = cordova.file.externalRootDirectory+"Android/data/com.akshara.easymath/Files/Download/.gameFilesBBV5_0_5/www/";
 
 		_this.fullSize = 121195371;
 

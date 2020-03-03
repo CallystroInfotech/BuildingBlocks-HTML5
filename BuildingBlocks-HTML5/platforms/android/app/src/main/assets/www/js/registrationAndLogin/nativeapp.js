@@ -87,22 +87,22 @@ var nativeApp =
             FirebasePlugin.logEvent("Select_practice_activity", {Select_practice_avty_val: message, item_id: ""});
         },
 
-       startChallengeActivity:function()
+       startChallengeActivity:function(message)
         {
            FirebasePlugin.logEvent("Select_challenge_activity", {Select_chal_avty_val: message, item_id: ""});
         },
 
-        finishPracticeActivity:function()
+        finishPracticeActivity:function(message)
         {
             FirebasePlugin.logEvent("Finish_practice_activity", {Finish_practice_acty_val: message, item_id: ""});
         },
 
-        finishChallengeActivity:function()
+        finishChallengeActivity:function(message)
         {
             FirebasePlugin.logEvent("Finish_Challenge_activity", {Finish_chal_acty_val: message, item_id: ""});
         },
 
-        onButtonShowPopupWindowClick:function() {
+        onButtonShowPopupWindowClick:function(message) {
             
         },
 };

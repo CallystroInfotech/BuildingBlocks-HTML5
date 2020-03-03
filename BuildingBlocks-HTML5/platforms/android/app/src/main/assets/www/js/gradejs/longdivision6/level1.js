@@ -4083,7 +4083,7 @@ init:function(game)
              console.log("gameEnd");
            //_this.stopAllVoice();
              _this.stopVoice();
-             _this.state.start('longdivision6NSN2score',true,false);
+             _this.state.start('longdivision6Score',true,false);
              },_this);
         }
 

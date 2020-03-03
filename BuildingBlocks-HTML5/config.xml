@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.buildingblocks.test" version="7.0.0">
+<widget id="com.akshara.easymath" android-versionCode="37"
+version="7.0.0">
     <name>Building Blocks</name>
     <description>
         Maths Games Class 1-5 – Building Blocks by Akshara
