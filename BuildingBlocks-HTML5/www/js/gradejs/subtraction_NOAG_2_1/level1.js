@@ -302,7 +302,7 @@ Game.subtraction_NOAG_2_1level1.prototype={
               //this.video.destroy();
               _this.create1();
             },_this);
-               if(window.languageSelected == "Marathi" || window.languageSelected == "Telugu" || window.languageSelected == "Tamil" || window.languageSelected == "Urdu")
+               if(window.languageSelected == "Telugu" || window.languageSelected == "Tamil" || window.languageSelected == "Urdu")
 								{
 									//do nothing
 									this.video.playbackRate = 1;
@@ -1412,7 +1412,7 @@ removeEverthing:function()
 					_this.playDemoVideos('10_2_1b');
 				},_this);
 			}
-			else if(window.languageSelected == "Marathi" || window.languageSelected == "Telugu" || window.languageSelected == "Tamil" || window.languageSelected == "Urdu")
+			else if(window.languageSelected == "Telugu" || window.languageSelected == "Tamil" || window.languageSelected == "Urdu")
 								{
 									//do nothing
 									this.videoLevel2.playbackRate = 1;

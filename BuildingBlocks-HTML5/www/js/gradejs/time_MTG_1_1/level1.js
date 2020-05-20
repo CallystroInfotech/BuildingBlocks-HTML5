@@ -261,7 +261,10 @@ Game.time_MTG_1_1level1.prototype={
         this.load.image('Level54_tittleBaar',window.baseUrl+'assets/gradeAssets/5.4/commonAssets/tittleBaar.png');
         this.load.atlas('Level54_replay',window.baseUrl+'assets/gradeAssets/5.4/commonAssets/reply.png' ,window.baseUrl+'json/gradeJson/5.4/reply.json');
         //this.load.atlas('Level54_monthname',window.baseUrl+'assets/gradeAssets/5.4/monthname.png' ,window.baseUrl+'json/gradeJson/5.4/monthname.json');
-        this.load.atlas('Level54_monthname',window.baseUrl+'assets/newAssets/monthname.png' ,window.baseUrl+'assets/newAssets/monthname.json');
+        if(window.languageSelected == "Gujarati")
+			this.load.atlas('Level54_monthname',window.baseUrl+'assets/newAssets/monthname1.png' ,window.baseUrl+'assets/newAssets/monthname1.json');
+		else
+			this.load.atlas('Level54_monthname',window.baseUrl+'assets/newAssets/monthname.png' ,window.baseUrl+'assets/newAssets/monthname.json');
         //game assets
         this.load.atlas('Level54_main_imageanim',window.baseUrl+'assets/gradeAssets/5.4/main_imageanim.png' ,window.baseUrl+'json/gradeJson/5.4/main_imageanim.json');
         this.load.image('Level54_main_image',window.baseUrl+'assets/gradeAssets/5.4/main_image.png');

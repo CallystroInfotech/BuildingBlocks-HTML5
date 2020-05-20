@@ -3790,7 +3790,7 @@ Game.grade1Measurement.prototype={
 								  _this.state.start('unity10_1_1level1',true,false);			
 								},_this);
 								
-								if(window.languageSelected == "Marathi" || window.languageSelected == "Telugu" || window.languageSelected == "Tamil" || window.languageSelected == "Urdu")
+								if(window.languageSelected == "Telugu" || window.languageSelected == "Tamil" || window.languageSelected == "Urdu")
 								{
 									//do nothing
 									this.video2.playbackRate = 1.2;
@@ -3943,7 +3943,7 @@ Game.grade1Measurement.prototype={
 									_this.playDemoVideos('10_2_1b');
 								},_this);
 							}
-							else if(window.languageSelected == "Marathi" || window.languageSelected == "Telugu" || window.languageSelected == "Tamil" || window.languageSelected == "Urdu")
+							else if(window.languageSelected == "Telugu" || window.languageSelected == "Tamil" || window.languageSelected == "Urdu")
 								{
 									//do nothing
 									this.video3.playbackRate = 1.2;
