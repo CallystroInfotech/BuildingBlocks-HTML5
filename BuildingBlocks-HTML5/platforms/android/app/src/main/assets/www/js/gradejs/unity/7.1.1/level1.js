@@ -1445,6 +1445,22 @@ getVoice:function(){
             {
                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Kannada/Game 7.1.1.mp3");
             }
+			else if(window.languageSelected=="Marathi")
+            {
+                _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Marathi/7.1.1.mp3");
+            }
+			else if(window.languageSelected=="Telugu")
+            {
+                _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Telugu/7.1.1.mp3");
+            }
+			else if(window.languageSelected=="Tamil")
+            {
+                _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Tamil/7.1.1.mp3");
+            }
+			else if(window.languageSelected=="Urdu")
+            {
+                _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Urdu/7.1.1.mp3");
+            }
             else if(window.languageSelected=="Gujarati")
             {
                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/3.2.1/7.1.1.mp3");

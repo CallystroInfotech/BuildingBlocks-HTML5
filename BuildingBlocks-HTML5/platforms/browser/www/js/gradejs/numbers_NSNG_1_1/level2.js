@@ -71,6 +71,22 @@ Game.number_NSNG_1_1level2.prototype={
             {
                  _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/1.2/Game1_2.mp3");
             } 
+			else if(window.languageSelected=="Marathi")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Marathi/Game1_2.mp3");
+            }
+			else if(window.languageSelected=="Telugu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Telugu/Game1_2.mp3");
+            }
+			else if(window.languageSelected=="Tamil")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Tamil/Game1_2.mp3");
+            }
+			else if(window.languageSelected=="Urdu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Urdu/Game1_2.mp3");
+            }
             else
             {
                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Odiya/1.2.mp3");
@@ -392,7 +408,7 @@ toCheckAnswer:function(target){
       //_this.stopVoice();
      _this.questionid = 1;
      if( _this.no1==0 &&  _this.wrong == true){               
-         _this.time.events.add(9150, function(){
+         _this.time.events.add(9450, function(){
             this.getVoice();
             //commonNavBar.getVoice(commonNavBar.soundUrl);
         },_this);
@@ -426,7 +442,7 @@ toCheckAnswer:function(target){
           //_this.stopVoice();
         _this.questionid = 1;
          if( _this.no1==0 &&  _this.wrong == true){               
-         _this.time.events.add(8500, function(){
+         _this.time.events.add(9450, function(){
            this.getVoice();
             //commonNavBar.getVoice(commonNavBar.soundUrl);
         },_this);
@@ -462,7 +478,7 @@ toCheckAnswer:function(target){
         // _this.stopVoice();
         _this.questionid = 1;
         if( _this.no1==0 &&  _this.wrong == true){               
-         _this.time.events.add(8500, function(){
+         _this.time.events.add(9450, function(){
             this.getVoice();
                 //commonNavBar.getVoice(commonNavBar.soundUrl);
         },_this);
@@ -497,7 +513,7 @@ toCheckAnswer:function(target){
         // _this.stopVoice();
         _this.questionid = 1;
         if( _this.no1==0 &&  _this.wrong == true){               
-         _this.time.events.add(8500, function(){
+         _this.time.events.add(9450, function(){
            this.getVoice();
                 //commonNavBar.getVoice(commonNavBar.soundUrl);
         },_this);
@@ -533,7 +549,7 @@ toCheckAnswer:function(target){
        //_this.stopVoice();
         _this.questionid = 1;
         if( _this.no1==0 &&  _this.wrong == true){               
-         _this.time.events.add(8500, function(){
+         _this.time.events.add(9450, function(){
             this.getVoice();
                 //commonNavBar.getVoice(commonNavBar.soundUrl);
         },_this);
@@ -569,7 +585,7 @@ toCheckAnswer:function(target){
         //_this.stopVoice();
         _this.questionid = 1;
         if( _this.no1==0 &&  _this.wrong == true){               
-         _this.time.events.add(8500, function(){
+         _this.time.events.add(9450, function(){
             this.getVoice();
                 //commonNavBar.getVoice(commonNavBar.soundUrl);
         },_this);
@@ -605,7 +621,7 @@ toCheckAnswer:function(target){
          //_this.stopVoice();
         _this.questionid = 1;
         if( _this.no1==0 &&  _this.wrong == true){               
-         _this.time.events.add(8500, function(){
+         _this.time.events.add(9450, function(){
             this.getVoice();
                // commonNavBar.getVoice(commonNavBar.soundUrl);
         },_this);
@@ -640,7 +656,7 @@ toCheckAnswer:function(target){
         //_this.stopVoice();
         _this.questionid = 1;
         if( _this.no1==0 &&  _this.wrong == true){               
-         _this.time.events.add(8500, function(){
+         _this.time.events.add(9450, function(){
             this.getVoice();
                // commonNavBar.getVoice(commonNavBar.soundUrl);
         },_this);
@@ -676,7 +692,7 @@ toCheckAnswer:function(target){
          //_this.stopVoice();
         _this.questionid = 1;
         if( _this.no1==0 &&  _this.wrong == true){               
-         _this.time.events.add(8500, function(){
+         _this.time.events.add(9450, function(){
             this.getVoice();
                 //commonNavBar.getVoice(commonNavBar.soundUrl);
         },_this);
@@ -1069,7 +1085,7 @@ getVoice:function(){
         //console.log("voice "+ _this.qArrays[ _this.no1]);
             _this.stopVoice();
             _this.playQuestionSound = document.createElement('audio');
-          _this.src = document.createElement('source');
+		  _this.src = document.createElement('source');
             switch( _this.qArrays[ _this.no1])
             {
                     
@@ -1088,7 +1104,23 @@ getVoice:function(){
                         } 
                         else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No1.mp3");
-                        else 
+					else if(window.languageSelected=="Marathi")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Marathi/No1.mp3");
+            }
+			else if(window.languageSelected=="Telugu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Telugu/No1.mp3");
+            }
+			else if(window.languageSelected=="Tamil")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Tamil/No1.mp3");
+            }
+			else if(window.languageSelected=="Urdu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Urdu/No1.mp3");
+            }
+						else 
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/1.mp3");
                         }
@@ -1105,9 +1137,25 @@ getVoice:function(){
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/2.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Marathi/No2.mp3");
+            }
+			else if(window.languageSelected=="Telugu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Telugu/No2.mp3");
+            }
+			else if(window.languageSelected=="Tamil")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Tamil/No2.mp3");
+            }
+			else if(window.languageSelected=="Urdu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Urdu/No2.mp3");
+            }
                         else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No2.mp3");
-                        else
+						else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/2.mp3");
                         }
@@ -1124,9 +1172,25 @@ getVoice:function(){
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/3.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Marathi/No3.mp3");
+            }
+			else if(window.languageSelected=="Telugu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Telugu/No3.mp3");
+            }
+			else if(window.languageSelected=="Tamil")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Tamil/No3.mp3");
+            }
+			else if(window.languageSelected=="Urdu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Urdu/No3.mp3");
+            }
                         else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No3.mp3");
-                        else
+						else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/3.mp3");
                         }
@@ -1143,9 +1207,25 @@ getVoice:function(){
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/4.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Marathi/No4.mp3");
+            }
+			else if(window.languageSelected=="Telugu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Telugu/No4.mp3");
+            }
+			else if(window.languageSelected=="Tamil")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Tamil/No4.mp3");
+            }
+			else if(window.languageSelected=="Urdu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Urdu/No4.mp3");
+            }
                         else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No4.mp3");
-                        else
+						else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/4.mp3");
                         }
@@ -1162,9 +1242,25 @@ getVoice:function(){
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/5.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Marathi/No5.mp3");
+            }
+			else if(window.languageSelected=="Telugu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Telugu/No5.mp3");
+            }
+			else if(window.languageSelected=="Tamil")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Tamil/No5.mp3");
+            }
+			else if(window.languageSelected=="Urdu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Urdu/No5.mp3");
+            }
                         else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No5.mp3");
-                        else
+						else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/5.mp3");
                         }
@@ -1181,9 +1277,25 @@ getVoice:function(){
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/6.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Marathi/No6.mp3");
+            }
+			else if(window.languageSelected=="Telugu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Telugu/No6.mp3");
+            }
+			else if(window.languageSelected=="Tamil")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Tamil/No6.mp3");
+            }
+			else if(window.languageSelected=="Urdu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Urdu/No6.mp3");
+            }
                         else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No6.mp3");
-                        else
+						else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/6.mp3");
                         }
@@ -1200,9 +1312,25 @@ getVoice:function(){
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/7.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Marathi/No7.mp3");
+            }
+			else if(window.languageSelected=="Telugu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Telugu/No7.mp3");
+            }
+			else if(window.languageSelected=="Tamil")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Tamil/No7.mp3");
+            }
+			else if(window.languageSelected=="Urdu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Urdu/No7.mp3");
+            }
                         else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No7.mp3");
-                        else
+						else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/7.mp3");
                         }
@@ -1219,9 +1347,25 @@ getVoice:function(){
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/8.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Marathi/No8.mp3");
+            }
+			else if(window.languageSelected=="Telugu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Telugu/No8.mp3");
+            }
+			else if(window.languageSelected=="Tamil")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Tamil/No8.mp3");
+            }
+			else if(window.languageSelected=="Urdu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Urdu/No8.mp3");
+            }
                         else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No8.mp3");
-                        else
+						else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/8.mp3");
                         }
@@ -1238,16 +1382,32 @@ getVoice:function(){
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/9.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Marathi/No9.mp3");
+            }
+			else if(window.languageSelected=="Telugu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Telugu/No9.mp3");
+            }
+			else if(window.languageSelected=="Tamil")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Tamil/No9.mp3");
+            }
+			else if(window.languageSelected=="Urdu")
+            {
+                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.2/Urdu/No9.mp3");
+            }
                         else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No9.mp3");
-                        else
+						else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/9.mp3");
                         }
                         break;
             }
         _this.playQuestionSound.appendChild(_this.src);
-        _this.playQuestionSound.play();
+		_this.playQuestionSound.play();
         },
     
     stopVoice:function(){

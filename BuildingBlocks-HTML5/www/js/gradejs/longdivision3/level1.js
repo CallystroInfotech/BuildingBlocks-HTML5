@@ -2502,6 +2502,10 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Tamil/dhdtg1.4_1.mp3");
                     }
+					else if(window.languageSelected == "Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Urdu/dhdtg1.4_1.mp3");
+                    }
                     else
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Odiya/dhdtg1.4_1.mp3");  
@@ -2536,6 +2540,10 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                     else if(window.languageSelected == "Tamil")
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Tamil/dhdtg1.4_2.mp3");
+                    }
+					else if(window.languageSelected == "Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Urdu/dhdtg1.4_2.mp3");
                     }
                     else
                     {
@@ -2572,6 +2580,10 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Tamil/which_is_least.mp3");
                     }
+					else if(window.languageSelected == "Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Urdu/which_is_least.mp3");
+                    }
                     else
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Odiya/which_is_least.mp3");  
@@ -2606,6 +2618,10 @@ _this.minutes=0;_this.seconds=0;_this.counterForTimer=0;
                     else if(window.languageSelected == "Tamil")
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Tamil/Which_are_most.mp3");
+                    }
+					else if(window.languageSelected == "Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/DH2/Urdu/Which_are_most.mp3");
                     }
                     else
                     {

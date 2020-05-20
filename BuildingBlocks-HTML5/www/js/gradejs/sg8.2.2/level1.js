@@ -5761,6 +5761,22 @@ Game.sg8_2_2level1.prototype ={
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.2.2/Gujarati/8.2.2G.mp3");
 				        //_this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
                     }
+					else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.2.2/Marathi/sg8.2.2a.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.2.2/Telugu/sg8.2.2a.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.2.2/Tamil/sg8.2.2a.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.2.2/Urdu/sg8.2.2a.mp3");
+                    }
                     else
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.2.2/Odiya/sg8.2.2O.mp3");

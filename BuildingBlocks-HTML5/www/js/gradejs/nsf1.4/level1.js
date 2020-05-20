@@ -18163,6 +18163,22 @@ getVoice:function(){
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf1.4/Gujrati/nsf1.4.mp3");
                     }
+					else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf1.4/Marathi/nsf1.4.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf1.4/Telugu/nsf1.4.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf1.4/Tamil/nsf1.4.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf1.4/Urdu/nsf1.4.mp3");
+                    }
                     else
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf1.4/Odiya/nsf1.4.mp3");  

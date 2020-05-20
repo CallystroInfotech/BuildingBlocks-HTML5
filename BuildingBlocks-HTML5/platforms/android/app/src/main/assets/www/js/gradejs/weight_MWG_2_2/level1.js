@@ -2876,6 +2876,26 @@ Game.weight_MWG_2_2level1.prototype={
             commonNavBar.getVoice(window.baseUrl+"questionSounds/Gujarati/3.2A/3.2B_E2a.mp3");
             _this.soundurl = window.baseUrl+"questionSounds/Gujarati/3.2A/3.2B_E2a.mp3";
         } 
+		else if(window.languageSelected == "Marathi")
+                    {
+                        commonNavBar.getVoice(window.baseUrl+"questionSounds/3.1/Marathi/3.2B_E2a.mp3");
+						_this.soundurl = window.baseUrl+"questionSounds/3.1/Marathi/3.2B_E2a.mp3";
+                    }
+					else if(window.languageSelected == "Telugu")
+                    {
+                        commonNavBar.getVoice(window.baseUrl+"questionSounds/3.1/Telugu/3.2B_E2a.mp3");
+						_this.soundurl = window.baseUrl+"questionSounds/3.1/Telugu/3.2B_E2a.mp3";
+                    }
+					else if(window.languageSelected == "Tamil")
+                    {
+                        commonNavBar.getVoice(window.baseUrl+"questionSounds/3.1/Tamil/3.2B_E2a.mp3");
+						_this.soundurl = window.baseUrl+"questionSounds/3.1/Tamil/3.2B_E2a.mp3";
+                    }
+					else if(window.languageSelected == "Urdu")
+                    {
+                        commonNavBar.getVoice( window.baseUrl+"questionSounds/3.1/Urdu/3.2B_E2a.mp3");
+						_this.soundurl = window.baseUrl+"questionSounds/3.1/Urdu/3.2B_E2a.mp3";
+                    }
 		else
         {
            

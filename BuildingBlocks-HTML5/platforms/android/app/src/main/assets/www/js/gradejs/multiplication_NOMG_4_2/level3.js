@@ -67,6 +67,22 @@ Game.multiplication_NOMG_4_2level3.prototype={
         {
             _this.soundurl =  window.baseUrl+"questionSounds/13.1/Kannada/Game13.1.mp3";
         }
+		else if(window.languageSelected=="Marathi")
+        {
+            _this.soundurl =  window.baseUrl+"questionSounds/13.1/Marathi/Game13.1.mp3";
+        }
+		else if(window.languageSelected=="Tamil")
+        {
+            _this.soundurl =  window.baseUrl+"questionSounds/13.1/Tamil/Game13.1.mp3";
+        }
+		else if(window.languageSelected=="Telugu")
+        {
+            _this.soundurl =  window.baseUrl+"questionSounds/13.1/Telugu/Game13.1.mp3";
+        }
+		else if(window.languageSelected=="Urdu")
+        {
+            _this.soundurl =  window.baseUrl+"questionSounds/13.1/Urdu/Game13.1.mp3";
+        }
         else if(window.languageSelected=="Gujarati")
         {
             _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/13.1/Game13.1.mp3";

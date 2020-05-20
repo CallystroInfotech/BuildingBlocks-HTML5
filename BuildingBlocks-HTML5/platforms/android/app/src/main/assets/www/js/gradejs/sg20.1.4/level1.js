@@ -1956,6 +1956,22 @@ gotoTwentyfourthQuestion:function(){
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.1.4/Gujrati/sg20.1.4a.mp3");
                         //_this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
                     }
+					else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.1.4/Marathi/sg20.1.4a.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.1.4/Telugu/sg20.1.4a.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.1.4/Tamil/sg20.1.4a.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.1.4/Urdu/sg20.1.4a.mp3");
+                    }
                     else
                     {
                       _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.1.4/Odiya/sg20.1.4a.mp3");
@@ -1989,6 +2005,22 @@ gotoTwentyfourthQuestion:function(){
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.1.4/Gujrati/sg20.1.4b.mp3");
                         //_this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
+                    }
+					else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.1.4/Marathi/sg20.1.4b.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.1.4/Telugu/sg20.1.4b.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.1.4/Tamil/sg20.1.4b.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.1.4/Urdu/sg20.1.4b.mp3");
                     }
                     else
                     {

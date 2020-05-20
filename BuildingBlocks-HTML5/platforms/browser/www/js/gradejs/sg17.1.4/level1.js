@@ -4064,6 +4064,22 @@ checkOverlap:function(spriteA, spriteB)
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg17.1.4/Gujarati/sg17.1.4G.mp3");
                             //_this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
                         }
+						else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg17.1.4/Marathi/sg17.1.4.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg17.1.4/Telugu/sg17.1.4.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg17.1.4/Tamil/sg17.1.4.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg17.1.4/Urdu/sg17.1.4.mp3");
+                    }
                         else
                         {
                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg17.1.4/Odiya/sg17.1.4.mp3");

@@ -6,7 +6,7 @@ Game.unity4_1_1level1.prototype ={
     {
         _this= this;
         telInitializer.gameIdInit("Comparison4_1",gradeSelected);
-
+		
     },
 
     preload:function(game){
@@ -1190,6 +1190,22 @@ Game.unity4_1_1level1.prototype ={
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1/Kannada/4.1G.mp3");
                     }
+					else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1/Marathi/4.1G.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1/Telugu/4.1G.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1/Tamil/4.1G.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1/Urdu/4.1G.mp3");
+                    }
                     else if(window.languageSelected=="Gujarati")
                     {
                          _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/4.1/4.1G.mp3");
@@ -1215,6 +1231,22 @@ Game.unity4_1_1level1.prototype ={
                     else if(window.languageSelected=="Kannada")
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1/Kannada/4.1L.mp3");
+                    }
+					else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1/Marathi/4.1L.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1/Telugu/4.1L.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1/Tamil/4.1L.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1/Urdu/4.1L.mp3");
                     }
                     else if(window.languageSelected=="Gujarati")
                     {

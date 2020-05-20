@@ -38,7 +38,7 @@ Game.appLoginEditScreen.prototype={
 	    _this.zipFiles = [["Assets1.zip",26430143],["Assets2.zip",39780906],["Assets3.zip",18453216],
 	    					["Assets4.zip",14402031],["Assets5.zip",19891065],["Assets6.zip",19889389],
 	    					["English.zip",23759971],["Kannada.zip",25787866],["Hindi.zip",25508626],
-	    					["Odiya.zip",40129117],["Gujarati.zip",31882078]];
+	    					["Odiya.zip",40129117],["Gujarati.zip",31882078],["questionSounds.zip",162758079]];
 
 	    _this.counter = 0;
 	    _this.counter1 = 0;
@@ -55,7 +55,8 @@ Game.appLoginEditScreen.prototype={
 			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
 			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
 			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
-			[_this.basePath+"assets/DH1","Assets6New.zip"]
+			[_this.basePath+"assets/DH1","Assets6New.zip"],
+			[_this.basePath+"assets/AddNew","Assets16.zip"]
 			];	
 	    }
 	    else if(_this.user.language == "Hindi")
@@ -68,7 +69,8 @@ Game.appLoginEditScreen.prototype={
 			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
 			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
 			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
-			[_this.basePath+"assets/DH1","Assets6New.zip"]
+			[_this.basePath+"assets/DH1","Assets6New.zip"],
+			[_this.basePath+"assets/AddNew","Assets16.zip"]
 			];	
 	    }
 	    else if(_this.user.language == "Kannada")
@@ -81,7 +83,8 @@ Game.appLoginEditScreen.prototype={
 			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
 			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
 			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
-			[_this.basePath+"assets/DH1","Assets6New.zip"]
+			[_this.basePath+"assets/DH1","Assets6New.zip"],
+			[_this.basePath+"assets/AddNew","Assets16.zip"]
 			];	
 	    }
 	    else if(_this.user.language == "Odiya")
@@ -94,7 +97,8 @@ Game.appLoginEditScreen.prototype={
 			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
 			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
 			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
-			[_this.basePath+"assets/DH1","Assets6New.zip"]
+			[_this.basePath+"assets/DH1","Assets6New.zip"],
+			[_this.basePath+"assets/AddNew","Assets16.zip"]
 			];	
 	    }
 	    else if(_this.user.language == "Gujarati")
@@ -107,7 +111,64 @@ Game.appLoginEditScreen.prototype={
 			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
 			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
 			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
-			[_this.basePath+"assets/DH1","Assets6New.zip"]
+			[_this.basePath+"assets/DH1","Assets6New.zip"],
+			[_this.basePath+"assets/AddNew","Assets16.zip"]
+			];	
+	    }
+		else if(_this.user.language == "Marathi")
+	    {
+	    	_this.fileCheck = [
+			[_this.basePath+"questionSounds/1.1A/Marathi","Marathi.zip"],
+			[_this.basePath+"assets/commonAssets","Assets1.zip"],
+			[_this.basePath+"assets/demoVideos","Assets2.zip"],
+			[_this.basePath+"assets/gradeAssets/1.1A","Assets3.zip"],
+			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
+			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
+			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
+			[_this.basePath+"assets/DH1","Assets6New.zip"],
+			[_this.basePath+"assets/AddNew","Assets16.zip"]
+			];	
+	    }
+		else if(_this.user.language == "Telugu")
+	    {
+	    	_this.fileCheck = [
+			[_this.basePath+"questionSounds/1.1A/Telugu","Telugu.zip"],
+			[_this.basePath+"assets/commonAssets","Assets1.zip"],
+			[_this.basePath+"assets/demoVideos","Assets2.zip"],
+			[_this.basePath+"assets/gradeAssets/1.1A","Assets3.zip"],
+			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
+			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
+			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
+			[_this.basePath+"assets/DH1","Assets6New.zip"],
+			[_this.basePath+"assets/AddNew","Assets16.zip"]
+			];	
+	    }
+		else if(_this.user.language == "Tamil")
+	    {
+	    	_this.fileCheck = [
+			[_this.basePath+"questionSounds/1.1A/Tamil","Tamil.zip"],
+			[_this.basePath+"assets/commonAssets","Assets1.zip"],
+			[_this.basePath+"assets/demoVideos","Assets2.zip"],
+			[_this.basePath+"assets/gradeAssets/1.1A","Assets3.zip"],
+			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
+			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
+			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
+			[_this.basePath+"assets/DH1","Assets6New.zip"],
+			[_this.basePath+"assets/AddNew","Assets16.zip"]
+			];	
+	    }
+		else if(_this.user.language == "Urdu")
+	    {
+	    	_this.fileCheck = [
+			[_this.basePath+"questionSounds/1.1A/Urdu","Urdu.zip"],
+			[_this.basePath+"assets/commonAssets","Assets1.zip"],
+			[_this.basePath+"assets/demoVideos","Assets2.zip"],
+			[_this.basePath+"assets/gradeAssets/1.1A","Assets3.zip"],
+			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
+			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
+			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
+			[_this.basePath+"assets/DH1","Assets6New.zip"],
+			[_this.basePath+"assets/AddNew","Assets16.zip"]
 			];	
 	    }
 
@@ -171,6 +232,21 @@ Game.appLoginEditScreen.prototype={
 		}else if(_this.user.language == "Gujarati")
 		{
 			textLang = "શરૂ કરો";
+		}else if(_this.user.language == "Marathi")
+		{
+			textLang = "सुरू करा"
+		}
+		else if(_this.user.language == "Telugu")
+		{
+			textLang = "ప్రారంభించండి"
+		}
+		else if(_this.user.language == "Tamil")
+		{
+			textLang = "தொடக்கம்"
+		}
+		else if(_this.user.language == "Urdu")
+		{
+			textLang = "شروع کیجئے"
 		}else{
 			textLang = "START";
 		}
@@ -382,22 +458,24 @@ Game.appLoginEditScreen.prototype={
 			        _this.progressPercentageTxt.text = Math.round((progressEvent.loaded / progressEvent.total)*100)+"%";
 			        _this.progressPercentageTxt2.text = Math.round((progressEvent.loaded / progressEvent.total)*100)+"/100";
 
-			        if(filename!="English.zip" && filename!="Hindi.zip" && filename!="Kannada.zip" && filename!="Odiya.zip" && filename!="Gujarati.zip")
+			        if(filename!="English.zip" && filename!="Hindi.zip" && filename!="Kannada.zip" && filename!="Odiya.zip" && filename!="Gujarati.zip" && filename!="Marathi.zip" && filename!="Telugu.zip" && filename!="Tamil.zip" && filename!="Urdu.zip")
 			        {
 			        	if(filename=="Assets1.zip")
-			        		_this.noOfAssets.text = "1/6";
+			        		_this.noOfAssets.text = "1/7";
 			        	else if(filename=="Assets2.zip")
-			        		_this.noOfAssets.text = "2/6";
+			        		_this.noOfAssets.text = "2/7";
 			        	else if(filename=="Assets3.zip")
-			        		_this.noOfAssets.text = "3/6";
+			        		_this.noOfAssets.text = "3/7";
 			        	else if(filename=="Assets4.zip")
-			        		_this.noOfAssets.text = "4/6";
+			        		_this.noOfAssets.text = "4/7";
 			        	else if(filename=="Assets5.zip")
-			        		_this.noOfAssets.text = "5/6";
+			        		_this.noOfAssets.text = "5/7";
 			        	else if(filename=="Assets6.zip")
-			        		_this.noOfAssets.text = "6/6";
+			        		_this.noOfAssets.text = "6/7";
 			        	else if(filename=="Assets6New.zip")
-			        		_this.noOfAssets.text = "6/6";
+			        		_this.noOfAssets.text = "7/7";
+						else if(filename=="Assets16.zip")
+			        		_this.noOfAssets.text = "7/7";
 
 			        	_this.noOfAssets.visible = true;
 			        }

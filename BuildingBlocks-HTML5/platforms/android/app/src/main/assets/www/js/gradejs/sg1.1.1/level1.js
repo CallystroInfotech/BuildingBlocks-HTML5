@@ -1305,6 +1305,22 @@ wrongAns:function(target)
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg1.1.1/Kannada/sg1.1.1.mp3");
                         }
+						else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg1.1.1/Marathi/sg1.1.1.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg1.1.1/Telugu/sg1.1.1.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg1.1.1/Tamil/sg1.1.1.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg1.1.1/Urdu/sg1.1.1.mp3");
+                    }
                         else if(window.languageSelected == "Gujarati")
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg1.1.1/Gujarati/sg1.1.1.mp3");

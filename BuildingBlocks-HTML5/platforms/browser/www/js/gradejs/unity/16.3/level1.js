@@ -268,6 +268,22 @@ _this.amplify = null;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/16.3/Game16.3.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.3/Marathi/Game16.3.mp3");
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.3/Telugu/Game16.3.mp3");
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.3/Tamil/Game16.3.mp3");
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.3/Urdu/Game16.3.mp3");
+                            }
                         else
                         {
                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.3/Odiya/16.3.mp3");

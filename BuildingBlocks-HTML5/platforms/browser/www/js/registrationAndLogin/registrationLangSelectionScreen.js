@@ -75,21 +75,21 @@ Game.registrationLangSelectionScreen.prototype={
 		}
 
 
-    	var graphicBg = game.add.sprite(game.world.centerX,game.world.centerY-50,'graphicBg');
+    	var graphicBg = game.add.sprite(game.world.centerX,game.world.centerY-60,'graphicBg');
     	graphicBg.scale.setTo(0.6,0.5);
     	graphicBg.anchor.setTo(0.5);
 
-    	var carrotIcon = game.add.sprite(game.world.centerX+110,game.world.centerY-50,'carrotIcon');
+    	var carrotIcon = game.add.sprite(game.world.centerX+110,game.world.centerY-60,'carrotIcon');
     	carrotIcon.scale.setTo(0.7);
     	carrotIcon.anchor.setTo(0.5);
 
 
-    	var regTickBtn = game.add.sprite(game.world.centerX,game.world.centerY+100,'regTickBtn');
+    	var regTickBtn = game.add.sprite(game.world.centerX,game.world.centerY+90,'regTickBtn');
     	regTickBtn.scale.setTo(0.5);
     	regTickBtn.anchor.setTo(0.5);
 
 
-    	this.selectLanguageText = game.add.text(game.world.centerX-10,game.world.centerY-47,"Select Language");
+    	this.selectLanguageText = game.add.text(game.world.centerX-10,game.world.centerY-57,"Select Language");
 		this.selectLanguageText.x = Math.round(this.selectLanguageText.x);
 		this.selectLanguageText.anchor.setTo(0.5);
 		this.selectLanguageText.align = 'center';
@@ -108,11 +108,11 @@ Game.registrationLangSelectionScreen.prototype={
 
 			this.languageSelectedGrp = game.add.group();
 
-			var languageList = ["Select Language","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી"];
+			var languageList = ["Select Language","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
 			//var languageList = ["Select Language"];
 
 	    	var x = game.world.centerX-140;
-	    	var y = game.world.centerY-70;
+	    	var y = game.world.centerY-80;
 
 	    	for(var i=0; i<languageList.length; i++){
 	    		if(i!=0)
@@ -139,7 +139,7 @@ Game.registrationLangSelectionScreen.prototype={
 		//this["languagegraphicsBg"+i].drawRoundedRect(x, y, 280, 45, 10);
 		this["languagegraphicsBg"+i].drawRect(x, y, 280, 55);
 
-		if((i+1) < 6)
+		if((i+1) < 10)
 		{
 			this["bdm"+i] = game.add.bitmapData(800,600);                
 	    	this["bdm"+i].ctx.beginPath();        
@@ -192,8 +192,18 @@ Game.registrationLangSelectionScreen.prototype={
 						lang = "Odiya"
 					else if(target.name == "ગુજરાતી")
 						lang = "Gujarati"
+					else if(target.name == "मराठी")
+						lang = "Marathi"
+					else if(target.name == "తెలుగు")
+						lang = "Telugu"
+					else if(target.name == "தமிழ்")
+						lang = "Tamil"
+					else if(target.name == "اردو")
+						lang = "Urdu"
 					else
 						lang = "English"
+
+					FirebasePlugin.logEvent("Select_language", {Select_language: lang, item_id: ""});
 
 					game.state.start('registrationPicSelectionScreen',true,false,lang,_this.user);
 				},this);
@@ -201,7 +211,7 @@ Game.registrationLangSelectionScreen.prototype={
 		},this);
 
 		grp.add(this["languagegraphicsBg"+i]);
-		if((i+1) < 6)
+		if((i+1) < 10)
 			grp.add(this["sprite"+i]);	
 		grp.add(this["languageTxt"+i]);
 

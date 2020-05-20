@@ -3701,19 +3701,19 @@ init:function(game)
                     {
                     if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/English/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/English/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/English/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/English/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/English/nolmg1.4_4.mp3");
                     }
                 break;
                     }
@@ -3721,19 +3721,19 @@ init:function(game)
                     {
                      if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Hindi/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Hindi/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Hindi/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Hindi/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Hindi/nolmg1.4_4.mp3");
                     }
                 break;
                     }
@@ -3741,19 +3741,19 @@ init:function(game)
                     {
                      if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Kannada/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Kannada/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Kannada/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Kannada/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Kannada/nolmg1.4_4.mp3");
                     }
                 break;
                     }
@@ -3761,19 +3761,19 @@ init:function(game)
                     {
                      if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujarati/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Gujarati/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujarati/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Gujarati/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujarati/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Gujarati/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Gujarati/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Gujarati/nolmg1.4_4.mp3");
                     }
                 break;
                     }
@@ -3781,19 +3781,19 @@ init:function(game)
                     {
                      if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Marathi/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Marathi/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Marathi/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Marathi/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Marathi/nolmg1.4_4.mp3");
                     }
                 break;
                     }
@@ -3801,19 +3801,19 @@ init:function(game)
                     {
                      if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Odiya/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Odiya/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Odiya/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Odiya/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Odiya/nolmg1.4_4.mp3");
                     }
                       _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);  
                 break;
@@ -3822,19 +3822,19 @@ init:function(game)
                     {
                      if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Tamil/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Tamil/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Tamil/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Tamil/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Tamil/nolmg1.4_4.mp3");
                     }
                       _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);  
                 break;
@@ -3843,19 +3843,19 @@ init:function(game)
                     {
                      if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Telugu/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Telugu/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Telugu/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Telugu/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Telugu/nolmg1.4_4.mp3");
                     }
                       _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);  
                    break;
@@ -3864,19 +3864,19 @@ init:function(game)
                     {
                      if(_this.voicevalue1==true && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Urdu/nolmg1.4_1.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Urdu/nolmg1.4_1.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==true && _this.voicevalue3==false && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Urdu/nolmg1.4_2.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Urdu/nolmg1.4_2.mp3");
                     }
                    else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==true && _this.voicevalue4==false)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Urdu/nolmg1.4_3.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Urdu/nolmg1.4_3.mp3");
                     }
                  else if(_this.voicevalue1==false && _this.voicevalue2==false && _this.voicevalue3==false && _this.voicevalue4==true)
                     {
-                        _this.src.setAttribute("src", "questionSounds/Urdu/nolmg1.4_4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLM/Urdu/nolmg1.4_4.mp3");
                     }
                       _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);  
                 break;

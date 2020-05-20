@@ -6800,6 +6800,22 @@ removeCelebration:function()
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf1.5/Gujarati/nsf1.5G.mp3");
                     }
+					else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf1.5/Marathi/nsf1.5.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf1.5/Telugu/nsf1.5.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf1.5/Tamil/nsf1.5.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf1.5/Urdu/nsf1.5.mp3");
+                    }
 					else
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf1.5/Odiya/nsf1.5O.mp3");

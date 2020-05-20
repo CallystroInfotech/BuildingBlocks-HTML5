@@ -252,6 +252,22 @@ Game.multiplication_NOMG_4_2level1.prototype ={
         {
             _this.soundurl =  window.baseUrl+"questionSounds/12.3.1/Kannada/12.3.1.mp3";
         }
+		else if(window.languageSelected=="Marathi")
+        {
+            _this.soundurl =  window.baseUrl+"questionSounds/12.3.1/Marathi/12.3.1.mp3";
+        }
+		else if(window.languageSelected=="Tamil")
+        {
+           _this.soundurl =  window.baseUrl+"questionSounds/12.3.1/Tamil/12.3.1.mp3";
+        }
+		else if(window.languageSelected=="Telugu")
+        {
+            _this.soundurl =  window.baseUrl+"questionSounds/12.3.1/Telugu/12.3.1.mp3";
+        }
+		else if(window.languageSelected=="Urdu")
+        {
+            _this.soundurl =  window.baseUrl+"questionSounds/12.3.1/Urdu/12.3.1.mp3";
+        }
         else if(window.languageSelected=="Gujarati")
         {
             _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/12.1/12.1.mp3";

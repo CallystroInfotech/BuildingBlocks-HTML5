@@ -1666,6 +1666,26 @@ Game.time_MTG_3_3level1.prototype={
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/7.1/7.1A.mp3");
                     _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/7.1/7.1A.mp3";
                 }
+				else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Marathi/7.1A.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/7.1/Marathi/7.1A.mp3";
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Telugu/7.1A.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/7.1/Telugu/7.1A.mp3";
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Tamil/7.1A.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/7.1/Tamil/7.1A.mp3";
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Urdu/7.1A.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/7.1/Urdu/7.1A.mp3";
+                      } 
                 else
                 {
                     _this.src.setAttribute("src", "sounds/7.1_1.mp3");
@@ -1693,6 +1713,26 @@ Game.time_MTG_3_3level1.prototype={
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/7.1/7.1H.mp3");
                     _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/7.1/7.1H.mp3";
                 }
+				else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Marathi/7.1H.mp3");
+                          _this.soundurl =  window.baseUrl+"questionSounds/7.1/Marathi/7.1H.mp3";
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Telugu/7.1H.mp3");
+                          _this.soundurl =  window.baseUrl+"questionSounds/7.1/Telugu/7.1H.mp3";
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Tamil/7.1H.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/7.1/Tamil/7.1H.mp3";
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Urdu/7.1H.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/7.1/Urdu/7.1H.mp3";
+                      } 
                 else
                 {
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Odiya/7.1_2.mp3");
@@ -1720,6 +1760,26 @@ Game.time_MTG_3_3level1.prototype={
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/7.1/7.1H.mp3");
                     _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/7.1/7.1H.mp3";
                 }
+				else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Marathi/7.1H.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/7.1/Marathi/7.1H.mp3";
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Telugu/7.1H.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/7.1/Telugu/7.1H.mp3";
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Tamil/7.1H.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/7.1/Tamil/7.1H.mp3";
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Urdu/7.1H.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/7.1/Urdu/7.1H.mp3";
+                      } 
                 else
                 {
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Odiya/7.1_2.mp3");
@@ -1747,6 +1807,26 @@ Game.time_MTG_3_3level1.prototype={
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/7.1/7.1M.mp3");
                     _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/7.1/7.1M.mp3";
                 }
+				else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Marathi/7.1M.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/7.1/Marathi/7.1M.mp3";
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Telugu/7.1M.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/7.1/Telugu/7.1M.mp3";
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Tamil/7.1M.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/7.1/Tamil/7.1M.mp3";
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Urdu/7.1M.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/7.1/Urdu/7.1M.mp3";
+                      } 
                 else
                 {
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/7.1/Odiya/7.1_3.mp3");
@@ -1800,7 +1880,7 @@ Game.time_MTG_3_3level1.prototype={
 
     shutdown:function()
     {
-        _this.baudio.pause();
+		_this.baudio.pause();
         _this.baudio = null;
         _this.stopvoice();
         /*delete bg1;

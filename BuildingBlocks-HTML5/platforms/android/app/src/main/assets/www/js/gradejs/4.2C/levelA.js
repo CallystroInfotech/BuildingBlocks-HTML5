@@ -2854,6 +2854,22 @@ init:function(game)
 					{
 						 _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/4.2A/4.2C1.mp3");
 					}
+					else if(window.languageSelected == "Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.2C/Marathi/4.2C1.mp3");
+                    }
+					else if(window.languageSelected == "Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.2C/telugu/4.2C1.mp3");
+                    }
+					else if(window.languageSelected == "Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.2C/Tamil/4.2C1.mp3");
+                    }
+					else if(window.languageSelected == "Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.2C/Urdu/4.2C1.mp3");
+                    }
 					else
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.2C/Odiya/4.2C1.mp3");

@@ -1203,6 +1203,22 @@ _this.noofAttempts=0;
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg24.2.4/Gujrati/sg24.2.4.mp3");
                     }
+					else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg24.2.4/Marathi/sg24.2.4.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg24.2.4/Telugu/sg24.2.4.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg24.2.4/Tamil/sg24.2.4.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg24.2.4/Urdu/sg24.2.4.mp3");
+                    }
                     else
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg24.2.4/Odiya/sg24.2.4.mp3");  

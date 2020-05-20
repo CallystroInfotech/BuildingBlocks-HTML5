@@ -70,6 +70,22 @@ Game.measurement2.prototype={
                         {
                            this.measurementTxt.setText("ମାପ");
                         }
+						else if(window.languageSelected == "Marathi")
+                        {
+                           this.measurementTxt.setText("मापने/एकके");
+                        }
+						else if(window.languageSelected == "Telugu")
+                        {
+                           this.measurementTxt.setText("కొలతలు");
+                        }
+						else if(window.languageSelected == "Tamil")
+                        {
+                           this.measurementTxt.setText("அளவீடுகள்");
+                        }
+						else if(window.languageSelected == "Urdu")
+                        {
+                           this.measurementTxt.setText("پیمائش");
+                        }
                         else
                         {
                         	this.measurementTxt.setText("Measurements");

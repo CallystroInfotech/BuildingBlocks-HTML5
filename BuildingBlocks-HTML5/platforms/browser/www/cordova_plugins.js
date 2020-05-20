@@ -327,30 +327,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-facebook4/www/facebook-browser.js",
-        "id": "cordova-plugin-facebook4.FacebookConnectPluginBrowser",
-        "pluginId": "cordova-plugin-facebook4",
-        "clobbers": [
-            "facebookConnectPlugin"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-appsflyer-sdk/www/appsflyer.js",
-        "id": "cordova-plugin-appsflyer-sdk.appsflyer",
-        "pluginId": "cordova-plugin-appsflyer-sdk",
-        "clobbers": [
-            "window.plugins.appsFlyer"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-appsflyer-sdk/www/AppsFlyerError.js",
-        "id": "cordova-plugin-appsflyer-sdk.AppsFlyerError",
-        "pluginId": "cordova-plugin-appsflyer-sdk",
-        "clobbers": [
-            "AppsFlyerError"
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
         "id": "cordova-plugin-statusbar.statusbar",
         "pluginId": "cordova-plugin-statusbar",
@@ -387,8 +363,6 @@ module.exports.metadata =
     "cordova-plugin-x-socialsharing": "5.6.4",
     "cordova-plugin-native-spinner": "1.1.3",
     "cordova-plugin-android-permissions": "1.0.2",
-    "cordova-plugin-facebook4": "6.3.0",
-    "cordova-plugin-appsflyer-sdk": "4.4.22",
     "cordova-plugin-statusbar": "2.4.3"
 }
 // BOTTOM OF METADATA

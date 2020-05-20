@@ -1778,6 +1778,22 @@ _this.numGroup.add(_this.numBackground);
 			{
 				temp =window.baseUrl+"questionSounds/Gujarati/16.1/";
 			}
+			else if(window.languageSelected=="Marathi")
+                            {
+                               temp =window.baseUrl+"questionSounds/16.1/Marathi/";
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                               temp =window.baseUrl+"questionSounds/16.1/Telugu/";
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                temp =window.baseUrl+"questionSounds/16.1/Tamil/";
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                temp =window.baseUrl+"questionSounds/16.1/Urdu/";
+                            }
 			else
 			{
 				temp =window.baseUrl+"questionSounds/16.1/Odiya/";

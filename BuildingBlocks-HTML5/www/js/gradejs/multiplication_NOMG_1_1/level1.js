@@ -107,6 +107,22 @@ create:function(game)
                         _this.qsoundurl =window.baseUrl+"questionSounds/11.1/Kannada/11.1K.mp3";
                     else if(window.languageSelected=="Gujarati")
                         _this.qsoundurl = window.baseUrl+"questionSounds/Gujarati/11.1/11.1E.mp3";
+					else if(window.languageSelected=="Marathi")
+                    {
+                         _this.qsoundurl =window.baseUrl+"questionSounds/11.1/Marathi/11.1E.mp3";
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                         _this.qsoundurl =window.baseUrl+"questionSounds/11.1/Tamil/11.1E.mp3";
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                         _this.qsoundurl =window.baseUrl+"questionSounds/11.1/Telugu/11.1E.mp3";
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                         _this.qsoundurl =window.baseUrl+"questionSounds/11.1/Urdu/11.1E.mp3";
+                    }
                     else
                         _this.qsoundurl =window.baseUrl+"questionSounds/11.1/Odiya/11.1.mp3";
 

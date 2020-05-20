@@ -1944,6 +1944,22 @@ _this.box1.frame = 0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/16.2/Game16.2_2.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Marathi/Game16.2_2.mp3");
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Telugu/Game16.2_2.mp3");
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Tamil/Game16.2_2.mp3");
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Urdu/Game16.2_2.mp3");
+                            }
 						else
 						{
 						  _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Odiya/16.2K.mp3");
@@ -1966,6 +1982,22 @@ _this.box1.frame = 0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/16.2/Game16.2_3.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Marathi/Game16.2_3.mp3");
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Telugu/Game16.2_3.mp3");
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Tamil/Game16.2_3.mp3");
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Urdu/Game16.2_3.mp3");
+                            }
 						else
 						{
 						  _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Odiya/16.2L.mp3");
@@ -1989,6 +2021,22 @@ _this.box1.frame = 0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/16.2/Game16.2_3.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Marathi/Game16.2_3.mp3");
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Telugu/Game16.2_3.mp3");
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Tamil/Game16.2_3.mp3");
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Urdu/Game16.2_3.mp3");
+                            }
 					   else
 						{
 						  _this.src.setAttribute("src", "/questionSounds/16.2/Odiya/16.2L.mp3");
@@ -2011,7 +2059,22 @@ _this.box1.frame = 0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/16.2/Game16.2_5.mp3");
                         }
-
+						else if(window.languageSelected=="Marathi")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Marathi/Game16.2_5.mp3");
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Telugu/Game16.2_5.mp3");
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Tamil/Game16.2_5.mp3");
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Urdu/Game16.2_5.mp3");
+                            }
 						else
 						{
 						  _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Odiya/16.2N.mp3");
@@ -2034,6 +2097,22 @@ _this.box1.frame = 0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/16.2/Game16.2_5.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Marathi/Game16.2_5.mp3");
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Telugu/Game16.2_5.mp3");
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Tamil/Game16.2_5.mp3");
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Urdu/Game16.2_5.mp3");
+                            }
 						else
 						{
 						  _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Odiya/16.2N.mp3");
@@ -2056,6 +2135,22 @@ _this.box1.frame = 0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/16.2/Game16.2_2.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Marathi/Game16.2_2.mp3");
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Telugu/Game16.2_2.mp3");
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Tamil/Game16.2_2.mp3");
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Urdu/Game16.2_2.mp3");
+                            }
 						else
 						{
 						  _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Odiya/16.2K.mp3");
@@ -2078,6 +2173,22 @@ _this.box1.frame = 0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/16.2/Game16.2_3.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Marathi/Game16.2_3.mp3");
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Telugu/Game16.2_3.mp3");
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Tamil/Game16.2_3.mp3");
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Urdu/Game16.2_3.mp3");
+                            }
 						else
 						{
 						  _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Odiya/16.2L.mp3");
@@ -2100,6 +2211,22 @@ _this.box1.frame = 0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/16.2/Game16.2_5.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Marathi/Game16.2_5.mp3");
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Telugu/Game16.2_5.mp3");
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Tamil/Game16.2_5.mp3");
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Urdu/Game16.2_5.mp3");
+                            }
 						else
 						{
 						  _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Odiya/16.2N.mp3");
@@ -2122,6 +2249,22 @@ _this.box1.frame = 0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/16.2/Game16.2_4.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Marathi/Game16.2_4.mp3");
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Telugu/Game16.2_4.mp3");
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Tamil/Game16.2_4.mp3");
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Urdu/Game16.2_4.mp3");
+                            }
 						else
 						{
 						  _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Odiya/16.2M.mp3");
@@ -2144,6 +2287,22 @@ _this.box1.frame = 0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/16.2/Game16.2_2.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Marathi/Game16.2_2.mp3");
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Telugu/Game16.2_2.mp3");
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Tamil/Game16.2_2.mp3");
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Urdu/Game16.2_2.mp3");
+                            }
 						else
 						{
 						  _this.src.setAttribute("src", window.baseUrl+"questionSounds/16.2/Odiya/16.2K.mp3");

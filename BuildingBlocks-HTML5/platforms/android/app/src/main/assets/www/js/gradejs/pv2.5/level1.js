@@ -12590,6 +12590,22 @@ Game.pv2_5level1.prototype ={
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv2.4/Kannada/NSPVG2.4K.mp3");
                     }
+					else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv2.4/Marathi/NSPVG2.4.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv2.4/Telugu/NSPVG2.4.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv2.4/Tamil/NSPVG2.4.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv2.4/Urdu/NSPVG2.4.mp3");
+                    }
                     else if(window.languageSelected=="Gujarati")
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv2.4/Gujarati/NSPVG2.4G.mp3");

@@ -1421,6 +1421,22 @@ addNumberPad:function(target){
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg21.1.5/Gujrati/sg21.1.5.mp3");
                        // _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
                     }
+					else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg21.1.5/Marathi/sg21.1.5.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg21.1.5/Telugu/sg21.1.5.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg21.1.5/Tamil/sg21.1.5.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg21.1.5/Urdu/sg21.1.5.mp3");
+                    }
                     else
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg21.1.5/Odiya/sg21.1.5.mp3");

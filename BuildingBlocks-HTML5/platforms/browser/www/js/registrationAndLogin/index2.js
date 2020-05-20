@@ -18,7 +18,7 @@ Game.index2.prototype={
 		window.languageSelected = user.language;
 		window.gradeSelected = user.grade;
 		window.selctedLang = null;
-		window.baseUrl = cordova.file.externalRootDirectory+"Android/data/io.cordova.hellocordova/files/Download/gameFilesBBV5_0_5/www/";
+		window.baseUrl = cordova.file.externalRootDirectory+"Android/data/com.akshara.easymath/Files/Download/.gameFilesBBV5_0_5/www/";
 		window.score = 50;
 		window.mcIcon = null;
 		window.userProgress = flag;
@@ -34,12 +34,9 @@ Game.index2.prototype={
 
     preload:function(game)
     {
-
     	//game.cache.destroy();	
     	game.load.image('exitBg','assets/exitAssets/exitBg.png');
-    	game.load.image('confirmBg','assets/exitAssets/confirmBg.png');
-
-    	 
+    	game.load.image('confirmBg','assets/exitAssets/confirmBg.png');  	 
     },
 
 

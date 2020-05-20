@@ -24158,6 +24158,22 @@ checkAns2:function(target)
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf2.4/Gujarati/nsf2.4G.mp3");
                     }
+					else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf2.4/Marathi/nsf2.4.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf2.4/Telugu/nsf2.4.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf2.4/Tamil/nsf2.4.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf2.4/Urdu/nsf2.4.mp3");
+                    }
 					else
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf2.4/Odiya/nsf2.4.mp3");

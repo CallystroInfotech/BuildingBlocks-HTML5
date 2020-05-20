@@ -5,6 +5,7 @@ Game.unity4_4_2level1.prototype={
 	{
 		_this = this;
     telInitializer.gameIdInit("unity4_4_1",gradeSelected);
+
 	},
 
     
@@ -2594,6 +2595,22 @@ _this.UnorderedNum5.kill();
                         else if(window.languageSelected == "Kannada")
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.4.1/Kannada/Game 4.4.1.mp3");
+                        }
+						else if(window.languageSelected == "Marathi")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.4.1/Marathi/4.4.1.mp3");
+                        }
+						else if(window.languageSelected == "Telugu")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.4.1/Telugu/4.4.1.mp3");
+                        }
+						else if(window.languageSelected == "Tamil")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.4.1/Tamil/4.4.1.mp3");
+                        }
+						else if(window.languageSelected == "Urdu")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.4.1/Urdu/4.4.1.mp3");
                         }
                         else if(window.languageSelected=="Gujarati")
                     {

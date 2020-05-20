@@ -842,8 +842,8 @@ Game.preloader.prototype={
 
 
 		//// ***************************** loading the video files *****************************************//
-		this.load.video('demo7_1_1',window.baseUrl+'assets/demoVideos/demo.mp4');
-		this.load.video('demo',window.baseUrl+'assets/demoVideos/demo.mp4');
+		this.load.video('demo7_1_1','./demo.mp4');
+		this.load.video('demo','./demo.mp4');
 		
 		_this.addgradeSelectionAssets();
 		_this.addgrade1SelectionAssets();
@@ -4181,7 +4181,7 @@ Game.preloader.prototype={
         _this.load.atlas('Level24B_gate',window.baseUrl+'assets/gradeAssets/2.4A/gameAssets/gate.png' ,window.baseUrl+'json/gradeJson/2.4A/gate.json');
 
          //_this.load.atlas('DisplayScale',window.baseUrl+'assets/gradeAssets/2.4A/commonAssets/DisplayScale.png' ,window.baseUrl+'json/gradeJson/2.4A/DisplayScale.json');
-         _this.load.atlas('DisplayScale','assets/newAssets/DisplayScale.png' ,'assets/newAssets/DisplayScale.json');
+         _this.load.atlas('DisplayScale',window.baseUrl+'assets/newAssets/DisplayScale.png' ,window.baseUrl+'assets/newAssets/DisplayScale.json');
 		
 		/*_this.load.audio('Eng_24A1', window.baseUrl+'questionSounds/2.4A/English/2.4A1.mp3');
         _this.load.audio('Eng_24A2', window.baseUrl+'questionSounds/2.4A/English/2.4A2.mp3');
@@ -5800,7 +5800,10 @@ Game.preloader.prototype={
         this.load.image('Level54_tittleBaar',window.baseUrl+'assets/gradeAssets/5.4/commonAssets/tittleBaar.png');
         this.load.atlas('Level54_replay',window.baseUrl+'assets/gradeAssets/5.4/commonAssets/reply.png' ,window.baseUrl+'json/gradeJson/5.4/reply.json');
         //this.load.atlas('Level54_monthname',window.baseUrl+'assets/gradeAssets/5.4/monthname.png' ,window.baseUrl+'json/gradeJson/5.4/monthname.json');
-        this.load.atlas('Level54_monthname','assets/newAssets/monthname.png' ,'assets/newAssets/monthname.json');
+		if(window.languageSelected == "Marathi" || window.languageSelected == "Telugu" || window.languageSelected == "Tamil" || window.languageSelected == "Urdu")
+			this.load.atlas('Level54_monthname','assets/newAssets/monthname.png' ,'assets/newAssets/monthname.json');
+		else
+			this.load.atlas('Level54_monthname','assets/newAssets/monthname1.png' ,'assets/newAssets/monthname1.json');
         //game assets
         this.load.atlas('Level54_main_imageanim',window.baseUrl+'assets/gradeAssets/5.4/main_imageanim.png' ,window.baseUrl+'json/gradeJson/5.4/main_imageanim.json');
         this.load.image('Level54_main_image',window.baseUrl+'assets/gradeAssets/5.4/main_image.png');

@@ -5,6 +5,7 @@ Game.unity2_6_2level1.prototype={
     {
        _this = this;
         telInitializer.gameIdInit("sequence2_6_1",gradeSelected);
+		
        
     },
 
@@ -6281,6 +6282,22 @@ gotoEighthQuestion:function()
                     else if(window.languageSelected=="Gujarati")
                     {
                          _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/2.6.1/26.1E.mp3");
+                    }
+					else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.6.1/Marathi/26.1E.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.6.1/Telugu/26.1E.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.6.1/Tamil/26.1E.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.6.1/Urdu/26.1E.mp3");
                     }
 					else
                     {

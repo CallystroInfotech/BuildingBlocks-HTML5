@@ -332,6 +332,22 @@ Game.unity4_2_2level1.prototype={
         {
             _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.2.2/Kannada/4.2.2.mp3");
         }
+		else if(window.languageSelected == "Marathi")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.2.2/Marathi/4.2.2.mp3");
+                        }
+						else if(window.languageSelected == "Telugu")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.2.2/Telugu/4.2.2.mp3");
+                        }
+						else if(window.languageSelected == "Tamil")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.2.2/Tamil/4.2.2.mp3");
+                        }
+						else if(window.languageSelected == "Urdu")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.2.2/Urdu/4.2.2.mp3");
+                        }
         else if(window.languageSelected=="Gujarati")
                     {
                          _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/4.2.2/4.2.2.mp3");

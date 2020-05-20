@@ -11,6 +11,7 @@ Game.grade1_1Alevel1.prototype={
 		_this = this;
        
 		telInitializer.gameIdInit("pinwheel1_1A",gradeSelected);
+		
 	},
 
 	preload:function(game){
@@ -700,6 +701,22 @@ Game.grade1_1Alevel1.prototype={
 		else if(window.languageSelected == "Kannada")
 		{
 			_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.1A/Kannada/1.1A1.mp3");
+		}
+		else if(window.languageSelected == "Marathi")
+		{
+			_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.1A/Marathi/1.1A1.mp3");
+		}
+		else if(window.languageSelected == "Telugu")
+		{
+			_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.1A/telugu/1.1A1.mp3");
+		}
+		else if(window.languageSelected == "Tamil")
+		{
+			_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.1A/Tamil/1.1A1.mp3");
+		}
+		else if(window.languageSelected == "Urdu")
+		{
+			_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.1A/Urdu/1.1A1.mp3");
 		}
 		else if(window.languageSelected == "Gujarati")
 		{

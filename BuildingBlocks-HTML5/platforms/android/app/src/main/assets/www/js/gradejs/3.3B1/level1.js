@@ -457,10 +457,18 @@ Game.grade3_3B1level1.prototype={
             kgTxt = this.add.text(x+90,505, "ಕೆಜಿ");
 		else if(window.languageSelected=="Odiya")
             kgTxt = this.add.text(x+90,505, "କି.ଗ୍ରା."); //now it is gm it should be 'kg'
-        else
+        else if(window.languageSelected=="Marathi")
+				var kgTxt = this.add.text(x+90,505, "किलोग्रॅम");
+			else if(window.languageSelected=="Telugu")
+				var kgTxt = this.add.text(x+90,505, "కిలో");
+			else if(window.languageSelected=="Tamil")
+				var kgTxt = this.add.text(x+90,505, "கி.கி");
+			else if(window.languageSelected=="Urdu")
+				var kgTxt = this.add.text(x+90,505, "کلو گرام");
+			else
             kgTxt = this.add.text(x+90,505, "કિગ્રા");
         
-		if(window.languageSelected=="Hindi" || window.languageSelected=="Kannada"|| window.languageSelected=="Odiya" || window.languageSelected=="Gujarati"){
+		if(window.languageSelected=="Hindi" || window.languageSelected=="Kannada"|| window.languageSelected=="Odiya" || window.languageSelected=="Gujarati" || window.languageSelected=="Marathi" || window.languageSelected=="Telugu" || window.languageSelected=="Tamil" || window.languageSelected=="Urdu"){
                     //kgTxt.setTextBounds(20, 20, 768, 568);
                     //kgTxt.padding.set(20, 20);
                     kgTxt.anchor.setTo(0.5);
@@ -3530,6 +3538,22 @@ Game.grade3_3B1level1.prototype={
                     else if(window.languageSelected == "Gujarati")
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/3.3A/3.3B_1.mp3");
+                    }
+					else if(window.languageSelected == "Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.1/Marathi/3.3B_1.mp3");
+                    }
+					else if(window.languageSelected == "Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.1/Telugu/3.3B_1.mp3");
+                    }
+					else if(window.languageSelected == "Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.1/Tamil/3.3B_1.mp3");
+                    }
+					else if(window.languageSelected == "Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.1/Urdu/3.3B_1.mp3");
                     }
 					else
                     {

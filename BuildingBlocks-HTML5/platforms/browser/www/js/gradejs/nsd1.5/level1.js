@@ -2585,6 +2585,22 @@ create:function(game){
                     {
                          _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd1.5/Gujarati/nsd1.5G.mp3");
                     }
+					else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd1.5/Marathi/nsd1.5.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd1.5/Telugu/nsd1.5.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd1.5/Tamil/nsd1.5.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd1.5/Urdu/nsd1.5.mp3");
+                    }
                         else
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd1.5/Odiya/nsd1.5O.mp3");

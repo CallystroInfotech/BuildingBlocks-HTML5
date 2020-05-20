@@ -2668,6 +2668,22 @@ Game.nsf3_4level1.prototype ={
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf3.4/Gujarati/3.4G.mp3");
 				        //_this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
                     }
+					else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf3.4/Marathi/nsf3.4.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf3.4/Telugu/nsf3.4.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf3.4/Tamil/nsf3.4.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf3.4/Urdu/nsf3.4.mp3");
+                    }
                     else
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf3.4/Odiya/3.4O.mp3");

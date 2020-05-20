@@ -209,6 +209,22 @@ Game.volume_MVG_3_4level1.prototype={
 		{
 			 _this.soundurl = window.baseUrl+"questionSounds/Gujarati/4.3A/4.3A1.mp3";
 		}
+		else if(window.languageSelected == "Marathi")
+                    {
+                        _this.soundurl = window.baseUrl+"questionSounds/4.3A/Marathi/4.3A1.mp3";
+                    }
+					else if(window.languageSelected == "Telugu")
+                    {
+                        _this.soundurl = window.baseUrl+"questionSounds/4.3A/telugu/4.3A1.mp3";
+                    }
+					else if(window.languageSelected == "Tamil")
+                    {
+                        _this.soundurl = window.baseUrl+"questionSounds/4.3A/Tamil/4.3A1.mp3";
+                    }
+					else if(window.languageSelected == "Urdu")
+                    {
+                        _this.soundurl = window.baseUrl+"questionSounds/4.3A/Urdu/4.3A1.mp3";
+                    }
         else
         {
             _this.soundurl =  window.baseUrl+"questionSounds/4.3A/Odiya/4.3A1.mp3";
@@ -1304,6 +1320,62 @@ Game.volume_MVG_3_4level1.prototype={
                 kgTxt.align = 'center';
                 kgTxt.fill = '#ffffff';
             }
+			else if(window.languageSelected=="Marathi"){
+			  kgTxt0 = this.add.text(565,300, _this.firstValue+"  "+"       x "+_this.secondValue+" = ");
+				kgTxt = this.add.text(545,305, "मिलीलिटर");
+				kgTxt1 = this.add.text(814,305, "मिलीलिटर");
+				kgTxt0.font = 'myfont';
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt1.font = 'Comic Sans MS';
+				kgTxt0.fontSize = 38;
+				kgTxt.fontSize = 17;
+				kgTxt1.fontSize = 17;
+				kgTxt.anchor.setTo(0.5);
+				kgTxt.align = 'center';
+				kgTxt.fill = '#ffffff';
+		   }
+		   else if(window.languageSelected=="Tamil"){
+			  kgTxt0 = this.add.text(565,300, _this.firstValue+"  "+"       x "+_this.secondValue+" = ");
+				kgTxt = this.add.text(545,305, "மி.லி");
+				kgTxt1 = this.add.text(814,305, "மி.லி");
+				kgTxt0.font = 'myfont';
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt1.font = 'Comic Sans MS';
+				kgTxt0.fontSize = 38;
+				kgTxt.fontSize = 17;
+				kgTxt1.fontSize = 17;
+				kgTxt.anchor.setTo(0.5);
+				kgTxt.align = 'center';
+				kgTxt.fill = '#ffffff';
+		   }
+		   else if(window.languageSelected=="Telugu"){
+			  kgTxt0 = this.add.text(565,300, _this.firstValue+"  "+"       x "+_this.secondValue+" = ");
+				kgTxt = this.add.text(545,305, "మిల్లీ,");
+				kgTxt1 = this.add.text(814,305, "మిల్లీ");
+				kgTxt0.font = 'myfont';
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt1.font = 'Comic Sans MS';
+				kgTxt0.fontSize = 38;
+				kgTxt.fontSize = 17;
+				kgTxt1.fontSize = 17;
+				kgTxt.anchor.setTo(0.5);
+				kgTxt.align = 'center';
+				kgTxt.fill = '#ffffff';
+		   }
+		   else if(window.languageSelected=="Urdu"){
+			  kgTxt0 = this.add.text(565,300, _this.firstValue+"  "+"       x "+_this.secondValue+" = ");
+				kgTxt = this.add.text(545,305, "ملی لیٹر");
+				kgTxt1 = this.add.text(814,305, "ملی لیٹر");
+				kgTxt0.font = 'myfont';
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt1.font = 'Comic Sans MS';
+				kgTxt0.fontSize = 38;
+				kgTxt.fontSize = 17;
+				kgTxt1.fontSize = 17;
+				kgTxt.anchor.setTo(0.5);
+				kgTxt.align = 'center';
+				kgTxt.fill = '#ffffff';
+		   }
 			else if(window.languageSelected=="Gujarati"){
 			  kgTxt0 = this.add.text(585,300, _this.firstValue+"  "+"    x "+_this.secondValue+" = ");
 				kgTxt = this.add.text(559,305, "એમ");
@@ -1381,6 +1453,62 @@ Game.volume_MVG_3_4level1.prototype={
 			   kgTxt0 = this.add.text(585,300, _this.firstValue+"  "+"    x "+_this.secondValue+" = ");
 				kgTxt = this.add.text(559,305, "એમ");
 				kgTxt1 = this.add.text(810,305, "એમ");
+				kgTxt0.font = 'myfont';
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt1.font = 'Comic Sans MS';
+				kgTxt0.fontSize = 38;
+				kgTxt.fontSize = 17;
+				kgTxt1.fontSize = 17;
+				kgTxt.anchor.setTo(0.5);
+				kgTxt.align = 'center';
+				kgTxt.fill = '#ffffff';
+		   }
+		   else if(window.languageSelected=="Marathi"){
+			  kgTxt0 = this.add.text(565,300, _this.firstValue+"  "+"        x "+_this.secondValue+" = ");
+				kgTxt = this.add.text(535,305, "मिलीलिटर");
+				kgTxt1 = this.add.text(814,305, "मिलीलिटर");
+				kgTxt0.font = 'myfont';
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt1.font = 'Comic Sans MS';
+				kgTxt0.fontSize = 38;
+				kgTxt.fontSize = 17;
+				kgTxt1.fontSize = 17;
+				kgTxt.anchor.setTo(0.5);
+				kgTxt.align = 'center';
+				kgTxt.fill = '#ffffff';
+		   }
+		   else if(window.languageSelected=="Tamil"){
+			  kgTxt0 = this.add.text(565,300, _this.firstValue+"  "+"       x "+_this.secondValue+" = ");
+				kgTxt = this.add.text(545,305, "மி.லி");
+				kgTxt1 = this.add.text(814,305, "மி.லி");
+				kgTxt0.font = 'myfont';
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt1.font = 'Comic Sans MS';
+				kgTxt0.fontSize = 38;
+				kgTxt.fontSize = 17;
+				kgTxt1.fontSize = 17;
+				kgTxt.anchor.setTo(0.5);
+				kgTxt.align = 'center';
+				kgTxt.fill = '#ffffff';
+		   }
+		   else if(window.languageSelected=="Telugu"){
+			  kgTxt0 = this.add.text(565,300, _this.firstValue+"  "+"       x "+_this.secondValue+" = ");
+				kgTxt = this.add.text(545,305, "మిల్లీ,");
+				kgTxt1 = this.add.text(814,305, "మిల్లీ");
+				kgTxt0.font = 'myfont';
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt1.font = 'Comic Sans MS';
+				kgTxt0.fontSize = 38;
+				kgTxt.fontSize = 17;
+				kgTxt1.fontSize = 17;
+				kgTxt.anchor.setTo(0.5);
+				kgTxt.align = 'center';
+				kgTxt.fill = '#ffffff';
+		   }
+		   else if(window.languageSelected=="Urdu"){
+			  kgTxt0 = this.add.text(565,300, _this.firstValue+"  "+"       x "+_this.secondValue+" = ");
+				kgTxt = this.add.text(545,305, "ملی لیٹر");
+				kgTxt1 = this.add.text(814,305, "ملی لیٹر");
 				kgTxt0.font = 'myfont';
 				kgTxt.font = 'Comic Sans MS';
 				kgTxt1.font = 'Comic Sans MS';

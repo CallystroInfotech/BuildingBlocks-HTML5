@@ -81,7 +81,11 @@ Game.time_MTG_2_3level1.prototype={
         this.load.atlas('Level61_redNum', window.baseUrl+'assets/gradeAssets/6.1/redNum.png', window.baseUrl+'json/gradeJson/6.1/redNum.json');
         this.load.atlas('Level61_whiteNum', window.baseUrl+'assets/gradeAssets/6.1/whiteNum.png', window.baseUrl+'json/gradeJson/6.1/whiteNum.json');
         //this.load.atlas('Level61_months', window.baseUrl+'assets/gradeAssets/6.1/months.png', window.baseUrl+'json/gradeJson/6.1/months.json');  
-        this.load.atlas('Level61_months',window.baseUrl+'assets/newAssets/months.png',window.baseUrl+'assets/newAssets/months.json');  
+        //this.load.atlas('Level61_months',window.baseUrl+'assets/newAssets/months.png',window.baseUrl+'assets/newAssets/months.json'); 
+if(window.languageSelected == "Marathi" || window.languageSelected == "Telugu" || window.languageSelected == "Tamil" || window.languageSelected == "Urdu")
+			this.load.atlas('Level61_months',window.baseUrl+'assets/newAssets/monthname.png' ,window.baseUrl+'assets/newAssets/monthname.json');
+		else
+			this.load.atlas('Level61_months',window.baseUrl+'assets/newAssets/monthname1.png', window.baseUrl+'assets/newAssets/monthname1.json');		
         
         this.load.image('Level61_year', window.baseUrl+'assets/gradeAssets/6.1/year.png');
         
@@ -96,7 +100,10 @@ Game.time_MTG_2_3level1.prototype={
 
         this.load.atlas('Level61_monday',window.baseUrl+'assets/newAssets/1.png',window.baseUrl+'assets/newAssets/1.json');
         this.load.atlas('Level61_Tuesday',window.baseUrl+'assets/newAssets/2.png',window.baseUrl+'assets/newAssets/2.json');
-        this.load.atlas('Level61_wednesday',window.baseUrl+'assets/newAssets/3.png',window.baseUrl+'assets/newAssets/3.json');
+        if(window.languageSelected == "Tamil")
+			this.load.atlas('Level61_wednesday',window.baseUrl+'assets/newAssets/3_1.png',window.baseUrl+'assets/newAssets/3_1.json');
+		else 
+			this.load.atlas('Level61_wednesday',window.baseUrl+'assets/newAssets/3.png',window.baseUrl+'assets/newAssets/3.json');
         this.load.atlas('Level61_thusday',window.baseUrl+'assets/newAssets/4.png',window.baseUrl+'assets/newAssets/4.json');
         this.load.atlas('Level61_friday',window.baseUrl+'assets/newAssets/5.png',window.baseUrl+'assets/newAssets/5.json');
         this.load.atlas('Level61_saturday',window.baseUrl+'assets/newAssets/6.png',window.baseUrl+'assets/newAssets/6.json');
@@ -136,7 +143,12 @@ Game.time_MTG_2_3level1.prototype={
         this.load.atlas('Level62_whiteNum', window.baseUrl+'assets/gradeAssets/6.2/whiteNum.png', window.baseUrl+'json/gradeJson/6.2/whiteNum.json');
         
         //this.load.atlas('Level62_months', window.baseUrl+'assets/gradeAssets/6.2/months.png', window.baseUrl+'json/gradeJson/6.2/months.json'); 
-        this.load.atlas('Level62_months',window.baseUrl+'assets/newAssets/months.png',window.baseUrl+'assets/newAssets/months.json');  
+        //this.load.atlas('Level62_months',window.baseUrl+'assets/newAssets/months.png',window.baseUrl+'assets/newAssets/months.json'); 
+
+if(window.languageSelected == "Marathi" || window.languageSelected == "Telugu" || window.languageSelected == "Tamil" || window.languageSelected == "Urdu")
+			this.load.atlas('Level62_months',window.baseUrl+'assets/newAssets/monthname.png' ,window.baseUrl+'assets/newAssets/monthname.json');
+		else
+			this.load.atlas('Level62_months',window.baseUrl+'assets/newAssets/monthname1.png', window.baseUrl+'assets/newAssets/monthname1.json');			
          
         
         this.load.image('Level62_year', window.baseUrl+'assets/gradeAssets/6.2/year.png');
@@ -152,7 +164,11 @@ Game.time_MTG_2_3level1.prototype={
 
         this.load.atlas('Level62_monday',window.baseUrl+'assets/newAssets/1.png',window.baseUrl+'assets/newAssets/1.json');
         this.load.atlas('Level62_Tuesday',window.baseUrl+'assets/newAssets/2.png',window.baseUrl+'assets/newAssets/2.json');
-        this.load.atlas('Level62_wednesday',window.baseUrl+'assets/newAssets/3.png',window.baseUrl+'assets/newAssets/3.json');
+        this.load.atlas('Level62_tuesday',window.baseUrl+'assets/newAssets/2.png',window.baseUrl+'assets/newAssets/2.json');
+        if(window.languageSelected == "Tamil")
+			this.load.atlas('Level62_wednesday',window.baseUrl+'assets/newAssets/3_1.png',window.baseUrl+'assets/newAssets/3_1.json');
+		else 
+			this.load.atlas('Level62_wednesday',window.baseUrl+'assets/newAssets/3.png',window.baseUrl+'assets/newAssets/3.json');
         this.load.atlas('Level62_thusday',window.baseUrl+'assets/newAssets/4.png',window.baseUrl+'assets/newAssets/4.json');
         this.load.atlas('Level62_friday',window.baseUrl+'assets/newAssets/5.png',window.baseUrl+'assets/newAssets/5.json');
         this.load.atlas('Level62_saturday',window.baseUrl+'assets/newAssets/6.png',window.baseUrl+'assets/newAssets/6.json');
@@ -566,6 +582,58 @@ addQuestion:function(no22)
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=48;
+            monday.frame=5;
+            Tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=60;
+            monday.frame=6;
+            Tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=72;
+            monday.frame=7;
+            Tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=84;
+            monday.frame=8;
+            Tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else{
             months.x=367;
@@ -1110,6 +1178,58 @@ gotoSecondQuestion:function(){
             saturday.frame=3;
             sunday.frame=3;
         }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=49;
+            monday.frame=5;
+            Tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=61;
+            monday.frame=6;
+            Tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=73;
+            monday.frame=7;
+            Tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=85;
+            monday.frame=8;
+            Tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
+        }
         else{
             months.x=367;
             months.y=118;
@@ -1615,6 +1735,58 @@ gotoSecondQuestion:function(){
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=50;
+            monday.frame=5;
+            Tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=62;
+            monday.frame=6;
+            Tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=74;
+            monday.frame=7;
+            Tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=86;
+            monday.frame=8;
+            Tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else{
             months.x=367;
@@ -2179,6 +2351,58 @@ gotoSecondQuestion:function(){
             saturday.frame=3;
             sunday.frame=3;
         }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=51;
+            monday.frame=5;
+            Tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=63;
+            monday.frame=6;
+            Tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=75;
+            monday.frame=7;
+            Tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=87;
+            monday.frame=8;
+            Tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
+        }
         else{
             months.x=367;
             months.y=118;
@@ -2730,6 +2954,58 @@ gotoSecondQuestion:function(){
             saturday.frame=3;
             sunday.frame=3;
         }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=52;
+            monday.frame=5;
+            Tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=64;
+            monday.frame=6;
+            Tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=76;
+            monday.frame=7;
+            Tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=88;
+            monday.frame=8;
+            Tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
+        }
         else{
             months.x=367;
             months.y=118;
@@ -3266,6 +3542,58 @@ gotoSecondQuestion:function(){
             saturday.frame=3;
             sunday.frame=3;
         }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=53;
+            monday.frame=5;
+            Tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=65;
+            monday.frame=6;
+            Tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=77;
+            monday.frame=7;
+            Tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=89;
+            monday.frame=8;
+            Tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
+        }
         else{
             months.x=367;
             months.y=118;
@@ -3790,6 +4118,58 @@ gotoSecondQuestion:function(){
             saturday.frame=3;
             sunday.frame=3;
         }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=54;
+            monday.frame=5;
+            Tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=66;
+            monday.frame=6;
+            Tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=78;
+            monday.frame=7;
+            Tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=90;
+            monday.frame=8;
+            Tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
+        }
         else{
             months.x=367;
             months.y=118;
@@ -4295,6 +4675,58 @@ gotoEighthQuestion:function(){
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=55;
+            monday.frame=5;
+            Tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=67;
+            monday.frame=6;
+            Tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=79;
+            monday.frame=7;
+            Tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=91;
+            monday.frame=8;
+            Tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else{
             months.x=367;
@@ -4830,6 +5262,58 @@ gotoEighthQuestion:function(){
             saturday.frame=3;
             sunday.frame=3;
         }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=56;
+            monday.frame=5;
+            Tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=68;
+            monday.frame=6;
+            Tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=80;
+            monday.frame=7;
+            Tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=92;
+            monday.frame=8;
+            Tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
+        }
         else{
             months.x=367;
             months.y=118;
@@ -5323,6 +5807,58 @@ gotoEighthQuestion:function(){
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=57;
+            monday.frame=5;
+            Tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=69;
+            monday.frame=6;
+            Tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=81;
+            monday.frame=7;
+            Tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=93;
+            monday.frame=8;
+            Tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else{
             months.x=367;
@@ -5827,6 +6363,58 @@ gotoEighthQuestion:function(){
             saturday.frame=3;
             sunday.frame=3;
         }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=58;
+            monday.frame=5;
+            Tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=70;
+            monday.frame=6;
+            Tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=82;
+            monday.frame=7;
+            Tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=94;
+            monday.frame=8;
+            Tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
+        }
         else{
             months.x=367;
             months.y=118;
@@ -6322,6 +6910,58 @@ gotoEighthQuestion:function(){
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=59;
+            monday.frame=5;
+            Tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=71;
+            monday.frame=6;
+            Tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=83;
+            monday.frame=7;
+            Tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=95;
+            monday.frame=8;
+            Tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else {
             months.x=367;
@@ -7666,6 +8306,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/EMonday.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/EMonday.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/EMonday.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/EMonday.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/EMonday.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/OMonday.mp3");
@@ -7688,6 +8344,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/ETuesday.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/ETuesday.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/ETuesday.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/ETuesday.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/ETuesday.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/OTuesday.mp3");
@@ -7710,6 +8382,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/EWednesday.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/EWednesday.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/EWednesday.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/EWednesday.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/EWednesday.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/OWednesday.mp3");
@@ -7732,6 +8420,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/EThursday.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/KThursday.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/KThursday.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/KThursday.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/KThursday.mp3");
+                      } 
                                     else 
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/OThursday.mp3");
@@ -7754,6 +8458,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/EFriday.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/EFriday.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/EFriday.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/EFriday.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/EFriday.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/OFriday.mp3");
@@ -7777,6 +8497,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/ESunday.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/ESunday.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/ESunday.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/ESunday.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/ESunday.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/OSunday.mp3");
@@ -7801,6 +8537,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/EfirstDay.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/EfirstDay.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/EfirstDay.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/EfirstDay.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/EfirstDay.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/OfirstDay.mp3");
@@ -7823,6 +8575,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/ElastDay.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/ElastDay.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/ElastDay.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/ElastDay.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/ElastDay.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/OlastDay.mp3");
@@ -7845,6 +8613,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/EfirstMonday.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/EfirstMonday.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/EfirstMonday.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/EfirstMonday.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/EfirstMonday.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/OfirstMonday.mp3");
@@ -7867,6 +8651,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/EfirstTuesday.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/EfirstTuesday.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/EfirstTuesday.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/EfirstTuesday.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/EfirstTuesday.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/OfirstTuesday.mp3");
@@ -7889,6 +8689,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/EfirstWednesday.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/EfirstWednesday.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/EfirstWednesday.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/EfirstWednesday.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/EfirstWednesday.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/OfirstWednesday.mp3");
@@ -7911,6 +8727,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/ElastSunday.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/ElastSunday.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/ElastSunday.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/ElastSunday.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/ElastSunday.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/OlastSunday.mp3");
@@ -7933,6 +8765,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/ElastSaturday.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/ElastSaturday.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/ElastSaturday.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/ElastSaturday.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/ElastSaturday.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/OlastSaturday.mp3");
@@ -7955,6 +8803,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/ElastFriday.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/ElastFriday.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/ElastFriday.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/ElastFriday.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/ElastFriday.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/OlastFriday.mp3");
@@ -7977,6 +8841,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/Efirst2Days.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/Efirst2Days.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/Efirst2Days.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/Efirst2Days.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/Efirst2Days.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Ofirst2Days.mp3");
@@ -7999,6 +8879,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/Elast2Days.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/Elast2Days.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/Elast2Days.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/Elast2Days.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/Elast2Days.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Olast2Days.mp3");
@@ -8021,6 +8917,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/ESelectMonth.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/ESelectMonth.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/ESelectMonth.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/ESelectMonth.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/ESelectMonth.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/OSelectMonth.mp3");
@@ -8043,6 +8955,22 @@ gotoEighthQuestion:function(){
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.1/EselectYear.mp3");
                                     }
+									else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Marathi/EselectYear.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Telugu/EselectYear.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Tamil/EselectYear.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/Urdu/EselectYear.mp3");
+                      } 
                                     else
                                     {
                                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.1/OselectYear.mp3");

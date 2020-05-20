@@ -364,6 +364,22 @@ Game.time_MTG_1_1level1.prototype={
         {
             _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/5.1/5.1_1.mp3";
         }
+		else if(window.languageSelected == "Marathi")
+                      {
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.1/Marathi/5.1_1.mp3";
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.1/Telugu/5.1_1.mp3";
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.1/Tamil/5.1_1.mp3";
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.1/Urdu/5.1_1.mp3";
+                      } 
         else
         {
             _this.soundurl =  window.baseUrl+"questionSounds/5.1/Odiya/5.1_1.mp3";

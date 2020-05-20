@@ -172,6 +172,14 @@ Game.number_NSNG_1_1level1.prototype ={
         {
              _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/1.1/question.mp3");
         } 
+		else if(window.languageSelected=="Marathi")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Marathi/question.mp3");
+		 else if(window.languageSelected=="Telugu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Telugu/question.mp3");
+		 else if(window.languageSelected=="Tamil")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Tamil/question.mp3");
+		 else if(window.languageSelected=="Urdu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Urdu/question.mp3");
         else 
         {
             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/question.mp3");
@@ -3534,6 +3542,14 @@ Game.number_NSNG_1_1level1.prototype ={
                         commonNavBar.soundUrl = window.baseUrl+"questionSounds/unity/1.1/Kannada/";
                     else if(window.languageSelected=="Odiya")
                         commonNavBar.soundUrl = window.baseUrl+"questionSounds/unity/1.1/Odiya/";
+					else if(window.languageSelected=="Marathi")
+						 commonNavBar.soundUrl = window.baseUrl+"questionSounds/unity/1.1/Marathi/No";
+					 else if(window.languageSelected=="Telugu")
+						 commonNavBar.soundUrl = window.baseUrl+"questionSounds/unity/1.1/Telugu/No";
+					 else if(window.languageSelected=="Tamil")
+						 commonNavBar.soundUrl = window.baseUrl+"questionSounds/unity/1.1/Tamil/No";
+					 else if(window.languageSelected=="Urdu")
+						 commonNavBar.soundUrl = window.baseUrl+"questionSounds/unity/1.1/Urdu/No";
                     else
                         commonNavBar.soundUrl = window.baseUrl+"questionSounds/Gujarati/unity/numbers/No";
 
@@ -3665,9 +3681,19 @@ Game.number_NSNG_1_1level1.prototype ={
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Hindi/1.mp3");
                     else if(window.languageSelected=="Kannada")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/1.mp3");
+					else if(window.languageSelected=="Marathi")
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Marathi/No1.mp3");
                     else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No1.mp3");
-                    else
+					else if(window.languageSelected=="Marathi")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Marathi/No1.mp3");
+		 else if(window.languageSelected=="Telugu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Telugu/No1.mp3");
+		 else if(window.languageSelected=="Tamil")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Tamil/No1.mp3");
+		 else if(window.languageSelected=="Urdu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Urdu/No1.mp3");
+					else
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/1.mp3");
                     break;
             case 5: if(window.languageSelected=="English")
@@ -3676,9 +3702,17 @@ Game.number_NSNG_1_1level1.prototype ={
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Hindi/2.mp3");
                     else if(window.languageSelected=="Kannada")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/2.mp3");
+					else if(window.languageSelected=="Marathi")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Marathi/No2.mp3");
+		 else if(window.languageSelected=="Telugu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Telugu/No2.mp3");
+		 else if(window.languageSelected=="Tamil")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Tamil/No2.mp3");
+		 else if(window.languageSelected=="Urdu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Urdu/No2.mp3");
                     else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No2.mp3");
-                    else
+					else
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/2.mp3");
                     break;
             case 3: if(window.languageSelected=="English")
@@ -3687,9 +3721,17 @@ Game.number_NSNG_1_1level1.prototype ={
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Hindi/3.mp3");
                     else if(window.languageSelected=="Kannada")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/3.mp3");
+					else if(window.languageSelected=="Marathi")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Marathi/No3.mp3");
+		 else if(window.languageSelected=="Telugu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Telugu/No3.mp3");
+		 else if(window.languageSelected=="Tamil")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Tamil/No3.mp3");
+		 else if(window.languageSelected=="Urdu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Urdu/No3.mp3");
                     else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No3.mp3");
-                    else
+					else
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/3.mp3");
                     break;
             case 2:if(window.languageSelected=="English")
@@ -3698,9 +3740,17 @@ Game.number_NSNG_1_1level1.prototype ={
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Hindi/4.mp3");
                     else if(window.languageSelected=="Kannada")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/4.mp3");
+					else if(window.languageSelected=="Marathi")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Marathi/No4.mp3");
+		 else if(window.languageSelected=="Telugu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Telugu/No4.mp3");
+		 else if(window.languageSelected=="Tamil")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Tamil/No4.mp3");
+		 else if(window.languageSelected=="Urdu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Urdu/No4.mp3");
                     else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No4.mp3");
-                    else
+					else
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/4.mp3");
                     break;
             case 8:if(window.languageSelected=="English")
@@ -3709,9 +3759,17 @@ Game.number_NSNG_1_1level1.prototype ={
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Hindi/5.mp3");
                     else if(window.languageSelected=="Kannada")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/5.mp3");
+					else if(window.languageSelected=="Marathi")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Marathi/No5.mp3");
+		 else if(window.languageSelected=="Telugu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Telugu/No5.mp3");
+		 else if(window.languageSelected=="Tamil")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Tamil/No5.mp3");
+		 else if(window.languageSelected=="Urdu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Urdu/No5.mp3");
                     else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No5.mp3");
-                    else
+					else
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/5.mp3");
                     break;
             case 9:if(window.languageSelected=="English")
@@ -3720,9 +3778,17 @@ Game.number_NSNG_1_1level1.prototype ={
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Hindi/6.mp3");
                     else if(window.languageSelected=="Kannada")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/6.mp3");
+					else if(window.languageSelected=="Marathi")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Marathi/No6.mp3");
+		 else if(window.languageSelected=="Telugu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Telugu/No6.mp3");
+		 else if(window.languageSelected=="Tamil")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Tamil/No6.mp3");
+		 else if(window.languageSelected=="Urdu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Urdu/No6.mp3");
                     else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No6.mp3");
-                    else
+					else
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/6.mp3");
                     break;
             case 7:if(window.languageSelected=="English")
@@ -3731,9 +3797,17 @@ Game.number_NSNG_1_1level1.prototype ={
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Hindi/7.mp3");
                     else if(window.languageSelected=="Kannada")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/7.mp3");
+					else if(window.languageSelected=="Marathi")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Marathi/No7.mp3");
+		 else if(window.languageSelected=="Telugu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Telugu/No7.mp3");
+		 else if(window.languageSelected=="Tamil")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Tamil/No7.mp3");
+		 else if(window.languageSelected=="Urdu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Urdu/No7.mp3");
                     else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No7.mp3");
-                    else
+					else
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/7.mp3");
                     break;
             case 1:if(window.languageSelected=="English")
@@ -3742,9 +3816,17 @@ Game.number_NSNG_1_1level1.prototype ={
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Hindi/8.mp3");
                     else if(window.languageSelected=="Kannada")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/8.mp3");
+					else if(window.languageSelected=="Marathi")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Marathi/No8.mp3");
+		 else if(window.languageSelected=="Telugu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Telugu/No8.mp3");
+		 else if(window.languageSelected=="Tamil")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Tamil/No8.mp3");
+		 else if(window.languageSelected=="Urdu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Urdu/No8.mp3");
                     else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No8.mp3");
-                    else
+					else
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/8.mp3");
                     break;
             case 6:if(window.languageSelected=="English")
@@ -3753,16 +3835,23 @@ Game.number_NSNG_1_1level1.prototype ={
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Hindi/9.mp3");
                     else if(window.languageSelected=="Kannada")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Kannada/9.mp3");
+					else if(window.languageSelected=="Marathi")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Marathi/No9.mp3");
+		 else if(window.languageSelected=="Telugu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Telugu/No9.mp3");
+		 else if(window.languageSelected=="Tamil")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Tamil/No9.mp3");
+		 else if(window.languageSelected=="Urdu")
+             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Urdu/No9.mp3");
                     else if(window.languageSelected=="Gujarati")
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/numbers/No9.mp3");
-                    else
+					else
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.1/Odiya/9.mp3");
                     break;
         }
         
         _this.playQuestionSound.appendChild(_this.src);
         _this.playQuestionSound.play();
-        commonNavBar.addNavBar(this,this.src.src,"numbersense1");
     },
 
     stopVoice:function()

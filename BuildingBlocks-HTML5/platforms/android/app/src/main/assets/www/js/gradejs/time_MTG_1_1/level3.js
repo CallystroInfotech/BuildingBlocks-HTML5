@@ -366,6 +366,12 @@ Game.time_MTG_1_1level3.prototype={
             groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10001'));
         else if(window.languageSelected=="Gujarati")
             groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10004'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10008'));
         else
             groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10003'));
 
@@ -380,6 +386,14 @@ Game.time_MTG_1_1level3.prototype={
             groupdayname.push(this.add.sprite(15,110,'Level52_tuesday','Symbol 14 instance 10001'));
         else if(window.languageSelected=="Gujarati")
             groupdayname.push(this.add.sprite(15,110,'Level52_tuesday','Symbol 14 instance 10004'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(15,110,'Level52_tuesday','Symbol 14 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(15,110,'Level52_tuesday','Symbol 14 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_tuesday','Symbol 14 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_tuesday','Symbol 14 instance 10008'));
         else
             groupdayname.push(this.add.sprite(15,110,'Level52_tuesday','Symbol 14 instance 10003'));
 
@@ -387,15 +401,23 @@ Game.time_MTG_1_1level3.prototype={
         
         groupdays.push(this.add.sprite(190,400,'Level52_wed'+dayselct));groupdays[2].alpha=0;
         if(window.languageSelected=="English")
-            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 16 instance 10000'));
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10000'));
         else if(window.languageSelected=="Kannada")
-            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 16 instance 10002'));
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10002'));
         else if(window.languageSelected=="Hindi")
-            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 16 instance 10001'));
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10001'));
         else if(window.languageSelected=="Gujarati")
-            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 16 instance 10004'));
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10004'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10008'));
         else
-            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 16 instance 10003'));
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10003'));
 
         groupdayname[2].alpha=1;groupdayname[2].scale.setTo(1.45,1.45);
         
@@ -408,6 +430,14 @@ Game.time_MTG_1_1level3.prototype={
             groupdayname.push(this.add.sprite(15,110,'Level52_thursday','Symbol 16 instance 10001'));
         else if(window.languageSelected=="Gujarati")
             groupdayname.push(this.add.sprite(15,110,'Level52_thursday','Symbol 16 instance 10004'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(15,110,'Level52_thursday','Symbol 16 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(15,110,'Level52_thursday','Symbol 16 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_thursday','Symbol 16 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_thursday','Symbol 16 instance 10008'));
         else
             groupdayname.push(this.add.sprite(15,110,'Level52_thursday','Symbol 16 instance 10003'));
 
@@ -422,6 +452,14 @@ Game.time_MTG_1_1level3.prototype={
             groupdayname.push(this.add.sprite(15,110,'Level52_friday','Symbol 17 instance 10001'));
         else if(window.languageSelected=="Gujarati")
             groupdayname.push(this.add.sprite(15,110,'Level52_friday','Symbol 17 instance 10004'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(15,110,'Level52_friday','Symbol 17 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(15,110,'Level52_friday','Symbol 17 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_friday','Symbol 17 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_friday','Symbol 17 instance 10008'));
         else
             groupdayname.push(this.add.sprite(15,110,'Level52_friday','Symbol 17 instance 10003'));
 
@@ -436,6 +474,14 @@ Game.time_MTG_1_1level3.prototype={
             groupdayname.push(this.add.sprite(15,110,'Level52_saturday','Symbol 18 instance 10001'));
         else if(window.languageSelected=="Gujarati")
             groupdayname.push(this.add.sprite(15,110,'Level52_saturday','Symbol 18 instance 10004'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(15,110,'Level52_saturday','Symbol 18 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(15,110,'Level52_saturday','Symbol 18 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_saturday','Symbol 18 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+			groupdayname.push(this.add.sprite(15,110,'Level52_saturday','Symbol 18 instance 10008'));
         else
             groupdayname.push(this.add.sprite(15,110,'Level52_saturday','Symbol 18 instance 10003'));
 
@@ -450,6 +496,14 @@ Game.time_MTG_1_1level3.prototype={
             groupdayname.push(this.add.sprite(15,110,'Level52_sunday','Symbol 19 instance 10001'));
         else if(window.languageSelected=="Gujarati")
             groupdayname.push(this.add.sprite(15,110,'Level52_sunday','Symbol 19 instance 10004'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(15,110,'Level52_sunday','Symbol 19 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(15,110,'Level52_sunday','Symbol 19 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_sunday','Symbol 19 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+			groupdayname.push(this.add.sprite(15,110,'Level52_sunday','Symbol 19 instance 10008'));
         else
             groupdayname.push(this.add.sprite(15,110,'Level52_sunday','Symbol 19 instance 10003'));
 
@@ -1035,6 +1089,26 @@ Game.time_MTG_1_1level3.prototype={
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/5.2/5.2_3.mp3");
                     _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/5.2/5.2_3.mp3";
                 }
+				else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/5.2_3.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/5.2_3.mp3";
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/5.2_3.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/5.2_3.mp3";
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/5.2_3.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/5.2_3.mp3";
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/5.2_3.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/5.2_3.mp3";
+                      } 
             else
             {
                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Odiya/5.2_3.mp3");
@@ -1089,6 +1163,58 @@ Game.time_MTG_1_1level3.prototype={
                             _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/5.2/a-monday.mp3";
                         }
                     }
+					else if(window.languageSelected == "Marathi")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/b-monday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/b-monday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/a-monday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/a-monday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/b-monday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/b-monday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/a-monday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/a-monday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/b-monday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/b-monday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/a-monday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/a-monday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/b-monday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/b-monday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/a-monday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/a-monday.mp3";
+								}
+                      } 
                     else
                     {
                         if(status2=="before"){
@@ -1141,6 +1267,58 @@ Game.time_MTG_1_1level3.prototype={
                             _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/5.2/a-tuesday.mp3";
                         }
                     }
+					else if(window.languageSelected == "Marathi")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/b-tuesday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/b-tuesday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/a-tuesday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/a-tuesday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/b-tuesday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/b-tuesday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/a-tuesday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/a-tuesday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/b-tuesday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/b-tuesday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/a-tuesday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/a-tuesday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/b-tuesday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/b-tuesday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/a-tuesday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/a-tuesday.mp3";
+								}
+                      } 
                     else
                     {
                         if(status2=="before"){
@@ -1193,6 +1371,58 @@ Game.time_MTG_1_1level3.prototype={
                             _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/5.2/a-wednesday.mp3";
                         }
                     }
+					else if(window.languageSelected == "Marathi")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/b-wednesday.mp3");
+                                   _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/b-wednesday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/a-wednesday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/a-wednesday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/b-wednesday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/b-wednesday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/a-wednesday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/a-wednesday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/b-wednesday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/b-wednesday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/a-wednesday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/a-wednesday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/b-wednesday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/b-wednesday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/a-wednesday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/a-wednesday.mp3";
+								}
+                      } 
                     else
                     {
                         if(status2=="before"){
@@ -1245,6 +1475,58 @@ Game.time_MTG_1_1level3.prototype={
                             _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/5.2/a-thursday.mp3";
                         }
                     }
+					else if(window.languageSelected == "Marathi")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/b-thursday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/b-thursday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/a-thursday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/a-thursday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/b-thursday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/b-thursday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/a-thursday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/a-thursday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/b-thursday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/b-thursday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/a-thursday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/a-thursday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/b-thursday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/b-thursday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/a-thursday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/a-thursday.mp3";
+								}
+                      } 
                     else
                     {
                         if(status2=="before"){
@@ -1297,6 +1579,58 @@ Game.time_MTG_1_1level3.prototype={
                             _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/5.2/a-friday.mp3";
                         }
                     }
+					else if(window.languageSelected == "Marathi")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/b-friday.mp3");
+                                   _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/b-friday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/a-friday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/a-friday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/b-friday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/b-friday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/a-friday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/a-friday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/b-friday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/b-friday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/a-friday.mp3");
+                                   _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/a-friday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/b-friday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/b-friday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/a-friday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/a-friday.mp3";
+								}
+                      } 
                     else
                     {
                         if(status2=="before"){
@@ -1349,6 +1683,58 @@ Game.time_MTG_1_1level3.prototype={
                             _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/5.2/a-saturday.mp3";
                         }
                     }
+					else if(window.languageSelected == "Marathi")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/b-saturday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/b-saturday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/a-saturday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/a-saturday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/b-saturday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/b-saturday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/a-saturday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/a-saturday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/b-saturday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/b-saturday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/a-saturday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/a-saturday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/b-saturday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/b-saturday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/a-saturday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/a-saturday.mp3";
+								}
+                      } 
                     else
                     {
                         if(status2=="before"){
@@ -1401,6 +1787,58 @@ Game.time_MTG_1_1level3.prototype={
                             _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/5.2/a-sunday.mp3";
                         }
                     }
+					else if(window.languageSelected == "Marathi")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/b-sunday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/b-sunday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/a-sunday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/a-sunday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/b-sunday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/b-sunday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/a-sunday.mp3");
+                                   _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/a-sunday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/b-sunday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/b-sunday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/a-sunday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/a-sunday.mp3";
+								}
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           if(status2=="before")
+						   {
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/b-sunday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/b-sunday.mp3";
+						   }
+                                else
+								{
+                                    _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/a-sunday.mp3");
+                                    _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/a-sunday.mp3";
+								}
+                      } 
                     else
                     {
                         if(status2=="before"){

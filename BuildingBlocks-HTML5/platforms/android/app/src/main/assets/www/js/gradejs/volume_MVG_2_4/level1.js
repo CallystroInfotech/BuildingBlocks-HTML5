@@ -310,6 +310,22 @@ Game.volume_MVG_2_4level1.prototype={
 		{
 			 _this.soundurl = window.baseUrl+"questionSounds/Gujarati/4.2A/4.2A1.mp3";
 		}
+		else if(window.languageSelected == "Marathi")
+                    {
+                        _this.soundurl = window.baseUrl+"questionSounds/4.2A/Marathi/4.2A1.mp3";
+                    }
+					else if(window.languageSelected == "Telugu")
+                    {
+                        _this.soundurl = window.baseUrl+"questionSounds/4.2A/telugu/4.2A1.mp3";
+                    }
+					else if(window.languageSelected == "Tamil")
+                    {
+                        _this.soundurl = window.baseUrl+"questionSounds/4.2A/Tamil/4.2A1.mp3";
+                    }
+					else if(window.languageSelected == "Urdu")
+                    {
+                        _this.soundurl = window.baseUrl+"questionSounds/4.2A/Urdu/4.2A1.mp3";
+                    }
         else
         {
             _this.soundurl =  window.baseUrl+"questionSounds/4.2A/Odiya/4.2A1.mp3";

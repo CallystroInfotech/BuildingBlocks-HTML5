@@ -67,6 +67,22 @@ Game.division_NODG_4_2level2.prototype={
                         {
                             _this.qsoundurl= window.baseUrl+"questionSounds/Gujarati/3.2.1/17.3.mp3";
                         }
+						else if(window.languageSelected=="Marathi")
+                            {
+                                _this.qsoundurl= window.baseUrl+"questionSounds/3.2.1/Marathi/17.3.mp3";
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                               _this.qsoundurl= window.baseUrl+"questionSounds/3.2.1/Telugu/17.3.mp3";
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                _this.qsoundurl= window.baseUrl+"questionSounds/3.2.1/Tamil/17.3.mp3";
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                _this.qsoundurl= window.baseUrl+"questionSounds/3.2.1/Urdu/17.3.mp3";
+                            }
                        else
                       {
                            _this.qsoundurl= window.baseUrl+"questionSounds/3.2.1/Odiya/17.3.mp3";

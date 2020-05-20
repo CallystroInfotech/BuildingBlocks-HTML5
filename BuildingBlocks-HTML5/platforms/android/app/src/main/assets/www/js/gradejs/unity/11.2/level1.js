@@ -1975,6 +1975,22 @@ gotoTenthQuestion:function(){
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/11.2/11.2E.mp3");
                     }
+					else if(window.languageSelected=="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/11.2/Marathi/11.2E.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/11.2/Tamil/11.2E.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/11.2/Telugu/11.2E.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/11.2/Urdu/11.2E.mp3");
+                    }
 					else
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/11.2/Odiya/11.2.mp3");

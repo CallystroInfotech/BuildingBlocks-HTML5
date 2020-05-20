@@ -2594,6 +2594,22 @@ _this.UnorderedNum5.kill();
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.4.1/Kannada/Game 4.4.1.mp3");
                         }
+						else if(window.languageSelected == "Marathi")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.4.1/Marathi/4.4.1.mp3");
+                        }
+						else if(window.languageSelected == "Telugu")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.4.1/Telugu/4.4.1.mp3");
+                        }
+						else if(window.languageSelected == "Tamil")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.4.1/Tamil/4.4.1.mp3");
+                        }
+						else if(window.languageSelected == "Urdu")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.4.1/Urdu/4.4.1.mp3");
+                        }
                         else if(window.languageSelected=="Gujarati")
                     {
                          _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/4.4.1/4.4.1.mp3");

@@ -2222,6 +2222,22 @@ Game.unity12_1level1.prototype ={
                         {
                              _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/12.1/12.1.mp3");
                         }
+					else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/12.1/Marathi/12.1.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/12.1/Tamil/12.1.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/12.1/Telugu/12.1.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/12.1/Urdu/12.1.mp3");
+                    }
                     else
                     {
                         _this.src.setAttribute("src", "sounds/12.1.mp3");

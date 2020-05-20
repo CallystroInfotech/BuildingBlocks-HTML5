@@ -33,6 +33,22 @@ Game.multiplication_NOMG_5_3level2.prototype={
                         _this.qsoundurl =window.baseUrl+"questionSounds/14.2/Kannada/Game 14.2.mp3";
                     else if(window.languageSelected=="Gujarati")
                         _this.qsoundurl =window.baseUrl+"questionSounds/Gujarati/14.2/Game14.2.mp3";
+					else if(window.languageSelected=="Marathi")
+        {
+            _this.qsoundurl =window.baseUrl+"questionSounds/14.2/Marathi/game14.2.mp3";
+        }
+		else if(window.languageSelected=="Tamil")
+        {
+            _this.qsoundurl =window.baseUrl+"questionSounds/14.2/Tamil/game14.2.mp3";
+        }
+		else if(window.languageSelected=="Telugu")
+        {
+            _this.qsoundurl =window.baseUrl+"questionSounds/14.2/Telugu/game14.2.mp3";
+        }
+		else if(window.languageSelected=="Urdu")
+        {
+            _this.qsoundurl =window.baseUrl+"questionSounds/14.2/Urdu/game14.2.mp3";
+        }
                     else
                         _this.qsoundurl =window.baseUrl+"questionSounds/14.2/Odiya/14.2.mp3";
 

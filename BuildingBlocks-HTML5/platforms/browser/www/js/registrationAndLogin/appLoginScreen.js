@@ -16,13 +16,12 @@ Game.appLoginScreen.prototype={
 
 	create:function(game)
 	{
-
 		//AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
 		//AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN | AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
+		screen.orientation.lock('portrait');
+		AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
+		_this.game.scale.setGameSize(540, 960);
 		_this.checkPermission();
-
-		
-		
 
 	},
 
@@ -58,6 +57,34 @@ Game.appLoginScreen.prototype={
 		titleTxt.fill = '#FFFFFF';
 		titleTxt.wordWrap = true;
 		titleTxt.wordWrapWidth = 500;
+		
+		if(this.video==null)
+						{	
+							this.video = this.add.video('demo');
+							
+						}
+						
+				this.helpIcon = this.add.image(500,42,'helpIcon');
+    	this.helpIcon.scale.setTo(1);
+    	this.helpIcon.anchor.setTo(0.5);
+		this.helpIcon.inputEnabled = true;
+        		this.helpIcon.input.useHandCursor = true;
+		this.helpIcon.events.onInputDown.add(function()
+        		{
+        			//this.clickSound = this.add.audio('ClickSound');
+                	//this.clickSound.play();
+        			//if(appConfig.cordova && !appConfig.browser)
+        			//{
+						screen.orientation.lock('landscape');
+						AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN, null, null);
+						//AndroidFullScreen.setSystemUiVisibility(AndroidFullScreen.SYSTEM_UI_FLAG_FULLSCREEN | AndroidFullScreen.SYSTEM_UI_FLAG_LOW_PROFILE, null, null);
+
+						
+						_this.game.scale.setGameSize(960, 540);
+						nativeApp.playHelp(_this,"appLoginScreen");
+        			//}
+
+        		},this);
 	},
 
 	checkPermission:function()
@@ -153,6 +180,7 @@ Game.appLoginScreen.prototype={
     		for (var i = 0; i < _this.userArray.length; i++) {
     			if(_this.userArray[i].name.toLowerCase() == "fish")
     			{
+    				FirebasePlugin.logEvent("Click_avatar", {Click_avatar_value: _this.userArray[i].name, item_id: ""});
     				_this.state.start('appLoginEditScreen',true,false,_this.userArray[i]);
     				return;
     			} 
@@ -166,6 +194,8 @@ Game.appLoginScreen.prototype={
     		for (var i = 0; i < _this.userArray.length; i++) {
     			if(_this.userArray[i].name.toLowerCase() == "butterfly")
     			{
+    				FirebasePlugin.logEvent("Click_avatar", {Click_avatar_value: _this.userArray[i].name, item_id: ""});
+    				
     				_this.state.start('appLoginEditScreen',true,false,_this.userArray[i]);
     				return;
     			} 
@@ -178,6 +208,8 @@ Game.appLoginScreen.prototype={
     		for (var i = 0; i < _this.userArray.length; i++) {
     			if(_this.userArray[i].name.toLowerCase() == "flower")
     			{
+    				FirebasePlugin.logEvent("Click_avatar", {Click_avatar_value: _this.userArray[i].name, item_id: ""});
+    				
     				_this.state.start('appLoginEditScreen',true,false,_this.userArray[i]);
     				return;
     			} 
@@ -190,6 +222,8 @@ Game.appLoginScreen.prototype={
     		for (var i = 0; i < _this.userArray.length; i++) {
     			if(_this.userArray[i].name.toLowerCase() == "parrot")
     			{
+    				FirebasePlugin.logEvent("Click_avatar", {Click_avatar_value: _this.userArray[i].name, item_id: ""});
+    				
     				_this.state.start('appLoginEditScreen',true,false,_this.userArray[i]);
     				return;
     			} 
@@ -202,6 +236,8 @@ Game.appLoginScreen.prototype={
     		for (var i = 0; i < _this.userArray.length; i++) {
     			if(_this.userArray[i].name.toLowerCase() == "sun")
     			{
+    				FirebasePlugin.logEvent("Click_avatar", {Click_avatar_value: _this.userArray[i].name, item_id: ""});
+    				
     				_this.state.start('appLoginEditScreen',true,false,_this.userArray[i]);
     				return;
     			} 
@@ -214,6 +250,8 @@ Game.appLoginScreen.prototype={
     		for (var i = 0; i < _this.userArray.length; i++) {
     			if(_this.userArray[i].name.toLowerCase() == "tree")
     			{
+    				FirebasePlugin.logEvent("Click_avatar", {Click_avatar_value: _this.userArray[i].name, item_id: ""});
+    				
     				_this.state.start('appLoginEditScreen',true,false,_this.userArray[i]);
     				return;
     			} 
@@ -305,6 +343,8 @@ Game.appLoginScreen.prototype={
 			{
 				_this.regandstsrtBtn.inputEnabled = true;
 				_this.regandstsrtBtn.events.onInputDown.add(function(){
+					FirebasePlugin.logEvent("Button_click_register", {Button_click: "", item_id: ""});
+    				
 					_this.state.start('registrationLangSelectionScreen',true,false,_this.userArray);
 				},_this);
 			}

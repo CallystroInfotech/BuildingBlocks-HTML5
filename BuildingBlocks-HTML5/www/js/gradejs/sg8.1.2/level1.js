@@ -2209,6 +2209,26 @@ Game.sg8_1_2level1.prototype={
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Gujarati/sg8.1.2b.mp3");
                     _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Gujarati/sg8.1.2b.mp3";
                 }
+				else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Marathi/sg8.1.2b.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Marathi/sg8.1.2b.mp3";
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Telugu/sg8.1.2b.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Telugu/sg8.1.2b.mp3";
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Tamil/sg8.1.2b.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Tamil/sg8.1.2b.mp3";
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Urdu/sg8.1.2b.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Urdu/sg8.1.2b.mp3";
+                    }
                 else
                 {
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Odiya/sg8.1.2b.mp3");
@@ -2240,6 +2260,26 @@ Game.sg8_1_2level1.prototype={
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Gujarati/sg8.1.2a.mp3");
                     _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Gujarati/sg8.1.2a.mp3";
                 }
+				else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Marathi/sg8.1.2a.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Marathi/sg8.1.2a.mp3";
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Telugu/sg8.1.2a.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Telugu/sg8.1.2a.mp3";
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Tamil/sg8.1.2a.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Tamil/sg8.1.2a.mp3";
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Urdu/sg8.1.2a.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Urdu/sg8.1.2a.mp3";
+                    }
                 else
                 {
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Odiya/sg8.1.2a.mp3");
@@ -2270,6 +2310,26 @@ Game.sg8_1_2level1.prototype={
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Gujarati/sg8.1.2e.mp3");
                     _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Gujarati/sg8.1.2e.mp3";
                 }
+				else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Marathi/sg8.1.2e.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Marathi/sg8.1.2e.mp3";
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Telugu/sg8.1.2e.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Telugu/sg8.1.2e.mp3";
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Tamil/sg8.1.2e.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Tamil/sg8.1.2e.mp3";
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Urdu/sg8.1.2e.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Urdu/sg8.1.2e.mp3";
+                    }
                 else
                 {
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Odiya/sg8.1.2e.mp3");
@@ -2299,6 +2359,26 @@ Game.sg8_1_2level1.prototype={
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Gujarati/sg8.1.2d.mp3");
                     _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Gujarati/sg8.1.2d.mp3";
                 }
+				else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Marathi/sg8.1.2d.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Marathi/sg8.1.2d.mp3";
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Telugu/sg8.1.2d.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Telugu/sg8.1.2d.mp3";
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Tamil/sg8.1.2d.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Tamil/sg8.1.2d.mp3";
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Urdu/sg8.1.2d.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Urdu/sg8.1.2d.mp3";
+                    }
                 else
                 {
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Odiya/sg8.1.2d.mp3");
@@ -2329,6 +2409,26 @@ Game.sg8_1_2level1.prototype={
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Gujarati/sg8.1.2c.mp3");
                     _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Gujarati/sg8.1.2c.mp3";
                 }
+				else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Marathi/sg8.1.2c.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Marathi/sg8.1.2c.mp3";
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Telugu/sg8.1.2c.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Telugu/sg8.1.2c.mp3";
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Tamil/sg8.1.2c.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Tamil/sg8.1.2c.mp3";
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Urdu/sg8.1.2c.mp3");
+                    _this.soundurl =  window.baseUrl+"questionSounds/sg8.1.2/Urdu/sg8.1.2c.mp3";
+                    }
                 else
                 {
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg8.1.2/Odiya/sg8.1.2c.mp3");

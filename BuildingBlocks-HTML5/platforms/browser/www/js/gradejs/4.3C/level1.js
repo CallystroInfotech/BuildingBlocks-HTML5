@@ -693,6 +693,254 @@ Game.grade4_3Clevel1.prototype={
 				mlTxt11.fontSize = 10;
                 mlTxt11.fill = '#373535';
 		   }
+		   else if(window.languageSelected=="Tamil"){
+				kgTxt = this.add.text(747,392, "மி.லி");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(165,423, "மி.லி");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+             
+                mlTxt1 = this.add.text(355,415, "மி.லி");
+				mlTxt1.font = 'Comic Sans MS';
+				mlTxt1.fontSize = 10;
+                mlTxt2 = this.add.text(564,455, "50");
+				mlTxt2.font = 'myfont';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535';
+                
+                mlTxt3 = this.add.text(582,458, "மி.லி");
+				mlTxt3.font = 'Comic Sans MS';
+				mlTxt3.fontSize = 10;
+                mlTxt3.fill = '#373535';
+              
+                mlTxt4 = this.add.text(562,410, "250");
+				mlTxt4.font = 'myfont';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+              
+                mlTxt5 = this.add.text(585,413, "மி.லி");
+				mlTxt5.font = 'Comic Sans MS';
+				mlTxt5.fontSize = 10;
+                mlTxt5.fill = '#373535';
+              
+                mlTxt6 = this.add.text(562,358, "500");
+				mlTxt6.font = 'myfont';
+				mlTxt6.fontSize = 12;
+                mlTxt6.fill = '#373535'; 
+              
+                mlTxt7 = this.add.text(585,360, "மி.லி");
+				mlTxt7.font = 'Comic Sans MS';
+				mlTxt7.fontSize = 10;
+                mlTxt7.fill = '#373535';
+              
+                mlTxt8 = this.add.text(559,298, "750");
+				mlTxt8.font = 'myfont';
+				mlTxt8.fontSize = 12;
+                mlTxt8.fill = '#373535';
+              
+                mlTxt9 = this.add.text(582,300, "மி.லி");
+				mlTxt9.font = 'Comic Sans MS';
+				mlTxt9.fontSize = 10;
+                mlTxt9.fill = '#373535';
+              
+                mlTxt10 = this.add.text(552,248, "1000");
+				mlTxt10.font = 'myfont';
+				mlTxt10.fontSize = 12;
+                mlTxt10.fill = '#373535';
+              
+                mlTxt11 = this.add.text(582,250, "மி.லி");
+				mlTxt11.font = 'Comic Sans MS';
+				mlTxt11.fontSize = 10;
+                mlTxt11.fill = '#373535';
+		   }
+		   else if(window.languageSelected=="Telugu"){
+				kgTxt = this.add.text(747,392, "మిల్లీ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(165,423, "మిల్లీ");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+             
+                mlTxt1 = this.add.text(355,415, "మిల్లీ");
+				mlTxt1.font = 'Comic Sans MS';
+				mlTxt1.fontSize = 10;
+                mlTxt2 = this.add.text(564,455, "50");
+				mlTxt2.font = 'myfont';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535';
+                
+                mlTxt3 = this.add.text(582,458, "మిల్లీ");
+				mlTxt3.font = 'Comic Sans MS';
+				mlTxt3.fontSize = 10;
+                mlTxt3.fill = '#373535';
+              
+                mlTxt4 = this.add.text(562,410, "250");
+				mlTxt4.font = 'myfont';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+              
+                mlTxt5 = this.add.text(585,413, "మిల్లీ");
+				mlTxt5.font = 'Comic Sans MS';
+				mlTxt5.fontSize = 10;
+                mlTxt5.fill = '#373535';
+              
+                mlTxt6 = this.add.text(562,358, "500");
+				mlTxt6.font = 'myfont';
+				mlTxt6.fontSize = 12;
+                mlTxt6.fill = '#373535'; 
+              
+                mlTxt7 = this.add.text(585,360, "మిల్లీ");
+				mlTxt7.font = 'Comic Sans MS';
+				mlTxt7.fontSize = 10;
+                mlTxt7.fill = '#373535';
+              
+                mlTxt8 = this.add.text(559,298, "750");
+				mlTxt8.font = 'myfont';
+				mlTxt8.fontSize = 12;
+                mlTxt8.fill = '#373535';
+              
+                mlTxt9 = this.add.text(582,300, "మిల్లీ");
+				mlTxt9.font = 'Comic Sans MS';
+				mlTxt9.fontSize = 10;
+                mlTxt9.fill = '#373535';
+              
+                mlTxt10 = this.add.text(552,248, "1000");
+				mlTxt10.font = 'myfont';
+				mlTxt10.fontSize = 12;
+                mlTxt10.fill = '#373535';
+              
+                mlTxt11 = this.add.text(582,250, "మిల్లీ");
+				mlTxt11.font = 'Comic Sans MS';
+				mlTxt11.fontSize = 10;
+                mlTxt11.fill = '#373535';
+		   }
+		   else if(window.languageSelected=="Urdu"){
+				kgTxt = this.add.text(747,392, "ملی لیٹر");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(165,423, "ملی لیٹر");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+             
+                mlTxt1 = this.add.text(355,415, "ملی لیٹر");
+				mlTxt1.font = 'Comic Sans MS';
+				mlTxt1.fontSize = 10;
+                mlTxt2 = this.add.text(564,455, "50");
+				mlTxt2.font = 'myfont';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535';
+                
+                mlTxt3 = this.add.text(582,458, "ملی لیٹر");
+				mlTxt3.font = 'Comic Sans MS';
+				mlTxt3.fontSize = 10;
+                mlTxt3.fill = '#373535';
+              
+                mlTxt4 = this.add.text(562,410, "250");
+				mlTxt4.font = 'myfont';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+              
+                mlTxt5 = this.add.text(585,413, "ملی لیٹر");
+				mlTxt5.font = 'Comic Sans MS';
+				mlTxt5.fontSize = 10;
+                mlTxt5.fill = '#373535';
+              
+                mlTxt6 = this.add.text(562,358, "500");
+				mlTxt6.font = 'myfont';
+				mlTxt6.fontSize = 12;
+                mlTxt6.fill = '#373535'; 
+              
+                mlTxt7 = this.add.text(585,360, "ملی لیٹر");
+				mlTxt7.font = 'Comic Sans MS';
+				mlTxt7.fontSize = 10;
+                mlTxt7.fill = '#373535';
+              
+                mlTxt8 = this.add.text(559,298, "750");
+				mlTxt8.font = 'myfont';
+				mlTxt8.fontSize = 12;
+                mlTxt8.fill = '#373535';
+              
+                mlTxt9 = this.add.text(582,300, "ملی لیٹر");
+				mlTxt9.font = 'Comic Sans MS';
+				mlTxt9.fontSize = 10;
+                mlTxt9.fill = '#373535';
+              
+                mlTxt10 = this.add.text(552,248, "1000");
+				mlTxt10.font = 'myfont';
+				mlTxt10.fontSize = 12;
+                mlTxt10.fill = '#373535';
+              
+                mlTxt11 = this.add.text(582,250, "ملی لیٹر");
+				mlTxt11.font = 'Comic Sans MS';
+				mlTxt11.fontSize = 10;
+                mlTxt11.fill = '#373535';
+		   }
+		    else if(window.languageSelected=="Marathi"){
+				kgTxt = this.add.text(747,392, "मि.ली");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(165,423, "मि.ली");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+             
+                mlTxt1 = this.add.text(355,415, "मि.ली");
+				mlTxt1.font = 'Comic Sans MS';
+				mlTxt1.fontSize = 10;
+                mlTxt2 = this.add.text(564,455, "50");
+				mlTxt2.font = 'myfont';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535';
+                
+                mlTxt3 = this.add.text(582,458, "मि.ली");
+				mlTxt3.font = 'Comic Sans MS';
+				mlTxt3.fontSize = 10;
+                mlTxt3.fill = '#373535';
+              
+                mlTxt4 = this.add.text(562,410, "250");
+				mlTxt4.font = 'myfont';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+              
+                mlTxt5 = this.add.text(585,413, "मि.ली");
+				mlTxt5.font = 'Comic Sans MS';
+				mlTxt5.fontSize = 10;
+                mlTxt5.fill = '#373535';
+              
+                mlTxt6 = this.add.text(562,358, "500");
+				mlTxt6.font = 'myfont';
+				mlTxt6.fontSize = 12;
+                mlTxt6.fill = '#373535'; 
+              
+                mlTxt7 = this.add.text(585,360, "मि.ली");
+				mlTxt7.font = 'Comic Sans MS';
+				mlTxt7.fontSize = 10;
+                mlTxt7.fill = '#373535';
+              
+                mlTxt8 = this.add.text(559,298, "750");
+				mlTxt8.font = 'myfont';
+				mlTxt8.fontSize = 12;
+                mlTxt8.fill = '#373535';
+              
+                mlTxt9 = this.add.text(582,300, "मि.ली");
+				mlTxt9.font = 'Comic Sans MS';
+				mlTxt9.fontSize = 10;
+                mlTxt9.fill = '#373535';
+              
+                mlTxt10 = this.add.text(552,248, "1000");
+				mlTxt10.font = 'myfont';
+				mlTxt10.fontSize = 12;
+                mlTxt10.fill = '#373535';
+              
+                mlTxt11 = this.add.text(582,250, "मि.ली");
+				mlTxt11.font = 'Comic Sans MS';
+				mlTxt11.fontSize = 10;
+                mlTxt11.fill = '#373535';
+			}
 		   else{
 				kgTxt = this.add.text(747,392, "ମି.ଲି");
 				kgTxt.font = 'Comic Sans MS';
@@ -821,7 +1069,7 @@ Game.grade4_3Clevel1.prototype={
         objGroup.add(mlTxt4);
         objGroup.add(mlTxt5);
         objGroup.add(mlTxt6);
-     if(window.languageSelected=="Hindi" || window.languageSelected=="Kannada"||window.languageSelected=="Odiya"||window.languageSelected=="Gujarati"){
+     if(window.languageSelected=="Hindi" || window.languageSelected=="Kannada"||window.languageSelected=="Odiya"||window.languageSelected=="Gujarati" || window.languageSelected=="Marathi" || window.languageSelected=="Telugu" || window.languageSelected=="Tamil" || window.languageSelected=="Urdu"){
         objGroup.add(mlTxt7);
         objGroup.add(mlTxt8);
         objGroup.add(mlTxt9);
@@ -1120,6 +1368,256 @@ Game.grade4_3Clevel1.prototype={
 				mlTxt11.fontSize = 10;
                 mlTxt11.fill = '#373535';
 		   } 
+		   else if(window.languageSelected=="Marathi"){
+				kgTxt = this.add.text(743,358, "मि.ली ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(166,425, "मि.ली");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+             
+                mlTxt1 = this.add.text(380,370, "मि.ली ");
+				mlTxt1.font = 'Comic Sans MS';
+				mlTxt1.fontSize = 10;
+             
+                
+                mlTxt2 = this.add.text(564,455, "50");
+				mlTxt2.font = 'myfont';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535';
+                
+                mlTxt3 = this.add.text(582,458, "मि.ली ");
+				mlTxt3.font = 'Comic Sans MS';
+				mlTxt3.fontSize = 10;
+                mlTxt3.fill = '#373535';
+              
+                mlTxt4 = this.add.text(562,410, "250");
+				mlTxt4.font = 'myfont';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+              
+                mlTxt5 = this.add.text(585,413, "मि.ली ");
+				mlTxt5.font = 'Comic Sans MS';
+				mlTxt5.fontSize = 10;
+                mlTxt5.fill = '#373535';
+              
+                mlTxt6 = this.add.text(562,358, "500");
+				mlTxt6.font = 'myfont';
+				mlTxt6.fontSize = 12;
+                mlTxt6.fill = '#373535'; 
+              
+                mlTxt7 = this.add.text(585,360, "मि.ली ");
+				mlTxt7.font = 'Comic Sans MS';
+				mlTxt7.fontSize = 10;
+                mlTxt7.fill = '#373535';
+              
+                mlTxt8 = this.add.text(559,298, "750");
+				mlTxt8.font = 'myfont';
+				mlTxt8.fontSize = 12;
+                mlTxt8.fill = '#373535';
+              
+                mlTxt9 = this.add.text(582,300, "मि.ली ");
+				mlTxt9.font = 'Comic Sans MS';
+				mlTxt9.fontSize = 10;
+                mlTxt9.fill = '#373535';
+              
+                mlTxt10 = this.add.text(552,248, "1000");
+				mlTxt10.font = 'myfont';
+				mlTxt10.fontSize = 12;
+                mlTxt10.fill = '#373535';
+              
+                mlTxt11 = this.add.text(582,250, "मि.ली ");
+				mlTxt11.font = 'Comic Sans MS';
+				mlTxt11.fontSize = 10;
+                mlTxt11.fill = '#373535';
+			}
+			else if(window.languageSelected=="Tamil"){
+				kgTxt = this.add.text(747,392, "மி.லி");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(165,423, "மி.லி");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+             
+                mlTxt1 = this.add.text(355,415, "மி.லி");
+				mlTxt1.font = 'Comic Sans MS';
+				mlTxt1.fontSize = 10;
+                mlTxt2 = this.add.text(564,455, "50");
+				mlTxt2.font = 'myfont';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535';
+                
+                mlTxt3 = this.add.text(582,458, "மி.லி");
+				mlTxt3.font = 'Comic Sans MS';
+				mlTxt3.fontSize = 10;
+                mlTxt3.fill = '#373535';
+              
+                mlTxt4 = this.add.text(562,410, "250");
+				mlTxt4.font = 'myfont';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+              
+                mlTxt5 = this.add.text(585,413, "மி.லி");
+				mlTxt5.font = 'Comic Sans MS';
+				mlTxt5.fontSize = 10;
+                mlTxt5.fill = '#373535';
+              
+                mlTxt6 = this.add.text(562,358, "500");
+				mlTxt6.font = 'myfont';
+				mlTxt6.fontSize = 12;
+                mlTxt6.fill = '#373535'; 
+              
+                mlTxt7 = this.add.text(585,360, "மி.லி");
+				mlTxt7.font = 'Comic Sans MS';
+				mlTxt7.fontSize = 10;
+                mlTxt7.fill = '#373535';
+              
+                mlTxt8 = this.add.text(559,298, "750");
+				mlTxt8.font = 'myfont';
+				mlTxt8.fontSize = 12;
+                mlTxt8.fill = '#373535';
+              
+                mlTxt9 = this.add.text(582,300, "மி.லி");
+				mlTxt9.font = 'Comic Sans MS';
+				mlTxt9.fontSize = 10;
+                mlTxt9.fill = '#373535';
+              
+                mlTxt10 = this.add.text(552,248, "1000");
+				mlTxt10.font = 'myfont';
+				mlTxt10.fontSize = 12;
+                mlTxt10.fill = '#373535';
+              
+                mlTxt11 = this.add.text(582,250, "மி.லி");
+				mlTxt11.font = 'Comic Sans MS';
+				mlTxt11.fontSize = 10;
+                mlTxt11.fill = '#373535';
+		   }
+		   else if(window.languageSelected=="Telugu"){
+				kgTxt = this.add.text(747,392, "మిల్లీ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(165,423, "మిల్లీ");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+             
+                mlTxt1 = this.add.text(355,415, "మిల్లీ");
+				mlTxt1.font = 'Comic Sans MS';
+				mlTxt1.fontSize = 10;
+                mlTxt2 = this.add.text(564,455, "50");
+				mlTxt2.font = 'myfont';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535';
+                
+                mlTxt3 = this.add.text(582,458, "మిల్లీ");
+				mlTxt3.font = 'Comic Sans MS';
+				mlTxt3.fontSize = 10;
+                mlTxt3.fill = '#373535';
+              
+                mlTxt4 = this.add.text(562,410, "250");
+				mlTxt4.font = 'myfont';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+              
+                mlTxt5 = this.add.text(585,413, "మిల్లీ");
+				mlTxt5.font = 'Comic Sans MS';
+				mlTxt5.fontSize = 10;
+                mlTxt5.fill = '#373535';
+              
+                mlTxt6 = this.add.text(562,358, "500");
+				mlTxt6.font = 'myfont';
+				mlTxt6.fontSize = 12;
+                mlTxt6.fill = '#373535'; 
+              
+                mlTxt7 = this.add.text(585,360, "మిల్లీ");
+				mlTxt7.font = 'Comic Sans MS';
+				mlTxt7.fontSize = 10;
+                mlTxt7.fill = '#373535';
+              
+                mlTxt8 = this.add.text(559,298, "750");
+				mlTxt8.font = 'myfont';
+				mlTxt8.fontSize = 12;
+                mlTxt8.fill = '#373535';
+              
+                mlTxt9 = this.add.text(582,300, "మిల్లీ");
+				mlTxt9.font = 'Comic Sans MS';
+				mlTxt9.fontSize = 10;
+                mlTxt9.fill = '#373535';
+              
+                mlTxt10 = this.add.text(552,248, "1000");
+				mlTxt10.font = 'myfont';
+				mlTxt10.fontSize = 12;
+                mlTxt10.fill = '#373535';
+              
+                mlTxt11 = this.add.text(582,250, "మిల్లీ");
+				mlTxt11.font = 'Comic Sans MS';
+				mlTxt11.fontSize = 10;
+                mlTxt11.fill = '#373535';
+		   }
+		   else if(window.languageSelected=="Urdu"){
+				kgTxt = this.add.text(747,392, "ملی لیٹر");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(165,423, "ملی لیٹر");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+             
+                mlTxt1 = this.add.text(355,415, "ملی لیٹر");
+				mlTxt1.font = 'Comic Sans MS';
+				mlTxt1.fontSize = 10;
+                mlTxt2 = this.add.text(564,455, "50");
+				mlTxt2.font = 'myfont';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535';
+                
+                mlTxt3 = this.add.text(582,458, "ملی لیٹر");
+				mlTxt3.font = 'Comic Sans MS';
+				mlTxt3.fontSize = 10;
+                mlTxt3.fill = '#373535';
+              
+                mlTxt4 = this.add.text(562,410, "250");
+				mlTxt4.font = 'myfont';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+              
+                mlTxt5 = this.add.text(585,413, "ملی لیٹر");
+				mlTxt5.font = 'Comic Sans MS';
+				mlTxt5.fontSize = 10;
+                mlTxt5.fill = '#373535';
+              
+                mlTxt6 = this.add.text(562,358, "500");
+				mlTxt6.font = 'myfont';
+				mlTxt6.fontSize = 12;
+                mlTxt6.fill = '#373535'; 
+              
+                mlTxt7 = this.add.text(585,360, "ملی لیٹر");
+				mlTxt7.font = 'Comic Sans MS';
+				mlTxt7.fontSize = 10;
+                mlTxt7.fill = '#373535';
+              
+                mlTxt8 = this.add.text(559,298, "750");
+				mlTxt8.font = 'myfont';
+				mlTxt8.fontSize = 12;
+                mlTxt8.fill = '#373535';
+              
+                mlTxt9 = this.add.text(582,300, "ملی لیٹر");
+				mlTxt9.font = 'Comic Sans MS';
+				mlTxt9.fontSize = 10;
+                mlTxt9.fill = '#373535';
+              
+                mlTxt10 = this.add.text(552,248, "1000");
+				mlTxt10.font = 'myfont';
+				mlTxt10.fontSize = 12;
+                mlTxt10.fill = '#373535';
+              
+                mlTxt11 = this.add.text(582,250, "ملی لیٹر");
+				mlTxt11.font = 'Comic Sans MS';
+				mlTxt11.fontSize = 10;
+                mlTxt11.fill = '#373535';
+		   }
 		   else{
 			   kgTxt = this.add.text(743,358, "એમ ");
 				kgTxt.font = 'Comic Sans MS';
@@ -1249,7 +1747,7 @@ Game.grade4_3Clevel1.prototype={
         objGroup.add(mlTxt4);
         objGroup.add(mlTxt5);
         objGroup.add(mlTxt6);
-     if(window.languageSelected=="Hindi" || window.languageSelected=="Kannada"||window.languageSelected=="Odiya"||window.languageSelected=="Gujarati"){
+     if(window.languageSelected=="Hindi" || window.languageSelected=="Kannada"||window.languageSelected=="Odiya"||window.languageSelected=="Gujarati" || window.languageSelected=="Marathi" || window.languageSelected=="Telugu" || window.languageSelected=="Tamil" || window.languageSelected=="Urdu"){
         objGroup.add(mlTxt7);
         objGroup.add(mlTxt8);
         objGroup.add(mlTxt9);
@@ -1549,6 +2047,256 @@ Game.grade4_3Clevel1.prototype={
 				mlTxt11.fontSize = 10;
                 mlTxt11.fill = '#373535';
 			}
+			else if(window.languageSelected=="Marathi"){
+				kgTxt = this.add.text(743,358, "मि.ली ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(166,425, "मि.ली");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+             
+                mlTxt1 = this.add.text(380,370, "मि.ली ");
+				mlTxt1.font = 'Comic Sans MS';
+				mlTxt1.fontSize = 10;
+             
+                
+                mlTxt2 = this.add.text(564,455, "50");
+				mlTxt2.font = 'myfont';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535';
+                
+                mlTxt3 = this.add.text(582,458, "मि.ली ");
+				mlTxt3.font = 'Comic Sans MS';
+				mlTxt3.fontSize = 10;
+                mlTxt3.fill = '#373535';
+              
+                mlTxt4 = this.add.text(562,410, "250");
+				mlTxt4.font = 'myfont';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+              
+                mlTxt5 = this.add.text(585,413, "मि.ली ");
+				mlTxt5.font = 'Comic Sans MS';
+				mlTxt5.fontSize = 10;
+                mlTxt5.fill = '#373535';
+              
+                mlTxt6 = this.add.text(562,358, "500");
+				mlTxt6.font = 'myfont';
+				mlTxt6.fontSize = 12;
+                mlTxt6.fill = '#373535'; 
+              
+                mlTxt7 = this.add.text(585,360, "मि.ली ");
+				mlTxt7.font = 'Comic Sans MS';
+				mlTxt7.fontSize = 10;
+                mlTxt7.fill = '#373535';
+              
+                mlTxt8 = this.add.text(559,298, "750");
+				mlTxt8.font = 'myfont';
+				mlTxt8.fontSize = 12;
+                mlTxt8.fill = '#373535';
+              
+                mlTxt9 = this.add.text(582,300, "मि.ली ");
+				mlTxt9.font = 'Comic Sans MS';
+				mlTxt9.fontSize = 10;
+                mlTxt9.fill = '#373535';
+              
+                mlTxt10 = this.add.text(552,248, "1000");
+				mlTxt10.font = 'myfont';
+				mlTxt10.fontSize = 12;
+                mlTxt10.fill = '#373535';
+              
+                mlTxt11 = this.add.text(582,250, "मि.ली ");
+				mlTxt11.font = 'Comic Sans MS';
+				mlTxt11.fontSize = 10;
+                mlTxt11.fill = '#373535';
+			}
+			else if(window.languageSelected=="Tamil"){
+				kgTxt = this.add.text(747,392, "மி.லி");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(165,423, "மி.லி");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+             
+                mlTxt1 = this.add.text(355,415, "மி.லி");
+				mlTxt1.font = 'Comic Sans MS';
+				mlTxt1.fontSize = 10;
+                mlTxt2 = this.add.text(564,455, "50");
+				mlTxt2.font = 'myfont';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535';
+                
+                mlTxt3 = this.add.text(582,458, "மி.லி");
+				mlTxt3.font = 'Comic Sans MS';
+				mlTxt3.fontSize = 10;
+                mlTxt3.fill = '#373535';
+              
+                mlTxt4 = this.add.text(562,410, "250");
+				mlTxt4.font = 'myfont';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+              
+                mlTxt5 = this.add.text(585,413, "மி.லி");
+				mlTxt5.font = 'Comic Sans MS';
+				mlTxt5.fontSize = 10;
+                mlTxt5.fill = '#373535';
+              
+                mlTxt6 = this.add.text(562,358, "500");
+				mlTxt6.font = 'myfont';
+				mlTxt6.fontSize = 12;
+                mlTxt6.fill = '#373535'; 
+              
+                mlTxt7 = this.add.text(585,360, "மி.லி");
+				mlTxt7.font = 'Comic Sans MS';
+				mlTxt7.fontSize = 10;
+                mlTxt7.fill = '#373535';
+              
+                mlTxt8 = this.add.text(559,298, "750");
+				mlTxt8.font = 'myfont';
+				mlTxt8.fontSize = 12;
+                mlTxt8.fill = '#373535';
+              
+                mlTxt9 = this.add.text(582,300, "மி.லி");
+				mlTxt9.font = 'Comic Sans MS';
+				mlTxt9.fontSize = 10;
+                mlTxt9.fill = '#373535';
+              
+                mlTxt10 = this.add.text(552,248, "1000");
+				mlTxt10.font = 'myfont';
+				mlTxt10.fontSize = 12;
+                mlTxt10.fill = '#373535';
+              
+                mlTxt11 = this.add.text(582,250, "மி.லி");
+				mlTxt11.font = 'Comic Sans MS';
+				mlTxt11.fontSize = 10;
+                mlTxt11.fill = '#373535';
+		   }
+		   else if(window.languageSelected=="Telugu"){
+				kgTxt = this.add.text(747,392, "మిల్లీ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(165,423, "మిల్లీ");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+             
+                mlTxt1 = this.add.text(355,415, "మిల్లీ");
+				mlTxt1.font = 'Comic Sans MS';
+				mlTxt1.fontSize = 10;
+                mlTxt2 = this.add.text(564,455, "50");
+				mlTxt2.font = 'myfont';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535';
+                
+                mlTxt3 = this.add.text(582,458, "మిల్లీ");
+				mlTxt3.font = 'Comic Sans MS';
+				mlTxt3.fontSize = 10;
+                mlTxt3.fill = '#373535';
+              
+                mlTxt4 = this.add.text(562,410, "250");
+				mlTxt4.font = 'myfont';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+              
+                mlTxt5 = this.add.text(585,413, "మిల్లీ");
+				mlTxt5.font = 'Comic Sans MS';
+				mlTxt5.fontSize = 10;
+                mlTxt5.fill = '#373535';
+              
+                mlTxt6 = this.add.text(562,358, "500");
+				mlTxt6.font = 'myfont';
+				mlTxt6.fontSize = 12;
+                mlTxt6.fill = '#373535'; 
+              
+                mlTxt7 = this.add.text(585,360, "మిల్లీ");
+				mlTxt7.font = 'Comic Sans MS';
+				mlTxt7.fontSize = 10;
+                mlTxt7.fill = '#373535';
+              
+                mlTxt8 = this.add.text(559,298, "750");
+				mlTxt8.font = 'myfont';
+				mlTxt8.fontSize = 12;
+                mlTxt8.fill = '#373535';
+              
+                mlTxt9 = this.add.text(582,300, "మిల్లీ");
+				mlTxt9.font = 'Comic Sans MS';
+				mlTxt9.fontSize = 10;
+                mlTxt9.fill = '#373535';
+              
+                mlTxt10 = this.add.text(552,248, "1000");
+				mlTxt10.font = 'myfont';
+				mlTxt10.fontSize = 12;
+                mlTxt10.fill = '#373535';
+              
+                mlTxt11 = this.add.text(582,250, "మిల్లీ");
+				mlTxt11.font = 'Comic Sans MS';
+				mlTxt11.fontSize = 10;
+                mlTxt11.fill = '#373535';
+		   }
+		   else if(window.languageSelected=="Urdu"){
+				kgTxt = this.add.text(747,392, "ملی لیٹر");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(165,423, "ملی لیٹر");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+             
+                mlTxt1 = this.add.text(355,415, "ملی لیٹر");
+				mlTxt1.font = 'Comic Sans MS';
+				mlTxt1.fontSize = 10;
+                mlTxt2 = this.add.text(564,455, "50");
+				mlTxt2.font = 'myfont';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535';
+                
+                mlTxt3 = this.add.text(582,458, "ملی لیٹر");
+				mlTxt3.font = 'Comic Sans MS';
+				mlTxt3.fontSize = 10;
+                mlTxt3.fill = '#373535';
+              
+                mlTxt4 = this.add.text(562,410, "250");
+				mlTxt4.font = 'myfont';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+              
+                mlTxt5 = this.add.text(585,413, "ملی لیٹر");
+				mlTxt5.font = 'Comic Sans MS';
+				mlTxt5.fontSize = 10;
+                mlTxt5.fill = '#373535';
+              
+                mlTxt6 = this.add.text(562,358, "500");
+				mlTxt6.font = 'myfont';
+				mlTxt6.fontSize = 12;
+                mlTxt6.fill = '#373535'; 
+              
+                mlTxt7 = this.add.text(585,360, "ملی لیٹر");
+				mlTxt7.font = 'Comic Sans MS';
+				mlTxt7.fontSize = 10;
+                mlTxt7.fill = '#373535';
+              
+                mlTxt8 = this.add.text(559,298, "750");
+				mlTxt8.font = 'myfont';
+				mlTxt8.fontSize = 12;
+                mlTxt8.fill = '#373535';
+              
+                mlTxt9 = this.add.text(582,300, "ملی لیٹر");
+				mlTxt9.font = 'Comic Sans MS';
+				mlTxt9.fontSize = 10;
+                mlTxt9.fill = '#373535';
+              
+                mlTxt10 = this.add.text(552,248, "1000");
+				mlTxt10.font = 'myfont';
+				mlTxt10.fontSize = 12;
+                mlTxt10.fill = '#373535';
+              
+                mlTxt11 = this.add.text(582,250, "ملی لیٹر");
+				mlTxt11.font = 'Comic Sans MS';
+				mlTxt11.fontSize = 10;
+                mlTxt11.fill = '#373535';
+		   }
 			else{
 				kgTxt = this.add.text(746,302, "એમ  ");
 				kgTxt.font = 'Comic Sans MS';
@@ -1679,7 +2427,7 @@ Game.grade4_3Clevel1.prototype={
         objGroup.add(mlTxt4);
         objGroup.add(mlTxt5);
         objGroup.add(mlTxt6);
-     if(window.languageSelected=="Hindi" || window.languageSelected=="Kannada"|| window.languageSelected=="Odiya"|| window.languageSelected=="Gujarati"){
+     if(window.languageSelected=="Hindi" || window.languageSelected=="Kannada"|| window.languageSelected=="Odiya"|| window.languageSelected=="Gujarati" || window.languageSelected=="Marathi" || window.languageSelected=="Telugu" || window.languageSelected=="Tamil" || window.languageSelected=="Urdu"){
         objGroup.add(mlTxt7);
         objGroup.add(mlTxt8);
         objGroup.add(mlTxt9);
@@ -1974,6 +2722,256 @@ Game.grade4_3Clevel1.prototype={
 				mlTxt11.fontSize = 10;
                 mlTxt11.fill = '#373535';
 			}
+			else if(window.languageSelected=="Marathi"){
+				kgTxt = this.add.text(743,358, "मि.ली ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(166,425, "मि.ली");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+             
+                mlTxt1 = this.add.text(380,370, "मि.ली ");
+				mlTxt1.font = 'Comic Sans MS';
+				mlTxt1.fontSize = 10;
+             
+                
+                mlTxt2 = this.add.text(564,455, "50");
+				mlTxt2.font = 'myfont';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535';
+                
+                mlTxt3 = this.add.text(582,458, "मि.ली ");
+				mlTxt3.font = 'Comic Sans MS';
+				mlTxt3.fontSize = 10;
+                mlTxt3.fill = '#373535';
+              
+                mlTxt4 = this.add.text(562,410, "250");
+				mlTxt4.font = 'myfont';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+              
+                mlTxt5 = this.add.text(585,413, "मि.ली ");
+				mlTxt5.font = 'Comic Sans MS';
+				mlTxt5.fontSize = 10;
+                mlTxt5.fill = '#373535';
+              
+                mlTxt6 = this.add.text(562,358, "500");
+				mlTxt6.font = 'myfont';
+				mlTxt6.fontSize = 12;
+                mlTxt6.fill = '#373535'; 
+              
+                mlTxt7 = this.add.text(585,360, "मि.ली ");
+				mlTxt7.font = 'Comic Sans MS';
+				mlTxt7.fontSize = 10;
+                mlTxt7.fill = '#373535';
+              
+                mlTxt8 = this.add.text(559,298, "750");
+				mlTxt8.font = 'myfont';
+				mlTxt8.fontSize = 12;
+                mlTxt8.fill = '#373535';
+              
+                mlTxt9 = this.add.text(582,300, "मि.ली ");
+				mlTxt9.font = 'Comic Sans MS';
+				mlTxt9.fontSize = 10;
+                mlTxt9.fill = '#373535';
+              
+                mlTxt10 = this.add.text(552,248, "1000");
+				mlTxt10.font = 'myfont';
+				mlTxt10.fontSize = 12;
+                mlTxt10.fill = '#373535';
+              
+                mlTxt11 = this.add.text(582,250, "मि.ली ");
+				mlTxt11.font = 'Comic Sans MS';
+				mlTxt11.fontSize = 10;
+                mlTxt11.fill = '#373535';
+			}
+			else if(window.languageSelected=="Tamil"){
+				kgTxt = this.add.text(747,392, "மி.லி");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(165,423, "மி.லி");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+             
+                mlTxt1 = this.add.text(355,415, "மி.லி");
+				mlTxt1.font = 'Comic Sans MS';
+				mlTxt1.fontSize = 10;
+                mlTxt2 = this.add.text(564,455, "50");
+				mlTxt2.font = 'myfont';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535';
+                
+                mlTxt3 = this.add.text(582,458, "மி.லி");
+				mlTxt3.font = 'Comic Sans MS';
+				mlTxt3.fontSize = 10;
+                mlTxt3.fill = '#373535';
+              
+                mlTxt4 = this.add.text(562,410, "250");
+				mlTxt4.font = 'myfont';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+              
+                mlTxt5 = this.add.text(585,413, "மி.லி");
+				mlTxt5.font = 'Comic Sans MS';
+				mlTxt5.fontSize = 10;
+                mlTxt5.fill = '#373535';
+              
+                mlTxt6 = this.add.text(562,358, "500");
+				mlTxt6.font = 'myfont';
+				mlTxt6.fontSize = 12;
+                mlTxt6.fill = '#373535'; 
+              
+                mlTxt7 = this.add.text(585,360, "மி.லி");
+				mlTxt7.font = 'Comic Sans MS';
+				mlTxt7.fontSize = 10;
+                mlTxt7.fill = '#373535';
+              
+                mlTxt8 = this.add.text(559,298, "750");
+				mlTxt8.font = 'myfont';
+				mlTxt8.fontSize = 12;
+                mlTxt8.fill = '#373535';
+              
+                mlTxt9 = this.add.text(582,300, "மி.லி");
+				mlTxt9.font = 'Comic Sans MS';
+				mlTxt9.fontSize = 10;
+                mlTxt9.fill = '#373535';
+              
+                mlTxt10 = this.add.text(552,248, "1000");
+				mlTxt10.font = 'myfont';
+				mlTxt10.fontSize = 12;
+                mlTxt10.fill = '#373535';
+              
+                mlTxt11 = this.add.text(582,250, "மி.லி");
+				mlTxt11.font = 'Comic Sans MS';
+				mlTxt11.fontSize = 10;
+                mlTxt11.fill = '#373535';
+		   }
+		   else if(window.languageSelected=="Telugu"){
+				kgTxt = this.add.text(747,392, "మిల్లీ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(165,423, "మిల్లీ");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+             
+                mlTxt1 = this.add.text(355,415, "మిల్లీ");
+				mlTxt1.font = 'Comic Sans MS';
+				mlTxt1.fontSize = 10;
+                mlTxt2 = this.add.text(564,455, "50");
+				mlTxt2.font = 'myfont';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535';
+                
+                mlTxt3 = this.add.text(582,458, "మిల్లీ");
+				mlTxt3.font = 'Comic Sans MS';
+				mlTxt3.fontSize = 10;
+                mlTxt3.fill = '#373535';
+              
+                mlTxt4 = this.add.text(562,410, "250");
+				mlTxt4.font = 'myfont';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+              
+                mlTxt5 = this.add.text(585,413, "మిల్లీ");
+				mlTxt5.font = 'Comic Sans MS';
+				mlTxt5.fontSize = 10;
+                mlTxt5.fill = '#373535';
+              
+                mlTxt6 = this.add.text(562,358, "500");
+				mlTxt6.font = 'myfont';
+				mlTxt6.fontSize = 12;
+                mlTxt6.fill = '#373535'; 
+              
+                mlTxt7 = this.add.text(585,360, "మిల్లీ");
+				mlTxt7.font = 'Comic Sans MS';
+				mlTxt7.fontSize = 10;
+                mlTxt7.fill = '#373535';
+              
+                mlTxt8 = this.add.text(559,298, "750");
+				mlTxt8.font = 'myfont';
+				mlTxt8.fontSize = 12;
+                mlTxt8.fill = '#373535';
+              
+                mlTxt9 = this.add.text(582,300, "మిల్లీ");
+				mlTxt9.font = 'Comic Sans MS';
+				mlTxt9.fontSize = 10;
+                mlTxt9.fill = '#373535';
+              
+                mlTxt10 = this.add.text(552,248, "1000");
+				mlTxt10.font = 'myfont';
+				mlTxt10.fontSize = 12;
+                mlTxt10.fill = '#373535';
+              
+                mlTxt11 = this.add.text(582,250, "మిల్లీ");
+				mlTxt11.font = 'Comic Sans MS';
+				mlTxt11.fontSize = 10;
+                mlTxt11.fill = '#373535';
+		   }
+		   else if(window.languageSelected=="Urdu"){
+				kgTxt = this.add.text(747,392, "ملی لیٹر");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(165,423, "ملی لیٹر");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+             
+                mlTxt1 = this.add.text(355,415, "ملی لیٹر");
+				mlTxt1.font = 'Comic Sans MS';
+				mlTxt1.fontSize = 10;
+                mlTxt2 = this.add.text(564,455, "50");
+				mlTxt2.font = 'myfont';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535';
+                
+                mlTxt3 = this.add.text(582,458, "ملی لیٹر");
+				mlTxt3.font = 'Comic Sans MS';
+				mlTxt3.fontSize = 10;
+                mlTxt3.fill = '#373535';
+              
+                mlTxt4 = this.add.text(562,410, "250");
+				mlTxt4.font = 'myfont';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+              
+                mlTxt5 = this.add.text(585,413, "ملی لیٹر");
+				mlTxt5.font = 'Comic Sans MS';
+				mlTxt5.fontSize = 10;
+                mlTxt5.fill = '#373535';
+              
+                mlTxt6 = this.add.text(562,358, "500");
+				mlTxt6.font = 'myfont';
+				mlTxt6.fontSize = 12;
+                mlTxt6.fill = '#373535'; 
+              
+                mlTxt7 = this.add.text(585,360, "ملی لیٹر");
+				mlTxt7.font = 'Comic Sans MS';
+				mlTxt7.fontSize = 10;
+                mlTxt7.fill = '#373535';
+              
+                mlTxt8 = this.add.text(559,298, "750");
+				mlTxt8.font = 'myfont';
+				mlTxt8.fontSize = 12;
+                mlTxt8.fill = '#373535';
+              
+                mlTxt9 = this.add.text(582,300, "ملی لیٹر");
+				mlTxt9.font = 'Comic Sans MS';
+				mlTxt9.fontSize = 10;
+                mlTxt9.fill = '#373535';
+              
+                mlTxt10 = this.add.text(552,248, "1000");
+				mlTxt10.font = 'myfont';
+				mlTxt10.fontSize = 12;
+                mlTxt10.fill = '#373535';
+              
+                mlTxt11 = this.add.text(582,250, "ملی لیٹر");
+				mlTxt11.font = 'Comic Sans MS';
+				mlTxt11.fontSize = 10;
+                mlTxt11.fill = '#373535';
+		   }
 			else{
 				kgTxt = this.add.text(760,258, "એમ ");
 				kgTxt.font = 'Comic Sans MS';
@@ -2102,7 +3100,7 @@ Game.grade4_3Clevel1.prototype={
         objGroup.add(mlTxt4);
         objGroup.add(mlTxt5);
         objGroup.add(mlTxt6);
-     if(window.languageSelected=="Hindi" || window.languageSelected=="Kannada"|| window.languageSelected=="Odiya"|| window.languageSelected=="Gujarati"){
+     if(window.languageSelected=="Hindi" || window.languageSelected=="Kannada"|| window.languageSelected=="Odiya"|| window.languageSelected=="Gujarati" || window.languageSelected=="Marathi" || window.languageSelected=="Tamil" || window.languageSelected=="Telugu" || window.languageSelected=="Urdu"){
         objGroup.add(mlTxt7);
         objGroup.add(mlTxt8);
         objGroup.add(mlTxt9);
@@ -2254,7 +3252,8 @@ Game.grade4_3Clevel1.prototype={
 				mlTxt4.fontSize = 10;
                 mlTxt4.fill = '#373535';
 		   }
-		 else if(window.languageSelected=="Gujarati"){
+		 
+			else if(window.languageSelected=="Gujarati"){
 				kgTxt = this.add.text(653,345, "એમ ");
 				kgTxt.font = 'Comic Sans MS';
 				kgTxt.fontSize = 13;
@@ -2280,6 +3279,126 @@ Game.grade4_3Clevel1.prototype={
                 mlTxt3.fill = '#373535';
              
                 mlTxt4 = this.add.text(480,200, "લિટર ");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+			else if(window.languageSelected=="Marathi"){
+				kgTxt = this.add.text(653,345, "मि.ली  ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "मि.ली  ");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "ली  ");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "ली  ");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+			else if(window.languageSelected=="Tamil"){
+				kgTxt = this.add.text(653,345, "மி.லி ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "மி.லி");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "லி");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "லி");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+			else if(window.languageSelected=="Telugu"){
+				kgTxt = this.add.text(653,345, "మిల్లీ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "మిల్లీ");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "ల్లీ");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "ల్లీ");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+		   else if(window.languageSelected=="Urdu"){
+				kgTxt = this.add.text(653,345, "ملی لیٹر");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "ملی لیٹر");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "لیٹر");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "لیٹر");
 				mlTxt4.font = 'Comic Sans MS';
 				mlTxt4.fontSize = 12;
                 mlTxt4.fill = '#373535';
@@ -2531,6 +3650,126 @@ Game.grade4_3Clevel1.prototype={
 				mlTxt4.fontSize = 12;
                 mlTxt4.fill = '#373535';
 			}
+			else if(window.languageSelected=="Marathi"){
+				kgTxt = this.add.text(653,345, "मि.ली  ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "मि.ली  ");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "ली  ");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "ली  ");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+			else if(window.languageSelected=="Tamil"){
+				kgTxt = this.add.text(653,345, "மி.லி ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "மி.லி");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "லி");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "லி");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+			else if(window.languageSelected=="Telugu"){
+				kgTxt = this.add.text(653,345, "మిల్లీ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "మిల్లీ");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "ల్లీ");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "ల్లీ");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+		   else if(window.languageSelected=="Urdu"){
+				kgTxt = this.add.text(653,345, "ملی لیٹر");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "ملی لیٹر");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "لیٹر");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "لیٹر");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
 			else {
 				kgTxt = this.add.text(646,378, "ମି.ଲି ");
 				kgTxt.font = 'Comic Sans MS';
@@ -2772,6 +4011,126 @@ Game.grade4_3Clevel1.prototype={
                 mlTxt3.fill = '#373535';
              
                 mlTxt4 = this.add.text(480,200, "લિટર");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+			else if(window.languageSelected=="Marathi"){
+				kgTxt = this.add.text(653,345, "मि.ली  ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "मि.ली  ");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "ली  ");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "ली  ");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+			else if(window.languageSelected=="Tamil"){
+				kgTxt = this.add.text(653,345, "மி.லி ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "மி.லி");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "லி");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "லி");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+			else if(window.languageSelected=="Telugu"){
+				kgTxt = this.add.text(653,345, "మిల్లీ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "మిల్లీ");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "ల్లీ");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "ల్లీ");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+		   else if(window.languageSelected=="Urdu"){
+				kgTxt = this.add.text(653,345, "ملی لیٹر");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "ملی لیٹر");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "لیٹر");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "لیٹر");
 				mlTxt4.font = 'Comic Sans MS';
 				mlTxt4.fontSize = 12;
                 mlTxt4.fill = '#373535';
@@ -3020,6 +4379,126 @@ Game.grade4_3Clevel1.prototype={
 				mlTxt4.fontSize = 12;
                 mlTxt4.fill = '#373535';
 			}
+			else if(window.languageSelected=="Marathi"){
+				kgTxt = this.add.text(653,345, "मि.ली  ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "मि.ली  ");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "ली  ");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "ली  ");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+			else if(window.languageSelected=="Tamil"){
+				kgTxt = this.add.text(653,345, "மி.லி ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "மி.லி");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "லி");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "லி");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+			else if(window.languageSelected=="Telugu"){
+				kgTxt = this.add.text(653,345, "మిల్లీ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "మిల్లీ");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "ల్లీ");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "ల్లీ");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+		   else if(window.languageSelected=="Urdu"){
+				kgTxt = this.add.text(653,345, "ملی لیٹر");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "ملی لیٹر");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "لیٹر");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "لیٹر");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
 			else {
 				kgTxt = this.add.text(650,246, "ମି.ଲି ");
 				kgTxt.font = 'Comic Sans MS';
@@ -3262,6 +4741,126 @@ Game.grade4_3Clevel1.prototype={
                 mlTxt3.fill = '#373535';
              
                 mlTxt4 = this.add.text(480,200, "લિટર");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+			else if(window.languageSelected=="Marathi"){
+				kgTxt = this.add.text(653,345, "मि.ली  ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "मि.ली  ");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "ली  ");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "ली  ");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+			else if(window.languageSelected=="Tamil"){
+				kgTxt = this.add.text(653,345, "மி.லி ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "மி.லி");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "லி");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "லி");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+			else if(window.languageSelected=="Telugu"){
+				kgTxt = this.add.text(653,345, "మిల్లీ");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "మిల్లీ");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "ల్లీ");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "ల్లీ");
+				mlTxt4.font = 'Comic Sans MS';
+				mlTxt4.fontSize = 12;
+                mlTxt4.fill = '#373535';
+			}
+		   else if(window.languageSelected=="Urdu"){
+				kgTxt = this.add.text(653,345, "ملی لیٹر");
+				kgTxt.font = 'Comic Sans MS';
+				kgTxt.fontSize = 13;
+             
+                mlTxt = this.add.text(245,295, "ملی لیٹر");
+				mlTxt.font = 'Comic Sans MS';
+				mlTxt.fontSize = 10;
+                mlTxt.fill = '#373535'; 
+             
+                mlTxt1 = this.add.text(470,327, +"1");
+				mlTxt1.font = 'myfont';
+				mlTxt1.fontSize = 20;
+                mlTxt1.fill = '#373535';
+             
+                mlTxt2 = this.add.text(480,335, "لیٹر");
+				mlTxt2.font = 'Comic Sans MS';
+				mlTxt2.fontSize = 12;
+                mlTxt2.fill = '#373535'; 
+             
+                mlTxt3 = this.add.text(465,190, +"2");
+				mlTxt3.font = 'myfont';
+				mlTxt3.fontSize = 20;
+                mlTxt3.fill = '#373535';
+             
+                mlTxt4 = this.add.text(480,200, "لیٹر");
 				mlTxt4.font = 'Comic Sans MS';
 				mlTxt4.fontSize = 12;
                 mlTxt4.fill = '#373535';
@@ -4514,6 +6113,22 @@ displayEquation:function()
 					{
 						 _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/4.3A/4.3C1.mp3");
 					}
+					else if(window.languageSelected == "Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1A/Marathi/4.3C1.mp3");
+                    }
+					else if(window.languageSelected == "Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1A/telugu/4.3C1.mp3");
+                    }
+					else if(window.languageSelected == "Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1A/Tamil/4.3C1.mp3");
+                    }
+					else if(window.languageSelected == "Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1A/Urdu/4.3C1.mp3");
+                    }
 					else
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.3A/Odiya/4.3C1.mp3");
@@ -4540,6 +6155,22 @@ displayEquation:function()
 					{
 						 _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/4.3A/4.3C1_1.mp3");
 					}
+					else if(window.languageSelected == "Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1A/Marathi/4.3C1_1.mp3");
+                    }
+					else if(window.languageSelected == "Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1A/telugu/4.3C1_1.mp3");
+                    }
+					else if(window.languageSelected == "Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1A/Tamil/4.3C1_1.mp3");
+                    }
+					else if(window.languageSelected == "Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.1A/Urdu/4.3C1_1.mp3");
+                    }
 					else
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/4.3A/Odiya/4.3C1.1.mp3");

@@ -2714,6 +2714,22 @@ Game.nsf5_5level1.prototype={
             {
                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf5.5/Gujarati/nsf5.5a.mp3");
             }
+			else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf5.5/Marathi/nsf5.5.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf5.5/Telugu/nsf5.5.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf5.5/Tamil/nsf5.5.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf5.5/Urdu/nsf5.5.mp3");
+                    }
             else
             {
                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf5.5/Odiya/nsf5.5a.mp3");
@@ -2734,6 +2750,22 @@ Game.nsf5_5level1.prototype={
             {
                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf5.5/Kannada/nsf5.5b.mp3");
             }
+			else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf5.5/Marathi/nsf5.5.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf5.5/Telugu/nsf5.5.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf5.5/Tamil/nsf5.5.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf5.5/Urdu/nsf5.5.mp3");
+                    }
             else if(window.languageSelected == "Gujarati")
             {
                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsf5.5/Gujarati/nsf5.5b.mp3");

@@ -6922,6 +6922,22 @@ _this.box=0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Kannada/NSPVG3.5a.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Marathi/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Telugu/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Tamil/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Urdu/NSPVG3.5a.mp3");
+                    }
                         else if(window.languageSelected == "Gujrati")
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Gujrati/NSPVG3.5a.mp3");
@@ -6951,6 +6967,22 @@ _this.box=0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Gujrati/NSPVG3.5b.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Marathi/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Telugu/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Tamil/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Urdu/NSPVG3.5b.mp3");
+                    }
                         else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Odiya/NSPVG3.5b.mp3");  
@@ -6977,6 +7009,22 @@ _this.box=0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Gujrati/NSPVG3.5a.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Marathi/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Telugu/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Tamil/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Urdu/NSPVG3.5a.mp3");
+                    }
                         else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Odiya/NSPVG3.5a.mp3");  
@@ -6998,6 +7046,22 @@ _this.box=0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Kannada/NSPVG3.5b.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Marathi/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Telugu/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Tamil/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Urdu/NSPVG3.5b.mp3");
+                    }
                         else if(window.languageSelected == "Gujrati")
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Gujrati/NSPVG3.5b.mp3");
@@ -7026,6 +7090,22 @@ _this.box=0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Gujrati/NSPVG3.5c.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Marathi/NSPVG3.5c.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Telugu/NSPVG3.5c.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Tamil/NSPVG3.5c.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Urdu/NSPVG3.5c.mp3");
+                    }
                         else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Odiya/NSPVG3.5c.mp3");  
@@ -7052,6 +7132,22 @@ _this.box=0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Gujrati/NSPVG3.5a.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Marathi/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Telugu/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Tamil/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Urdu/NSPVG3.5a.mp3");
+                    }
                         else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Odiya/NSPVG3.5a.mp3");  
@@ -7077,6 +7173,22 @@ _this.box=0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Gujrati/NSPVG3.5b.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Marathi/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Telugu/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Tamil/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Urdu/NSPVG3.5b.mp3");
+                    }
                         else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Odiya/NSPVG3.5b.mp3");  
@@ -7101,6 +7213,22 @@ _this.box=0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Gujrati/NSPVG3.5d.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Marathi/NSPVG3.5d.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Telugu/NSPVG3.5d.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Tamil/NSPVG3.5d.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Urdu/NSPVG3.5d.mp3");
+                    }
                         else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Odiya/NSPVG3.5d.mp3");  
@@ -7127,6 +7255,22 @@ _this.box=0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Gujrati/NSPVG3.5a.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Marathi/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Telugu/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Tamil/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Urdu/NSPVG3.5a.mp3");
+                    }
                         else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Odiya/NSPVG3.5a.mp3");  
@@ -7152,6 +7296,22 @@ _this.box=0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Gujrati/NSPVG3.5b.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Marathi/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Telugu/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Tamil/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Urdu/NSPVG3.5b.mp3");
+                    }
                         else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Odiya/NSPVG3.5b.mp3");  
@@ -7176,6 +7336,22 @@ _this.box=0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Gujrati/NSPVG3.5e.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Marathi/NSPVG3.5e.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Telugu/NSPVG3.5e.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Tamil/NSPVG3.5e.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Urdu/NSPVG3.5e.mp3");
+                    }
                         else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Odiya/NSPVG3.5e.mp3");  
@@ -7202,6 +7378,22 @@ _this.box=0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Gujrati/NSPVG3.5a.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Marathi/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Telugu/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Tamil/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Urdu/NSPVG3.5a.mp3");
+                    }
                         else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Odiya/NSPVG3.5a.mp3");  
@@ -7227,6 +7419,22 @@ _this.box=0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Gujrati/NSPVG3.5b.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Marathi/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Telugu/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Tamil/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Urdu/NSPVG3.5b.mp3");
+                    }
                         else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Odiya/NSPVG3.5b.mp3");  
@@ -7251,6 +7459,22 @@ _this.box=0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Gujrati/NSPVG3.5d.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Marathi/NSPVG3.5d.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Telugu/NSPVG3.5d.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Tamil/NSPVG3.5d.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Urdu/NSPVG3.5d.mp3");
+                    }
                         else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Odiya/NSPVG3.5d.mp3");  
@@ -7277,6 +7501,22 @@ _this.box=0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Gujrati/NSPVG3.5a.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Marathi/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Telugu/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Tamil/NSPVG3.5a.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Urdu/NSPVG3.5a.mp3");
+                    }
                         else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Odiya/NSPVG3.5a.mp3");  
@@ -7302,6 +7542,22 @@ _this.box=0;
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Gujrati/NSPVG3.5b.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Marathi/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Telugu/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Tamil/NSPVG3.5b.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Urdu/NSPVG3.5b.mp3");
+                    }
                         else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/pv3.5/Odiya/NSPVG3.5b.mp3");  

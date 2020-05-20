@@ -196,6 +196,22 @@ Game.number_NSNG_2_1level1.prototype ={
         {
             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Kannada/question1.4kan.mp3");
         }
+		else if(window.languageSelected=="Marathi")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Marathi/question1.4.mp3");
+        }
+		else if(window.languageSelected=="Telugu")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Telugu/question1.4.mp3");
+        }
+		else if(window.languageSelected=="Tamil")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Tamil/question1.4.mp3");
+        }
+		else if(window.languageSelected=="Urdu")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Urdu/question1.4.mp3");
+        }
         else if(window.languageSelected=="Gujarati")
             {
                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/1.4/question1.4.mp3");
@@ -4917,7 +4933,7 @@ createCandyright:function(groupAnim)
     
     getVoice:function()
     {
-        //_this.stopVoice();
+        _this.stopVoice();
         //console.log("fffffff"+_this.qArrays[_this.no11]);
         
         _this.playQuestionSound = document.createElement('audio');
@@ -4934,27 +4950,45 @@ createCandyright:function(groupAnim)
             case 8:
             case 9:if(selctedLang.languageSelected=="English")
                     {
-                        _this.src.setAttribute("src", "questionSounds/unity/1.4/English/question1.4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/English/question1.4.mp3");
                     }
                     else if(selctedLang.languageSelected=="Hindi")
                     {
-                        _this.src.setAttribute("src", "questionSounds/unity/1.4/Hindi/question1.4Hin.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Hindi/question1.4Hin.mp3");
                     }
                     else if(selctedLang.languageSelected=="Kannada")
                     {
-                        _this.src.setAttribute("src", "questionSounds/unity/1.4/Kannada/question1.4kan.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Kannada/question1.4kan.mp3");
                     }
+                    else if(window.languageSelected=="Gujarati")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/1.4/question1.4.mp3");
+                    }
+					else if(window.languageSelected=="Marathi")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Marathi/question1.4.mp3");
+        }
+		else if(window.languageSelected=="Telugu")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Telugu/question1.4.mp3");
+        }
+		else if(window.languageSelected=="Tamil")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Tamil/question1.4.mp3");
+        }
+		else if(window.languageSelected=="Urdu")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Urdu/question1.4.mp3");
+        }
 					else
                     {
-                        _this.src.setAttribute("src", "questionSounds/unity/1.4/Odiya/1.4.mp3");
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Odiya/1.4.mp3");
 						_this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
                     }
         }
         
-        //_this.playQuestionSound.appendChild(_this.src);
-        //_this.playQuestionSound.play();
-
-        
+        _this.playQuestionSound.appendChild(_this.src);
+        _this.playQuestionSound.play();
     },
 
 

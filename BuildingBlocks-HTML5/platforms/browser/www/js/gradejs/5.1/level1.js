@@ -1353,6 +1353,22 @@ Game.grade5_1level1.prototype={
                       {
                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.1/Kannada/5.1_1.mp3");
                       } 
+					  else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.1/Marathi/5.1_1.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.1/Telugu/5.1_1.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.1/Tamil/5.1_1.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.1/Urdu/5.1_1.mp3");
+                      } 
                       else if(window.languageSelected == "Gujarati")
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/5.1/5.1_1.mp3");

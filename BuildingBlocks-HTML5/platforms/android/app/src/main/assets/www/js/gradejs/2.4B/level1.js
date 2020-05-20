@@ -406,6 +406,14 @@ Game.grade2_4Blevel1.prototype={
                         {
                              _this.displayPopUp.frame = 3;
                         }
+						else if(window.languageSelected=="Marathi")
+                        _this.displayPopUp.frame =6;
+						else if(window.languageSelected=="Telugu")
+							_this.displayPopUp.frame=7;
+						else if(window.languageSelected=="Tamil")
+							_this.displayPopUp.frame=5;
+						else if(window.languageSelected=="Urdu")
+							_this.displayPopUp.frame=8;
 						else
                         {
                              _this.displayPopUp.frame = 4;
@@ -533,6 +541,66 @@ Game.grade2_4Blevel1.prototype={
                     numGroup.add(gmTxt2);
                 
                 }
+				else if(window.languageSelected=="Urdu")
+            {
+                var gmTxt2 = this.add.text(x+65,510, "سم ");
+                    gmTxt2.anchor.setTo(0.5);
+                    gmTxt2.align = 'center';
+
+                    gmTxt2.font = 'myfont';
+                    gmTxt2.fontSize = 20;
+                    gmTxt2.fontWeight = 'normal';
+                    gmTxt2.fill = '#65B4C3';
+
+                    gmTxt2.setShadow(0, 0,'Level33A_rgba(0, 0, 0, 0)', 0);
+                    numGroup.add(gmTxt2);
+                
+                }
+				else if(window.languageSelected=="Marathi")
+            {
+                var gmTxt2 = this.add.text(x+65,510, "सेंटीमीटर");
+                    gmTxt2.anchor.setTo(0.5);
+                    gmTxt2.align = 'center';
+
+                    gmTxt2.font = 'myfont';
+                    gmTxt2.fontSize = 17;
+                    gmTxt2.fontWeight = 'normal';
+                    gmTxt2.fill = '#65B4C3';
+
+                    gmTxt2.setShadow(0, 0,'Level33A_rgba(0, 0, 0, 0)', 0);
+                    numGroup.add(gmTxt2);
+                
+                }
+				else if(window.languageSelected=="Tamil")
+            {
+                var gmTxt2 = this.add.text(x+65,510, "செ.மீ.");
+                    gmTxt2.anchor.setTo(0.5);
+                    gmTxt2.align = 'center';
+
+                    gmTxt2.font = 'myfont';
+                    gmTxt2.fontSize = 20;
+                    gmTxt2.fontWeight = 'normal';
+                    gmTxt2.fill = '#65B4C3';
+
+                    gmTxt2.setShadow(0, 0,'Level33A_rgba(0, 0, 0, 0)', 0);
+                    numGroup.add(gmTxt2);
+                
+                }
+				else if(window.languageSelected=="Telugu")
+            {
+                var gmTxt2 = this.add.text(x+65,510, "సెంటీ \n మీటర్");
+                    gmTxt2.anchor.setTo(0.5);
+                    gmTxt2.align = 'center';
+
+                    gmTxt2.font = 'myfont';
+                    gmTxt2.fontSize = 19;
+                    gmTxt2.fontWeight = 'normal';
+                    gmTxt2.fill = '#65B4C3';
+
+                    gmTxt2.setShadow(0, 0,'Level33A_rgba(0, 0, 0, 0)', 0);
+                    numGroup.add(gmTxt2);
+                
+                }
             else 
             {
                 var gmTxt2 = this.add.text(x+65,510, "સેમી");
@@ -601,6 +669,66 @@ Game.grade2_4Blevel1.prototype={
 
                     gmTxt2.font = 'myfont';
                     gmTxt2.fontSize = 20;
+                    gmTxt2.fontWeight = 'normal';
+                    gmTxt2.fill = '#65B4C3';
+
+                    gmTxt2.setShadow(0, 0,'Level33A_rgba(0, 0, 0, 0)', 0);
+                    numGroup.add(gmTxt2);
+                
+                }
+				else if(window.languageSelected=="Urdu")
+            {
+                var gmTxt2 = this.add.text(x+65,510, "سم ");
+                    gmTxt2.anchor.setTo(0.5);
+                    gmTxt2.align = 'center';
+
+                    gmTxt2.font = 'myfont';
+                    gmTxt2.fontSize = 20;
+                    gmTxt2.fontWeight = 'normal';
+                    gmTxt2.fill = '#65B4C3';
+
+                    gmTxt2.setShadow(0, 0,'Level33A_rgba(0, 0, 0, 0)', 0);
+                    numGroup.add(gmTxt2);
+                
+                }
+				else if(window.languageSelected=="Marathi")
+            {
+                var gmTxt2 = this.add.text(x+65,510, "मीटर");
+                    gmTxt2.anchor.setTo(0.5);
+                    gmTxt2.align = 'center';
+
+                    gmTxt2.font = 'myfont';
+                    gmTxt2.fontSize = 17;
+                    gmTxt2.fontWeight = 'normal';
+                    gmTxt2.fill = '#65B4C3';
+
+                    gmTxt2.setShadow(0, 0,'Level33A_rgba(0, 0, 0, 0)', 0);
+                    numGroup.add(gmTxt2);
+                
+                }
+				else if(window.languageSelected=="Tamil")
+            {
+                var gmTxt2 = this.add.text(x+65,510, "மீ");
+                    gmTxt2.anchor.setTo(0.5);
+                    gmTxt2.align = 'center';
+
+                    gmTxt2.font = 'myfont';
+                    gmTxt2.fontSize = 20;
+                    gmTxt2.fontWeight = 'normal';
+                    gmTxt2.fill = '#65B4C3';
+
+                    gmTxt2.setShadow(0, 0,'Level33A_rgba(0, 0, 0, 0)', 0);
+                    numGroup.add(gmTxt2);
+                
+                }
+				else if(window.languageSelected=="Telugu")
+            {
+                var gmTxt2 = this.add.text(x+65,510, "మీటర్");
+                    gmTxt2.anchor.setTo(0.5);
+                    gmTxt2.align = 'center';
+
+                    gmTxt2.font = 'myfont';
+                    gmTxt2.fontSize = 19;
                     gmTxt2.fontWeight = 'normal';
                     gmTxt2.fill = '#65B4C3';
 
@@ -1214,6 +1342,14 @@ Game.grade2_4Blevel1.prototype={
                         popup2.frame=2;
 					else if(window.languageSelected=="Odiya")
                         popup2.frame=3;
+					else if(window.languageSelected=="Marathi")
+                        popup2.frame=6;
+					else if(window.languageSelected=="Telugu")
+                        popup2.frame=7;
+					else if(window.languageSelected=="Tamil")
+                        popup2.frame=5;
+					else if(window.languageSelected=="Urdu")
+                        popup2.frame=8;
                     else
                         popup2.frame = 4;
 
@@ -1304,7 +1440,7 @@ Game.grade2_4Blevel1.prototype={
 
         popup2=this.add.sprite(480,63,'game24b_popup2');
         popup2.anchor.setTo(0.5);
-        if(window.languageSelected=="English")
+       if(window.languageSelected=="English")
                         popup2.frame=0;
                     else if(window.languageSelected=="Hindi")
                         popup2.frame=1;
@@ -1312,6 +1448,14 @@ Game.grade2_4Blevel1.prototype={
                         popup2.frame=2;
 					else if(window.languageSelected=="Odiya")
                         popup2.frame=3;
+					else if(window.languageSelected=="Marathi")
+                        popup2.frame=6;
+					else if(window.languageSelected=="Telugu")
+                        popup2.frame=7;
+					else if(window.languageSelected=="Tamil")
+                        popup2.frame=5;
+					else if(window.languageSelected=="Urdu")
+                        popup2.frame=8;
                     else
                         popup2.frame = 4;
 
@@ -1466,6 +1610,14 @@ Game.grade2_4Blevel1.prototype={
                         popup2.frame=2;
 					else if(window.languageSelected=="Odiya")
                         popup2.frame=3;
+					else if(window.languageSelected=="Marathi")
+                        popup2.frame=6;
+					else if(window.languageSelected=="Telugu")
+                        popup2.frame=7;
+					else if(window.languageSelected=="Tamil")
+                        popup2.frame=5;
+					else if(window.languageSelected=="Urdu")
+                        popup2.frame=8;
                     else
                         popup2.frame = 4;
 
@@ -1606,6 +1758,14 @@ Game.grade2_4Blevel1.prototype={
                         popup2.frame=2;
 					else if(window.languageSelected=="Odiya")
                         popup2.frame=3;
+					else if(window.languageSelected=="Marathi")
+                        popup2.frame=6;
+					else if(window.languageSelected=="Telugu")
+                        popup2.frame=7;
+					else if(window.languageSelected=="Tamil")
+                        popup2.frame=5;
+					else if(window.languageSelected=="Urdu")
+                        popup2.frame=8;
                     else
                         popup2.frame = 4;
         
@@ -1724,6 +1884,14 @@ Game.grade2_4Blevel1.prototype={
                         popup2.frame=2;
 					else if(window.languageSelected=="Odiya")
                         popup2.frame=3;
+					else if(window.languageSelected=="Marathi")
+                        popup2.frame=6;
+					else if(window.languageSelected=="Telugu")
+                        popup2.frame=7;
+					else if(window.languageSelected=="Tamil")
+                        popup2.frame=5;
+					else if(window.languageSelected=="Urdu")
+                        popup2.frame=8;
                     else
                         popup2.frame = 4;
         
@@ -1890,6 +2058,14 @@ Game.grade2_4Blevel1.prototype={
                         popup2.frame=2;
 					else if(window.languageSelected=="Odiya")
                         popup2.frame=3;
+					else if(window.languageSelected=="Marathi")
+                        popup2.frame=6;
+					else if(window.languageSelected=="Telugu")
+                        popup2.frame=7;
+					else if(window.languageSelected=="Tamil")
+                        popup2.frame=5;
+					else if(window.languageSelected=="Urdu")
+                        popup2.frame=8;
                     else
                         popup2.frame = 4;
         mainSprite = this.add.sprite(this.world.centerX-30,this.world.centerY+30,'Level24B_birds1');
@@ -2026,6 +2202,14 @@ Game.grade2_4Blevel1.prototype={
                         popup2.frame=2;
 					else if(window.languageSelected=="Odiya")
                         popup2.frame=3;
+					else if(window.languageSelected=="Marathi")
+                        popup2.frame=6;
+					else if(window.languageSelected=="Telugu")
+                        popup2.frame=7;
+					else if(window.languageSelected=="Tamil")
+                        popup2.frame=5;
+					else if(window.languageSelected=="Urdu")
+                        popup2.frame=8;
                     else
                         popup2.frame = 4;
         
@@ -2179,6 +2363,14 @@ Game.grade2_4Blevel1.prototype={
                         popup2.frame=2;
 					else if(window.languageSelected=="Odiya")
                         popup2.frame=3;
+					else if(window.languageSelected=="Marathi")
+                        popup2.frame=6;
+					else if(window.languageSelected=="Telugu")
+                        popup2.frame=7;
+					else if(window.languageSelected=="Tamil")
+                        popup2.frame=5;
+					else if(window.languageSelected=="Urdu")
+                        popup2.frame=8;
                     else
                         popup2.frame = 4;
         
@@ -2335,6 +2527,14 @@ Game.grade2_4Blevel1.prototype={
                         popup2.frame=2;
 					else if(window.languageSelected=="Odiya")
                         popup2.frame=3;
+					else if(window.languageSelected=="Marathi")
+                        popup2.frame=6;
+					else if(window.languageSelected=="Telugu")
+                        popup2.frame=7;
+					else if(window.languageSelected=="Tamil")
+                        popup2.frame=5;
+					else if(window.languageSelected=="Urdu")
+                        popup2.frame=8;
                     else
                         popup2.frame = 4;
         
@@ -2451,6 +2651,14 @@ Game.grade2_4Blevel1.prototype={
                         popup2.frame=2;
 					else if(window.languageSelected=="Odiya")
                         popup2.frame=3;
+					else if(window.languageSelected=="Marathi")
+                        popup2.frame=6;
+					else if(window.languageSelected=="Telugu")
+                        popup2.frame=7;
+					else if(window.languageSelected=="Tamil")
+                        popup2.frame=5;
+					else if(window.languageSelected=="Urdu")
+                        popup2.frame=8;
                     else
                         popup2.frame = 4;
         
@@ -2568,6 +2776,14 @@ Game.grade2_4Blevel1.prototype={
                         popup2.frame=2;
 					else if(window.languageSelected=="Odiya")
                         popup2.frame=3;
+					else if(window.languageSelected=="Marathi")
+                        popup2.frame=6;
+					else if(window.languageSelected=="Telugu")
+                        popup2.frame=7;
+					else if(window.languageSelected=="Tamil")
+                        popup2.frame=5;
+					else if(window.languageSelected=="Urdu")
+                        popup2.frame=8;
                     else
                         popup2.frame = 4;
         
@@ -2673,6 +2889,14 @@ Game.grade2_4Blevel1.prototype={
                         popup2.frame=2;
 					else if(window.languageSelected=="Odiya")
                         popup2.frame=3;
+					else if(window.languageSelected=="Marathi")
+                        popup2.frame=6;
+					else if(window.languageSelected=="Telugu")
+                        popup2.frame=7;
+					else if(window.languageSelected=="Tamil")
+                        popup2.frame=5;
+					else if(window.languageSelected=="Urdu")
+                        popup2.frame=8;
                     else
                         popup2.frame = 4;
         
@@ -2729,6 +2953,14 @@ Game.grade2_4Blevel1.prototype={
                         popup2.frame=2;
 					else if(window.languageSelected=="Odiya")
                         popup2.frame=3;
+					else if(window.languageSelected=="Marathi")
+                        popup2.frame=6;
+					else if(window.languageSelected=="Telugu")
+                        popup2.frame=7;
+					else if(window.languageSelected=="Tamil")
+                        popup2.frame=5;
+					else if(window.languageSelected=="Urdu")
+                        popup2.frame=8;
                     else
                         popup2.frame = 4;
         
@@ -2859,6 +3091,22 @@ Game.grade2_4Blevel1.prototype={
                         {
                              _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/2.4A/2.4A1.mp3");
                         }
+						else if(window.languageSelected == "Marathi")
+                              {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Marathi/2.4A1.mp3");
+                              }
+							  else if(window.languageSelected == "Telugu")
+                              {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Telugu/2.4A1.mp3");
+                              }
+							  else if(window.languageSelected == "Tamil")
+                              {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Tamil/2.4A1.mp3");
+                              }
+							  else if(window.languageSelected == "Urdu")
+                              {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Urdu/2.4A1.mp3");
+                              }
 						else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Odiya/2.4A1.mp3");
@@ -2894,6 +3142,22 @@ Game.grade2_4Blevel1.prototype={
                         {
                              _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/2.4A/2.4B1.mp3");
                         }
+						else if(window.languageSelected == "Marathi")
+                              {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Marathi/2.4A2.mp3");
+                              }
+							  else if(window.languageSelected == "Telugu")
+                              {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Telugu/2.4A2.mp3");
+                              }
+							  else if(window.languageSelected == "Tamil")
+                              {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Tamil/2.4A2.mp3");
+                              }
+							  else if(window.languageSelected == "Urdu")
+                              {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Urdu/2.4A2.mp3");
+                              }
 						else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Odiya/2.4A2.mp3");

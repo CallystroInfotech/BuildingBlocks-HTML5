@@ -426,10 +426,18 @@ Game.weight_MWG_2_2level3.prototype={
             var gmTxt = this.add.text(x+90,505, "ಗ್ರಾಂ"); 
         else if(window.languageSelected=="Odiya")
             var gmTxt = this.add.text(x+90,505, "ଗ୍ରାମ");
+		else if(window.languageSelected=="Marathi")
+				var gmTxt = this.add.text(x+90,505, "ग्रॅम");
+			else if(window.languageSelected=="Telugu")
+				var gmTxt = this.add.text(x+90,505, "గ్రాము");
+			else if(window.languageSelected=="Tamil")
+				var gmTxt = this.add.text(x+90,505, "கிராம்");
+			else if(window.languageSelected=="Urdu")
+				var gmTxt = this.add.text(x+90,505, "گرام");
         else 
             var gmTxt = this.add.text(x+90,505, "ગ્રા");
             
-        if(window.languageSelected=="Hindi" || window.languageSelected=="Kannada"|| window.languageSelected=="Odiya" || window.languageSelected=="Gujarati"){
+        if(window.languageSelected=="Hindi" || window.languageSelected=="Kannada"|| window.languageSelected=="Odiya" || window.languageSelected=="Gujarati" || window.languageSelected=="Marathi" || window.languageSelected=="Telugu" || window.languageSelected=="Tamil" || languageSelected=="Urdu"){
             gmTxt.anchor.setTo(0.5);
             gmTxt.align = 'center';
 
@@ -1029,6 +1037,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=3;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -1339,6 +1355,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -1582,6 +1606,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -1834,6 +1866,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -2076,6 +2116,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -2325,6 +2373,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -2576,6 +2632,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -2824,6 +2888,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -3076,6 +3148,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -3328,6 +3408,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -3581,6 +3669,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -3829,6 +3925,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -4084,6 +4188,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -4338,6 +4450,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -4593,6 +4713,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -4846,6 +4974,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -5099,6 +5235,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -5352,6 +5496,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -5605,6 +5757,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -5857,6 +6017,14 @@ Game.weight_MWG_2_2level3.prototype={
             popup.frame=2;
         else if(window.languageSelected=="Odiya")
             popup.frame=3;
+		else if(window.languageSelected=="Marathi")
+            popup.frame=6;
+		else if(window.languageSelected=="Telugu")
+            popup.frame=7;
+		else if(window.languageSelected=="Tamil")
+            popup.frame=5;
+		else if(window.languageSelected=="Urdu")
+            popup.frame=8;
         else
             popup.frame=4;
         popup.name="game32d_popup";
@@ -6774,6 +6942,26 @@ Game.weight_MWG_2_2level3.prototype={
                         commonNavBar.getVoice(window.baseUrl+"questionSounds/Gujarati/3.2A/ElevelD.mp3");
                         _this.soundurl = window.baseUrl+"questionSounds/Gujarati/3.2A/ElevelD.mp3";
                         
+                    }
+					else if(window.languageSelected == "Marathi")
+                    {
+                        commonNavBar.getVoice(window.baseUrl+"questionSounds/3.1/Marathi/3.2D_Ed.mp3");
+                        _this.soundurl = window.baseUrl+"questionSounds/3.1/Marathi/3.2D_Ed.mp3";
+                    }
+					else if(window.languageSelected == "Telugu")
+                    {
+                        commonNavBar.getVoice(window.baseUrl+"questionSounds/3.1/Telugu/3.2D_Ed.mp3");
+                        _this.soundurl = window.baseUrl+"questionSounds/3.1/Telugu/3.2D_Ed.mp3";
+                    }
+					else if(window.languageSelected == "Tamil")
+                    {
+                        commonNavBar.getVoice(window.baseUrl+"questionSounds/3.1/Tamil/3.2D_Ed.mp3");
+                        _this.soundurl = window.baseUrl+"questionSounds/3.1/Tamil/3.2D_Ed.mp3";
+                    }
+					else if(window.languageSelected == "Urdu")
+                    {
+                        commonNavBar.getVoice(window.baseUrl+"questionSounds/3.1/Urdu/3.2D_Ed.mp3");
+                        _this.soundurl = window.baseUrl+"questionSounds/3.1/Urdu/3.2D_Ed.mp3";
                     }
 					else
                     {

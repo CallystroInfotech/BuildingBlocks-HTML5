@@ -560,6 +560,22 @@ Game.unity14_2level1.prototype={
 		{
 			_this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/14.1/Game14.2.mp3");
 		}
+		else if(window.languageSelected=="Marathi")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/14.2/Marathi/game14.2.mp3");
+        }
+		else if(window.languageSelected=="Tamil")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/14.2/Tamil/game14.2.mp3");
+        }
+		else if(window.languageSelected=="Telugu")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/14.2/Telugu/game14.2.mp3");
+        }
+		else if(window.languageSelected=="Urdu")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/14.2/Urdu/game14.2.mp3");
+        }
 		else{
             _this.src.setAttribute("src", window.baseUrl+"questionSounds/14.2/Odiya/14.2.mp3");
             _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);

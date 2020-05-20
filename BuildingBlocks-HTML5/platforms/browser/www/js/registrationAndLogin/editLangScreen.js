@@ -60,16 +60,16 @@ Game.editLangScreen.prototype={
 		
 
 
-    	var graphicBg = game.add.sprite(game.world.centerX,game.world.centerY-50,'graphicBg');
+    	var graphicBg = game.add.sprite(game.world.centerX,game.world.centerY-60,'graphicBg');
     	graphicBg.scale.setTo(0.6,0.5);
     	graphicBg.anchor.setTo(0.5);
 
-    	var carrotIcon = game.add.sprite(game.world.centerX+110,game.world.centerY-50,'carrotIcon');
+    	var carrotIcon = game.add.sprite(game.world.centerX+110,game.world.centerY-60,'carrotIcon');
     	carrotIcon.scale.setTo(0.8);
     	carrotIcon.anchor.setTo(0.5);
 
 
-    	var regTickBtn = game.add.sprite(game.world.centerX,game.world.centerY+100,'regTickBtn');
+    	var regTickBtn = game.add.sprite(game.world.centerX,game.world.centerY+90,'regTickBtn');
     	regTickBtn.scale.setTo(0.5);
     	regTickBtn.anchor.setTo(0.5);
 
@@ -85,8 +85,16 @@ Game.editLangScreen.prototype={
 				lang = "ଓଡ଼ିଆ";
 			if(_this.user.language == "Gujarati")
 				lang = "ગુજરાતી";
+			if(_this.user.language == "Marathi")
+				lang = "मराठी"
+			if(_this.user.language == "Telugu")
+				lang = "తెలుగు"
+			if(_this.user.language == "Tamil")
+				lang = "தமிழ்"
+			if(_this.user.language == "Urdu")
+				lang = "اردو"
 
-    	this.selectLanguageText = game.add.text(game.world.centerX-10,game.world.centerY-47,lang);
+    	this.selectLanguageText = game.add.text(game.world.centerX-10,game.world.centerY-57,lang);
 		this.selectLanguageText.x = Math.round(_this.selectLanguageText.x);
 		this.selectLanguageText.anchor.setTo(0.5);
 		this.selectLanguageText.align = 'center';
@@ -105,18 +113,26 @@ Game.editLangScreen.prototype={
 
 			this.languageSelectedGrp = game.add.group();
 			if(_this.user.language == "English")
-				var languageList = ["Select Language","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી"];
+				var languageList = ["Select Language","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
 			if(_this.user.language == "Hindi")
-				var languageList = ["भाषा चुने","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી"];
+				var languageList = ["भाषा चुने","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
 			if(_this.user.language == "Kannada")
-				var languageList = ["ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી"];
+				var languageList = ["ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
 			if(_this.user.language == "Odiya")
-				var languageList = ["ଭାଷା ବାଛନ୍ତୁ","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી"];
+				var languageList = ["ଭାଷା ବାଛନ୍ତୁ","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
 			if(_this.user.language == "Gujarati")
-				var languageList = ["ભાષા પસંદ કરો","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી"];
+				var languageList = ["ભાષા પસંદ કરો","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
+			if(_this.user.language == "Marathi")
+				var languageList = ["भाषा निवडा","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
+			if(_this.user.language == "Telugu")
+				var languageList = ["భాషను ఎంపిక చేసుకోండి","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
+			if(_this.user.language == "Tamil")
+				var languageList = ["மொழியை தேர்ந்தெடு","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
+			if(_this.user.language == "Urdu")
+				var languageList = ["زبان منتخب کیجئے","English","हिंदी","ಕನ್ನಡ","ଓଡ଼ିଆ","ગુજરાતી","मराठी","తెలుగు","தமிழ்","اردو"];
 
 	    	var x = game.world.centerX-140;
-	    	var y = game.world.centerY-70;
+	    	var y = game.world.centerY-80;
 
 	    	for(var i=0; i<languageList.length; i++){
 	    		if(i!=0)
@@ -144,7 +160,7 @@ Game.editLangScreen.prototype={
 		this["languagegraphicsBg"+i].drawRect(x, y, 280, 55);
 
 
-		if((i+1) < 6)
+		if((i+1) < 10)
 		{
 			this["bdm"+i] = game.add.bitmapData(800,600);                
 	    	this["bdm"+i].ctx.beginPath();        
@@ -194,7 +210,7 @@ Game.editLangScreen.prototype={
 		},this);
 
 		grp.add(this["languagegraphicsBg"+i]);
-		if((i+1) < 6)
+		if((i+1) < 10)
 			grp.add(this["sprite"+i]);	
 		grp.add(this["languageTxt"+i]);
 	},
@@ -209,8 +225,18 @@ Game.editLangScreen.prototype={
 			target.name = "Odiya"
 		else if(target.name == "ગુજરાતી")
 			target.name = "Gujarati"
+		else if(target.name == "मराठी")
+			target.name = "Marathi"
+		else if(target.name == "తెలుగు")
+			target.name = "Telugu"
+		else if(target.name == "தமிழ்")
+			target.name = "Tamil"
+		else if(target.name == "اردو")
+			target.name = "Urdu"
 		else
 			target.name = "English"
+
+		FirebasePlugin.logEvent("Select_language", {Select_language: target.name, item_id: ""});
 
 		var jsondata = {name:_this.user.name,deviceid:_this.user.deviceId,grade:_this.user.grade,schooltype:_this.user.schoolType,language:target.name,organization:_this.user.organization};
 

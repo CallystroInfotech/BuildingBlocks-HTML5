@@ -1802,6 +1802,22 @@ gotoTwevelvethQuestion:function(){
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/11.1/11.1E.mp3");
                     }
+					else if(window.languageSelected=="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/11.1/Marathi/11.1E.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/11.1/Tamil/11.1E.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/11.1/Telugu/11.1E.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/11.1/Urdu/11.1E.mp3");
+                    }
 					else
                     {
                          _this.src.setAttribute("src", window.baseUrl+"questionSounds/11.1/Odiya/11.1.mp3");

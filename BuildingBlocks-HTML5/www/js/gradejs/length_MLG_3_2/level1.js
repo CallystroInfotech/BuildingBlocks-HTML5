@@ -3045,14 +3045,30 @@ Game.length_MLG_3_2level1.prototype={
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Kannada/2.4A1.mp3");
                         }
-                        else if(window.languageSelected == "Gujarati")
+                        else if(window.languageSelected=="Gujarati")
                         {
-                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/2.4A/2.4A1.mp3");
+                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/2.4A/2.4A1.mp3");
                         }
-                        else
+						 else if(window.languageSelected == "Marathi")
+                              {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Marathi/2.4A1.mp3");
+                              }
+							  else if(window.languageSelected == "Telugu")
+                              {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Telugu/2.4A1.mp3");
+                              }
+							  else if(window.languageSelected == "Tamil")
+                              {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Tamil/2.4A1.mp3");
+                              }
+							  else if(window.languageSelected == "Urdu")
+                              {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Urdu/2.4A1.mp3");
+                              }
+						else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Odiya/2.4A1.mp3");
-                            _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
+							_this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
                         }
                         break;
             case 11:
@@ -3074,14 +3090,30 @@ Game.length_MLG_3_2level1.prototype={
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Kannada/2.4B1.mp3");
                         }
-                        else if(window.languageSelected == "Gujarati")
+                        else if(window.languageSelected=="Gujarati")
                         {
-                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/2.4A/2.4B1.mp3");
+                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/2.4A/2.4A2.mp3");
                         }
-                        else
+						else if(window.languageSelected == "Marathi")
+                              {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Marathi/2.4B1.mp3");
+                              }
+							  else if(window.languageSelected == "Telugu")
+                              {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Telugu/2.4B1.mp3");
+                              }
+							  else if(window.languageSelected == "Tamil")
+                              {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Tamil/2.4B1.mp3");
+                              }
+							  else if(window.languageSelected == "Urdu")
+                              {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Urdu/2.4B1.mp3");
+                              }
+						else
                         {
-                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Odiya//2.4B1.mp3");
-                            _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/2.4A/Odiya/2.4B1.mp3");
+							_this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);
                         }
                         break;
             
@@ -3091,11 +3123,10 @@ Game.length_MLG_3_2level1.prototype={
         
         
         _this.playQuestionSound.appendChild(_this.src);
-        //_this.playQuestionSound.play();
-
-       commonNavBar.addNavBar(this,_this.src.src,'measurement1');
+        _this.playQuestionSound.play();
+		
+		commonNavBar.addNavBar(this,_this.src.src,'measurement1');
        commonNavBar.getVoice(_this.src.src);
-       // commonNavBar.stopVoice();
        
     },
     

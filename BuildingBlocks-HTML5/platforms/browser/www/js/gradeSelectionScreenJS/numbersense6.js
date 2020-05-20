@@ -71,6 +71,22 @@ Game.numbersense6.prototype={
                         {
                            this.numbersenseTxt.setText("ସଂଖ୍ୟା ପରିଚୟ");
                         }
+						else if(window.languageSelected == "Marathi")
+                        {
+                           this.numbersenseTxt.setText("संख्या ज्ञान");
+                        }
+						else if(window.languageSelected == "Telugu")
+                        {
+                           this.numbersenseTxt.setText("అంకెల జ్ఞానం");
+                        }
+						else if(window.languageSelected == "Tamil")
+                        {
+                           this.numbersenseTxt.setText("எண் அறிவு");
+                        }
+						else if(window.languageSelected == "Urdu")
+                        {
+                           this.numbersenseTxt.setText("اعداد کی پہچان");
+                        }
                         else
                         {
                         	this.numbersenseTxt.setText("Number Sense");

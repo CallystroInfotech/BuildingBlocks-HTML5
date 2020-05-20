@@ -80,6 +80,22 @@ Game.subtraction_NOAG_4_3level2.prototype={
                 {
                     _this.soundurl =  window.baseUrl+"questionSounds/3.2.1/Kannada/Game 10.2.3.mp3";
                 }
+				else if(window.languageSelected=="Marathi")
+          {
+           _this.soundurl =  window.baseUrl+"questionSounds/3.2.1/Marathi/10.2.3.mp3";
+         }
+		 else if(window.languageSelected=="Telugu")
+          {
+           _this.soundurl =  window.baseUrl+"questionSounds/3.2.1/Telugu/10.2.3.mp3";
+         }
+		 else if(window.languageSelected=="Tamil")
+          {
+           _this.soundurl =  window.baseUrl+"questionSounds/3.2.1/Tamil/10.2.3.mp3";
+         }
+		 else if(window.languageSelected=="Urdu")
+          {
+           _this.soundurl =  window.baseUrl+"questionSounds/3.2.1/Urdu/10.2.3.mp3";
+         }
 				else if(window.languageSelected == "Gujarati")
 				{
 					_this.soundurl = window.baseUrl+"questionSounds/Gujarati/3.2.1/Game 10.2.3.mp3";
@@ -1830,6 +1846,22 @@ wrongAns:function(target)
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Kannada/Game 10.2.3.mp3");
                         }
+						else if(window.languageSelected=="Marathi")
+          {
+           _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Marathi/10.2.3.mp3");
+         }
+		 else if(window.languageSelected=="Telugu")
+          {
+           _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Telugu/10.2.3.mp3");
+         }
+		 else if(window.languageSelected=="Tamil")
+          {
+           _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Tamil/10.2.3.mp3");
+         }
+		 else if(window.languageSelected=="Urdu")
+          {
+           _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Urdu/10.2.3.mp3");
+         }
 						else
                         {
                             _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Odiya/10.2.3.mp3");

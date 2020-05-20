@@ -4773,6 +4773,22 @@ _this.box=0;
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd2.5/Gujrati/nsd2.5a.mp3");
                     }
+					else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd2.5/Marathi/nsd2.5a.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd2.5/Telugu/nsd2.5a.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd2.5/Tamil/nsd2.5a.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd2.5/Urdu/nsd2.5a.mp3");
+                    }
                     else
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd2.5/Odiya/nsd2.5a.mp3");  
@@ -4795,6 +4811,22 @@ _this.box=0;
                     else if(window.languageSelected == "Gujarati")
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd2.5/Gujrati/nsd2.5b.mp3");
+                    }
+					else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd2.5/Marathi/nsd2.5b.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd2.5/Telugu/nsd2.5b.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd2.5/Tamil/nsd2.5b.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd2.5/Urdu/nsd2.5b.mp3");
                     }
                     else
                     {

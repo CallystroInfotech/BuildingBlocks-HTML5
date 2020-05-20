@@ -289,6 +289,14 @@ getVoice:function(){
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameFirst.mp3");
               else if(window.languageSelected=="Gujarati")
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameFirst.mp3");
+			else if(window.languageSelected=="Marathi")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameFirst.mp3");
+				else if(window.languageSelected=="Telugu")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameFirst.mp3");
+				else if(window.languageSelected=="Tamil")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameFirst.mp3");
+				else if(window.languageSelected=="Urdu")
+					this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameFirst.mp3");
               else
               {
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_a.mp3");
@@ -309,6 +317,14 @@ getVoice:function(){
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameSecond.mp3");
               else if(window.languageSelected=="Gujarati")
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameSecond.mp3");
+			else if(window.languageSelected=="Marathi")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameSecond.mp3");
+				else if(window.languageSelected=="Telugu")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameSecond.mp3");
+				else if(window.languageSelected=="Tamil")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameSecond.mp3");
+				else if(window.languageSelected=="Urdu")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameSecond.mp3");
               else
               {
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_b.mp3");
@@ -331,6 +347,14 @@ getVoice:function(){
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameThird.mp3");
                else if(window.languageSelected=="Gujarati")
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameThird.mp3");
+			else if(window.languageSelected=="Marathi")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameThird.mp3");
+				else if(window.languageSelected=="Telugu")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameThird.mp3");
+				else if(window.languageSelected=="Tamil")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameThird.mp3");
+				else if(window.languageSelected=="Urdu")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameThird.mp3");
               else
               {
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_c.mp3");
@@ -353,6 +377,14 @@ getVoice:function(){
               this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameFourth.mp3");
              else if(window.languageSelected=="Gujarati")
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameFourth.mp3");
+			else if(window.languageSelected=="Marathi")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameFourth.mp3");
+				else if(window.languageSelected=="Telugu")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameFourth.mp3");
+				else if(window.languageSelected=="Tamil")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameFourth.mp3");
+				else if(window.languageSelected=="Urdu")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameFourth.mp3");
             else
             {
               this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_d.mp3");
@@ -374,6 +406,14 @@ getVoice:function(){
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameFifth.mp3");
                else if(window.languageSelected=="Gujarati")
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameFifth.mp3");
+			else if(window.languageSelected=="Marathi")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameFifth.mp3");
+				else if(window.languageSelected=="Telugu")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameFifth.mp3");
+				else if(window.languageSelected=="Tamil")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameFifth.mp3");
+				else if(window.languageSelected=="Urdu")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameFifth.mp3");
               else
               {
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_e.mp3");
@@ -395,6 +435,14 @@ getVoice:function(){
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameSixth.mp3");
                else if(window.languageSelected=="Gujarati")
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameSixth.mp3");
+			else if(window.languageSelected=="Marathi")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameSixth.mp3");
+				else if(window.languageSelected=="Telugu")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameSixth.mp3");
+				else if(window.languageSelected=="Tamil")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameSixth.mp3");
+				else if(window.languageSelected=="Urdu")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameSixth.mp3");
               else
               {
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_f.mp3");
@@ -416,6 +464,14 @@ getVoice:function(){
               this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameSeventh.mp3");
              else if(window.languageSelected=="Gujarati")
                 this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameSeventh.mp3");
+			else if(window.languageSelected=="Marathi")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameSeventh.mp3");
+				else if(window.languageSelected=="Telugu")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameSeventh.mp3");
+				else if(window.languageSelected=="Tamil")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameSeventh.mp3");
+				else if(window.languageSelected=="Urdu")
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameSeventh.mp3");
             else
             {
               this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_g.mp3");
@@ -789,6 +845,22 @@ getVoice:function(){
                            {
                             this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/5.1/EHowMany.mp3");
                           }
+						  else if(window.languageSelected=="Marathi")
+                                     {
+                                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Marathi/EHowMany.mp3");
+                                    }
+									else if(window.languageSelected=="Telugu")
+                                     {
+                                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Telugu/EHowMany.mp3");
+                                    }
+									else if(window.languageSelected=="Tamil")
+                                     {
+                                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Tamil/EHowMany.mp3");
+                                    }
+									else if(window.languageSelected=="Urdu")
+                                     {
+                                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Urdu/EHowMany.mp3");
+                                    }
 
                             //_this.soundUrl =  window.baseUrl+"questionSounds/unity/5.1/English/EHowMany.mp3";    
                             commonNavBar.getVoice(this.src.src);
@@ -2416,6 +2488,14 @@ var sum=randomno+framesChange1[0];
                  _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameFirst.mp3";
                else if(window.languageSelected=="Gujarati")
                  _this.soundurl = window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameFirst.mp3";
+			 else if(window.languageSelected=="Marathi")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameFirst.mp3";
+				else if(window.languageSelected=="Telugu")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameFirst.mp3";
+				else if(window.languageSelected=="Tamil")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameFirst.mp3";
+				else if(window.languageSelected=="Urdu")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameFirst.mp3";
                else
                 _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_a.mp3";
 
@@ -2434,6 +2514,14 @@ var sum=randomno+framesChange1[0];
                _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameSecond.mp3";
              else if(window.languageSelected=="Gujarati")
                  _this.soundurl = window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameSecond.mp3";
+			 else if(window.languageSelected=="Marathi")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameSecond.mp3";
+				else if(window.languageSelected=="Telugu")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameSecond.mp3";
+				else if(window.languageSelected=="Tamil")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameSecond.mp3";
+				else if(window.languageSelected=="Urdu")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameSecond.mp3";
              else
                _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_b.mp3";
 
@@ -2453,6 +2541,14 @@ var sum=randomno+framesChange1[0];
                 _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameThird.mp3";
               else if(window.languageSelected=="Gujarati")
                  _this.soundurl = window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameThird.mp3";
+			  else if(window.languageSelected=="Marathi")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameThird.mp3";
+				else if(window.languageSelected=="Telugu")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameThird.mp3";
+				else if(window.languageSelected=="Tamil")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameThird.mp3";
+				else if(window.languageSelected=="Urdu")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameThird.mp3";
               else
                 _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_c.mp3";          
 
@@ -2470,6 +2566,14 @@ var sum=randomno+framesChange1[0];
              _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameFourth.mp3";
            else if(window.languageSelected=="Gujarati")
                  _this.soundurl = window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameFourth.mp3";
+			 else if(window.languageSelected=="Marathi")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameFourth.mp3";
+				else if(window.languageSelected=="Telugu")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameFourth.mp3";
+				else if(window.languageSelected=="Tamil")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameFourth.mp3";
+				else if(window.languageSelected=="Urdu")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameFourth.mp3";
            else
              _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_d.mp3";
 
@@ -2486,6 +2590,14 @@ var sum=randomno+framesChange1[0];
                _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameFifth.mp3";
              else if(window.languageSelected=="Gujarati")
                  _this.soundurl = window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameFifth.mp3";
+			 else if(window.languageSelected=="Marathi")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameFifth.mp3";
+				else if(window.languageSelected=="Telugu")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameFifth.mp3";
+				else if(window.languageSelected=="Tamil")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameFifth.mp3";
+				else if(window.languageSelected=="Urdu")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameFifth.mp3";
              else
               _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_e.mp3";                  
           }
@@ -2500,6 +2612,14 @@ var sum=randomno+framesChange1[0];
                _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameSixth.mp3";
              else if(window.languageSelected=="Gujarati")
                  _this.soundurl = window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameSixth.mp3";
+			 else if(window.languageSelected=="Marathi")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameSixth.mp3";
+				else if(window.languageSelected=="Telugu")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameSixth.mp3";
+				else if(window.languageSelected=="Tamil")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameSixth.mp3";
+				else if(window.languageSelected=="Urdu")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameSixth.mp3";
              else
               _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_f.mp3";
 
@@ -2517,6 +2637,14 @@ var sum=randomno+framesChange1[0];
                _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameSeventh.mp3";
              else if(window.languageSelected=="Gujarati")
                  _this.soundurl = window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameSeventh.mp3";
+			 else if(window.languageSelected=="Marathi")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameSeventh.mp3";
+				else if(window.languageSelected=="Telugu")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameSeventh.mp3";
+				else if(window.languageSelected=="Tamil")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameSeventh.mp3";
+				else if(window.languageSelected=="Urdu")
+                    _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameSeventh.mp3";
              else
               _this.soundurl = window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_g.mp3";
 
@@ -2536,6 +2664,14 @@ var sum=randomno+framesChange1[0];
                  commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameFirst.mp3");
                else if(window.languageSelected=="Gujarati")
                  commonNavBar.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameFirst.mp3");
+			 else if(window.languageSelected=="Marathi")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameSeventh.mp3");
+				else if(window.languageSelected=="Telugu")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameSeventh.mp3");
+				else if(window.languageSelected=="Tamil")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameSeventh.mp3");
+				else if(window.languageSelected=="Urdu")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameSeventh.mp3");
                else
                  commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_a.mp3");
 
@@ -2553,6 +2689,14 @@ var sum=randomno+framesChange1[0];
              commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameSecond.mp3");
            else if(window.languageSelected=="Gujarati")
                  commonNavBar.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameSecond.mp3");
+			  else if(window.languageSelected=="Marathi")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameSecond.mp3");
+				else if(window.languageSelected=="Telugu")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameSecond.mp3");
+				else if(window.languageSelected=="Tamil")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameSecond.mp3");
+				else if(window.languageSelected=="Urdu")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameSecond.mp3");
            else
              commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_b.mp3");
 
@@ -2572,6 +2716,14 @@ var sum=randomno+framesChange1[0];
                 commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameThird.mp3");
               else if(window.languageSelected=="Gujarati")
                  commonNavBar.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameThird.mp3");
+			 else if(window.languageSelected=="Marathi")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameThird.mp3");
+				else if(window.languageSelected=="Telugu")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameThird.mp3");
+				else if(window.languageSelected=="Tamil")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameThird.mp3");
+				else if(window.languageSelected=="Urdu")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameThird.mp3");
               else
                 commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_c.mp3");          
 
@@ -2589,6 +2741,14 @@ var sum=randomno+framesChange1[0];
              commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameFourth.mp3");
            else if(window.languageSelected=="Gujarati")
                 commonNavBar.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameFourth.mp3");
+			else if(window.languageSelected=="Marathi")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameFourth.mp3");
+				else if(window.languageSelected=="Telugu")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameFourth.mp3");
+				else if(window.languageSelected=="Tamil")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameFourth.mp3");
+				else if(window.languageSelected=="Urdu")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameFourth.mp3");
            else
              commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_d.mp3");
 
@@ -2605,6 +2765,14 @@ var sum=randomno+framesChange1[0];
                commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameFifth.mp3");
              else if(window.languageSelected=="Gujarati")
                 commonNavBar.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameFifth.mp3");
+			else if(window.languageSelected=="Marathi")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameFifth.mp3");
+				else if(window.languageSelected=="Telugu")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameFifth.mp3");
+				else if(window.languageSelected=="Tamil")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameFifth.mp3");
+				else if(window.languageSelected=="Urdu")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameFifth.mp3");
              else
               commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_e.mp3");                  
           }
@@ -2619,6 +2787,14 @@ var sum=randomno+framesChange1[0];
                commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameSixth.mp3");
              else if(window.languageSelected=="Gujarati")
                commonNavBar.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameSixth.mp3");
+		   else if(window.languageSelected=="Marathi")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameSixth.mp3");
+				else if(window.languageSelected=="Telugu")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameSixth.mp3");
+				else if(window.languageSelected=="Tamil")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameSixth.mp3");
+				else if(window.languageSelected=="Urdu")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameSixth.mp3");
              else
               commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_f.mp3");
 
@@ -2636,6 +2812,14 @@ var sum=randomno+framesChange1[0];
                commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameSeventh.mp3");
              else if(window.languageSelected=="Gujarati")
                  commonNavBar.getVoice("questionSounds/Gujarati/unity/5.1/EGameSeventh.mp3");
+			  else if(window.languageSelected=="Marathi")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameSeventh.mp3");
+				else if(window.languageSelected=="Telugu")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameSeventh.mp3");
+				else if(window.languageSelected=="Tamil")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameSeventh.mp3");
+				else if(window.languageSelected=="Urdu")
+                    commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameSeventh.mp3");
              else
               commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/5.1/Odiya/5.1_g.mp3");
 

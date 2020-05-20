@@ -31,14 +31,14 @@ Game.appLoginEditScreen.prototype={
 
 		_this.i = 0;
 
-		_this.basePath = cordova.file.externalRootDirectory+"Android/data/io.cordova.hellocordova/files/Download/gameFilesBBV5_0_5/www/";
+		_this.basePath = cordova.file.externalRootDirectory+"Android/data/com.akshara.easymath/Files/Download/.gameFilesBBV5_0_5/www/";
 
 		_this.fullSize = 121195371;
 
 	    _this.zipFiles = [["Assets1.zip",26430143],["Assets2.zip",39780906],["Assets3.zip",18453216],
 	    					["Assets4.zip",14402031],["Assets5.zip",19891065],["Assets6.zip",19889389],
 	    					["English.zip",23759971],["Kannada.zip",25787866],["Hindi.zip",25508626],
-	    					["Odiya.zip",40129117],["Gujarati.zip",31882078]];
+	    					["Odiya.zip",40129117],["Gujarati.zip",31882078],["questionSounds.zip",162758079]];
 
 	    _this.counter = 0;
 	    _this.counter1 = 0;
@@ -110,6 +110,58 @@ Game.appLoginEditScreen.prototype={
 			[_this.basePath+"assets/DH1","Assets6New.zip"]
 			];	
 	    }
+		else if(_this.user.language == "Marathi")
+	    {
+	    	_this.fileCheck = [
+			[_this.basePath+"questionSounds/1.1A/Marathi","questionSounds.zip"],
+			[_this.basePath+"assets/commonAssets","Assets1.zip"],
+			[_this.basePath+"assets/demoVideos","Assets2.zip"],
+			[_this.basePath+"assets/gradeAssets/1.1A","Assets3.zip"],
+			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
+			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
+			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
+			[_this.basePath+"assets/DH1","Assets6New.zip"]
+			];	
+	    }
+		else if(_this.user.language == "Telugu")
+	    {
+	    	_this.fileCheck = [
+			[_this.basePath+"questionSounds/1.1A/Telugu","questionSounds.zip"],
+			[_this.basePath+"assets/commonAssets","Assets1.zip"],
+			[_this.basePath+"assets/demoVideos","Assets2.zip"],
+			[_this.basePath+"assets/gradeAssets/1.1A","Assets3.zip"],
+			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
+			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
+			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
+			[_this.basePath+"assets/DH1","Assets6New.zip"]
+			];	
+	    }
+		else if(_this.user.language == "Tamil")
+	    {
+	    	_this.fileCheck = [
+			[_this.basePath+"questionSounds/1.1A/Tamil","questionSounds.zip"],
+			[_this.basePath+"assets/commonAssets","Assets1.zip"],
+			[_this.basePath+"assets/demoVideos","Assets2.zip"],
+			[_this.basePath+"assets/gradeAssets/1.1A","Assets3.zip"],
+			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
+			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
+			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
+			[_this.basePath+"assets/DH1","Assets6New.zip"]
+			];	
+	    }
+		else if(_this.user.language == "Urdu")
+	    {
+	    	_this.fileCheck = [
+			[_this.basePath+"questionSounds/1.1A/Urdu","questionSounds.zip"],
+			[_this.basePath+"assets/commonAssets","Assets1.zip"],
+			[_this.basePath+"assets/demoVideos","Assets2.zip"],
+			[_this.basePath+"assets/gradeAssets/1.1A","Assets3.zip"],
+			[_this.basePath+"assets/gradeAssets/2.2","Assets4.zip"],
+			[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
+			[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
+			[_this.basePath+"assets/DH1","Assets6New.zip"]
+			];	
+	    }
 
 
 	    _this.splash = game.add.sprite(game.world.centerX,game.world.centerY,'registrationbg');
@@ -171,6 +223,21 @@ Game.appLoginEditScreen.prototype={
 		}else if(_this.user.language == "Gujarati")
 		{
 			textLang = "શરૂ કરો";
+		}else if(_this.user.language == "Marathi")
+		{
+			textLang = "सुरू करा"
+		}
+		else if(_this.user.language == "Telugu")
+		{
+			textLang = "ప్రారంభించండి"
+		}
+		else if(_this.user.language == "Tamil")
+		{
+			textLang = "தொடக்கம்"
+		}
+		else if(_this.user.language == "Urdu")
+		{
+			textLang = "شروع کیجئے"
 		}else{
 			textLang = "START";
 		}
@@ -257,7 +324,7 @@ Game.appLoginEditScreen.prototype={
 		_this.pleaseWaitTxt.align = 'center';
 		_this.pleaseWaitTxt.font = 'regfont4';
 		_this.pleaseWaitTxt.fontSize = '22pt';
-		_this.pleaseWaitTxt.fontWeight = 450;
+		_this.pleaseWaitTxt.fontWeight = 'normal';
 		_this.pleaseWaitTxt.fill = '#000000';
 		_this.pleaseWaitTxt.wordWrap = true;
 		_this.pleaseWaitTxt.wordWrapWidth = 500;
@@ -283,7 +350,7 @@ Game.appLoginEditScreen.prototype={
 		_this.progressPercentageTxt.align = 'center';
 		_this.progressPercentageTxt.font = 'regfont4';
 		_this.progressPercentageTxt.fontSize = '16pt';
-		_this.progressPercentageTxt.fontWeight = 450;
+		_this.progressPercentageTxt.fontWeight = 'normal';
 		_this.progressPercentageTxt.fill = '#000000';
 		_this.progressPercentageTxt.wordWrap = true;
 		_this.progressPercentageTxt.wordWrapWidth = 500;
@@ -354,6 +421,7 @@ Game.appLoginEditScreen.prototype={
 
 			_this.regandstsrtBtn.inputEnabled = true;
 			_this.regandstsrtBtn.events.onInputDown.add(function(){
+				FirebasePlugin.logEvent("Button_click_start", {Button_click_start: "", item_id: ""});
 				_this.state.start('index2',true,false,_this.user,false);
 			},_this);
 		}
@@ -381,7 +449,7 @@ Game.appLoginEditScreen.prototype={
 			        _this.progressPercentageTxt.text = Math.round((progressEvent.loaded / progressEvent.total)*100)+"%";
 			        _this.progressPercentageTxt2.text = Math.round((progressEvent.loaded / progressEvent.total)*100)+"/100";
 
-			        if(filename!="English.zip" && filename!="Hindi.zip" && filename!="Kannada.zip" && filename!="Odiya.zip" && filename!="Gujarati.zip")
+			        if(filename!="English.zip" && filename!="Hindi.zip" && filename!="Kannada.zip" && filename!="Odiya.zip" && filename!="Gujarati.zip"&& filename!="questionSounds.zip")
 			        {
 			        	if(filename=="Assets1.zip")
 			        		_this.noOfAssets.text = "1/6";
@@ -394,6 +462,8 @@ Game.appLoginEditScreen.prototype={
 			        	else if(filename=="Assets5.zip")
 			        		_this.noOfAssets.text = "5/6";
 			        	else if(filename=="Assets6.zip")
+			        		_this.noOfAssets.text = "6/6";
+			        	else if(filename=="Assets6New.zip")
 			        		_this.noOfAssets.text = "6/6";
 
 			        	_this.noOfAssets.visible = true;

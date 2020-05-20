@@ -1711,6 +1711,22 @@ _this.numGroup.add(_this.numBackground);
          {
           temp =window.baseUrl+"questionSounds/Gujarati/16.2/";
         }
+		else if(window.languageSelected=="Marathi")
+                            {
+                                temp = window.baseUrl+"questionSounds/16.2/Marathi/Game16.2_2.mp3";
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                                temp =window.baseUrl+"questionSounds/16.2/Telugu/Game16.2_2.mp3";
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                temp =window.baseUrl+"questionSounds/16.2/Tamil/Game16.2_2.mp3";
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                temp =window.baseUrl+"questionSounds/16.2/Urdu/Game16.2_2.mp3";
+                            }
           else
           {
             temp =window.baseUrl+"questionSounds/16.2/Odiya/";

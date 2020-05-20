@@ -53,6 +53,12 @@ Game.numberoperation4.prototype={
 
 		this.numberoperationTxt = this.add.text(150,23, "Number Operations");
 		this.numberoperationTxt.fontSize = 18;
+		
+		if(window.languageSelected == "Tamil")
+		{
+			this.numberoperationText.scale.set(1.2,1);
+			this.numberoperationText.x = 180;
+		}
 
 		if(window.languageSelected == "Gujarati")
                         {
@@ -71,6 +77,22 @@ Game.numberoperation4.prototype={
                         {
                            this.numberoperationTxt.setText("ସଂଖ୍ୟା ସଂଚାଳନ");
                         }
+						else if(window.languageSelected == "Marathi")
+                        {
+                           this.numberoperationTxt.setText("गणिती क्रिया");
+                        }
+						else if(window.languageSelected == "Telugu")
+                        {
+                           this.numberoperationTxt.setText("అంకెల పరికర్మములు");
+                        }
+						else if(window.languageSelected == "Tamil")
+                        {
+                           this.numberoperationTxt.setText("எண் செயல்பாடுகள்");
+                        }
+						else if(window.languageSelected == "Urdu")
+                        {
+                           this.numberoperationTxt.setText("اعدادی اعمال");
+                        }
                         else
                         {
                         	this.numberoperationTxt.setText("Number Operations");
@@ -85,6 +107,13 @@ Game.numberoperation4.prototype={
 
 		this.additionMc = this.add.sprite(270,20,'divisionMc');
 		this.additionMc.anchor.setTo(0.5);
+		
+		if(window.languageSelected == "Tamil")
+		{
+			this.additionMc.x = 320;
+			this.numberoperationTxt.x = 180;
+
+		}
 
 
 		this.numberoperation1_1State = localStorage.getItem(window.avatarName+"division_NODG_1_2state");

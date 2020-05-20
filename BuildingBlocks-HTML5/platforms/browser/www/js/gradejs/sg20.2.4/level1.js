@@ -126,6 +126,22 @@ Game.sg20_2_4level1.prototype={
         {
             _this.soundurl =  window.baseUrl+"questionSounds/sg20.2.4/Gujarati/sg20.2.4.mp3";
         }
+		else if(window.languageSelected =="Marathi")
+                    {
+                         _this.soundurl =  window.baseUrl+"questionSounds/sg20.2.4/Marathi/sg20.2.4.mp3";
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.soundurl =  window.baseUrl+"questionSounds/sg20.2.4/Telugu/sg20.2.4.mp3";
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.soundurl =  window.baseUrl+"questionSounds/sg20.2.4/Tamil/sg20.2.4.mp3";
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.soundurl =  window.baseUrl+"questionSounds/sg20.2.4/Urdu/sg20.2.4.mp3";
+                    }
         else
         {
             _this.soundurl =  window.baseUrl+"questionSounds/sg20.2.4/Odiya/sg20.2.4.mp3";
@@ -2787,6 +2803,22 @@ Game.sg20_2_4level1.prototype={
         {
             _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.2.4/Gujarati/sg20.2.4.mp3");
         }
+		else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.2.4/Marathi/sg20.2.4.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.2.4/Telugu/sg20.2.4.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.2.4/Tamil/sg20.2.4.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.2.4/Urdu/sg20.2.4.mp3");
+                    }
         else
         {
             _this.src.setAttribute("src", window.baseUrl+"questionSounds/sg20.2.4/Odiya/sg20.2.4.mp3");

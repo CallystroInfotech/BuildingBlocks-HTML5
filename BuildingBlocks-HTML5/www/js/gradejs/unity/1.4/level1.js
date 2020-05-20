@@ -18,6 +18,7 @@ Game.unity1_4level1.prototype ={
        _this.savedVar = absdsjsapi.saveGameplay(_this.saveGameplay);*/
 
        telInitializer.gameIdInit("unity1_4",gradeSelected);
+
         
     },
 
@@ -198,6 +199,22 @@ Game.unity1_4level1.prototype ={
         else if(window.languageSelected=="Kannada")
         {
             _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Kannada/question1.4kan.mp3");
+        }
+		else if(window.languageSelected=="Marathi")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Marathi/question1.4.mp3");
+        }
+		else if(window.languageSelected=="Telugu")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Telugu/question1.4.mp3");
+        }
+		else if(window.languageSelected=="Tamil")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Tamil/question1.4.mp3");
+        }
+		else if(window.languageSelected=="Urdu")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Urdu/question1.4.mp3");
         }
         else if(window.languageSelected=="Gujarati")
             {
@@ -4889,6 +4906,22 @@ Game.unity1_4level1.prototype ={
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/1.4/question1.4.mp3");
                     }
+					else if(window.languageSelected=="Marathi")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Marathi/question1.4.mp3");
+        }
+		else if(window.languageSelected=="Telugu")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Telugu/question1.4.mp3");
+        }
+		else if(window.languageSelected=="Tamil")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Tamil/question1.4.mp3");
+        }
+		else if(window.languageSelected=="Urdu")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Urdu/question1.4.mp3");
+        }
 					else
                     {
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/1.4/Odiya/1.4.mp3");

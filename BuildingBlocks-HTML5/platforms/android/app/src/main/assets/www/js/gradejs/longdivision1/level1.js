@@ -1874,6 +1874,10 @@ init:function(game)
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Telugu/distcoinequally.mp3");
                             }
+							else if(window.languageSelected == "Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Urdu/distcoinequally.mp3");
+                            }
                             else
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Odiya/distcoinequally.mp3");
@@ -1907,6 +1911,10 @@ init:function(game)
 							else if(window.languageSelected == "Telugu")
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Telugu/howmanytens.mp3");
+                            }
+							else if(window.languageSelected == "Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Urdu/howmanytens.mp3");
                             }
                             else
                             {
@@ -1942,6 +1950,10 @@ init:function(game)
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Telugu/howmanytotal.mp3");
                             }
+							else if(window.languageSelected == "urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/urdu/howmanytotal.mp3");
+                            }
                             else
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Odiya/howmanytotal.mp3");
@@ -1975,6 +1987,10 @@ init:function(game)
 							else if(window.languageSelected == "Telugu")
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Telugu/howmanyremain.mp3");
+                            }
+							else if(window.languageSelected == "Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Urdu/howmanyremain.mp3");
                             }
                             else
                             {
@@ -2010,6 +2026,10 @@ init:function(game)
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Telugu/exchangeremaining.mp3");
                             }
+							else if(window.languageSelected == "Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Urdu/exchangeremaining.mp3");
+                            }
                             else
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Odiya/exchangeremaining.mp3");
@@ -2043,6 +2063,10 @@ init:function(game)
 							else if(window.languageSelected == "Telugu")
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Telugu/howmanyones.mp3");
+                            }
+							else if(window.languageSelected == "Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Urdu/howmanyones.mp3");
                             }
                             else
                             {
@@ -2078,6 +2102,10 @@ init:function(game)
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Telugu/distributeallones.mp3");
                             }
+							else if(window.languageSelected == "Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Urdu/distributeallones.mp3");
+                            }
                             else
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Odiya/distributeallones.mp3");
@@ -2111,6 +2139,10 @@ init:function(game)
 							else if(window.languageSelected == "Telugu")
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Telugu/howmanyonesdisteach.mp3");
+                            }
+							else if(window.languageSelected == "Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Urdu/howmanyonesdisteach.mp3");
                             }
                             else
                             {
@@ -2146,6 +2178,10 @@ init:function(game)
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Telugu/howmanytotalonesdist.mp3");
                             }
+							else if(window.languageSelected == "Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Urdu/howmanytotalonesdist.mp3");
+                            }
                             else
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Odiya/howmanytotalonesdist.mp3");
@@ -2179,6 +2215,10 @@ init:function(game)
 							else if(window.languageSelected == "Telugu")
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Telugu/howmanyonesareremai.mp3");
+                            }
+							else if(window.languageSelected == "Urdu")
+                            {
+                                _this.src.setAttribute("src", window.baseUrl+"questionSounds/NOLDG1_4_5/Urdu/howmanyonesareremai.mp3");
                             }
                             else
                             {

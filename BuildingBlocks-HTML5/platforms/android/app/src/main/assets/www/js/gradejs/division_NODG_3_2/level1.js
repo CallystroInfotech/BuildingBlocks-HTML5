@@ -227,6 +227,26 @@ Game.division_NODG_3_2level1.prototype={
                             commonNavBar.getVoice(window.baseUrl+"questionSounds/Gujarati/16.3/Game16.3.mp3");
                             this.srcs = window.baseUrl+"questionSounds/Gujarati/16.3/Game16.3.mp3";
                         }
+						else if(window.languageSelected=="Marathi")
+                            {
+                                commonNavBar.getVoice(window.baseUrl+"questionSounds/16.3/Marathi/Game16.3.mp3");
+                                this.srcs = window.baseUrl+"questionSounds/16.3/Marathi/Game16.3.mp3";
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                               commonNavBar.getVoice(window.baseUrl+"questionSounds/16.3/Telugu/Game16.3.mp3");
+                               this.srcs = window.baseUrl+"questionSounds/16.3/Telugu/Game16.3.mp3";
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                commonNavBar.getVoice(window.baseUrl+"questionSounds/16.3/Tamil/Game16.3.mp3");
+                                this.srcs = window.baseUrl+"questionSounds/16.3/Tamil/Game16.3.mp3";
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                commonNavBar.getVoice(window.baseUrl+"questionSounds/16.3/Urdu/Game16.3.mp3");
+                                this.srcs = window.baseUrl+"questionSounds/16.3/Urdu/Game16.3.mp3";
+                            }
                        else
                       {
                           commonNavBar.getVoice(window.baseUrl+"questionSounds/16.3/Odiya/16.3.mp3");

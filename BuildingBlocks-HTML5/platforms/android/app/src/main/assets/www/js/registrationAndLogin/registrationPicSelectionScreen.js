@@ -77,11 +77,27 @@ Game.registrationPicSelectionScreen.prototype={
 		}else if(_this.language == "Gujarati")
 		{
 			textLang = "તમારૂં પ્રોફાઈલ પિક્ચર મૂકો";
-		}else{
+		}else if(_this.language == "Marathi")
+		{
+			textLang = "आपले प्रोफाइल चित्र सेट करा"
+		}
+		else if(_this.language == "Telugu")
+		{
+			textLang = "మీ ప్రొఫైల్ చిత్రాన్ని సెట్ చేయండి"
+		}
+		else if(_this.language == "Tamil")
+		{
+			textLang = "உங்கள் சுயவிவரப் படத்தை அமைக்கவும்"
+		}
+		else if(_this.language == "Urdu")
+		{
+			textLang = "اپنی پروفائل تصویر سیٹ کریں"
+		}
+		else{
 			textLang = "Set Your Profile Picture";
 		}
 
-    	var selectPicTxt = game.add.text(game.world.centerX,120,textLang);
+    	var selectPicTxt = game.add.text(game.world.centerX,122,textLang);
 		selectPicTxt.x = Math.round(selectPicTxt.x);
 		selectPicTxt.anchor.setTo(0.5);
 		selectPicTxt.align = 'center';
@@ -93,33 +109,33 @@ Game.registrationPicSelectionScreen.prototype={
 		selectPicTxt.wordWrapWidth = 500;
 
 
-		var fish = game.add.sprite(150,240,'fish');
+		var fish = game.add.sprite(150,245,'fish');
     	fish.scale.setTo(0.8);
     	fish.anchor.setTo(0.5);
     
-    	var butterfly = game.add.sprite(390,240,'butterfly');
+    	var butterfly = game.add.sprite(390,245,'butterfly');
     	butterfly.scale.setTo(0.8);
     	butterfly.anchor.setTo(0.5);
 
-    	var flower = game.add.sprite(150,440,'flower');
+    	var flower = game.add.sprite(150,445,'flower');
     	flower.scale.setTo(0.8);
     	flower.anchor.setTo(0.5);
 
-    	var parrot = game.add.sprite(390,440,'parrot');
+    	var parrot = game.add.sprite(390,445,'parrot');
     	parrot.scale.setTo(0.8);
     	parrot.anchor.setTo(0.5);
 
-    	var sun = game.add.sprite(150,640,'sun');
+    	var sun = game.add.sprite(150,645,'sun');
     	sun.scale.setTo(0.8);
     	sun.anchor.setTo(0.5);
 
-    	var tree = game.add.sprite(390,640,'tree');
+    	var tree = game.add.sprite(390,645,'tree');
     	tree.scale.setTo(0.8);
     	tree.anchor.setTo(0.5);
     	
 
 
-    	var regTickBtn = game.add.sprite(game.world.centerX,game.world.centerY+340,'regTickBtn');
+    	var regTickBtn = game.add.sprite(game.world.centerX,game.world.centerY+345,'regTickBtn');
     	regTickBtn.scale.setTo(0.5);
     	regTickBtn.anchor.setTo(0.5);
 

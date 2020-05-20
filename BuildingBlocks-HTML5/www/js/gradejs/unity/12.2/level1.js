@@ -7205,6 +7205,22 @@ numberBoxClicked:function(target){
                         {
                              _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/12.2/12.2.mp3");
                         }
+					else if(window.languageSelected=="Marathi")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/12.2/Marathi/12.2.mp3");
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/12.2/Tamil/12.2.mp3");
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/12.2/Telugu/12.2.mp3");
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.src.setAttribute("src", window.baseUrl+"questionSounds/12.2/Urdu/12.2.mp3");
+                    }
                 else{
                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/12.2/Odiya/12.2O.mp3");
                           _this.amplify = this.amplifyMedia(_this.playQuestionSound, 3);

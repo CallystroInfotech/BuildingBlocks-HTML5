@@ -91,6 +91,29 @@ Game.challengeModeGgradeSelectionScreen.prototype={
 					}
 
         		},this);
+				
+				if(this.video==null)
+						{	
+							this.video = this.add.video('demo');
+							
+						}
+						
+				this.helpIcon = game.add.image(820,21,'helpIcon');
+    	this.helpIcon.scale.setTo(0.8);
+    	this.helpIcon.anchor.setTo(0.5);
+		this.helpIcon.inputEnabled = true;
+        		this.helpIcon.input.useHandCursor = true;
+		this.helpIcon.events.onInputDown.add(function()
+        		{
+        			this.clickSound = this.add.audio('ClickSound');
+                	this.clickSound.play();
+        			//if(appConfig.cordova && !appConfig.browser)
+        			//{
+						_this.scale.forceOrientation(false, true);
+        				nativeApp.playHelp(this,"challengeModeGgradeSelectionScreen");
+        			//}
+
+        		},this);
 
 		this.scoreBg = this.add.sprite(750,7,'scoreBg');
 
@@ -140,6 +163,22 @@ Game.challengeModeGgradeSelectionScreen.prototype={
                         else if(window.languageSelected == "Odiya")
                         {
                            this.numbersenseTxt.setText("ସଂଖ୍ୟା ପରିଚୟ");
+                        }
+						else if(window.languageSelected == "Marathi")
+                        {
+                           this.numbersenseTxt.setText("संख्या ज्ञान");
+                        }
+						else if(window.languageSelected == "Telugu")
+                        {
+                           this.numbersenseTxt.setText("అంకెల జ్ఞానం");
+                        }
+						else if(window.languageSelected == "Tamil")
+                        {
+                           this.numbersenseTxt.setText("எண் அறிவு");
+                        }
+						else if(window.languageSelected == "Urdu")
+                        {
+                           this.numbersenseTxt.setText("اعداد کی پہچان");
                         }
                         else
                         {
@@ -253,6 +292,22 @@ Game.challengeModeGgradeSelectionScreen.prototype={
                         {
                            this.measurementTxt.setText("ମାପ");
                         }
+						else if(window.languageSelected == "Marathi")
+                        {
+                           this.measurementTxt.setText("मापने/एकके");
+                        }
+						else if(window.languageSelected == "Telugu")
+                        {
+                           this.measurementTxt.setText("కొలతలు");
+                        }
+						else if(window.languageSelected == "Tamil")
+                        {
+                           this.measurementTxt.setText("அளவீடுகள்");
+                        }
+						else if(window.languageSelected == "Urdu")
+                        {
+                           this.measurementTxt.setText("پیمائش");
+                        }
                         else
                         {
                         	this.measurementTxt.setText("Measurements");
@@ -348,6 +403,24 @@ Game.challengeModeGgradeSelectionScreen.prototype={
                         else if(window.languageSelected == "Odiya")
                         {
                            this.numberoperationTxt.setText("ସଂଖ୍ୟା ସଂଚାଳନ");
+                        }
+						else if(window.languageSelected == "Marathi")
+                        {
+                           this.numberoperationTxt.setText("गणिती क्रिया");
+                        }
+						else if(window.languageSelected == "Telugu")
+                        {
+                           this.numberoperationTxt.setText("అంకెల పరికర్మములు");
+                        }
+						else if(window.languageSelected == "Tamil")
+                        {
+                           this.numberoperationTxt.setText("எண் செயல்பாடுகள்");
+						   this.numberoperationTxt.fontSize = 16;
+						   this.numberoperationBoard.scale.setTo(1.3);
+                        }
+						else if(window.languageSelected == "Urdu")
+                        {
+                           this.numberoperationTxt.setText("اعدادی اعمال");
                         }
                         else
                         {

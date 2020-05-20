@@ -76,14 +76,18 @@ Game.grade6_2level1.prototype={
         this.load.atlas('Level62_whiteNum', window.baseUrl+'assets/gradeAssets/6.2/whiteNum.png', window.baseUrl+'json/gradeJson/6.2/whiteNum.json');
         
         //this.load.atlas('Level62_months', window.baseUrl+'assets/gradeAssets/6.2/months.png', window.baseUrl+'json/gradeJson/6.2/months.json'); 
-        this.load.atlas('Level62_months',window.baseUrl+'assets/newAssets/months.png',window.baseUrl+'assets/newAssets/months.json');  
+        //this.load.atlas('Level62_months',window.baseUrl+'assets/newAssets/months.png',window.baseUrl+'assets/newAssets/months.json'); 
+if(window.languageSelected == "Marathi" || window.languageSelected == "Telugu" || window.languageSelected == "Tamil" || window.languageSelected == "Urdu")
+			this.load.atlas('Level62_months',window.baseUrl+'assets/newAssets/monthname.png' ,window.baseUrl+'assets/newAssets/monthname.json');
+		else
+			this.load.atlas('Level62_months',window.baseUrl+'assets/newAssets/monthname1.png', window.baseUrl+'assets/newAssets/monthname1.json');		
          
         
         this.load.image('Level62_year', window.baseUrl+'assets/gradeAssets/6.2/year.png');
         
         
         /*this.load.atlas('Level62_monday',window.baseUrl+'assets/gradeAssets/6.2/monday.png',window.baseUrl+'json/gradeJson/6.2/monday.json');
-        this.load.atlas('Level62_Tuesday',window.baseUrl+'assets/gradeAssets/6.2/Tuesday.png',window.baseUrl+'json/gradeJson/6.2/tuesday.json');
+        this.load.atlas('Level62_tuesday',window.baseUrl+'assets/gradeAssets/6.2/tuesday.png',window.baseUrl+'json/gradeJson/6.2/tuesday.json');
         this.load.atlas('Level62_wednesday',window.baseUrl+'assets/gradeAssets/6.2/wednesday.png',window.baseUrl+'json/gradeJson/6.2/wednesday.json');
         this.load.atlas('Level62_thusday',window.baseUrl+'assets/gradeAssets/6.2/thursday.png',window.baseUrl+'json/gradeJson/6.2/thursday.json');
         this.load.atlas('Level62_friday',window.baseUrl+'assets/gradeAssets/6.2/friday.png',window.baseUrl+'json/gradeJson/6.2/friday.json');
@@ -91,8 +95,11 @@ Game.grade6_2level1.prototype={
         this.load.atlas('Level62_sunday',window.baseUrl+'assets/gradeAssets/6.2/sunday.png',window.baseUrl+'json/gradeJson/6.2/sunday.json');*/
 
         this.load.atlas('Level62_monday',window.baseUrl+'assets/newAssets/1.png',window.baseUrl+'assets/newAssets/1.json');
-        this.load.atlas('Level62_Tuesday',window.baseUrl+'assets/newAssets/2.png',window.baseUrl+'assets/newAssets/2.json');
-        this.load.atlas('Level62_wednesday',window.baseUrl+'assets/newAssets/3.png',window.baseUrl+'assets/newAssets/3.json');
+        this.load.atlas('Level62_tuesday',window.baseUrl+'assets/newAssets/2.png',window.baseUrl+'assets/newAssets/2.json');
+        if(window.languageSelected == "Tamil")
+			this.load.atlas('Level62_wednesday',window.baseUrl+'assets/newAssets/3_1.png',window.baseUrl+'assets/newAssets/3_1.json');
+		else 
+			this.load.atlas('Level62_wednesday',window.baseUrl+'assets/newAssets/3.png',window.baseUrl+'assets/newAssets/3.json');
         this.load.atlas('Level62_thusday',window.baseUrl+'assets/newAssets/4.png',window.baseUrl+'assets/newAssets/4.json');
         this.load.atlas('Level62_friday',window.baseUrl+'assets/newAssets/5.png',window.baseUrl+'assets/newAssets/5.json');
         this.load.atlas('Level62_saturday',window.baseUrl+'assets/newAssets/6.png',window.baseUrl+'assets/newAssets/6.json');
@@ -148,12 +155,20 @@ Game.grade6_2level1.prototype={
         qArrays = [1,2,3,4,5,6,7,8,9,10,11,12];
         // qArrays = [3];
         voices=new Array();
-        //voices=["Monday","Tuesday","Wednesday","Thursday","Friday","16","10","1","12","27","18"];
+        //voices=["Monday","tuesday","Wednesday","Thursday","Friday","16","10","1","12","27","18"];
 
         if(window.languageSelected == "Gujarati")
-            voices=["Monday","Tuesday","Wednesday","Thursday","Friday","12","18"];
+            voices=["Monday","tuesday","Wednesday","Thursday","Friday","12","18"];
+		else if(window.languageSelected == "Marathi")
+            voices=["Monday","tuesday","Wednesday","Thursday","Friday","12","16","18"];
+		else if(window.languageSelected == "Telugu")
+            voices=["Monday","tuesday","Wednesday","Thursday","Friday","12","16","18"];
+		else if(window.languageSelected == "Tamil")
+            voices=["Monday","tuesday","Wednesday","Thursday","Friday","12","16","18"];
+		else if(window.languageSelected == "Urdu")
+            voices=["Monday","tuesday","Wednesday","Thursday","Friday","12","16","18"];
         else
-            voices=["Monday","Tuesday","Wednesday","Thursday","Friday","16","10","1","12","27","18"];
+            voices=["Monday","tuesday","Wednesday","Thursday","Friday","16","10","1","12","27","18"];
 
         correctgrp=this.add.group();
         
@@ -394,7 +409,7 @@ Game.grade6_2level1.prototype={
             this.checkdays(monday,monarr);
         },this);
         
-        tuesday= this.add.sprite(215,165,'Level62_Tuesday');
+        tuesday= this.add.sprite(215,165,'Level62_tuesday');
         tuesday.scale.setTo(0.95,1);
         tuesday.inputEnabled=true; tuesday.name = "tuesday";
         tuesday.input.useHandCursor = true;
@@ -501,6 +516,58 @@ Game.grade6_2level1.prototype={
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=48;
+            monday.frame=5;
+            tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=60;
+            monday.frame=6;
+            tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=72;
+            monday.frame=7;
+            tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=84;
+            monday.frame=8;
+            tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else{
             // months.x=324;
@@ -919,7 +986,7 @@ Game.grade6_2level1.prototype={
             this.checkdays(monday,monarr);
         },this);
         
-        tuesday= this.add.sprite(215,165,'Level62_Tuesday');
+        tuesday= this.add.sprite(215,165,'Level62_tuesday');
         tuesday.scale.setTo(0.95,1);
         tuesday.inputEnabled=true; tuesday.name = "tuesday";
         tuesday.input.useHandCursor = true;
@@ -1022,6 +1089,58 @@ Game.grade6_2level1.prototype={
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=49;
+            monday.frame=5;
+            tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=61;
+            monday.frame=6;
+            tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=73;
+            monday.frame=7;
+            tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=85;
+            monday.frame=8;
+            tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else{
             months.x=367;
@@ -1404,7 +1523,7 @@ Game.grade6_2level1.prototype={
             this.checkdays(monday,monarr);
         },this);
         
-        tuesday= this.add.sprite(215,165,'Level62_Tuesday');
+        tuesday= this.add.sprite(215,165,'Level62_tuesday');
         tuesday.scale.setTo(0.95,1);
         tuesday.inputEnabled=true; tuesday.name = "tuesday";
         tuesday.input.useHandCursor = true;
@@ -1507,6 +1626,58 @@ Game.grade6_2level1.prototype={
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=50;
+            monday.frame=5;
+            tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=60;
+            monday.frame=6;
+            tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=72;
+            monday.frame=7;
+            tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=84;
+            monday.frame=8;
+            tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else{
             months.x=367;
@@ -1919,7 +2090,7 @@ Game.grade6_2level1.prototype={
             this.checkdays(monday,monarr);
         },this);
         
-        tuesday= this.add.sprite(215,165,'Level62_Tuesday');
+        tuesday= this.add.sprite(215,165,'Level62_tuesday');
         tuesday.scale.setTo(0.95,1);
         tuesday.inputEnabled=true; tuesday.name = "tuesday";
         tuesday.input.useHandCursor = true;
@@ -2022,6 +2193,58 @@ Game.grade6_2level1.prototype={
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=51;
+            monday.frame=5;
+            tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=63;
+            monday.frame=6;
+            tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=75;
+            monday.frame=7;
+            tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=87;
+            monday.frame=8;
+            tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else{
             months.x=367;
@@ -2423,7 +2646,7 @@ Game.grade6_2level1.prototype={
             this.checkdays(monday,monarr);
         },this);
         
-        tuesday= this.add.sprite(215,165,'Level62_Tuesday');
+        tuesday= this.add.sprite(215,165,'Level62_tuesday');
         tuesday.scale.setTo(0.95,1);
         tuesday.inputEnabled=true; tuesday.name = "tuesday";
         tuesday.input.useHandCursor = true;
@@ -2526,6 +2749,58 @@ Game.grade6_2level1.prototype={
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=52;
+            monday.frame=5;
+            tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=64;
+            monday.frame=6;
+            tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=76;
+            monday.frame=7;
+            tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=88;
+            monday.frame=8;
+            tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else{
             months.x=367;
@@ -2940,7 +3215,7 @@ Game.grade6_2level1.prototype={
             this.checkdays(monday,monarr);
         },this);
         
-        tuesday= this.add.sprite(215,165,'Level62_Tuesday');
+        tuesday= this.add.sprite(215,165,'Level62_tuesday');
         tuesday.scale.setTo(0.95,1);
         tuesday.inputEnabled=true; tuesday.name = "tuesday";
         tuesday.input.useHandCursor = true;
@@ -3043,6 +3318,58 @@ Game.grade6_2level1.prototype={
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=53;
+            monday.frame=5;
+            tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=65;
+            monday.frame=6;
+            tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=77;
+            monday.frame=7;
+            tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=89;
+            monday.frame=8;
+            tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else{
             months.x=367;
@@ -3477,7 +3804,7 @@ Game.grade6_2level1.prototype={
             this.checkdays(monday,monarr);
         },this);
         
-        tuesday= this.add.sprite(215,165,'Level62_Tuesday');
+        tuesday= this.add.sprite(215,165,'Level62_tuesday');
         tuesday.scale.setTo(0.95,1);
         tuesday.inputEnabled=true; tuesday.name = "tuesday";
         tuesday.input.useHandCursor = true;
@@ -3580,6 +3907,58 @@ Game.grade6_2level1.prototype={
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=54;
+            monday.frame=5;
+            tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=66;
+            monday.frame=6;
+            tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=78;
+            monday.frame=7;
+            tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=90;
+            monday.frame=8;
+            tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else{
             months.x=367;
@@ -3991,7 +4370,7 @@ Game.grade6_2level1.prototype={
             this.checkdays(monday,monarr);
         },this);
         
-        tuesday= this.add.sprite(215,165,'Level62_Tuesday');
+        tuesday= this.add.sprite(215,165,'Level62_tuesday');
         tuesday.scale.setTo(0.95,1);
         tuesday.inputEnabled=true; tuesday.name = "tuesday";
         tuesday.input.useHandCursor = true;
@@ -4094,6 +4473,58 @@ Game.grade6_2level1.prototype={
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=5;
+            monday.frame=5;
+            tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=67;
+            monday.frame=6;
+            tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=79;
+            monday.frame=7;
+            tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=91;
+            monday.frame=8;
+            tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else{
             months.x=367;
@@ -4511,7 +4942,7 @@ Game.grade6_2level1.prototype={
             this.checkdays(monday,monarr);
         },this);
         
-        tuesday= this.add.sprite(215,165,'Level62_Tuesday');
+        tuesday= this.add.sprite(215,165,'Level62_tuesday');
         tuesday.scale.setTo(0.95,1);
         tuesday.inputEnabled=true; tuesday.name = "tuesday";
         tuesday.input.useHandCursor = true;
@@ -4614,6 +5045,58 @@ Game.grade6_2level1.prototype={
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=56;
+            monday.frame=5;
+            tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=68;
+            monday.frame=6;
+            tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=80;
+            monday.frame=7;
+            tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=92;
+            monday.frame=8;
+            tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else{
             months.x=367;
@@ -5018,7 +5501,7 @@ Game.grade6_2level1.prototype={
             this.checkdays(monday,monarr);
         },this);
         
-        tuesday= this.add.sprite(215,165,'Level62_Tuesday');
+        tuesday= this.add.sprite(215,165,'Level62_tuesday');
         tuesday.scale.setTo(0.95,1);
         tuesday.inputEnabled=true; tuesday.name = "tuesday";
         tuesday.input.useHandCursor = true;
@@ -5121,6 +5604,58 @@ Game.grade6_2level1.prototype={
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=57;
+            monday.frame=5;
+            tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=69;
+            monday.frame=6;
+            tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=81;
+            monday.frame=7;
+            tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=93;
+            monday.frame=8;
+            tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else{
             months.x=367;
@@ -5536,7 +6071,7 @@ Game.grade6_2level1.prototype={
             this.checkdays(monday,monarr);
         },this);
         
-        tuesday= this.add.sprite(215,165,'Level62_Tuesday');
+        tuesday= this.add.sprite(215,165,'Level62_tuesday');
         tuesday.scale.setTo(0.95,1);
         tuesday.inputEnabled=true; tuesday.name = "tuesday";
         tuesday.input.useHandCursor = true;
@@ -5639,6 +6174,58 @@ Game.grade6_2level1.prototype={
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=58;
+            monday.frame=5;
+            tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=70;
+            monday.frame=6;
+            tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=82;
+            monday.frame=7;
+            tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=94;
+            monday.frame=8;
+            tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else{
             months.x=367;
@@ -6039,7 +6626,7 @@ Game.grade6_2level1.prototype={
             this.checkdays(monday,monarr);
         },this);
         
-        tuesday= this.add.sprite(215,165,'Level62_Tuesday');
+        tuesday= this.add.sprite(215,165,'Level62_tuesday');
         tuesday.scale.setTo(0.95,1);
         tuesday.inputEnabled=true; tuesday.name = "tuesday";
         tuesday.input.useHandCursor = true;
@@ -6141,6 +6728,58 @@ Game.grade6_2level1.prototype={
             friday.frame=3;
             saturday.frame=3;
             sunday.frame=3;
+        }
+		else if(window.languageSelected=="Tamil"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=59;
+            monday.frame=5;
+            tuesday.frame=5;
+            wednesday.frame=5;
+            thusday.frame=5;
+            friday.frame=5;
+            saturday.frame=5;
+            sunday.frame=5;
+        }
+		else if(window.languageSelected=="Marathi"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=71;
+            monday.frame=6;
+            tuesday.frame=6;
+            wednesday.frame=5;
+            thusday.frame=6;
+            friday.frame=6;
+            saturday.frame=6;
+            sunday.frame=6;
+        }
+		else if(window.languageSelected=="Telugu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=83;
+            monday.frame=7;
+            tuesday.frame=7;
+            wednesday.frame=6;
+            thusday.frame=7;
+            friday.frame=7;
+            saturday.frame=7;
+            sunday.frame=7;
+        }
+		else if(window.languageSelected=="Urdu"){
+            months.x=367;
+            months.y=118;
+            months.scale.setTo(1,1);
+            months.frame=95;
+            monday.frame=8;
+            tuesday.frame=8;
+            wednesday.frame=7;
+            thusday.frame=8;
+            friday.frame=8;
+            saturday.frame=8;
+            sunday.frame=8;
         }
         else{
             months.x=367;
@@ -6644,7 +7283,7 @@ Game.grade6_2level1.prototype={
                                 this.wrongAns(target);
                             }
                             break;
-            case "Tuesday" :if(group=="tuegrp")
+            case "tuesday" :if(group=="tuegrp")
                             {
                                 circleanim=this.add.sprite(0, 0, 'Level62_g3','Symbol 1 copy 14 instance 10000');
                                 circleanim.scale.setTo(0.74,0.85);
@@ -6865,6 +7504,22 @@ Game.grade6_2level1.prototype={
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.2/mondays.mp3");
                             }
+							else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Marathi/mondays.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Telugu/mondays.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Tamil/mondays.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Urdu/mondays.mp3");
+                      } 
                             else
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Odiya/6.2_9.mp3");
@@ -6872,7 +7527,7 @@ Game.grade6_2level1.prototype={
                             }
                             break;
                 
-            case 'Tuesday':if(window.languageSelected == "English")
+            case 'tuesday':if(window.languageSelected == "English")
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/English/tuesdays.mp3");
                             }
@@ -6888,6 +7543,22 @@ Game.grade6_2level1.prototype={
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.2/tuesdays.mp3");
                             }
+							else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Marathi/tuesdays.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Telugu/tuesdays.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Tamil/tuesdays.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Urdu/tuesdays.mp3");
+                      } 
                             else
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Odiya/6.2_11.mp3");
@@ -6911,6 +7582,22 @@ Game.grade6_2level1.prototype={
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.2/wednesdays.mp3");
                             }
+							else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Marathi/wednesdays.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Telugu/wednesdays.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Tamil/wednesdays.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Urdu/wednesdays.mp3");
+                      } 
                             else
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Odiya/6.2_10.mp3");
@@ -6934,6 +7621,22 @@ Game.grade6_2level1.prototype={
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.2/thursdays.mp3");
                             }
+							else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Marathi/thursdays.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Telugu/thursdays.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Tamil/thursdays.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Urdu/thursdays.mp3");
+                      } 
                             else
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Odiya/6.2_7.mp3");
@@ -6957,6 +7660,22 @@ Game.grade6_2level1.prototype={
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.2/fridays.mp3");
                             }
+							else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Marathi/fridays.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Telugu/fridays.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Tamil/fridays.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Urdu/fridays.mp3");
+                      } 
                             else
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Odiya/6.2_8.mp3");
@@ -6996,6 +7715,22 @@ Game.grade6_2level1.prototype={
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.2/1.mp3");
                             }
+							else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Marathi/1.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Telugu/1.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Tamil/1.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Urdu/1.mp3");
+                      } 
                             else
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Odiya/6.2_3.mp3");
@@ -7019,6 +7754,22 @@ Game.grade6_2level1.prototype={
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.2/10.mp3");
                             }
+							else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Marathi/10.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Telugu/10.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Tamil/10.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Urdu/10.mp3");
+                      } 
                             else
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Odiya/6.2_2.mp3");
@@ -7042,6 +7793,22 @@ Game.grade6_2level1.prototype={
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.2/12.mp3");
                             }
+							else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Marathi/12.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Telugu/12.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Tamil/12.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Urdu/12.mp3");
+                      }
                             else
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Odiya/6.2_4.mp3");
@@ -7065,6 +7832,22 @@ Game.grade6_2level1.prototype={
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.2/16.mp3");
                             }
+							else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Marathi/16.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Telugu/16.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Tamil/16.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Urdu/16.mp3");
+                      }
                             else
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Odiya/6.2_1.mp3");
@@ -7088,6 +7871,22 @@ Game.grade6_2level1.prototype={
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.2/18.mp3");
                             }
+							else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Marathi/18.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Telugu/18.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Tamil/18.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Urdu/18.mp3");
+                      }
                             else
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Odiya/6.2_6.mp3");
@@ -7111,6 +7910,22 @@ Game.grade6_2level1.prototype={
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/6.2/27.mp3");
                             }
+							else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Marathi/27.mp3");
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Telugu/27.mp3");
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Tamil/27.mp3");
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Urdu/27.mp3");
+                      }
                             else
                             {
                                 _this.src.setAttribute("src", window.baseUrl+"questionSounds/6.2/Odiya/6.2_5.mp3");

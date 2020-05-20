@@ -144,6 +144,22 @@ Game.time_MTG_1_1level4.prototype={
         {
             _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/5.4/5.4_1.mp3";
         }
+		else if(window.languageSelected == "Marathi")
+                      {
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.4/Marathi/5.4_1.mp3";
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.4/Telugu/5.4_1.mp3";
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.4/Tamil/5.4_1.mp3";
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.4/Urdu/5.4_1.mp3";
+                      } 
         else
         {
             _this.soundurl =  window.baseUrl+"questionSounds/5.4/Odiya/5.4_1.mp3";
@@ -348,6 +364,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10012'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10036'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10048'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10060'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10072'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10084'));
         else
              groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10048'));
 
@@ -362,6 +386,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10013'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10037'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10049'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10061'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10073'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10085'));
         else
              groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10049'));
 
@@ -376,6 +408,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10014')); 
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10038'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10050'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10062'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10074'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10086'));
         else
              groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10050'));
 
@@ -390,6 +430,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10015'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10039'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10051'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10063'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10075'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10087'));
         else
              groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10051'));
 
@@ -404,6 +452,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10016'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10040'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10052'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10064'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10076'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10088'));
         else
              groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10052'));
 
@@ -418,6 +474,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10017'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10041'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10053'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10065'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10077'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10089'));
         else
              groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10053'));
 
@@ -432,6 +496,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10018')); 
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10042'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10054'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10066'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10078'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10090'));
         else
              groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10054'));
 
@@ -446,6 +518,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10019')); 
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10043'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10055'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10067'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10079'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10091'));
         else
              groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10055'));
 
@@ -460,6 +540,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10020'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10044'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10056'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10068'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10080'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10092'));
         else
              groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10056'));
 
@@ -474,6 +562,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10021'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10045'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10057'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10069'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10081'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10093'));
         else
              groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10057'));
 
@@ -488,6 +584,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10022'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10046'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10058'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10070'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10082'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10094'));
         else
              groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10058'));
 
@@ -502,6 +606,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10023'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10047'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10059'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10071'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10083'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10095'));
         else
              groupmonthname.push(this.add.sprite(15,72,'Level54_monthname','Symbol 12 copy instance 10059'));
 
@@ -774,6 +886,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10012'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10036'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10048'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10060'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10072'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10084'));
         else
              groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10048'));
 
@@ -790,8 +910,16 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10013'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10037'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10049'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10061'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10073'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10085'));
         else
-             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10049'));
+             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10050'));
 
         groupmonthname[1].alpha=1;groupmonthname[1].scale.setTo(1.15,1.15);
 
@@ -805,6 +933,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10014'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10038'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10050'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10062'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10074'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10086'));
         else
              groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10050'));
 
@@ -819,6 +955,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10015'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10039'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10051'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10063'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10075'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10087'));
         else
              groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10051'));
 
@@ -833,6 +977,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10016'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10040'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10052'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10064'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10076'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10088'));
         else
              groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10052'));
 
@@ -847,6 +999,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10017'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10041'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10053'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10065'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10077'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10089'));
         else
              groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10053'));
 
@@ -861,6 +1021,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10018'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10042'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10054'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10066'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10078'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10090'));
         else
              groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10054'));
 
@@ -875,6 +1043,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10019'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10043'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10055'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10067'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10079'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10091'));
         else
              groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10055'));
 
@@ -889,6 +1065,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10020'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10044'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10056'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10068'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10080'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10092'));
         else
              groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10056'));
 
@@ -903,8 +1087,16 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10021'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10045'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10057'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10069'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10081'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10093'));
         else
-             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10057'));
+             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10058'));
 
         groupmonthname[9].alpha=1;groupmonthname[9].scale.setTo(1.15,1.15);
 
@@ -917,6 +1109,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10022'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10046'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10058'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10070'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10082'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10094'));
         else
              groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10058'));
 
@@ -931,6 +1131,14 @@ Game.time_MTG_1_1level4.prototype={
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10023'));
         else if(window.languageSelected=="Odiya")
             groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10047'));
+		else if(window.languageSelected=="Tamil")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10059'));
+		else if(window.languageSelected=="Marathi")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10071'));
+		else if(window.languageSelected=="Telugu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10083'));
+		else if(window.languageSelected=="Urdu")
+            groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10095'));
         else
              groupmonthname.push(this.add.sprite(-7,35,'Level54_monthname','Symbol 12 copy instance 10059'));
 

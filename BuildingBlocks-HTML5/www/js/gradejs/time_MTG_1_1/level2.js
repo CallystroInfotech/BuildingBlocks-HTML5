@@ -357,6 +357,14 @@ Game.time_MTG_1_1level2.prototype={
             groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10001'));
         else if(window.languageSelected=="Gujarati")
             groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10004'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10008'));
         else
             groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10003'));
         
@@ -372,6 +380,14 @@ Game.time_MTG_1_1level2.prototype={
             groupdayname.push(this.add.sprite(15,110,'Level52_tuesday','Symbol 14 instance 10001'));
         else if(window.languageSelected=="Gujarati")
             groupdayname.push(this.add.sprite(15,110,'Level52_tuesday','Symbol 14 instance 10004'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(15,110,'Level52_tuesday','Symbol 14 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(15,110,'Level52_tuesday','Symbol 14 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_tuesday','Symbol 14 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_tuesday','Symbol 14 instance 10008'));
         else
             groupdayname.push(this.add.sprite(15,110,'Level52_tuesday','Symbol 14 instance 10003'));
         
@@ -380,15 +396,23 @@ Game.time_MTG_1_1level2.prototype={
         groupdays.push(this.add.sprite(190,400,'Level52_wed'+dayselct));groupdays[2].alpha=0;
         
         if(window.languageSelected=="English")
-            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 16 instance 10000'));
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10000'));
         else if(window.languageSelected=="Kannada")
-            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 16 instance 10002'));
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10002'));
         else if(window.languageSelected=="Hindi")
-            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 16 instance 10001'));
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10001'));
         else if(window.languageSelected=="Gujarati")
-            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 16 instance 10004'));
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10004'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10008'));
         else
-            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 16 instance 10003'));
+            groupdayname.push(this.add.sprite(15,110,'Level52_wednesday','Symbol 15 instance 10003'));
         
         groupdayname[2].alpha=1;groupdayname[2].scale.setTo(1.45,1.45);
         
@@ -401,6 +425,14 @@ Game.time_MTG_1_1level2.prototype={
             groupdayname.push(this.add.sprite(15,110,'Level52_thursday','Symbol 16 instance 10001'));
         else if(window.languageSelected=="Gujarati")
             groupdayname.push(this.add.sprite(15,110,'Level52_thursday','Symbol 16 instance 10004'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(15,110,'Level52_thursday','Symbol 16 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(15,110,'Level52_thursday','Symbol 16 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_thursday','Symbol 16 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_thursday','Symbol 16 instance 10008'));
         else
             groupdayname.push(this.add.sprite(15,110,'Level52_thursday','Symbol 16 instance 10003'));
         
@@ -415,6 +447,14 @@ Game.time_MTG_1_1level2.prototype={
             groupdayname.push(this.add.sprite(15,110,'Level52_friday','Symbol 17 instance 10001'));
         else if(window.languageSelected=="Gujarati")
             groupdayname.push(this.add.sprite(15,110,'Level52_friday','Symbol 17 instance 10004'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(15,110,'Level52_friday','Symbol 17 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(15,110,'Level52_friday','Symbol 17 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_friday','Symbol 17 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_friday','Symbol 17 instance 10008'));
         else
             groupdayname.push(this.add.sprite(15,110,'Level52_friday','Symbol 17 instance 10003'));
         
@@ -429,6 +469,14 @@ Game.time_MTG_1_1level2.prototype={
             groupdayname.push(this.add.sprite(15,110,'Level52_saturday','Symbol 18 instance 10001'));
         else if(window.languageSelected=="Gujarati")
             groupdayname.push(this.add.sprite(15,110,'Level52_saturday','Symbol 18 instance 10004'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(15,110,'Level52_saturday','Symbol 18 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(15,110,'Level52_saturday','Symbol 18 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_saturday','Symbol 18 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_saturday','Symbol 18 instance 10008'));
         else
             groupdayname.push(this.add.sprite(15,110,'Level52_saturday','Symbol 18 instance 10003'));
         
@@ -443,6 +491,14 @@ Game.time_MTG_1_1level2.prototype={
             groupdayname.push(this.add.sprite(15,110,'Level52_sunday','Symbol 19 instance 10001'));
         else if(window.languageSelected=="Gujarati")
             groupdayname.push(this.add.sprite(15,110,'Level52_sunday','Symbol 19 instance 10004'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(15,110,'Level52_sunday','Symbol 19 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(15,110,'Level52_sunday','Symbol 19 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_sunday','Symbol 19 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(15,110,'Level52_sunday','Symbol 19 instance 10008'));
         else
             groupdayname.push(this.add.sprite(15,110,'Level52_sunday','Symbol 19 instance 10003'));
         
@@ -693,6 +749,14 @@ Game.time_MTG_1_1level2.prototype={
             groupdayname.push(this.add.sprite(5,60,'Level52_monday','Symbol 13 instance 10001'));
         else if(window.languageSelected=="Odiya")
             groupdayname.push(this.add.sprite(5,60,'Level52_monday','Symbol 13 instance 10003'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(5,60,'Level52_monday','Symbol 13 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(5,60,'Level52_monday','Symbol 13 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(5,60,'Level52_monday','Symbol 13 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(5,60,'Level52_monday','Symbol 13 instance 10008'));
         else
             groupdayname.push(this.add.sprite(5,60,'Level52_monday','Symbol 13 instance 10004'));
 
@@ -709,6 +773,14 @@ Game.time_MTG_1_1level2.prototype={
             groupdayname.push(this.add.sprite(5,60,'Level52_tuesday','Symbol 14 instance 10001'));
         else if(window.languageSelected=="Odiya")
             groupdayname.push(this.add.sprite(5,60,'Level52_tuesday','Symbol 14 instance 10003'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(5,60,'Level52_tuesday','Symbol 14 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(5,60,'Level52_tuesday','Symbol 14 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(5,60,'Level52_tuesday','Symbol 14 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(5,60,'Level52_tuesday','Symbol 14 instance 10008'));
         else
             groupdayname.push(this.add.sprite(5,60,'Level52_tuesday','Symbol 14 instance 10004'));
 
@@ -718,15 +790,23 @@ Game.time_MTG_1_1level2.prototype={
         groupdays[2].alpha=1;
         
         if(window.languageSelected=="English")
-            groupdayname.push(this.add.sprite(5,60,'Level52_wednesday','Symbol 16 instance 10000'));
+            groupdayname.push(this.add.sprite(5,60,'Level52_wednesday','Symbol 15 instance 10000'));
         else if(window.languageSelected=="Kannada")
-            groupdayname.push(this.add.sprite(5,60,'Level52_wednesday','Symbol 16 instance 10002'));
+            groupdayname.push(this.add.sprite(5,60,'Level52_wednesday','Symbol 15 instance 10002'));
         else if(window.languageSelected=="Hindi")
-            groupdayname.push(this.add.sprite(5,60,'Level52_wednesday','Symbol 16 instance 10001'));
+            groupdayname.push(this.add.sprite(5,60,'Level52_wednesday','Symbol 15 instance 10001'));
         else if(window.languageSelected=="Odiya")
-            groupdayname.push(this.add.sprite(5,60,'Level52_wednesday','Symbol 16 instance 10003'));
+            groupdayname.push(this.add.sprite(5,60,'Level52_wednesday','Symbol 15 instance 10003'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(5,60,'Level52_wednesday','Symbol 15 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(5,60,'Level52_wednesday','Symbol 15 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(5,60,'Level52_wednesday','Symbol 15 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(5,60,'Level52_wednesday','Symbol 15 instance 10008'));
         else
-            groupdayname.push(this.add.sprite(5,60,'Level52_wednesday','Symbol 16 instance 10004'));
+            groupdayname.push(this.add.sprite(5,60,'Level52_wednesday','Symbol 15 instance 10004'));
 
         groupdayname[2].alpha=1;
         
@@ -741,6 +821,14 @@ Game.time_MTG_1_1level2.prototype={
             groupdayname.push(this.add.sprite(5,60,'Level52_thursday','Symbol 16 instance 10001'));
         else if(window.languageSelected=="Odiya")
             groupdayname.push(this.add.sprite(5,60,'Level52_thursday','Symbol 16 instance 10003'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(5,60,'Level52_thursday','Symbol 16 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(5,60,'Level52_thursday','Symbol 16 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(5,60,'Level52_thursday','Symbol 16 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(5,60,'Level52_thursday','Symbol 16 instance 10008'));
         else
             groupdayname.push(this.add.sprite(5,60,'Level52_thursday','Symbol 16 instance 10004'));
 
@@ -757,6 +845,14 @@ Game.time_MTG_1_1level2.prototype={
             groupdayname.push(this.add.sprite(5,60,'Level52_friday','Symbol 17 instance 10001'));
         else if(window.languageSelected=="Odiya")
             groupdayname.push(this.add.sprite(5,60,'Level52_friday','Symbol 17 instance 10003'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(5,60,'Level52_friday','Symbol 17 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(5,60,'Level52_friday','Symbol 17 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(5,60,'Level52_friday','Symbol 17 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(5,60,'Level52_friday','Symbol 17 instance 10008'));
         else
             groupdayname.push(this.add.sprite(5,60,'Level52_friday','Symbol 17 instance 10004'));
 
@@ -773,6 +869,14 @@ Game.time_MTG_1_1level2.prototype={
             groupdayname.push(this.add.sprite(5,60,'Level52_saturday','Symbol 18 instance 10001'));
         else if(window.languageSelected=="Odiya")
             groupdayname.push(this.add.sprite(5,60,'Level52_saturday','Symbol 18 instance 10003'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(5,60,'Level52_saturday','Symbol 18 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(5,60,'Level52_saturday','Symbol 18 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(5,60,'Level52_saturday','Symbol 18 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(5,60,'Level52_saturday','Symbol 18 instance 10008'));
         else
             groupdayname.push(this.add.sprite(5,60,'Level52_saturday','Symbol 18 instance 10004'));
 
@@ -789,6 +893,14 @@ Game.time_MTG_1_1level2.prototype={
             groupdayname.push(this.add.sprite(5,60,'Level52_sunday','Symbol 19 instance 10001'));
         else if(window.languageSelected=="Odiya")
             groupdayname.push(this.add.sprite(5,60,'Level52_sunday','Symbol 19 instance 10003'));
+		else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(5,60,'Level52_sunday','Symbol 19 instance 10005'));
+		else if(window.languageSelected=="Marathi")
+            groupdayname.push(this.add.sprite(5,60,'Level52_sunday','Symbol 19 instance 10006'));
+		else if(window.languageSelected=="Telugu")
+            groupdayname.push(this.add.sprite(5,60,'Level52_sunday','Symbol 19 instance 10007'));
+		else if(window.languageSelected=="Urdu")
+            groupdayname.push(this.add.sprite(5,60,'Level52_sunday','Symbol 19 instance 10008'));
         else
             groupdayname.push(this.add.sprite(5,60,'Level52_sunday','Symbol 19 instance 10004'));
 
@@ -1429,6 +1541,26 @@ Game.time_MTG_1_1level2.prototype={
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/5.2/5.2_3.mp3");
                     _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/5.2/5.2_3.mp3";
                 }
+				else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/5.2_3.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/5.2_3.mp3";
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/5.2_3.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/5.2_3.mp3";
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/5.2_3.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/5.2_3.mp3";
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/5.2_3.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/5.2_3.mp3";
+                      } 
                 else
                 {
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Odiya/5.2_3.mp3");
@@ -1462,6 +1594,26 @@ Game.time_MTG_1_1level2.prototype={
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/5.2/5.2_1.mp3");
                     _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/5.2/5.2_1.mp3";
                 }
+				else if(window.languageSelected == "Marathi")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Marathi/5.2_1.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.2/Marathi/5.2_1.mp3";
+                      } 
+					  else if(window.languageSelected == "Telugu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Telugu/5.2_1.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.2/Telugu/5.2_1.mp3";
+                      } 
+					  else if(window.languageSelected == "Tamil")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Tamil/5.2_1.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.2/Tamil/5.2_1.mp3";
+                      } 
+					  else if(window.languageSelected == "Urdu")
+                      {
+                           _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Urdu/5.2_1.mp3");
+                           _this.soundurl =  window.baseUrl+"questionSounds/5.2/Urdu/5.2_1.mp3";
+                      } 
                 else
                 {
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/5.2/Odiya/5.2_1.mp3");

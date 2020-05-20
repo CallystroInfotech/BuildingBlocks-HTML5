@@ -776,6 +776,22 @@ Game.sequence_NSSG_3_2level1.prototype ={
                          _this.qsoundurl= window.baseUrl+"questionSounds/2.1.1/Kannada/question2.1_Kan.mp3";
                      else if(window.languageSelected=="Gujarati")
                          _this.qsoundurl= window.baseUrl+"questionSounds/Gujarati/unity/2.1.1/question2.1_guj.mp3";
+					 else if(window.languageSelected=="Marathi")
+                    {
+                        _this.qsoundurl= window.baseUrl+"questionSounds/2.1.1/Marathi/question2.1.mp3";
+                    }
+					else if(window.languageSelected=="Telugu")
+                    {
+                        _this.qsoundurl= window.baseUrl+"questionSounds/2.1.1/Telugu/question2.1.mp3";
+                    }
+					else if(window.languageSelected=="Tamil")
+                    {
+                        _this.qsoundurl= window.baseUrl+"questionSounds/2.1.1/Tamil/question2.1.mp3";
+                    }
+					else if(window.languageSelected=="Urdu")
+                    {
+                        _this.qsoundurl= window.baseUrl+"questionSounds/2.1.1/Urdu/question2.1.mp3";
+                    }
                     else
                          _this.qsoundurl= window.baseUrl+"questionSounds/2.1.1/Odiya/2.1.1.mp3";
 

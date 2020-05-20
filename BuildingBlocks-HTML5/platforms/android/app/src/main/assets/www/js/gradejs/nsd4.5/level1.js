@@ -128,6 +128,23 @@ Game.nsd4_5level1.prototype={
         {
             _this.soundurl =  window.baseUrl+"questionSounds/nsd4.5/Gujarati/nsd4.5.mp3";
         }
+		
+		else if(window.languageSelected =="Marathi")
+                    {
+                         _this.soundurl =  window.baseUrl+"questionSounds/nsd4.5/Marathi/nsd4.5.mp3";
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.soundurl =  window.baseUrl+"questionSounds/nsd4.5/Telugu/nsd4.5.mp3";
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.soundurl =  window.baseUrl+"questionSounds/nsd4.5/Tamil/nsd4.5.mp3";
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.soundurl =  window.baseUrl+"questionSounds/nsd4.5/Urdu/nsd4.5.mp3";
+                    }
         else
         {
             _this.soundurl =  window.baseUrl+"questionSounds/nsd4.5/Odiya/nsd4.5.mp3";
@@ -2206,6 +2223,22 @@ Game.nsd4_5level1.prototype={
         {
             _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd4.5/Gujarati/nsd4.5.mp3");
         }
+		else if(window.languageSelected =="Marathi")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd4.5/Marathi/nsd4.5.mp3");
+                    }
+					else if(window.languageSelected =="Telugu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd4.5/Telugu/nsd4.5.mp3");
+                    }
+					else if(window.languageSelected =="Tamil")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd4.5/Tamil/nsd4.5.mp3");
+                    }
+					else if(window.languageSelected =="Urdu")
+                    {
+                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd4.5/Urdu/nsd4.5.mp3");
+                    }
         else
         {
             _this.src.setAttribute("src", window.baseUrl+"questionSounds/nsd4.5/Odiya/nsd4.5.mp3");

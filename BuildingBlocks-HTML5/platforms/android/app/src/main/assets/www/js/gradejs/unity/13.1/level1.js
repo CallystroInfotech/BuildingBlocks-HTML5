@@ -1473,6 +1473,22 @@ Game.unity13_1level1.prototype={
         {
             _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/13.1/Game13.1.mp3");
         }
+		else if(window.languageSelected=="Marathi")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/13.1/Marathi/Game13.1.mp3");
+        }
+		else if(window.languageSelected=="Tamil")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/13.1/Tamil/Game13.1.mp3");
+        }
+		else if(window.languageSelected=="Telugu")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/13.1/Telugu/Game13.1.mp3");
+        }
+		else if(window.languageSelected=="Urdu")
+        {
+            _this.src.setAttribute("src", window.baseUrl+"questionSounds/13.1/Urdu/Game13.1.mp3");
+        }
         else
         {
             _this.src.setAttribute("src", window.baseUrl+"questionSounds/13.1/Odiya/13.1.mp3");

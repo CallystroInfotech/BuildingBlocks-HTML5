@@ -257,7 +257,7 @@ init:function(param,score)
         this.video.play(false);
         this.video.changeSource(window.baseUrl+"assets/demoVideos/3.1.2.mp4");
         _this.something =  this.video.addToWorld();
-        this.video.playbackRate = 0.9; 
+        this.video.playbackRate = 0.8; 
         _this.time.events.add(500, function(){
             _this.playDemoVideos('3_1_2');
             _this.skipDemos = _this.add.sprite(803,405,'skipDemoVideos');
@@ -356,6 +356,22 @@ init:function(param,score)
 				{
 					_this.soundurl = window.baseUrl+"questionSounds/Gujarati/3.2.1/3.1.2.mp3";
 				}
+				else if(window.languageSelected == "Marathi")
+                        {
+                            _this.soundurl = window.baseUrl+"questionSounds/3.2.1/Marathi/3.1.2.mp3";
+                        }
+						else if(window.languageSelected == "Telugu")
+                        {
+                            _this.soundurl = window.baseUrl+"questionSounds/3.2.1/Telugu/3.1.2.mp3";
+                        }
+						else if(window.languageSelected == "Tamil")
+                        {
+                            _this.soundurl = window.baseUrl+"questionSounds/3.2.1/Tamil/3.1.2.mp3";
+                        }
+						else if(window.languageSelected == "Urdu")
+                        {
+                            _this.soundurl = window.baseUrl+"questionSounds/3.2.1/Urdu/3.1.2.mp3";
+                        }
                 else
                 {
                     _this.soundurl =  window.baseUrl+"questionSounds/3.1.2/Odiya/3.1.2.mp3";
@@ -1831,6 +1847,8 @@ _this.coinBlue = _this.add.sprite(185,220,'Level321_Coin100');
         this.videoLevel2.play(false);
         this.videoLevel2.changeSource(window.baseUrl+"assets/demoVideos/3_2_2.mp4");
         _this.something1 =  this.videoLevel2.addToWorld();
+		
+		
         
         _this.time.events.add(2000, function(){
             _this.playDemoVideos('3_2_2a');
@@ -2099,6 +2117,22 @@ wrongAns:function(target)
 							{
 								_this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/3.2.1/3.1.2.mp3");
 							}
+							else if(window.languageSelected == "Marathi")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Marathi/3.1.2.mp3");
+                        }
+						else if(window.languageSelected == "Telugu")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Telugu/3.1.2.mp3");
+                        }
+						else if(window.languageSelected == "Tamil")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Tamil/3.1.2.mp3");
+                        }
+						else if(window.languageSelected == "Urdu")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Urdu/3.1.2.mp3");
+                        }
 							else
 							{
 								_this.src.setAttribute("src", window.baseUrl+"assets/DemoVOs/Odiya/3.1.2.mp3");
@@ -2121,6 +2155,22 @@ wrongAns:function(target)
 							{
 								_this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/3.2.1/3.2.2.mp3");
 							}
+							else if(window.languageSelected == "Marathi")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Marathi/3.2.2.mp3");
+                        }
+						else if(window.languageSelected == "Telugu")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Telugu/3.2.2.mp3");
+                        }
+						else if(window.languageSelected == "Tamil")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Tamil/3.2.2.mp3");
+                        }
+						else if(window.languageSelected == "Urdu")
+                        {
+                            _this.src.setAttribute("src", window.baseUrl+"questionSounds/3.2.1/Urdu/3.2.2.mp3");
+                        }
 							else
 							{
 								_this.src.setAttribute("src", window.baseUrl+"assets/DemoVOs/Odiya/3.2.2.mp3");

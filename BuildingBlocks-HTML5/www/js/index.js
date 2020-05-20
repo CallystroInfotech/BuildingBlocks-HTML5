@@ -11,7 +11,7 @@ var app = {
 
     receivedEvent: function(id) {
 
-      var onSuccess = function(result) {
+      /*var onSuccess = function(result) {
         // handle result  
         console.log(result);
         };
@@ -54,9 +54,9 @@ var app = {
       });
 
 
+		*/
 
-
-
+		bbreglogin.initializeDB();
 
        var game = new Phaser.Game(540,960,Phaser.CANVAS,'phaser_canvas',{preload:this.preload, create:this.create},false,true,null);
 
@@ -77,7 +77,10 @@ var app = {
 
     preload:function(game)
     {
+		game.load.video('demo','./demo.mp4');
     	game.load.image('splash','assets/splash.png');
+		game.load.image('helpIcon','./helpIcon.png');
+    	game.load.image('closeIcon','./closeIcon.png');
       game.load.image('registrationbg','assets/registrationbg.png');
       game.load.image('graphicBg','assets/graphicBg.png');
       game.load.image('carrotIcon','assets/carrotIcon.png');

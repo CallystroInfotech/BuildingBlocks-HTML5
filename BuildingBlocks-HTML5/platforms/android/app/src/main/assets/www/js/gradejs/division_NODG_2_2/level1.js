@@ -1436,6 +1436,26 @@ checkOverlap:function(spriteA, spriteB)
                             commonNavBar.getVoice(window.baseUrl+"questionSounds/Gujarati/15.1/Game15.1.mp3");
                             this.srcs = window.baseUrl+"questionSounds/Gujarati/15.1/Game15.1.mp3";
                         }
+						else if(window.languageSelected=="Marathi")
+                            {
+                                commonNavBar.getVoice(window.baseUrl+"questionSounds/15.1/Marathi/Game15.1.mp3");
+								this.srcs = window.baseUrl+"questionSounds/15.1/Marathi/Game15.1.mp3";
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                                commonNavBar.getVoice(window.baseUrl+"questionSounds/15.1/Telugu/Game15.1.mp3");
+								this.srcs = window.baseUrl+"questionSounds/15.1/Telugu/Game15.1.mp3";
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                commonNavBar.getVoice(window.baseUrl+"questionSounds/15.1/Tamil/Game15.1.mp3");
+								this.srcs = window.baseUrl+"questionSounds/15.1/Tamil/Game15.1.mp3";
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                commonNavBar.getVoice(window.baseUrl+"questionSounds/15.1/Urdu/Game15.1.mp3");
+								this.srcs = window.baseUrl+"questionSounds/15.1/Urdu/Game15.1.mp3";
+                            }
                        else
                       {
                           commonNavBar.getVoice(window.baseUrl+"questionSounds/15.1/Odiya/15.1.mp3");
@@ -1464,6 +1484,26 @@ checkOverlap:function(spriteA, spriteB)
                             commonNavBar.getVoice(window.baseUrl+"questionSounds/Gujarati/15.1/Game15.2.mp3");
                             this.srcs = window.baseUrl+"questionSounds/Gujarati/15.1/Game15.2.mp3";
                         }
+						else if(window.languageSelected=="Marathi")
+                            {
+                                commonNavBar.getVoice(window.baseUrl+"questionSounds/15.1/Marathi/Game15.2.mp3");
+								this.srcs = window.baseUrl+"questionSounds/15.1/Marathi/Game15.2.mp3";
+                            }
+							else if(window.languageSelected=="Telugu")
+                            {
+                                commonNavBar.getVoice(window.baseUrl+"questionSounds/15.1/Telugu/Game15.2.mp3");
+								this.srcs = window.baseUrl+"questionSounds/15.1/Telugu/Game15.2.mp3";
+                            }
+							else if(window.languageSelected=="Tamil")
+                            {
+                                commonNavBar.getVoice(window.baseUrl+"questionSounds/15.1/Tamil/Game15.2.mp3");
+								this.srcs = window.baseUrl+"questionSounds/15.1/Tamil/Game15.2.mp3";
+                            }
+							else if(window.languageSelected=="Urdu")
+                            {
+                                commonNavBar.getVoice(window.baseUrl+"questionSounds/15.1/Urdu/Game15.2.mp3");
+								this.srcs = window.baseUrl+"questionSounds/15.1/Urdu/Game15.2.mp3";
+                            }
                        else
                       {
                           commonNavBar.getVoice(window.baseUrl+"questionSounds/15.1/Odiya/15.2.mp3");

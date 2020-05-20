@@ -27,6 +27,9 @@ Game.userprogress.prototype={
 		else if(window.avatarName.toLowerCase() == "tree")
 			game.load.atlas('avatar','assets/tree.png','assets/tree.json');
 
+		game.load.image('scrollWhite','assets/scrollWhite.png');
+		game.load.image('scrollBlack','assets/scrollBlack.png');
+
 		game.time.advancedTiming = true;
 	},
 
@@ -94,6 +97,8 @@ Game.userprogress.prototype={
 
 		
 		this.gameModeBg = game.add.image(0,0,'gameModeBg');
+
+		console.log(window.deviceId);
 
 		var jsondata = {name:window.avatarName,deviceid:window.deviceId};
 
@@ -737,8 +742,6 @@ Game.userprogress.prototype={
 	addScrollingtouserprogress:function(game, completedText)
 	{
 
-		_this.tween = null;
-		_this.tap = false;
 
 		_this.groupScroll = _this.add.group();
 
@@ -983,213 +986,99 @@ Game.userprogress.prototype={
 		_this.graphicsBg = _this.add.graphics(0, 0);
 		_this.graphicsBg.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.graphicsBg.beginFill(0xA24098, 0);
-		_this.graphicsBg.drawRect(0,0,300,500);
+		_this.graphicsBg.drawRect(70, 10, 350, 800);
 		_this.graphicsBg.boundsPadding = 0;
-		
 
-		_this.mask = _this.add.graphics();
-        _this.mask.position.x = 0;   
-        _this.mask.position.y = 200;   
-        _this.mask.beginFill(0, 1);   
-        _this.mask.moveTo(0, 200);   
-        _this.mask.lineTo(200, 500);   
-        _this.mask.lineTo(960, 505);   
-        _this.mask.lineTo(0, 505);   
-        _this.mask.lineTo(0, 0);   
-        _this.mask.endFill();   
-        _this.graphicsBg.mask = _this.mask;
+		_this.mask = _this.add.graphics(10, 135);
+		_this.mask.lineStyle(0, 0xFFFFFF, 0);
+		_this.mask.beginFill(0xA24098, 1);
+		_this.mask.drawRect(70, 10, 360, 375);
+		_this.mask.boundsPadding = 0;
 
-
-
-		_this.page = document.getElementById("body"); 
-		_this.mc = new Hammer(_this.page);
-			_this.mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL , enable:false });
-
-			_this.mc.on("swipeleft", function () { 
-				//console.log('swipeleft');
-			}); 
-          
-           _this.mc.on("swiperight", function () { 
-				//console.log('swiperight');
-			});
-			
-			_this.mc.on("swipeup", function (v) { 
-				//console.log(v);
-				
-				
-			//	if(swipeUpFlag)
-			//	{
-					//game.input.enabled = false;
-
-					_this.tween = game.add.tween(_this.graphicsBg);
-					_this.tween.to({ y: _this.graphicsBg.y-(v.distance*(v.overallVelocity*2/-1))}, 0, 'Linear', true, 0);
-					_this.tween.onComplete.add(function(){
-					//	swipeDownFlag = true;
-						_this.tween = null;
-						if(_this.graphicsBg.y<=-520)
-						{
-							//swipeUpFlag = false;
-							_this.graphicsBg.y = -520;
-						}
-						
-						//game.input.enabled = true;
-					}, _this);
-					_this.tween.onUpdateCallback(function(){
-						_this.tap = false;
-						if(_this.graphicsBg.y<=-520)
-						{
-							//swipeUpFlag = false;
-							_this.graphicsBg.y = -520;
-							_this.tween.stop();
-							//_this.tween = null;
-							//game.input.enabled = true;
-						}
-					},_this);
-					
-			//	}
-			}); 
-			
-			_this.mc.on("swipedown", function (v) { 
-				
-			//	if(swipeDownFlag)
-			//	{
-					//game.input.enabled = false;
-					_this.tween = game.add.tween(_this.graphicsBg);
-					_this.tween.to({ y: _this.graphicsBg.y+(v.distance*(v.overallVelocity*2)) }, 0, 'Linear', true, 0);
-					_this.tween.onComplete.add(function(){
-					//	swipeUpFlag = true;
-						_this.tween = null;
-						if(_this.graphicsBg.y>=0)
-						{
-						//	swipeDownFlag = false;
-							_this.graphicsBg.y = 0;
-						}
-						//game.input.enabled = true;
-					}, _this);
-					
-					_this.tween.onUpdateCallback(function(){
-						tap = false;
-						if(_this.graphicsBg.y>=0)
-						{
-							//swipeUpFlag = false;
-							_this.graphicsBg.y = 0;
-							_this.tween.stop();
-							//_this.tween = null;
-							//game.input.enabled = true;
-						}
-					},_this);
-			//	}
-			});
-
-			_this.input.onDown.add(function(){
-				if(_this.tween)
-				{
-					if(_this.tween.isRunning)
-					{
-						_this.tween.stop();
-						//_this.tween = null;
-					}
-				}
-				_this.graphicsBg.inputEnabled = true;
-				_this.graphicsBg.input.enableDrag();
-				_this.graphicsBg.input.allowHorizontalDrag = false;
-
-				_this.graphicsBg.events.onDragUpdate.add(function(){
-					_this.tap = false;
-					if(_this.tween)
-					{
-						if(_this.tween.isRunning)
-						{
-							_this.tween.stop();
-							//_this.tween = null;
-						}
-					}
-					if(_this.graphicsBg.y>=10)
-						{
-							//swipeUpFlag = false;
-							_this.graphicsBg.y = 0;
-							//tween.stop();
-							//game.input.enabled = true;
-						}
-					else if(_this.graphicsBg.y<=-520)
-						{
-							//swipeUpFlag = false;
-							_this.graphicsBg.y = -520;
-							//tween.stop();
-							//game.input.enabled = true;
-						}
-				},_this);
-
-				_this.graphicsBg.events.onDragStop.add(function(e){
-					_this.tap = false;
-					//console.log(e);
-					if(_this.tween)
-					{
-						//if(tween.isRunning)
-						_this.tween.stop();
-						//_this.tween = null;
-					}
-
-						if(_this.graphicsBg.y>=0)
-						{
-						//	swipeDownFlag = false;
-							_this.graphicsBg.y = 0;
-						}
-						else if(_this.graphicsBg.y<=-520)
-						{
-							//swipeUpFlag = false;
-							_this.graphicsBg.y = -520;
-						}
-					
-				},_this);
-
-			},_this);
-		
-		_this.input.onTap.add(function(){
-			//console.log("tap");
-			_this.tap = true;
-			_this.time.events.add(300, function(){
-				_this.time.events.removeAll();
-				_this.tap = false;
-				//console.log("tapfalse");
-			},_this);
-		},_this);
-
-
-
-
-
+		_this.graphicsBg.mask = _this.mask;
 
 		
-		if(gradeScreen)
-		{
-			_this.graphicsBg.y = -520;
 
-			var gameScreenTween = game.add.tween(_this.graphicsBg);
-			gameScreenTween.to({ y: 0}, 0, 'Linear', true, 0);
-			gameScreenTween.onComplete.add(function(){
-					this.game.input.enabled = true;	
+		
 
-					if(_this.mc)
-					{
-						_this.mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL , enable:true });
-					}
+		_this.graphicsBg.addChild(this.numberSenseTree);
+		_this.graphicsBg.addChild(this.numberSenseTreeTxt);
+		_this.graphicsBg.addChild(this.measurementTree);
+		_this.graphicsBg.addChild(this.measurementTreeTxt);
+		_this.graphicsBg.addChild(this.numberoperationTree);
+		_this.graphicsBg.addChild(this.numberoperationTreeTxt);
+		_this.graphicsBg.addChild(this.shapesTree);
+		_this.graphicsBg.addChild(this.shapesTreeTxt);
+		_this.graphicsBg.addChild(this.datahandlingTree);
+		_this.graphicsBg.addChild(this.datahandlingTreeTxt);
+		_this.graphicsBg.addChild(this.numbersensePrgress);
+		_this.graphicsBg.addChild(this.numbersensePrgressTxt);
+		_this.graphicsBg.addChild(this.numbersensePrgressTotalTxt);
+		_this.graphicsBg.addChild(this.measurementPrgress);
+		_this.graphicsBg.addChild(this.measurementPrgressTxt);
+		_this.graphicsBg.addChild(this.measurementPrgressTotalTxt);
+		_this.graphicsBg.addChild(this.numberoperationPrgress);
+		_this.graphicsBg.addChild(this.numberoperationPrgressTxt);
+		_this.graphicsBg.addChild(this.numberoperationPrgressTotalTxt);
+		_this.graphicsBg.addChild(this.shapesPrgress);
+		_this.graphicsBg.addChild(this.shapesPrgressTxt);
+		_this.graphicsBg.addChild(this.shapesPrgressTotalTxt);
+		_this.graphicsBg.addChild(this.datahandlingPrgress);
+		_this.graphicsBg.addChild(this.datahandlingPrgressTxt);
+		_this.graphicsBg.addChild(this.datahandlingPrgressTotalTxt);
 
 
-			}, _this);
+		_this.scrollWhite = _this.add.sprite(425,130,'scrollWhite');
+		_this.scrollBlack = _this.add.sprite(428,135,'scrollBlack');
 
+		_this.graphicsBg.inputEnabled = true;
+		_this.graphicsBg.input.enableDrag();
+		_this.graphicsBg.input.allowHorizontalDrag = false;
+		_this.graphicsBg.events.onDragUpdate.add(function(target){
+			console.log(_this.graphicsBg.y);
 
-			gradeScreen = false;
+			if(_this.graphicsBg.y>0)
+				_this.graphicsBg.y = 0;
+			if(_this.graphicsBg.y<-95)
+				_this.graphicsBg.y = -95;
 
-		}
-		else
-		{
-			if(_this.mc)
-			{
-				_this.mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL , enable:true });
+			/*if(_this.scrollBlack.y>-47){
+				_this.scrollBlack.y = 210;
+				_this.graphicsBg.y = -95;
 			}
-			this.game.input.enabled = true;
-		}
+			else if(_this.scrollBlack.y<-47){
+				_this.scrollBlack.y = 135;
+				_this.graphicsBg.y = 0;
+			}*/
+
+		},true);
+
+		_this.scrollBlack.inputEnabled = true;
+
+    	_this.scrollBlack.input.enableDrag();
+		_this.scrollBlack.input.allowHorizontalDrag = false;
+		_this.scrollBlack.events.onDragUpdate.add(function(target){
+			console.log(_this.scrollBlack.y);
+			
+			
+			if(_this.scrollBlack.y<135)
+				_this.scrollBlack.y = 135;
+
+			if(_this.scrollBlack.y>210)
+				_this.scrollBlack.y = 210;
+
+			if(_this.scrollBlack.y>172){
+				_this.scrollBlack.y = 210;
+				_this.graphicsBg.y = -95;
+			}
+			else if(_this.scrollBlack.y<172){
+				_this.scrollBlack.y = 135;
+				_this.graphicsBg.y = 0;
+			}
+
+
+		},true);
+		
 	},
 
 	getchallengemodevalue:function(game){

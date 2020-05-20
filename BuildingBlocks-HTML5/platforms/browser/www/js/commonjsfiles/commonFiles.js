@@ -5299,6 +5299,14 @@ timevents6=game.time.events.add(11000,function(){
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Kannada/1.mp3");
                     else if(window.languageSelected=="Odiya")
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Odiya/1.mp3");
+					else if(window.languageSelected=="Marathi")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Marathi/No1.mp3");
+					else if(window.languageSelected=="Telugu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Telugu/No1.mp3");
+					else if(window.languageSelected=="Tamil")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Tamil/No1.mp3");
+					else if(window.languageSelected=="Urdu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Urdu/No1.mp3");
                     else
                         this.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/numbers/No1.mp3");
                 _this.numpad.visible=true;
@@ -5314,6 +5322,14 @@ timevents6=game.time.events.add(11000,function(){
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Hindi/2.mp3");
                     else if(window.languageSelected=="Kannada")
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Kannada/2.mp3");
+					else if(window.languageSelected=="Marathi")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Marathi/No2.mp3");
+					else if(window.languageSelected=="Telugu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Telugu/No2.mp3");
+					else if(window.languageSelected=="Tamil")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Tamil/No2.mp3");
+					else if(window.languageSelected=="Urdu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Urdu/No2.mp3");
                     else if(window.languageSelected=="Odiya")
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Odiya/2.mp3");
                     else
@@ -5333,6 +5349,14 @@ timevents6=game.time.events.add(11000,function(){
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Kannada/1.mp3");
                     else if(window.languageSelected=="Odiya")
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Odiya/1.mp3");
+					else if(window.languageSelected=="Marathi")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Marathi/No1.mp3");
+					else if(window.languageSelected=="Telugu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Telugu/No1.mp3");
+					else if(window.languageSelected=="Tamil")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Tamil/No1.mp3");
+					else if(window.languageSelected=="Urdu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Urdu/No1.mp3");
                     else
                         this.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/numbers/No1.mp3");
                     _this.numpad.visible=true;
@@ -5351,6 +5375,14 @@ timevents6=game.time.events.add(11000,function(){
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Kannada/1.mp3");
                     else if(window.languageSelected=="Odiya")
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Odiya/1.mp3");
+					else if(window.languageSelected=="Marathi")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Marathi/No1.mp3");
+					else if(window.languageSelected=="Telugu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Telugu/No1.mp3");
+					else if(window.languageSelected=="Tamil")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Tamil/No1.mp3");
+					else if(window.languageSelected=="Urdu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Urdu/No1.mp3");
                     else
                         this.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/numbers/No1.mp3");
                         _this.numpad.visible=true;
@@ -5370,6 +5402,14 @@ timevents6=game.time.events.add(11000,function(){
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Kannada/2.mp3");
                     else if(window.languageSelected=="Odiya")
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Odiya/2.mp3");
+					else if(window.languageSelected=="Marathi")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Marathi/No2.mp3");
+					else if(window.languageSelected=="Telugu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Telugu/No2.mp3");
+					else if(window.languageSelected=="Tamil")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Tamil/No2.mp3");
+					else if(window.languageSelected=="Urdu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Urdu/No2.mp3");
                     else
                         this.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/numbers/No2.mp3");
                             _this.numpad.visible=true;
@@ -5389,6 +5429,14 @@ timevents6=game.time.events.add(11000,function(){
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Kannada/3.mp3");
                     else if(window.languageSelected=="Odiya")
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Odiya/3.mp3");
+					else if(window.languageSelected=="Marathi")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Marathi/No3.mp3");
+					else if(window.languageSelected=="Telugu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Telugu/No3.mp3");
+					else if(window.languageSelected=="Tamil")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Tamil/No3.mp3");
+					else if(window.languageSelected=="Urdu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Urdu/No3.mp3");
                     else
                         this.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/numbers/No3.mp3");
                             _this.numpad.visible=true;
@@ -5408,6 +5456,14 @@ timevents6=game.time.events.add(11000,function(){
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Kannada/4.mp3");
                     else if(window.languageSelected=="Odiya")
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Odiya/4.mp3");
+					else if(window.languageSelected=="Marathi")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Marathi/No4.mp3");
+					else if(window.languageSelected=="Telugu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Telugu/No4.mp3");
+					else if(window.languageSelected=="Tamil")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Tamil/No4.mp3");
+					else if(window.languageSelected=="Urdu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Urdu/No4.mp3");
                     else
                         this.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/numbers/No4.mp3");
 
@@ -5427,6 +5483,14 @@ timevents6=game.time.events.add(11000,function(){
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Kannada/5.mp3");
                     else if(window.languageSelected=="Odiya")
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Odiya/5.mp3");
+					else if(window.languageSelected=="Marathi")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Marathi/No5.mp3");
+					else if(window.languageSelected=="Telugu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Telugu/No5.mp3");
+					else if(window.languageSelected=="Tamil")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Tamil/No5.mp3");
+					else if(window.languageSelected=="Urdu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Urdu/No5.mp3");
                     else
                         this.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/numbers/No5.mp3");
                                     _this.numpad.visible=true;
@@ -5471,6 +5535,14 @@ timevents6=game.time.events.add(11000,function(){
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Kannada/1.mp3");
                     else if(window.languageSelected=="Odiya")
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Odiya/1.mp3");
+					else if(window.languageSelected=="Marathi")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Marathi/No1.mp3");
+					else if(window.languageSelected=="Telugu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Telugu/No1.mp3");
+					else if(window.languageSelected=="Tamil")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Tamil/No1.mp3");
+					else if(window.languageSelected=="Urdu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Urdu/No1.mp3");
                     else
                         this.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/numbers/No1.mp3");
                 _this.numpad.visible=true;
@@ -5491,6 +5563,14 @@ timevents6=game.time.events.add(11000,function(){
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Kannada/2.mp3");
                     else if(window.languageSelected=="Odiya")
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Odiya/2.mp3");
+					else if(window.languageSelected=="Marathi")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Marathi/No2.mp3");
+					else if(window.languageSelected=="Telugu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Telugu/No2.mp3");
+					else if(window.languageSelected=="Tamil")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Tamil/No2.mp3");
+					else if(window.languageSelected=="Urdu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Urdu/No2.mp3");
                     else
                         this.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/numbers/No2.mp3");
                 _this.numpad.visible=true;
@@ -5510,6 +5590,14 @@ timevents6=game.time.events.add(11000,function(){
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Kannada/3.mp3");
                     else if(window.languageSelected=="Odiya")
                         this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Odiya/3.mp3");
+					else if(window.languageSelected=="Marathi")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Marathi/No3.mp3");
+					else if(window.languageSelected=="Telugu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Telugu/No3.mp3");
+					else if(window.languageSelected=="Tamil")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Tamil/No3.mp3");
+					else if(window.languageSelected=="Urdu")
+                        this.getVoice(window.baseUrl+"questionSounds/unity/1.1/Urdu/No3.mp3");
                     else
                         this.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/numbers/No3.mp3");
                     _this.numpad.visible=true;

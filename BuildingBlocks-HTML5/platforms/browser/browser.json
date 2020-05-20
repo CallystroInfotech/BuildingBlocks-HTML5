@@ -11,38 +11,6 @@
             {
               "xml": "<feature name=\"Device\"><param name=\"browser-package\" value=\"Device\" /></feature>",
               "count": 1
-            },
-            {
-              "xml": "<feature name=\"FacebookConnectPlugin\"><param name=\"browser-package\" value=\"FacebookConnectPluginBrowser\" /><param name=\"onload\" value=\"true\" /></feature>",
-              "count": 1
-            },
-            {
-              "xml": "<plugin name=\"FacebookConnectPlugin\" value=\"FacebookConnectPlugin\" />",
-              "count": 1
-            },
-            {
-              "xml": "<access origin=\"https://m.facebook.com\" />",
-              "count": 1
-            },
-            {
-              "xml": "<access origin=\"https://connect.facebook.net\" />",
-              "count": 1
-            },
-            {
-              "xml": "<access origin=\"https://graph.facebook.com\" />",
-              "count": 1
-            },
-            {
-              "xml": "<access origin=\"https://api.facebook.com\" />",
-              "count": 1
-            },
-            {
-              "xml": "<access origin=\"https://*.fbcdn.net\" />",
-              "count": 1
-            },
-            {
-              "xml": "<access origin=\"https://*.akamaihd.net\" />",
-              "count": 1
             }
           ]
         }
@@ -108,16 +76,6 @@
       "PACKAGE_NAME": "io.cordova.hellocordova"
     },
     "cordova-plugin-android-permissions": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
-    "cordova-plugin-facebook4": {
-      "APP_ID": "284648352510790",
-      "APP_NAME": "Building Blocks",
-      "FACEBOOK_HYBRID_APP_EVENTS": "false",
-      "FACEBOOK_ANDROID_SDK_VERSION": "5.13.0",
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
-    "cordova-plugin-appsflyer-sdk": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
     },
     "cordova-plugin-statusbar": {
@@ -453,30 +411,6 @@
       ]
     },
     {
-      "file": "plugins/cordova-plugin-facebook4/www/facebook-browser.js",
-      "id": "cordova-plugin-facebook4.FacebookConnectPluginBrowser",
-      "pluginId": "cordova-plugin-facebook4",
-      "clobbers": [
-        "facebookConnectPlugin"
-      ]
-    },
-    {
-      "file": "plugins/cordova-plugin-appsflyer-sdk/www/appsflyer.js",
-      "id": "cordova-plugin-appsflyer-sdk.appsflyer",
-      "pluginId": "cordova-plugin-appsflyer-sdk",
-      "clobbers": [
-        "window.plugins.appsFlyer"
-      ]
-    },
-    {
-      "file": "plugins/cordova-plugin-appsflyer-sdk/www/AppsFlyerError.js",
-      "id": "cordova-plugin-appsflyer-sdk.AppsFlyerError",
-      "pluginId": "cordova-plugin-appsflyer-sdk",
-      "clobbers": [
-        "AppsFlyerError"
-      ]
-    },
-    {
       "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
       "id": "cordova-plugin-statusbar.statusbar",
       "pluginId": "cordova-plugin-statusbar",
@@ -511,8 +445,6 @@
     "cordova-plugin-x-socialsharing": "5.6.4",
     "cordova-plugin-native-spinner": "1.1.3",
     "cordova-plugin-android-permissions": "1.0.2",
-    "cordova-plugin-facebook4": "6.3.0",
-    "cordova-plugin-appsflyer-sdk": "4.4.22",
     "cordova-plugin-statusbar": "2.4.3"
   }
 }

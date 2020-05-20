@@ -5337,6 +5337,26 @@ Game.fraction_NSFG_4_1level3.prototype={
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/1.4/1.2C1.mp3");
                         _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/1.4/1.2C1.mp3";
                     }
+					else if(window.languageSelected == "Marathi")
+					{
+						_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.4/Marathi/1.2C1.mp3");
+						_this.soundurl =  window.baseUrl+"questionSounds/1.4/Marathi/1.2C1.mp3";
+					}
+					else if(window.languageSelected == "Telugu")
+					{
+						_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.4/telugu/1.2C1.mp3");
+						_this.soundurl =  window.baseUrl+"questionSounds/1.4/telugu/1.2C1.mp3";
+					}
+					else if(window.languageSelected == "Tamil")
+					{
+						_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.4/Tamil/1.2C1.mp3");
+						_this.soundurl =  window.baseUrl+"questionSounds/1.4/Tamil/1.2C1.mp3";
+					}
+					else if(window.languageSelected == "Urdu")
+					{
+						_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.4/Urdu/1.2C1.mp3");
+						_this.soundurl =  window.baseUrl+"questionSounds/1.4/Urdu/1.2C1.mp3";
+					}
                 else
                 {
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/1.4/Odiya/1.2C1.mp3");
@@ -5366,6 +5386,26 @@ Game.fraction_NSFG_4_1level3.prototype={
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/1.4/1.2C2.mp3");
                         _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/1.4/1.2C2.mp3";
                     }
+					else if(window.languageSelected == "Marathi")
+					{
+						_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.4/Marathi/1.2C2.mp3");
+						_this.soundurl =  window.baseUrl+"questionSounds/1.4/Marathi/1.2C2.mp3";
+					}
+					else if(window.languageSelected == "Telugu")
+					{
+						_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.4/telugu/1.2C2.mp3");
+						_this.soundurl =  window.baseUrl+"questionSounds/1.4/telugu/1.2C2.mp3";
+					}
+					else if(window.languageSelected == "Tamil")
+					{
+						_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.4/Tamil/1.2C2.mp3");
+						_this.soundurl =  window.baseUrl+"questionSounds/1.4/Tamil/1.2C2.mp3";
+					}
+					else if(window.languageSelected == "Urdu")
+					{
+						_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.4/Urdu/1.2C2.mp3");
+						_this.soundurl =  window.baseUrl+"questionSounds/1.4/Urdu/1.2C2.mp3";
+					}
                 else
                 {
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/1.4/Odiya/1.2C2.mp3");
@@ -5395,6 +5435,26 @@ Game.fraction_NSFG_4_1level3.prototype={
                         _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/1.4/1.2C3.mp3");
                         _this.soundurl =  window.baseUrl+"questionSounds/Gujarati/1.4/1.2C3.mp3";
                     }
+					else if(window.languageSelected == "Marathi")
+					{
+						_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.4/Marathi/1.2C3.mp3");
+						_this.soundurl =  window.baseUrl+"questionSounds/1.4/Marathi/1.2C3.mp3";
+					}
+					else if(window.languageSelected == "Telugu")
+					{
+						_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.4/telugu/1.2C3.mp3");
+						_this.soundurl =  window.baseUrl+"questionSounds/1.4/telugu/1.2C3.mp3";
+					}
+					else if(window.languageSelected == "Tamil")
+					{
+						_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.4/Tamil/1.2C3.mp3");
+						_this.soundurl =  window.baseUrl+"questionSounds/1.4/Tamil/1.2C3.mp3";
+					}
+					else if(window.languageSelected == "Urdu")
+					{
+						_this.src.setAttribute("src", window.baseUrl+"questionSounds/1.4/Urdu/1.2C3.mp3");
+						_this.soundurl =  window.baseUrl+"questionSounds/1.4/Urdu/1.2C3.mp3";
+					}
                 else
                 {
                     _this.src.setAttribute("src", window.baseUrl+"questionSounds/1.4/Odiya/1.2C3.mp3");

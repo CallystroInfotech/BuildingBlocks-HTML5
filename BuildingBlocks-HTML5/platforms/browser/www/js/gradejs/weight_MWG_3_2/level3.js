@@ -566,11 +566,19 @@ Game.weight_MWG_3_2level3.prototype={
             kgTxt = this.add.text(x+80,500, "ಕೆಜಿ");
 		else if(window.languageSelected=="Odiya")
             kgTxt = this.add.text(x+80,500, "କି.ଗ୍ରା.");
+		else if(window.languageSelected=="Marathi")
+				var kgTxt = this.add.text(x+80,505, "किलोग्रॅम");
+			else if(window.languageSelected=="Telugu")
+				var kgTxt = this.add.text(x+80,505, "కిలో");
+			else if(window.languageSelected=="Tamil")
+				var kgTxt = this.add.text(x+80,505, "கி.கி");
+			else if(window.languageSelected=="Urdu")
+				var kgTxt = this.add.text(x+80,505, "کلو گرام");
         else
             kgTxt = this.add.text(x+80,500, "કિગ્રા.");
             //titletext.scale.setTo(1.5);
 			
-			if(window.languageSelected=="Hindi" || window.languageSelected=="Kannada"|| window.languageSelected=="Odiya" || window.languageSelected=="Gujarati"){
+			if(window.languageSelected=="Hindi" || window.languageSelected=="Kannada"|| window.languageSelected=="Odiya" || window.languageSelected=="Gujarati" || window.languageSelected=="Marathi" || window.languageSelected=="Telugu" || window.languageSelected=="Tamil" || window.languageSelected=="Urdu"){
 				kgTxt.anchor.setTo(0.5);
 				kgTxt.align = 'center';
 
@@ -606,11 +614,19 @@ Game.weight_MWG_3_2level3.prototype={
                         var gmTxt = this.add.text(x+210,500, "ಗ್ರಾಂ");
 					else if(window.languageSelected=="Odiya")
                         var gmTxt = this.add.text(x+210,500, "ଗ୍ରାମ");
+					else if(window.languageSelected=="Marathi")
+				var gmTxt = this.add.text(x+210,505, "ग्रॅम");
+			else if(window.languageSelected=="Telugu")
+				var gmTxt = this.add.text(x+210,505, "గ్రాము");
+			else if(window.languageSelected=="Tamil")
+				var gmTxt = this.add.text(x+210,505, "கி");
+			else if(window.languageSelected=="Urdu")
+				var gmTxt = this.add.text(x+210,505, "گرام");
                     else
                         var gmTxt = this.add.text(x+210,500, "ગ્રા");
             //titletext.scale.setTo(1.5);
 			
-			if(window.languageSelected=="Hindi" || window.languageSelected=="Kannada"|| window.languageSelected=="Odiya" || window.languageSelected=="Gujarati"){
+			if(window.languageSelected=="Hindi" || window.languageSelected=="Kannada"|| window.languageSelected=="Odiya" || window.languageSelected=="Gujarati" || window.languageSelected=="Marathi" || window.languageSelected=="Telugu" || window.languageSelected=="Tamil" || window.languageSelected=="Urdu"){
 				gmTxt.anchor.setTo(0.5);
 				gmTxt.align = 'center';
 
@@ -11187,6 +11203,26 @@ Game.weight_MWG_3_2level3.prototype={
                         //_this.src.setAttribute("src", window.baseUrl+"questionSounds/3.3A/Kannada/3.3A.mp3");
                         commonNavBar.getVoice(window.baseUrl+"questionSounds/Gujarati/3.3A/3.3B_2.mp3");
                         _this.soundurl = window.baseUrl+"questionSounds/Gujarati/3.3A/3.3B_2.mp3";
+                    }
+					else if(window.languageSelected == "Marathi")
+                    {
+                        commonNavBar.getVoice(window.baseUrl+"questionSounds/3.1/Marathi/3.3B_2.mp3");
+                        _this.soundurl = window.baseUrl+"questionSounds/3.1/Marathi/3.3B_2.mp3";
+                    }
+					else if(window.languageSelected == "Telugu")
+                    {
+                        commonNavBar.getVoice(window.baseUrl+"questionSounds/3.1/Telugu/3.3B_2.mp3");
+                        _this.soundurl = window.baseUrl+"questionSounds/3.1/Telugu/3.3B_2.mp3";
+                    }
+					else if(window.languageSelected == "Tamil")
+                    {
+                        commonNavBar.getVoice(window.baseUrl+"questionSounds/3.1/Tamil/3.3B_2.mp3");
+                        _this.soundurl = window.baseUrl+"questionSounds/3.1/Tamil/3.3B_2.mp3";
+                    }
+					else if(window.languageSelected == "Urdu")
+                    {
+                        commonNavBar.getVoice(window.baseUrl+"questionSounds/3.1/Urdu/3.3B_2.mp3");
+                        _this.soundurl = window.baseUrl+"questionSounds/3.1/Urdu/3.3B_2.mp3";
                     }
 					else
                     {

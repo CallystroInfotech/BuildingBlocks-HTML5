@@ -8,10 +8,11 @@ Game.boot.prototype={
 	
 	preload:function(){
 
+		//window.baseUrl = "./";
 		_this = this;
 		//_this.cache.destroy();		
 		
-		_this.load.json('translations',window.baseUrl+'assets/newAssets/lang.json');
+		_this.load.json('translations','js/lang.json');
 				
 		_this.load.image('prgressbarOutLine',window.baseUrl+'assets/commonAssets/prgressbarOutLine.png');
 		_this.load.image('preloadBar',window.baseUrl+'assets/commonAssets/prgressbar.png');
@@ -43,6 +44,7 @@ Game.boot.prototype={
 		
 		game.input.maxPointers = 1;
 
+		
 
 
 		screen.orientation.lock('landscape');
@@ -53,7 +55,6 @@ Game.boot.prototype={
 		_this.game.scale.setGameSize(960, 540);
 		
         _this.scale.forceOrientation(false, true);
-		
 		
 		
 		var translations = _this.cache.getJSON('translations');
@@ -73,6 +74,22 @@ Game.boot.prototype={
 		else if(window.languageSelected == "Gujarati")
 		{
 			window.selctedLang = translations.gu;
+		}
+		else if(window.languageSelected == "Marathi")
+		{
+			window.selctedLang = translations.ma;
+		}
+		else if(window.languageSelected == "Telugu")
+		{
+			window.selctedLang = translations.te;
+		}
+		else if(window.languageSelected == "Tamil")
+		{
+			window.selctedLang = translations.tm;
+		}
+		else if(window.languageSelected == "Urdu")
+		{
+			window.selctedLang = translations.ur;
 		}
 		else
 		{
