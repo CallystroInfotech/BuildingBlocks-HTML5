@@ -4,10 +4,13 @@ Game.division_NODG_1_2level1=function(){};
 Game.division_NODG_1_2level1.prototype={
 
 
-	init:function(game)
+	init:function(param,score)
 	{
 		_this = this;
-		this.score =parseInt(window.score);
+		this.Stararr = param;
+        this.score = score;
+		if(window.quizQuest == false)
+			this.score =parseInt(window.score);
 		
 
 		telInitializer2.gameIdInit2("NODG1.2");
@@ -1699,6 +1702,9 @@ _this.numGroup.add(_this.numBackground);
 										_this.tween1 = _this.add.tween(_this.numGroup);
 
 										_this.tween1.to({ y: 100 }, 0, 'Linear', true, 0);
+										{
+											commonNavBar.updateScore(+5);
+										}					 
 									}
 									else
 									{ 
@@ -1710,6 +1716,10 @@ _this.numGroup.add(_this.numBackground);
 										_this.numBoxNum1.visible = false;
 										_this.time.events.add(1000, function(){ _this.removeEverthing();}, _this);
 
+if(window.quizQuest == true)
+										{
+											commonNavBar.updateScore(-5);
+									}
 									}
 								},this);
 
@@ -1913,7 +1923,22 @@ _this.numGroup.add(_this.numBackground);
 					_this.rabbitBegin.destroy();
 					_this.rabbitBegin1.destroy();
 					_this.cloudBegin.destroy();
-					_this.getQuestion();
+					if(window.quizQuest == true)
+				{
+						var timerStopVar = commonNavBar.stopTimer();
+						commonNavBar.disableNavBar();
+						commonNavBar.soundVar=null,
+						commonNavBar.questionArray=null,
+						commonNavBar.questionCount=null,
+						commonNavBar.soundUrl=null,
+						commonNavBar.speakerbtn=null,
+						
+						quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+					}
+					else
+					{
+						_this.getQuestion();
+					}
 
 				}
 				else
@@ -1948,6 +1973,18 @@ _this.numGroup.add(_this.numBackground);
 					}
 				}
 				_this.starsGroup.getChildAt(0).frame = 2; 
+					if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }
 			},
 	/*correctAns:function()
 	{

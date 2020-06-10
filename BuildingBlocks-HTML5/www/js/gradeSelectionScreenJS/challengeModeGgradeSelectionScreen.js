@@ -22,14 +22,7 @@ Game.challengeModeGgradeSelectionScreen.prototype={
 	init:function()
 	{
 		_this = this;
-		window.score = localStorage.getItem(window.avatarName+"Score");
-		// remove an item
-
-		if(window.score==null||window.score==undefined||window.score==""||window.score==NaN)
-		{
-			localStorage.setItem(window.avatarName+"Score", 50);
-			window.score = parseInt(localStorage.getItem(window.avatarName+"Score"));
-		}
+		
 
 	},
 			

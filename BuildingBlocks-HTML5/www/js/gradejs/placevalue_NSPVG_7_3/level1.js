@@ -1,11 +1,14 @@
 Game.placevalue_NSPVG_7_3level1=function(){};
 
 Game.placevalue_NSPVG_7_3level1.prototype={
-    init:function(game)
+    init:function(param,score)
     {
        _this = this;
       // telInitializer.gameIdInit("unity4_6_1",gradeSelected);
 
+		this.Stararr = param;
+        this.score = score;
+	if(window.quizQuest == false)
       this.score =parseInt(window.score);
        telInitializer2.gameIdInit2("NSPVG7.3");
 
@@ -248,6 +251,18 @@ create:function(game)
 			}
 		}
         _this.starsGroup.getChildAt(0).frame = 2; 
+        if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }
 	},
        
      
@@ -2730,7 +2745,23 @@ gotoNinthQuestion:function()
                         _this.time.events.add(500,function(){
                         _this.starsGroup.getChildAt(_this.count1+1).frame = 2; 
                         _this.count1++;
-                        _this.getQuestion();
+
+						if(window.quizQuest == true)
+						{
+							var timerStopVar = commonNavBar.stopTimer();
+							commonNavBar.disableNavBar();
+							commonNavBar.soundVar=null,
+							commonNavBar.questionArray=null,
+							commonNavBar.questionCount=null,
+							commonNavBar.soundUrl=null,
+							commonNavBar.speakerbtn=null,
+							
+							quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+						}
+						else
+						{
+								_this.getQuestion();
+						}
                     },_this);
                  
                     }
@@ -2949,6 +2980,10 @@ gotoNinthQuestion:function()
      	commonNavBar.playCelebrationSound();
 		this.Stararr.push(3);
         _this.time.events.add(2000, _this.removeCelebration, _this);
+        if(window.quizQuest == true)
+		{
+			commonNavBar.updateScore(+5);
+		}
 
  
 	},
@@ -3008,6 +3043,10 @@ gotoNinthQuestion:function()
 		
         */
         _this.time.events.add(1000, _this.removeCelebration, _this);
+        if(window.quizQuest == true)
+		{
+			commonNavBar.updateScore(-5);
+		}                  
 	},
     
    

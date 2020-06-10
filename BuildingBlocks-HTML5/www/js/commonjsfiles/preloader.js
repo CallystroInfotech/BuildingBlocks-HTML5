@@ -175,6 +175,8 @@ Game.preloader.prototype={
 		window.longdivision4 = false;
 		window.longdivision5 = false;
 		window.longdivision6 = false;
+		
+		window.conversion = false;
 
 
 
@@ -269,6 +271,7 @@ Game.preloader.prototype={
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade4DataHandlingScreen.js", "js");
 
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade5NumberSenseScreen.js", "js");
+		this.loadjscssfile("js/gradeSelectionScreenJS/grade5MeasurementScreen.js", "js");
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade5NumberOperationScreen.js", "js");
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade5ShapesScreen.js", "js");
 		this.loadjscssfile("js/gradeSelectionScreenJS/grade5DataHandlingScreen.js", "js");
@@ -836,6 +839,10 @@ Game.preloader.prototype={
 
 		this.loadjscssfile("js/gradejs/longdivision6/level1.js", "js");
 		this.loadjscssfile("js/gradejs/longdivision6/score.js", "js");
+		
+		this.loadjscssfile("js/gradejs/conversion/commonFiles.js", "js");
+		this.loadjscssfile("js/gradejs/conversion/level1.js", "js");
+		this.loadjscssfile("js/gradejs/conversion/score.js", "js");
 
 		
 
@@ -844,6 +851,8 @@ Game.preloader.prototype={
 		//// ***************************** loading the video files *****************************************//
 		this.load.video('demo7_1_1','./demo.mp4');
 		this.load.video('demo','./demo.mp4');
+		
+		_this.load.image('conversion',window.baseUrl+'assets/conversion/conversion.png');
 		
 		_this.addgradeSelectionAssets();
 		_this.addgrade1SelectionAssets();
@@ -1267,6 +1276,9 @@ Game.preloader.prototype={
         this.load.audio('dragsnapsound','sounds/Drag_Snap.mp3');
         this.load.audio('snakeSound','sounds/snake.mp3');
         this.load.audio('ladderSound','sounds/ladder.mp3');
+		
+		
+        this.load.audio('autoSound','sounds/autoSound.mp3');
 
 
 		this.load.audio('CarrotBite', 'sounds/CarrotBite.mp3');
@@ -12486,6 +12498,7 @@ Game.preloader.prototype={
 		game.state.add('grade4DataHandling',Game.grade4DataHandling);
 
 		game.state.add('grade5NumberSense',Game.grade5NumberSense);
+		game.state.add('grade5Measurement',Game.grade5Measurement);
 		game.state.add('grade5NumberOperation',Game.grade5NumberOperation);
 		game.state.add('grade5Shapes',Game.grade5Shapes);
 		game.state.add('grade5DataHandling',Game.grade5DataHandling);
@@ -12929,6 +12942,9 @@ Game.preloader.prototype={
 
         game.state.add('longdivision6',Game.longdivision6);
         game.state.add('longdivision6Score',Game.longdivision6Score);
+		
+		game.state.add('conversion',Game.conversion);
+        game.state.add('conversionScore',Game.conversionScore);
 
 
 
@@ -13360,9 +13376,20 @@ Game.preloader.prototype={
           }
 
         
-          if(window.score==0)
+          /*if(window.score==0)
           {
           	window.score = 50;
-          }
+          }*/
+		  
+		  window.score = parseInt(localStorage.getItem(window.avatarName+"Score"));
+		// remove an item
+		//alert(Number.isNaN(window.score));
+		if(window.score==null||window.score==undefined||window.score==""||Number.isNaN(window.score))
+		{
+			//alert("here");
+			localStorage.setItem(window.avatarName+"Score", 50);
+			window.score = parseInt(localStorage.getItem(window.avatarName+"Score"));
+		}
+		//alert(window.score);
 	}
 }

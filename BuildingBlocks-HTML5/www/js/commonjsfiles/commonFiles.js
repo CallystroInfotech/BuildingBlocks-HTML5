@@ -63,6 +63,11 @@ var commonNavBar = {
             this.backbtn = game.add.sprite(-4,-2,'backBtn');
         //this.backbtn.scale.setTo(0.9);
         this.backbtn.inputEnabled = true;
+		if(window.quizQuest == true)
+			{
+				this.backbtn.visible = false;
+				this.backbtn.inputEnabled = false;
+			}
         this.backbtn.events.onInputDown.add(this.backClicked,this);
 
         if(this.mcIcon == null){
@@ -96,7 +101,14 @@ var commonNavBar = {
         }
         
         if(this.speakerbtn == null){ 
-            this.speakerbtn = game.add.sprite(610,7,'speakerBtn');
+           if(quizQuest == true)
+			{
+				this.speakerbtn = game.add.sprite(470,7,'speakerBtn');
+			}
+			else
+			{
+				this.speakerbtn = game.add.sprite(610,7,'speakerBtn');
+			}
             this.speakerbtn.inputEnabled = true;
             this.speakerbtn.input.priorityID = 2;
         }
@@ -273,73 +285,87 @@ var commonNavBar = {
 
     addTimerToTheGame:function(game,min,sec,counter)
     {
-        this.timerBg = game.add.sprite(game.world.centerX-150,6,'timerBg');
+		if(window.quizQuest == false)
+		{
+			
+		this.timerBg = game.add.sprite(game.world.centerX-150,6,'timerBg');
+		
 
         this.minutes = min;
         this.seconds = sec;
         this.counterForTimer = counter;
-
-        this.timeText = game.add.text(game.world.centerX-122,23, this.minutes + ':'+  this.seconds);
+		
+		
+		this.timeText = game.add.text(game.world.centerX-122,23, this.minutes + ':'+  this.seconds);
+		
         this.timeText.anchor.setTo(0.5);
         this.timeText.align = 'center';
         this.timeText.font = 'myfont';
         this.timeText.fontWeight = 'normal';
         this.timeText.fontSize = 20;
         this.timeText.fill = '#ADFF2F';
-
+		}
     },
 
     startTimer:function(game)
     {
-        this.timer = game.time.create(false);
-        this.timer.loop(1000, function()
-                        {
-            this.updateTimer();
-        }, this);
-        this.timer.start();
+		if(window.quizQuest == false)
+		{
+			this.timer = game.time.create(false);
+			this.timer.loop(1000, function()
+							{
+				this.updateTimer();
+			}, this);
+			this.timer.start();
+		}
     },
 
     stopTimer:function()
     {
-        if(this.timer)
-        {
-            this.timer.stop();
-            this.timer = null;
-        }
-        var timerObj = {
-            min:this.minutes,
-            sec:this.seconds,
-            counter:this.counterForTimer
-        };
-        return timerObj;
+		if(window.quizQuest == false)
+		{
+			if(this.timer)
+			{
+				this.timer.stop();
+				this.timer = null;
+			}
+			var timerObj = {
+				min:this.minutes,
+				sec:this.seconds,
+				counter:this.counterForTimer
+			};
+			return timerObj;
+		}
     },
 
     updateTimer:function() 
     {
-        this.counterForTimer++;
+		if(window.quizQuest == false)
+		{
+			this.counterForTimer++;
 
-        if(this.counterForTimer>59)
-        {
-            this.counterForTimer = 0;
+			if(this.counterForTimer>59)
+			{
+				this.counterForTimer = 0;
 
-            if(this.minutes<10){
-                this.minutes =  this.minutes+1;
-                this.seconds = 00;
-            }
-            else
-            {
-                this.minutes =  this.minutes+1;
-            }
-        }
-        else
-        {
-            if (this.counterForTimer < 10)        
-                this.seconds = '0' + this.counterForTimer;
-            else
-                this.seconds = this.counterForTimer;
-        }
-        this.timeText.setText(this.minutes+':' + this.seconds);
-
+				if(this.minutes<10){
+					this.minutes =  this.minutes+1;
+					this.seconds = 00;
+				}
+				else
+				{
+					this.minutes =  this.minutes+1;
+				}
+			}
+			else
+			{
+				if (this.counterForTimer < 10)        
+					this.seconds = '0' + this.counterForTimer;
+				else
+					this.seconds = this.counterForTimer;
+			}
+			this.timeText.setText(this.minutes+':' + this.seconds);
+		}
     },
 
     getVoice:function(url,callback)
@@ -430,7 +456,11 @@ var commonNavBar = {
         this.scoreTxt.fill = '#ADFF2F';
 
     },
-
+	updateScore:function(value)
+    {
+		this.scoreVar+= value;
+		this.scoreTxt.setText(this.scoreVar);
+	},
     addHint:function(game,hintparams)
     {
         //this.hintClicked(game,hint1,hint2,hint3,gameid);
@@ -450,6 +480,12 @@ var commonNavBar = {
         }
 
         this.hintIcon.inputEnabled = true;
+		if(window.quizQuest == true)
+		{
+			
+			 this.hintIcon.alpha = 0;
+			 this.hintIcon.inputEnabled = false;
+		}
         this.hintIcon.events.onInputDown.add(function(){
 
 
@@ -802,7 +838,8 @@ var commonNavBar = {
     {
         this.speakerbtn.inputEnabled = false;
         this.backbtn.inputEnabled = false;
-        this.hintIcon.inputEnabled = false;
+		if(this.hintIcon)
+			this.hintIcon.inputEnabled = false;
 
         this.navBar = null;
         this.backbtn = null;
@@ -815,7 +852,8 @@ var commonNavBar = {
     },
 
     enableHintIcon:function(){
-        this.hintIcon.inputEnabled = true;
+		if(quizQuest == false)
+			this.hintIcon.inputEnabled = true;
     },
 
     getScore:function()

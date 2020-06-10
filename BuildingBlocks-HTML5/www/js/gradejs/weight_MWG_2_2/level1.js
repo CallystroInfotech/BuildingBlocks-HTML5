@@ -8,6 +8,8 @@ Game.weight_MWG_2_2level1.prototype={
         
         _this.gameid = "3.2B";
         this.Stararr = param;
+        this.score = score;
+	if(window.quizQuest == false)
         this.score =parseInt(window.score);
         
        /* _this.currentTime = window.timeSaveFunc();
@@ -479,7 +481,22 @@ Game.weight_MWG_2_2level1.prototype={
             Maintween4Destroy.to({ x: -1000}, 0,'Linear', true, 0);
             Maintween4Destroy.onComplete.add(function(){
                 obj2Group.destroy();
-                this.getQuestion();
+               if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					this.getQuestion();
+				}
             },this);
             starsGroup.getChildAt(count1+1).frame = 2; 
             count1++;
@@ -683,6 +700,10 @@ Game.weight_MWG_2_2level1.prototype={
                         anim.onComplete.add(function(){this.removeEverthing();},this);
                         //this.time.events.add(3000, function(){this.removeEverthing();},this);
                    // count1++;
+                if(window.quizQuest == true)
+					{
+						commonNavBar.updateScore(+5);
+					}
                 }
             else
                 {
@@ -707,6 +728,10 @@ Game.weight_MWG_2_2level1.prototype={
                      //target.events.onInputDown.removeAll();
                     _this.time.events.add(2000, function(){ _this.removeEverthing();}, _this);
 
+                      if(window.quizQuest == true)
+					{
+						commonNavBar.updateScore(-5);
+					}                                  
                 }
   
         },this); 
@@ -2836,6 +2861,18 @@ Game.weight_MWG_2_2level1.prototype={
 			}
 		}
         starsGroup.getChildAt(0).frame = 2;
+if(window.quizQuest == true)
+      {
+          starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }
 	},
     
  

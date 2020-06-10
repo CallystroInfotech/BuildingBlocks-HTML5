@@ -10,7 +10,9 @@ Game.weight_MWG_1_1level1.prototype={
         this.Stararr = param;
        
 
-        this.score =parseInt(window.score);
+		this.score = score;
+		if(window.quizQuest == false)
+			this.score =parseInt(window.score);
         /*_this.gameid = "3.2A";
         
         _this.currentTime = window.timeSaveFunc();
@@ -308,7 +310,22 @@ Game.weight_MWG_1_1level1.prototype={
             MaintweenDestroy2.to({ x: -1000}, 0, 'Linear', true, 0);
             MaintweenDestroy2.onComplete.add(function(){
               _this.scale2Group.destroy();  
-              _this.gotoFirstQuestion();
+                if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					_this.gotoFirstQuestion();
+				}
             },_this);
                        
                        // _this.count =0;
@@ -427,6 +444,10 @@ Game.weight_MWG_1_1level1.prototype={
             var anim4 = starAnim.animations.add('star');
             anim4.play();
             anim.onComplete.add(function(){_this.removeEverthing();},_this);
+            if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(+5);
+			}
         }
         else
         {
@@ -443,6 +464,10 @@ Game.weight_MWG_1_1level1.prototype={
                      //_this.count1++
             target.events.onInputDown.removeAll();
             _this.time.events.add(1000, function(){ _this.removeEverthing();}, _this);
+           if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(-5);
+			}                        
            
         }
         
@@ -1039,6 +1064,18 @@ Game.weight_MWG_1_1level1.prototype={
             }
         }  
         _this.starsGroup.getChildAt(0).frame = 2;
+                                                                  if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }                                    
     },
     
     createScoreScene:function()

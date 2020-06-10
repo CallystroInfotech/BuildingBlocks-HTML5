@@ -51,6 +51,8 @@ Game.subtraction_NOAG_1_1level1.prototype={
     _this = this;
      
       this.Stararr = param;
+		this.score = score;
+	  if(window.quizQuest == false)
         this.score =parseInt(window.score);
         
         this.celebr = this.add.audio('celebr');
@@ -551,23 +553,35 @@ Game.subtraction_NOAG_1_1level1.prototype={
     
     generateStarsForTheScene:function(count)
 	 {
-		starsGroup = this.add.group();
+		this.starsGroup = this.add.group();
 		
 		for (var i = 0; i < count; i++)
 		{
 	
-			 starsGroup.create(_this.world.centerX, 10, 'cstarAnim');
+			 this.starsGroup.create(_this.world.centerX, 10, 'cstarAnim');
             
 			for(var j =0;j<i;j++)
 			{
-				if( starsGroup.getChildAt(j))
+				if( this.starsGroup.getChildAt(j))
 				{
-					 starsGroup.getChildAt(j).x-=10;
-					 starsGroup.getChildAt(i).x+=10;
+					 this.starsGroup.getChildAt(j).x-=10;
+					 this.starsGroup.getChildAt(i).x+=10;
 				}
 			}
 		}
-        starsGroup.getChildAt(0).frame = 2; 						
+        this.starsGroup.getChildAt(0).frame = 2; 						
+         if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }                  
 	},
 
     addQuestion:function(no22)
@@ -592,7 +606,7 @@ Game.subtraction_NOAG_1_1level1.prototype={
         //randarr[f].destroy();
         
         //this.time.events.add(500, function(){
-         starsGroup.getChildAt(count1+1).frame = 2; 
+         this.starsGroup.getChildAt(count1+1).frame = 2; 
             count1++;
         
         this.changeQuestion();
@@ -1183,7 +1197,22 @@ glowCarrotToCount :function()
 		if(no11<6)
 		{
             count++;
-			this.getQuestion();
+           if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					this.getQuestion();
+				}
 		}
 		else
 		{
@@ -1458,7 +1487,7 @@ glowCarrotToCount :function()
 		
         
     
-        var starAnim = starsGroup.getChildAt(count1);
+        var starAnim = this.starsGroup.getChildAt(count1);
 		//console.log(starAnim);
 		starAnim.smoothed = false;
     	var anim4 = starAnim.animations.add('star');
@@ -1466,6 +1495,10 @@ glowCarrotToCount :function()
         
         //this.disableListeners();
 		//target.events.onInputDown.removeAll();
+      if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(+5);
+			}
 	},
 
 
@@ -1476,7 +1509,7 @@ glowCarrotToCount :function()
         //console.log("wrong");
         	
         _this.Stararr.push(1);
-         starsGroup.getChildAt(count1).frame = 1;
+         this.starsGroup.getChildAt(count1).frame = 1;
 		//scoretext.setText(selctedLang.score+' : '+score);
         ////console.log(target);
         //target.tint = 0xA9A9A9;
@@ -1493,6 +1526,10 @@ glowCarrotToCount :function()
          this.time.events.add(500, this.removeCelebration, this);
         	//this.disableListeners();
         //target.events.onInputDown.removeAll();
+          if(window.quizQuest == true)
+		{
+			commonNavBar.updateScore(-5);
+		}                   
 	},
     
     destroyCarrots:function(){

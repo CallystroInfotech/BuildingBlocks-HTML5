@@ -3,13 +3,15 @@ var hintparams;
 
 Game.number_NSNG_2_1level1.prototype ={
     
-    init:function(game)
+    init:function(param,score)
     {
        _this= this;
        
+       this.Stararr = param;
        _this.gameid = "Game 1.4";
-
-       this.score =parseInt(window.score);
+        this.score = score;
+		if(window.quizQuest == false)
+			this.score =parseInt(window.score);
        telInitializer2.gameIdInit2("NSNG2.1");
        
     },
@@ -467,6 +469,18 @@ Game.number_NSNG_2_1level1.prototype ={
             }
         }
         _this.starsGroup.getChildAt(0).frame = 2; 
+        if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }                           
     },
    
 
@@ -4567,7 +4581,23 @@ counter=9;
 
                             //commonNavBar.stopTimer();
 
-                _this.getQuestion();
+                                                                                     //commonNavBar.stopTimer();
+				if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					//alert(commonNavBar.getScore());
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					_this.getQuestion();
+				}
             },_this);   
         }
         else
@@ -4799,6 +4829,10 @@ var timerStopVar = commonNavBar.stopTimer();
                     this.Stararr.push(3);
                     _this.time.events.add(2000,_this.removeEverthing,_this);
                    
+         if(window.quizQuest == true)
+		{
+			commonNavBar.updateScore(+5);
+		}                        
 	},
 createCandyright:function(groupAnim)
     {
@@ -4929,6 +4963,10 @@ createCandyright:function(groupAnim)
         target.events.onInputDown.removeAll();
         _this.time.events.add(2000,_this.removeEverthing,_this);
     
+         if(window.quizQuest == true)
+		{
+			commonNavBar.updateScore(-5);
+		}                       
 	},
     
     getVoice:function()

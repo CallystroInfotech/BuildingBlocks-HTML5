@@ -2,12 +2,15 @@ Game.sequence_NSSG_2_1level1=function(){};
 
 Game.sequence_NSSG_2_1level1.prototype ={
     
-    init:function(game)
+    init:function(param,score)
     {
         _this= this;
         _this.gameid = "Game 2.4.1";
         this.gamename = "2.4.1";
 
+		this.Stararr = param;
+        this.score = score;
+	if(window.quizQuest == false)
         this.score =parseInt(window.score);
 
 
@@ -1108,6 +1111,18 @@ Game.sequence_NSSG_2_1level1.prototype ={
         _this.starsGroup.getChildAt(0).frame = 2; 
                 _this.starsGroup.getChildAt(1).frame = 0; 
                         _this.starsGroup.getChildAt(2).frame = 0; 
+        if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }
 
 
     },
@@ -3644,7 +3659,22 @@ Game.sequence_NSSG_2_1level1.prototype ={
 		if(_this.no11<6)
 		{
             count++;
-			_this.getQuestion();
+			if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					_this.getQuestion();
+				}
 		}
 		else
 		{
@@ -3742,6 +3772,10 @@ Game.sequence_NSSG_2_1level1.prototype ={
             _this.time.events.add(3000, _this.removeEverthing, _this);
             _this.sceneCount++;
 
+                if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(+5);
+			}
         }
 
         else
@@ -3793,6 +3827,10 @@ Game.sequence_NSSG_2_1level1.prototype ={
             //commonNavBar.stopTimer();
             _this.time.events.add(2000,_this.removeEverthing,this);
 
+                if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(-5);
+			}
         }
 	},
 
@@ -3871,7 +3909,22 @@ Game.sequence_NSSG_2_1level1.prototype ={
                 // commonNavBar.stopTimer();
                  console.log("ddddddddddddddddddddddddddddddddddddddddd");
                this.getVoice();
-               this.getQuestion1();
+                if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					this.getQuestion1();
+				}
             //_this.generateStarsForTheScene1(this,9);
 			},_this);  
     } 
@@ -6412,7 +6465,22 @@ onDragStart1:function(target)
         if(_this.no11<6)
         {
             count++;
-            _this.getQuestion();
+            if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					_this.getQuestion();
+				}
         }
         else
         {
@@ -6512,6 +6580,10 @@ onDragStart1:function(target)
             target.events.onInputDown.removeAll();
             _this.time.events.add(3000, _this.removeEverthing1, _this);
 
+             if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(+5);
+			}                   
         }
         else
         {    
@@ -6562,6 +6634,10 @@ onDragStart1:function(target)
           //  commonNavBar.stopTimer();
             _this.time.events.add(2000,_this.removeEverthing1,this);
 
+                if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(-5);
+			}
         }
     },
    
@@ -6605,7 +6681,23 @@ onDragStart1:function(target)
                 _this.CaterpillarWhiteCopy.destroy();
                 _this.whiteGroup.destroy();
 /*                _this.no11++;
-*/                _this.getQuestion1();
+*/                
+                if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					_this.getQuestion1();
+				}
 
             },_this);  
         }

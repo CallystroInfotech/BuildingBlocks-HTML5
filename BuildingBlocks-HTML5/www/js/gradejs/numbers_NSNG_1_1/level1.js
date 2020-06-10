@@ -3,10 +3,13 @@ Game.number_NSNG_1_1level1=function(){};
 
 Game.number_NSNG_1_1level1.prototype ={
     
-    init:function(game)
+    init:function(param,score)
     {
        _this = this;
 
+		this.Stararr = param;
+        this.score = score;
+	if(window.quizQuest == false)
        this.score =parseInt(window.score);
        telInitializer2.gameIdInit2("NSNG1.1");
        
@@ -201,7 +204,12 @@ Game.number_NSNG_1_1level1.prototype ={
         commonNavBar.getVoice(_this.soundurl1);
 
         this.generateStarsForTheScene(game,8);
-        _this.speakerbtn = _this.add.sprite(610,7,'speakerBtn');
+        if(window.quizQuest == true)
+		{
+			_this.speakerbtn = _this.add.sprite(470,7,'speakerBtn');
+		}
+		else
+            _this.speakerbtn = _this.add.sprite(610,7,'speakerBtn');
         _this.speakerbtn.events.onInputDown.add(function()
         {
 
@@ -236,6 +244,18 @@ Game.number_NSNG_1_1level1.prototype ={
             }
         }           
         this.starsGroup.getChildAt(0).frame = 2;            
+          if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }                        
     },
     
     callsuccess:function()
@@ -3264,7 +3284,22 @@ Game.number_NSNG_1_1level1.prototype ={
 
                 if(_this.ShakeObjectGroup4)
                 	_this.ShakeObjectGroup4.destroy();
-                _this.getQuestion();
+                 if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					_this.getQuestion();
+				}
             },_this);   
         }
         else
@@ -3480,7 +3515,10 @@ Game.number_NSNG_1_1level1.prototype ={
 
         this.Stararr.push(3);
 
-        
+        if(window.quizQuest == true)
+		{
+			commonNavBar.updateScore(+5);
+		}
 	},
 
     wrongAns:function(target)
@@ -3525,7 +3563,10 @@ Game.number_NSNG_1_1level1.prototype ={
       //  _this.time.events.add(500, function(){ target.frame = 0;}, _this);
 
       _this.time.events.add(2200, _this.removeEverthing, _this);
-       
+       if(window.quizQuest == true)
+		{
+			commonNavBar.updateScore(-5);
+		}
      
 	},
 

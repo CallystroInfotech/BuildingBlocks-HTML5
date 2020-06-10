@@ -1,13 +1,16 @@
 Game.multiplication_NOMG_1_1level1=function(){};
 
 Game.multiplication_NOMG_1_1level1.prototype={
-    init:function(game)
+    init:function(param,score)
     {
        _this = this;
        
        _this.gameid = "Game 11.1";
 
-       this.score =parseInt(window.score);
+		this.Stararr = param;
+        this.score = score;
+		if(window.quizQuest == false)
+			this.score =parseInt(window.score);
         
         
        
@@ -280,6 +283,18 @@ create:function(game)
         _this.starsGroup.getChildAt(2).frame = 0;
         _this.starsGroup.getChildAt(3).frame = 0;
         _this.starsGroup.getChildAt(4).frame = 0;
+if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }     
         
 	},
 
@@ -1485,6 +1500,10 @@ gotoTwevelvethQuestion:function(){
                        _this.tween1 = _this.add.tween(_this.numGroup);
                        _this.tween1.to({ y: 100 }, 0, 'Linear', true, 0);
                        _this.time.events.add(1000, function(){_this.removeCelebration();},_this);
+                         if(window.quizQuest == true)
+						{
+							commonNavBar.updateScore(+5);
+						}
                 }
             else
                 {
@@ -1501,6 +1520,10 @@ gotoTwevelvethQuestion:function(){
                     target.events.onInputDown.removeAll();
                     _this.time.events.add(1000, _this.removeCelebration, _this);
 					//_this.time.events.add(300, function(){target.frame = 0;},_this);
+                    if(window.quizQuest == true)
+					{
+						commonNavBar.updateScore(-5);
+					}
                 }
   
         },_this);
@@ -1566,7 +1589,22 @@ gotoTwevelvethQuestion:function(){
                         _this.numGrp.destroy();
                         _this.enterTxt.destroy();
                         _this.selectedAns = '';
-                        _this.getQuestion();
+                         if(window.quizQuest == true)
+						{
+							var timerStopVar = commonNavBar.stopTimer();
+							commonNavBar.disableNavBar();
+							commonNavBar.soundVar=null,
+							commonNavBar.questionArray=null,
+							commonNavBar.questionCount=null,
+							commonNavBar.soundUrl=null,
+							commonNavBar.speakerbtn=null,
+							
+							quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+						}
+						else
+						{
+								_this.getQuestion();
+						}
                     
                     }
         
@@ -1639,6 +1677,10 @@ gotoTwevelvethQuestion:function(){
          this.Stararr.push(3);
         _this.time.events.add(1000, _this.removeCelebration, _this);
         _this.sceneCount++;
+        if(window.quizQuest == true)
+		{
+			commonNavBar.updateScore(+5);
+		}                                                   
         
 	},
 
@@ -1668,6 +1710,10 @@ gotoTwevelvethQuestion:function(){
          target.events.onInputDown.removeAll();
        //  commonNavBar.stopTimer();
         _this.time.events.add(1000, _this.removeCelebration, _this);
+                                                                    if(window.quizQuest == true)
+		{
+			commonNavBar.updateScore(-5);
+		}
 	},
     
     amplifyMedia:function(mediaElem, multiplier) {

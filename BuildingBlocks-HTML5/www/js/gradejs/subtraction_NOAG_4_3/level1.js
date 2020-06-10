@@ -8,6 +8,8 @@ Game.subtraction_NOAG_4_3level1.prototype={
 	{
 		_this = this;
         this.Stararr = param;
+        this.score = score;
+	  if(window.quizQuest == false)
         this.score =parseInt(window.score);
         
 		//telInitializer.gameIdInit("unity10_1_1",gradeSelected);
@@ -1639,6 +1641,10 @@ checkOverlap:function(spriteA, spriteB)
 
                        _this.questionid = 1;
                     //telInitializer.tele_saveAssessment(_this.questionid,"yes",_this.AnsTimerCount,_this.noofAttempts,_this.sceneCount);
+                     if(window.quizQuest == true)
+					{
+						commonNavBar.updateScore(+5);
+					}              
                 }
             else
                 { 
@@ -1653,6 +1659,10 @@ checkOverlap:function(spriteA, spriteB)
                      _this.Stararr.push(1);
                     // _this.count1++
                     _this.time.events.add(2000, function(){ _this.removeEverthing();}, _this);
+                    if(window.quizQuest == true)
+					{
+						commonNavBar.updateScore(-5);
+					}
                 }
   
         },this);
@@ -1802,7 +1812,22 @@ checkOverlap:function(spriteA, spriteB)
             
              _this.starsGroup.getChildAt(_this.count1+1).frame = 2; 
             _this.count1++;
-            _this.getQuestion();
+            if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					_this.getQuestion();
+				}
             
         }
         else
@@ -1938,6 +1963,18 @@ checkOverlap:function(spriteA, spriteB)
 			}
 		}
         _this.starsGroup.getChildAt(0).frame = 2; 						
+         if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }                                         
 	},
     
 	correctAns:function(target)

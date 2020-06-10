@@ -211,7 +211,16 @@ Game.index2.prototype={
 
 		if(localStorage.getItem(window.avatarName+"multiplication_NOMG_5_3state")==null)
 			localStorage.setItem(window.avatarName+"multiplication_NOMG_5_3state", "cannotplay");
-
+		
+		window.score = parseInt(localStorage.getItem(window.avatarName+"Score"));
+		// remove an item
+		//alert(window.score);
+		if(window.score==null||window.score==undefined||window.score==""||window.score==NaN)
+		{
+			localStorage.setItem(window.avatarName+"Score", 50);
+			window.score = parseInt(localStorage.getItem(window.avatarName+"Score"));
+		}
+		//alert(window.score);
 
 		abbchmprmdsjsapi.initializeDS();
 

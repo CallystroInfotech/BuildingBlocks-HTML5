@@ -10,7 +10,9 @@ Game.fraction_NSFG_4_1level1.prototype={
         //        _this.gameid = "1.4";
 
         this.Stararr = param;
-        this.score =parseInt(window.score);
+		this.score = score;
+		if(window.quizQuest == false)
+			this.score =parseInt(window.score);
         telInitializer2.gameIdInit2("NSFG4.1");
     },
 
@@ -178,6 +180,18 @@ Game.fraction_NSFG_4_1level1.prototype={
             }
         } 
         _this.starsGroup.getChildAt(0).frame = 2;
+         if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }                        
     },
     
     shuffle: function(array) {
@@ -297,6 +311,10 @@ Game.fraction_NSFG_4_1level1.prototype={
         _this.time.events.add(500, function(){
             commonNavBar.spinSound();
         }, _this);
+        if(window.quizQuest == true)
+		{
+			commonNavBar.updateScore(+5);
+		}
     },
 
     disableButtons:function()
@@ -348,6 +366,10 @@ Game.fraction_NSFG_4_1level1.prototype={
         _this.disableButtons();
         _this.starsGroup.getChildAt(_this.count-1).frame = 1;
         _this.time.events.add(500, _this.removeCelebration, _this);
+        if(window.quizQuest == true)
+		{
+			commonNavBar.updateScore(-5);
+		}                        
     },
 
     removeCelebration:function()
@@ -359,7 +381,22 @@ Game.fraction_NSFG_4_1level1.prototype={
 
             if(_this.count < 3)
             {
+                  if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
                 _this.displayQuestion();
+				}
                 _this.starsGroup.getChildAt(_this.count-1).frame = 2; 
             }
             else

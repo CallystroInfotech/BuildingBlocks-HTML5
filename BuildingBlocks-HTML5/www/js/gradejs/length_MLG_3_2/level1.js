@@ -36,13 +36,16 @@ Game.length_MLG_3_2level1=function(){
 
 Game.length_MLG_3_2level1.prototype={
 
-    init:function(game)
+    init:function(param,score)
     {
         _this = this;
         
         _this.gameid = "2.4A";
 
-        this.score =parseInt(window.score);
+		this.Stararr = param;
+        this.score = score;
+		if(window.quizQuest == false)
+			this.score =parseInt(window.score);
         
        /* _this.currentTime = window.timeSaveFunc();
         _this.saveGameplay = 
@@ -418,7 +421,22 @@ Game.length_MLG_3_2level1.prototype={
             count =0;
             //no1++;
            // no2++;
-            this.getQuestion();    
+			if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					this.getQuestion(); 
+				}	   
         }
         else
         {
@@ -603,6 +621,10 @@ Game.length_MLG_3_2level1.prototype={
                     anim.onComplete.add(function(){this.removeEverthing();},this);
                    // this.time.events.add(3000, function(){this.removeEverthing();},this);
                     count1++;
+				 if(window.quizQuest == true)
+					{
+						commonNavBar.updateScore(+5);
+					}
                 }
             else
                 {
@@ -624,6 +646,10 @@ Game.length_MLG_3_2level1.prototype={
                     objGroup.getByName('tape15cm').y = tapeYPos;
 
                    this.time.events.add(300, function(){target.frame = 0;this.removeEverthing();},this);
+					if(window.quizQuest == true)
+					{
+						commonNavBar.updateScore(-5);
+					}			
                 }
         },this);
     },
@@ -2965,6 +2991,18 @@ Game.length_MLG_3_2level1.prototype={
                     }
         }
         _this.starsGroup.getChildAt(0).frame = 2; 
+			if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }   
     },
 
    /* getVoice:function(question){

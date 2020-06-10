@@ -1380,6 +1380,26 @@ wrongAnsold:function(target)
                             commonNavBar.getVoice(window.baseUrl+"questionSounds/Gujarati/unity/1.5/Game1_5.mp3");
                            this.srcs = window.baseUrl+"questionSounds/Gujarati/unity/1.5/Game1_5.mp3";
                         }
+                        else if(window.languageSelected=="Marathi")
+						{
+							commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/1.5/Marathi/Game1_5.mp3");
+                           this.srcs = window.baseUrl+"questionSounds/unity/1.5/Marathi/Game1_5.mp3";
+						}
+						else if(window.languageSelected=="Telugu")
+						{
+							commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/1.5/Telugu/Game1_5.mp3");
+                           this.srcs = window.baseUrl+"questionSounds/unity/1.5/Telugu/Game1_5.mp3";
+						}
+						else if(window.languageSelected=="Tamil")
+						{
+							commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/1.5/Tamil/Game1_5.mp3");
+                           this.srcs = window.baseUrl+"questionSounds/unity/1.5/Tamil/Game1_5.mp3";
+						}
+						else if(window.languageSelected=="Urdu")
+						{
+							commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/1.5/Urdu/Game1_5.mp3");
+                           this.srcs = window.baseUrl+"questionSounds/unity/1.5/Urdu/Game1_5.mp3";
+						}
                         else
                         {
                             commonNavBar.getVoice(window.baseUrl+"questionSounds/unity/1.5/Odiya/1.5.mp3");

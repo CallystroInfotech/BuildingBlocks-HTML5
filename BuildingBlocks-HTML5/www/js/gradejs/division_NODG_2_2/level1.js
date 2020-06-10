@@ -4,10 +4,13 @@ Game.division_NODG_2_2level1=function(){};
 
 Game.division_NODG_2_2level1.prototype={
 
-      init:function(game)
+      init:function(param,score)
 	{
 		_this = this;
-        this.score =parseInt(window.score);
+        this.Stararr = param;
+        this.score = score;
+		if(window.quizQuest == false)
+			this.score =parseInt(window.score);
 
 
 
@@ -965,6 +968,10 @@ Game.division_NODG_2_2level1.prototype={
                             }
                         _this.time.events.add(500, function(){  _this.rightbtn.frame = 0}, _this);  
                                               _this.time.events.add(2000,_this.removeEverthing,_this);
+         if(window.quizQuest == true)
+								{
+									commonNavBar.updateScore(-5);
+								}
 
                       }
                }
@@ -1009,6 +1016,10 @@ Game.division_NODG_2_2level1.prototype={
                         _this.time.events.add(500, function(){  _this.rightbtn.frame = 0}, _this);  
                                               _this.time.events.add(2000,_this.removeEverthing,_this);
 
+       if(window.quizQuest == true)
+							{
+								commonNavBar.updateScore(-5);
+							}
                       }
               }
                },this);
@@ -1099,7 +1110,22 @@ checkOverlap:function(spriteA, spriteB)
              _this.inputBox1.frame = 0;
             _this.numBoxNum1.visible = false;
             _this.numBoxNum2.visible = false;
-             _this.getQuestion();
+                                                                       if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+					commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					_this.getQuestion();
+				}
             
                
            // tweenCount=0;
@@ -1317,6 +1343,18 @@ checkOverlap:function(spriteA, spriteB)
             }
         }
         _this.starsGroup.getChildAt(0).frame = 2; 
+           if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }                        
     },
     correctAns:function(target)
 	{
@@ -1367,6 +1405,10 @@ checkOverlap:function(spriteA, spriteB)
 
 
                     _this.time.events.add(2000,_this.removeEverthing,_this);
+                     if(window.quizQuest == true)
+					{
+						commonNavBar.updateScore(+5);
+					}          
                                    
 	},
 
@@ -1401,6 +1443,10 @@ checkOverlap:function(spriteA, spriteB)
          _this.speakerbtn.input.useHandCursor=true;
        */ //target.events.onInputDown.removeAll();
          _this.time.events.add(2000,_this.removeEverthing,_this);
+           if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(-5);
+			}            
 	},
     
     

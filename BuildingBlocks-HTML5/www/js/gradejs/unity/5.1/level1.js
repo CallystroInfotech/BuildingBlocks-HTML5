@@ -456,13 +456,13 @@ init:function(game)
                                 else if(window.languageSelected=="Kannada")
                                     this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Kannada/KGameFifth.mp3");
 								else if(window.languageSelected=="Marathi")
-                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Marathi/EGameFifth.mp3");
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Marathi/EgameFirfth.mp3");
 				else if(window.languageSelected=="Telugu")
-                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Telugu/EGameFifth.mp3");
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Telugu/EgameFirfth.mp3");
 				else if(window.languageSelected=="Tamil")
-                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Tamil/EGameFifth.mp3");
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Tamil/EgameFirfth.mp3");
 				else if(window.languageSelected=="Urdu")
-                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Urdu/EGameFifth.mp3");
+                    this.src.setAttribute("src", window.baseUrl+"questionSounds/unity/5.1/Urdu/EgameFirfth.mp3");
                                   else if(window.languageSelected == "Gujarati")
     {
       _this.src.setAttribute("src", window.baseUrl+"questionSounds/Gujarati/unity/5.1/EGameFifth.mp3");

@@ -366,6 +366,8 @@ Game.time_MTG_1_1level3.prototype={
             groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10001'));
         else if(window.languageSelected=="Gujarati")
             groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10004'));
+        else if(window.languageSelected=="Tamil")
+            groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10005'));
 		else if(window.languageSelected=="Marathi")
             groupdayname.push(this.add.sprite(15,110,'Level52_monday','Symbol 13 instance 10006'));
 		else if(window.languageSelected=="Telugu")

@@ -2,10 +2,13 @@ Game.comparison_NSCG_1_1level1=function(){};
 
 Game.comparison_NSCG_1_1level1.prototype ={
     
-    init:function(game)
+    init:function(param,score)
     {
         _this= this;
 
+        this.Stararr = param;
+        this.score = score;
+	if(window.quizQuest == false)
         this.score =parseInt(window.score);
         
        // telInitializer.gameIdInit("Comparison4_1",gradeSelected);
@@ -398,6 +401,18 @@ Game.comparison_NSCG_1_1level1.prototype ={
 			}
 		}		
         _this.starsGroup.getChildAt(0).frame = 2; 
+        if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }
 	},
 
     gotoFirstQuestion:function()
@@ -1084,6 +1099,10 @@ Game.comparison_NSCG_1_1level1.prototype ={
         _this.anim4 = _this.starAnim.animations.add('star',[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]);
         
         _this.anim4.play(10,false); 
+    if(window.quizQuest == true)
+		{
+			commonNavBar.updateScore(+5);
+		}
     
 	},
 
@@ -1169,6 +1188,10 @@ Game.comparison_NSCG_1_1level1.prototype ={
         
         
         _this.time.events.add(2000,_this.removeEverthing,_this);
+   if(window.quizQuest == true)
+		{
+			commonNavBar.updateScore(-5);
+		}
 	},
     
     removeEverthing:function() 
@@ -1204,7 +1227,22 @@ Game.comparison_NSCG_1_1level1.prototype ={
                 _this.fishGrp.destroy();
                 _this.optionGrp.destroy();
 				commonNavBar.enableHintIcon();
-                _this.getQuestion();
+                if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					_this.getQuestion();
+                }
             },_this);  
         }
         else

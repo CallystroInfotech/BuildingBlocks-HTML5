@@ -7,7 +7,9 @@ init:function(param,score)
         
         _this.gameid = "1.2";
         this.Stararr = param;
-        this.score =parseInt(window.score);
+		this.score = score;
+		if(window.quizQuest == false)
+			this.score =parseInt(window.score);
         
       /* // _this.currentTime = window.timeSaveFunc();
         _this.saveGameplay = 
@@ -1642,7 +1644,10 @@ _this.coinBlue = _this.add.sprite(185,220,'Level321_Coin100');
                      _this.time.events.add(2000, function(){ _this.removeEverthing();}, _this);
 
                      _this.questionid = 1;
-
+                    if(window.quizQuest == true)
+						{
+							commonNavBar.updateScore(+5);
+						}
                      /*if(_this.timer)
                        {
                             _this.timer.stop();
@@ -1664,7 +1669,10 @@ _this.coinBlue = _this.add.sprite(185,220,'Level321_Coin100');
                     // _this.count1++
                      //target.events.onInputDown.removeAll();
                     _this.time.events.add(2000, function(){ _this.removeEverthing();}, _this);
-
+                    if(window.quizQuest == true)
+					{
+						commonNavBar.updateScore(-5);
+					}
                 }
   
         },this);
@@ -1827,7 +1835,22 @@ _this.coinBlue = _this.add.sprite(185,220,'Level321_Coin100');
             _this.animArrayCoin10 =null;
             _this.animArrayCoin1 =null;
             _this.selectedAns = " ";
-            _this.getQuestion();
+     if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					_this.getQuestion();
+				}
              _this.starsGroup.getChildAt(_this.count1+1).frame = 2; 
             _this.count1++;           
             
@@ -1903,6 +1926,18 @@ _this.coinBlue = _this.add.sprite(185,220,'Level321_Coin100');
 			}
 		}
         _this.starsGroup.getChildAt(0).frame = 2;
+         if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }     
 	},
     
 	/*correctAns:function(target)

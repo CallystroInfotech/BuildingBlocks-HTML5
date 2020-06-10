@@ -42,11 +42,14 @@ var numTxt2;
 Game.division_NODG_4_2level1.prototype={
 
 
-     init:function(game)
+     init:function(param,score)
     {
         _this = this;
         _this.gameid = "17.2";
-        this.score =parseInt(window.score);
+        this.Stararr = param;
+        this.score = score;
+		if(window.quizQuest == false)
+			this.score =parseInt(window.score);
         //window.baseUrl="./";
         
         
@@ -4697,6 +4700,10 @@ Game.division_NODG_4_2level1.prototype={
                       _this.sceneCount++;
                       _this.time.events.add(2000,_this.removeEverthing,_this);
         
+                        if(window.quizQuest == true)
+							{
+								commonNavBar.updateScore(+5);
+							}                  
                     
                      _this.questionid = 1;
                     //telInitializer.tele_saveAssessment(_this.questionid,"yes",_this.AnsTimerCount,_this.noofAttempts,_this.sceneCount);
@@ -4834,6 +4841,10 @@ Game.division_NODG_4_2level1.prototype={
                       pressed2=0;
                  _this.time.events.add(1000, _this.removeEverthing, _this);
                   },this);
+                    if(window.quizQuest == true)
+					{
+						commonNavBar.updateScore(-5);
+					}   
              }
         },this);
     },
@@ -5000,7 +5011,22 @@ Game.division_NODG_4_2level1.prototype={
            
             _this.animArrayCoin1 =null;
             _this.selectedAns = " ";
-            _this.getQuestion();
+             if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+					commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					_this.getQuestion();
+				}
             showNum1=0;
      showNum2=0;
      showNum3=0;
@@ -5061,6 +5087,18 @@ Game.division_NODG_4_2level1.prototype={
         this.starsGroup.getChildAt(1).frame = 0;
         this.starsGroup.getChildAt(2).frame = 0;
         this.starsGroup.getChildAt(3).frame = 0;
+           if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }                                                 
        
         
     },

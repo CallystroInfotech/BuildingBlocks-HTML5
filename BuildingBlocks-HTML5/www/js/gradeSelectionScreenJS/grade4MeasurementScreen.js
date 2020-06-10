@@ -53,6 +53,8 @@ Game.grade4Measurement.prototype={
 		 grade4MeasurementSelected = true;
 		 grade4NumberSenseSelected = false;
 		 grade5NumberSenseSelected = false;
+		 
+		 this.video = null;
 		
 		_this.input.enabled = true;
 		_this.tween = null;
@@ -93,13 +95,18 @@ Game.grade4Measurement.prototype={
 		
 		
 		_this.grade4VolumeGroup = _this.add.group();
+		_this.grade4conversionGroup = _this.add.group();
 		
 		
 		_this.addGrade4VolumeTopic();
+		_this.addGrade4ConversionTopic();
 		
 
 		_this.grade4VolumeGroup.x = 0;
 		_this.grade4VolumeGroup.y = 0;
+		
+		_this.grade4conversionGroup.x = 0;
+		_this.grade4conversionGroup.y = 650;
 		
 		
 		
@@ -126,6 +133,7 @@ Game.grade4Measurement.prototype={
 		
 	
 		_this.graphicsBg.addChild(_this.grade4VolumeGroup);
+		_this.graphicsBg.addChild(_this.grade4conversionGroup);
 		
 		
 		
@@ -156,20 +164,20 @@ Game.grade4Measurement.prototype={
 					_this.tween.onComplete.add(function(){
 					//	swipeDownFlag = true;
 						_this.tween = null;
-						if(_this.graphicsBg.y<=-182)
+						if(_this.graphicsBg.y<=-400)
 						{
 							//swipeUpFlag = false;
-							_this.graphicsBg.y = -182;
+							_this.graphicsBg.y = -400;
 						}
 						
 						//game.input.enabled = true;
 					}, _this);
 					_this.tween.onUpdateCallback(function(){
 						_this.tap = false;
-						if(_this.graphicsBg.y<=-182)
+						if(_this.graphicsBg.y<=-400)
 						{
 							//swipeUpFlag = false;
-							_this.graphicsBg.y = -182;
+							_this.graphicsBg.y = -400;
 							_this.tween.stop();
 							//_this.tween = null;
 							//game.input.enabled = true;
@@ -241,10 +249,10 @@ Game.grade4Measurement.prototype={
 							//tween.stop();
 							//game.input.enabled = true;
 						}
-					else if(_this.graphicsBg.y<=-182)
+					else if(_this.graphicsBg.y<=-400)
 						{
 							//swipeUpFlag = false;
-							_this.graphicsBg.y = -182;
+							_this.graphicsBg.y = -400;
 							//tween.stop();
 							//game.input.enabled = true;
 						}
@@ -265,10 +273,10 @@ Game.grade4Measurement.prototype={
 						//	swipeDownFlag = false;
 							_this.graphicsBg.y = 0;
 						}
-						else if(_this.graphicsBg.y<=-182)
+						else if(_this.graphicsBg.y<=-400)
 						{
 							//swipeUpFlag = false;
-							_this.graphicsBg.y = -182;
+							_this.graphicsBg.y = -400;
 						}
 					
 				},_this);
@@ -850,157 +858,169 @@ Game.grade4Measurement.prototype={
 		
 	},
 	
-	addGrade1LengthTopic:function()
+	addGrade4ConversionTopic:function()
 	{
+		
+		
+		_this.conversionText = "CONVERSION";
+		
+		if(window.languageSelected == "Hindi")
+			_this.conversionText = "रूपांतरण";
+		else if(window.languageSelected == "Kannada")
+			_this.conversionText = "ಪರಿವರ್ತನೆ";
+		else if(window.languageSelected == "Odiya")
+			_this.conversionText = "ରୂପାନ୍ତର";
+		else if(window.languageSelected == "Gujarati")
+			_this.conversionText = "રૂપાંતર";
+		else if(window.languageSelected == "Marathi")
+			_this.conversionText = "रूपांतरण";
+		else if(window.languageSelected == "Telugu")
+			_this.conversionText = "మార్పిడి";
+		else if(window.languageSelected == "Tamil")
+			_this.conversionText = "மாற்றம்";
+		else if(window.languageSelected == "Urdu")
+			_this.conversionText = "تبادلوں";
+		else 
+			_this.conversionText = "CONVERSION";
+		
 		_this.topicTxtBg = _this.add.graphics(100, 60);
 		_this.topicTxtBg.lineStyle(0, 0xFFFFFF, 0.8);
-		_this.topicTxtBg.beginFill(0xD957A0, 1);
+		_this.topicTxtBg.beginFill(0x139487, 1);
 		_this.topicTxtBg.drawRoundedRect(0,0,170,100,10);
 		_this.topicTxtBg.boundsPadding = 0;
 		
-		_this.topicTitleText = _this.add.sprite(215,83,'lengthTitleTxt');
+		//_this.topicTitleText = _this.add.sprite(200, 83, 'volumeTitleTxt');
+		//_this.topicTitleText.anchor.setTo(0.5);
+
+		_this.topicTitleText = this.add.text(185, 85, ' \n '+_this.conversionText+' \n ');
 		_this.topicTitleText.anchor.setTo(0.5);
+		_this.topicTitleText.align = 'center';
+		
+				
+		_this.topicTitleText.font = 'gradefont';
+		_this.topicTitleText.fontSize = 26;
+		_this.topicTitleText.fontWeight = 'normal';
+		_this.topicTitleText.fill = 'white';
+
+		_this.topicTitleText.wordWrap = true;
+		_this.topicTitleText.wordWrapWidth = 500;
+		//_this.topicTitleText.setTextBounds(0,0,500,500);
+		//_this.topicTitleText.padding.set(50, 50);
+		
+		
+		//_this.topicTitleText.useAdvancedWrap  = true;
+		
+
+		//_this.topicTitleText.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
+		
 		
 		
 		_this.topicBg = _this.add.graphics(75, 100);
 		_this.topicBg.lineStyle(0, 0xFFFFFF, 0.8);
-		_this.topicBg.beginFill(0xD957A0, 1);
-		_this.topicBg.drawRoundedRect(0,0,805,200,30);
+		_this.topicBg.beginFill(0x139487, 1);
+		//topicBg.drawRoundedRect(0,0,805,400,30);
+		_this.topicBg.drawRoundedRect(0,0,850,150,30);
 		_this.topicBg.boundsPadding = 0;
 		
-		_this.length2_1AScreen = _this.add.sprite(100,120,'length2_1AScreen');
-		_this.length2_1AScreenTxt = _this.add.sprite(175, 250, 'length2_1A');
-		_this.length2_1AScreenTxt.anchor.setTo(0.5);
+		_this.volumes4_1AScreen = _this.add.sprite(100,120,'conversion');
+		//_this.volumes4_1AScreenTxt = _this.add.sprite(175, 250, 'volume4_1A');
+		//_this.volumes4_1AScreenTxt.anchor.setTo(0.5);
+
+		_this.bgGraphic1 = this.add.graphics(210,175);
+		_this.bgGraphic1.lineStyle(0, 0xFFFFFF, 0.8);
+		_this.bgGraphic1.beginFill(0x493A19, 1);
+		_this.bgGraphic1.drawRoundedRect(0,0,30,30,10);
+		_this.bgGraphic1.boundsPadding = 0;
+
+		_this.volumes4_1AScreenTxt = this.add.text(225, 192, ' \n 1 \n ');
+		_this.volumes4_1AScreenTxt.anchor.setTo(0.5);
+		_this.volumes4_1AScreenTxt.align = 'center';
+		
+				
+		_this.volumes4_1AScreenTxt.font = 'gradefont';
+		_this.volumes4_1AScreenTxt.fontSize = 20;
+		_this.volumes4_1AScreenTxt.fontWeight = 'normal';
+		_this.volumes4_1AScreenTxt.fill = 'white';
+
+		_this.volumes4_1AScreenTxt.wordWrap = true;
+		_this.volumes4_1AScreenTxt.wordWrapWidth = 500;
+		//_this.volumes4_1AScreenTxt.setTextBounds(0,0,500,500);
+		//_this.volumes4_1AScreenTxt.padding.set(50, 50);
 		
 		
-		_this.length2_1AScreen.inputEnabled = true;
-		_this.length2_1AScreen.name = "Length 2.1 A";
-		_this.length2_1AScreen.input.useHandCursor = true;
-		_this.length2_1AScreen.events.onInputDown.add(function(target){
-			
-			_this.time.events.add(300, function(){
+		//_this.volumes4_1AScreenTxt.useAdvancedWrap  = true;
+		
+
+		//_this.volumes4_1AScreenTxt.setShadow(0, 0, 'rgba(0, 0, 0, 0)', 0);
+		  
+		  
+		_this.volumes4_1AScreen.inputEnabled = true;
+		  _this.volumes4_1AScreen.input.useHandCursor = true;
+		  _this.volumes4_1AScreen.events.onInputDown.add(function(target){
+			  
+			  if(this.video==null)
+			{	
+				this.video = this.add.video('demo7_1_1');
+				
+			}
+			   _this.time.events.add(300, function(){
 				
 				if(_this.tap)
 				{
+					_this.time.events.removeAll();
+					target.events.onInputDown.removeAll();
+					_this.clickSound = _this.add.audio('ClickSound');
+					_this.clickSound.play();
 					
-					_this.time.events.removeAll();
-					target.events.onInputDown.removeAll();
-					_this.clickSound = _this.add.audio('ClickSound');
-					_this.clickSound.play();
-					_this.state.start('grade2_1Alevel1',true,false);
-				}
-			},_this);
-		},_this);
-		
-		_this.length2_1BScreen = _this.add.sprite(300,120,'length2_1BScreen');
-		_this.length2_1BScreenTxt = _this.add.sprite(375, 250, 'length2_1B');
-		_this.length2_1BScreenTxt.anchor.setTo(0.5);
-		
-		_this.length2_1BScreen.inputEnabled = true;
-		_this.length2_1BScreen.input.useHandCursor = true;
-		_this.length2_1BScreen.name = "Length 2.1 B";
-		_this.length2_1BScreen.events.onInputDown.add(function(target){
-			
-			_this.time.events.add(300, function(){
-				
-				if(_this.tap)
-				{
+					document.getElementById('phaser_canvas').style.pointerEvents = "none";
+
+					this.video.play(false);
 					
-					_this.time.events.removeAll();
-					target.events.onInputDown.removeAll();
-					_this.clickSound = _this.add.audio('ClickSound');
-					_this.clickSound.play();
-					_this.state.start('grade2_1Blevel1',true,false);
-				}
-			},_this);
-		},_this);
-		
-		_this.length2_2Screen = _this.add.sprite(500,120,'length2_2Screen');
-		_this.length2_2ScreenTxt = _this.add.sprite(575, 250, 'length2_2');
-		_this.length2_2ScreenTxt.anchor.setTo(0.5);
-		
-		_this.length2_2Screen.inputEnabled = true;
-		_this.length2_2Screen.name = "Length 2.2";
-		_this.length2_2Screen.input.useHandCursor = true;
-		_this.length2_2Screen.events.onInputDown.add(function(target){
-			
-			_this.time.events.add(300, function(){
-				
-				if(_this.tap)
-				{					
-					_this.time.events.removeAll();
-					target.events.onInputDown.removeAll();
-					_this.clickSound = _this.add.audio('ClickSound');
-					_this.clickSound.play();
-					_this.state.start('grade2_2level1',true,false);
-				}
-			},_this);
-		},_this);
-		
-		_this.length2_3Screen = _this.add.sprite(700,115,'game2.3ScreenShot');
-		_this.length2_3ScreenTxt = _this.add.sprite(775, 250, 'length2_3');
-		_this.length2_3ScreenTxt.anchor.setTo(0.5);
-		
-		_this.length2_3Screen.inputEnabled = true;
-		_this.length2_3Screen.name = "Length 2.3";
-		_this.length2_3Screen.input.useHandCursor = true;
-		_this.length2_3Screen.events.onInputDown.add(function(target){
-			
-			_this.time.events.add(300, function(){
-
-				if(_this.tap)
-				{
+					this.video.changeSource(window.baseUrl+"assets/conversion/demoVideos/DHDCG1_4.mp4");
 					
-					_this.time.events.removeAll();
-					target.events.onInputDown.removeAll();
-					_this.clickSound = _this.add.audio('ClickSound');
-					_this.clickSound.play();
-					_this.state.start('grade2_3level1',true,false);
+					this.video.addToWorld();
+					
+					this.video.play(false);
+					//this.game.input.enabled = false;
+					
+					/**************************Play Demo VO And Skip Demo *****************************/
+					//_this.playDemoVideos('7_1_1');
+					this.video.playbackRate = 0.7;    // slow down the video
+					_this.time.events.add(500, function(){
+					_this.skipDemos = _this.add.sprite(803,423,'skipDemoVideos');
+					document.getElementById('phaser_canvas').style.pointerEvents = "initial";
+					_this.skipDemos.inputEnabled = true;
+					_this.skipDemos.events.onInputDown.add(function(){
+						//_this.stopDemoVoice();
+						this.video.stop(false);
+						this.game.input.enabled = true;
+						_this.state.start('conversion',true,false);
+						
+					},_this);
+					},_this);
+					
+					/***********************************************************/
+					
+					
+					this.video.onComplete.add(function(){
+					this.game.input.enabled = true;
+					_this.state.start('conversion',true,false);
+
+					//_this.state.start('unity7_1_1demo',true,false);
+					},this);
 				}
 			},_this);
-		},_this);
-		
-
-
-		if(window.languageSelected=="Hindi")
-		{
-			_this.topicTitleText.frame = 1;
-			_this.length2_1AScreenTxt.frame = 1;
-			_this.length2_1BScreenTxt.frame = 1;
-			_this.length2_2ScreenTxt.frame = 1;
-			_this.length2_3ScreenTxt.frame = 1;
-		}
-		else if(window.languageSelected=="Kannada")
-		{
-			_this.topicTitleText.frame = 2;
-			_this.length2_1AScreenTxt.frame = 2;
-			_this.length2_1BScreenTxt.frame = 2;
-			_this.length2_2ScreenTxt.frame = 2;
-			_this.length2_3ScreenTxt.frame = 2;
-		}
-		else
-		{
-			_this.topicTitleText.frame = 0;
-			_this.length2_1AScreenTxt.frame = 0;
-			_this.length2_1BScreenTxt.frame = 0;
-			_this.length2_2ScreenTxt.frame = 0;
-			_this.length2_3ScreenTxt.frame = 0;
-		}
+		   
+		  },_this);
 		
 		
 		
-		_this.grade1LengthGroup.add(_this.topicTxtBg);
-		_this.grade1LengthGroup.add(_this.topicTitleText);
-		_this.grade1LengthGroup.add(_this.topicBg);
-		_this.grade1LengthGroup.add(_this.length2_1AScreen);
-		_this.grade1LengthGroup.add(_this.length2_1AScreenTxt);
-		_this.grade1LengthGroup.add(_this.length2_1BScreen);
-		_this.grade1LengthGroup.add(_this.length2_1BScreenTxt);
-		_this.grade1LengthGroup.add(_this.length2_2Screen);
-		_this.grade1LengthGroup.add(_this.length2_2ScreenTxt);
-		_this.grade1LengthGroup.add(_this.length2_3Screen);
-		_this.grade1LengthGroup.add(_this.length2_3ScreenTxt);
-		
+		_this.grade4conversionGroup.add(_this.topicTxtBg);
+		_this.grade4conversionGroup.add(_this.topicTitleText);
+		_this.grade4conversionGroup.add(_this.topicBg);
+		_this.grade4conversionGroup.add(_this.volumes4_1AScreen);
+		_this.grade4conversionGroup.add(_this.bgGraphic1);
+		_this.grade4conversionGroup.add(_this.volumes4_1AScreenTxt);
 		
 	},
 	
@@ -1019,7 +1039,7 @@ Game.grade4Measurement.prototype={
 		_this.topicBg = _this.add.graphics(75, 100);
 		_this.topicBg.lineStyle(0, 0xFFFFFF, 0.8);
 		_this.topicBg.beginFill(0xD957A0, 1);
-		_this.topicBg.drawRoundedRect(0,0,805,200,30);
+		_this.topicBg.drawRoundedRect(0,0,200,200,30);
 		_this.topicBg.boundsPadding = 0;
 		
 		_this.weight3_1Screen = _this.add.sprite(100,120,'game3.1ScreenShot');

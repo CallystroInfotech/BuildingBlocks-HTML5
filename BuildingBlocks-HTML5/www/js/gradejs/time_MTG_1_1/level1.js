@@ -7,6 +7,8 @@ Game.time_MTG_1_1level1.prototype={
         _this = this;
         ///window.languageSelected="English";
         this.Stararr = param;
+        this.score = score;
+	  if(window.quizQuest == false)
         this.score =parseInt(window.score);
 
     
@@ -456,6 +458,18 @@ Game.time_MTG_1_1level1.prototype={
             }
         } 
         _this.starsGroup.getChildAt(0).frame = 2;
+      if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }
     },
     
     getQuestion:function(target)
@@ -743,6 +757,10 @@ Game.time_MTG_1_1level1.prototype={
 //            _this.count1++;
 
         }, _this);
+      if(window.quizQuest == true)
+				{
+					commonNavBar.updateScore(+5);
+				}
     },
 
     checkFortheRightOrder:function(target){
@@ -878,6 +896,10 @@ Game.time_MTG_1_1level1.prototype={
         _this.Stararr.push(1);
         _this.starsGroup.getChildAt(_this.count1).frame = 1;
         _this.time.events.add(1500, this.removeEverthing, _this);
+         if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(-5);
+			}                           
     },
 
     addGlowtoTheSprite:function(target){
@@ -949,8 +971,22 @@ Game.time_MTG_1_1level1.prototype={
 
                 _this.count =0;
                 _this.tweenCount=0;
-                
-                _this.getQuestion();
+                 if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					_this.getQuestion();
+				}
                 _this.starsGroup.getChildAt(_this.count1+1).frame = 2;
                 _this.count1++;
 

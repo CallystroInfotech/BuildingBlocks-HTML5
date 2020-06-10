@@ -3,6 +3,7 @@ Game.gameModeSelectionScreen=function(){
 };
 
 window.mode = null;
+window.quizQuest = true;
 Game.gameModeSelectionScreen.prototype={
 	gameModeBg:null,
 	gameModeNavBar:null,
@@ -248,7 +249,44 @@ Game.gameModeSelectionScreen.prototype={
 			this.gameModePracticeImageTxt.fontSize = 30;
 			this.gameModeChallengeImageTxt.fontSize = 30;
 		}
-
+		
+		
+		_this.checkDay = new Date();
+		_this.checkDate = _this.checkDay.getDate();
+		_this.checkMonth = _this.checkDay.getMonth()+1;
+		_this.checkYear = _this.checkDay.getFullYear();
+		//alert(window.score);
+		
+		_this.storedDate = localStorage.getItem("Date")
+		_this.storedMonth = localStorage.getItem("Month")
+		_this.storedYear = localStorage.getItem("Year")
+		if(_this.checkDate > _this.storedDate)
+		{
+			window.quizQuest = true;
+			localStorage.setItem("Date", _this.checkDate);
+			localStorage.setItem("Month", _this.checkMonth);
+			localStorage.setItem("Year", _this.checkYear);
+		}
+		else if(_this.checkMonth > _this.storedMonth)
+		{
+			window.quizQuest = true;
+			localStorage.setItem("Date", _this.checkDate);
+			localStorage.setItem("Month", _this.checkMonth);
+			localStorage.setItem("Year", _this.checkYear);
+		}
+		else if(_this.checkYear > _this.storedYear)
+		{
+			window.quizQuest = true;
+			localStorage.setItem("Date", _this.checkDate);
+			localStorage.setItem("Month", _this.checkMonth);
+			localStorage.setItem("Year", _this.checkYear);
+		}
+		else
+		{
+			window.quizQuest = false;
+		}
+		if(window.quizQuest == true)
+			quizCommonFile.addQuestions(game);
 		
 	},
 

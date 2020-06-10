@@ -461,6 +461,9 @@ var telInitializer = {
             case "NSN2":
             				gameID = "NSNPG1.5";
             				break;
+			case "conversion":
+            				gameID = "MCON1.4";
+            				break;
 
 		}
 

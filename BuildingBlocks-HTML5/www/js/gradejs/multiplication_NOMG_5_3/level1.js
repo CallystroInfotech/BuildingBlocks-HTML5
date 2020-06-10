@@ -7,14 +7,16 @@ var count;
 var horiznum,vertinum;
 var deletesarr;
 Game.multiplication_NOMG_5_3level1.prototype={
-     init:function(game)
+     init:function(param,score)
     {
         _this = this;
        // telInitializer.gameIdInit("unity14_1",gradeSelected);
         
         _this.gameid = "14.1";
-
-        this.score =parseInt(window.score);
+this.Stararr = param;
+		this.score = score;
+		if(window.quizQuest == false)
+			this.score =parseInt(window.score);
         
         //_this.clickSound = _this.add.audio('ClickSound');
        // _this.snapSound = _this.add.audio('snapSound');
@@ -207,6 +209,18 @@ Game.multiplication_NOMG_5_3level1.prototype={
         _this.starsGroup.getChildAt(2).frame = 0;
         _this.starsGroup.getChildAt(3).frame = 0;
         
+		if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }						
         
 	},
     
@@ -668,6 +682,10 @@ Game.multiplication_NOMG_5_3level1.prototype={
        // },this);
 		//},this);
         _this.time.events.add(2000, _this.removeEverything, _this);
+   if(window.quizQuest == true)
+		{
+			commonNavBar.updateScore(+5);
+		}
     },
     
     removeEverything:function(){
@@ -687,7 +705,22 @@ Game.multiplication_NOMG_5_3level1.prototype={
                     }
                 }
                     shakeGroup.destroy();
-                    this.getQuestion();
+                    if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					_this.getQuestion(); 
+				} 
             }
                 else{
                 //_this.no1=0;
@@ -740,6 +773,10 @@ Game.multiplication_NOMG_5_3level1.prototype={
                 }, _this);
             }, _this);
         _this.time.events.add(2000, _this.removeEverything, _this);
+	if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(-5);
+			}
     },
     
    addNumberPad:function(){

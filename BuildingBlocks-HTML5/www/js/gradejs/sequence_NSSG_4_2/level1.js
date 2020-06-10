@@ -2,11 +2,14 @@ Game.sequence_NSSG_4_2level1=function(){};
 
 Game.sequence_NSSG_4_2level1.prototype ={
     
-    init:function(game)
+    init:function(param,score)
     {
         _this= this;
         _this.gameid = "4.2";
 
+		this.Stararr = param;
+        this.score = score;
+	if(window.quizQuest == false)
         this.score =parseInt(window.score);
         
         
@@ -1092,6 +1095,18 @@ Game.sequence_NSSG_4_2level1.prototype ={
         _this.starsGroup.getChildAt(0).frame = 2; 
         _this.starsGroup.getChildAt(1).frame = 0;
         _this.starsGroup.getChildAt(2).frame = 0;
+        if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }
         
         
 	},
@@ -3950,6 +3965,10 @@ Game.sequence_NSSG_4_2level1.prototype ={
              this.Stararr.push(3);
             _this.time.events.add(2000,_this.removeEverthing,_this);
             _this.sceneCount++; 
+                if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(+5);
+			}
             
         }
         else
@@ -4006,6 +4025,10 @@ Game.sequence_NSSG_4_2level1.prototype ={
         
             target.events.onInputDown.removeAll();
             _this.time.events.add(2000, _this.removeEverthing, _this);
+        if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(-5);
+			}
         }
 	},
 
@@ -4056,7 +4079,22 @@ Game.sequence_NSSG_4_2level1.prototype ={
                 _this.CaterpillarWhiteCopy.destroy();
                 _this.whiteGroup.destroy();
                 //_this.no11++;
-                _this.getQuestion1();
+                if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					_this.getQuestion1();
+				}
             },_this);  
         }
         else
@@ -6546,6 +6584,10 @@ Game.sequence_NSSG_4_2level1.prototype ={
            // countcorrect++;
             target.events.onInputDown.removeAll();
             _this.time.events.add(2000, _this.removeEverthing1, _this);
+            if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(+5);
+			}
         }
         else
         {   
@@ -6596,6 +6638,10 @@ Game.sequence_NSSG_4_2level1.prototype ={
             target.events.onInputDown.removeAll();
             //commonNavBar.stopTimer();
             _this.time.events.add(500,_this.removeEverthing1,_this);
+            if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(-5);
+			}             
         }
 	},
 
@@ -6640,7 +6686,22 @@ Game.sequence_NSSG_4_2level1.prototype ={
                 _this.CaterpillarWhiteCopy.destroy();
                 _this.whiteGroup.destroy();
                // _this.no11++;
-                _this.getQuestion1();
+            if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					_this.getQuestion1();
+				}
             },_this);  
         }
         else

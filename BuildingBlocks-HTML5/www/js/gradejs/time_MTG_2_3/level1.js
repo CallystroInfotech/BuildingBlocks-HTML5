@@ -32,7 +32,7 @@ var correctflag=0;
 var correctflag1=0;
 
 Game.time_MTG_2_3level1.prototype={
-    init:function(game)
+    init:function(param,score)
     {
 
         _this = this;
@@ -48,6 +48,9 @@ Game.time_MTG_2_3level1.prototype={
         _this.savedVar = absdsjsapi.saveGameplay(_this.saveGameplay);*/
 
        // telInitializer.gameIdInit("time6_1",gradeSelected);
+        this.Stararr = param;
+		 this.score = score;
+	  if(window.quizQuest == false)
        this.score =parseInt(window.score);
        telInitializer2.gameIdInit2("MTG2.3");
    },
@@ -260,7 +263,12 @@ if(window.languageSelected == "Marathi" || window.languageSelected == "Telugu" |
             _this.state.start('grade2levelSelectionScreen',true,false); 
         },_this);*/
 
-        _this.speakerbtn = _this.add.sprite(610,7,'speakerBtn');
+                                                            if(window.quizQuest == true)
+			{
+				_this.speakerbtn = _this.add.sprite(470,7,'speakerBtn');
+			}
+			else
+				_this.speakerbtn = _this.add.sprite(610,7,'speakerBtn');
       // _this.speakerbtn.inputEnabled = true;
 
 
@@ -427,6 +435,18 @@ generateStarsForTheScene:function(count)
         }
     } 
     starsGroup.getChildAt(0).frame = 2; 
+  if(window.quizQuest == true)
+      {
+          starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }
 },
 
 addQuestion:function(no22)
@@ -7383,7 +7403,22 @@ gotoEighthQuestion:function(){
                 flagGroup1.destroy();
                 starsGroup.getChildAt(count1+1).frame = 2; 
                 count1++;
-                this.getQuestion();
+                if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					this.getQuestion();
+				}
             },this);
         }
         else 
@@ -7461,6 +7496,10 @@ gotoEighthQuestion:function(){
         //this.disableListeners();
 
         //target.events.onInputDown.removeAll();
+     if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(+5);
+			}
     },
     
     wrongAns:function()
@@ -7482,6 +7521,10 @@ gotoEighthQuestion:function(){
         commonNavBar.playWrongCelebrationSound();
 
         this.time.events.add(10, this.removeCelebration, this);
+         if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(-5);
+			}           
 
     },
     
@@ -7541,6 +7584,10 @@ gotoEighthQuestion:function(){
                                 starsGroup.getChildAt(count1).frame = 1;
                                 this.Stararr.push(1);
                                 this.time.events.add(10, this.removeCelebration, this);
+                                                                     if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}
                             }
                             break;
                             case "Tuesday" :if(group=="tuegrp")
@@ -7572,6 +7619,10 @@ gotoEighthQuestion:function(){
                                 starsGroup.getChildAt(count1).frame = 1;
                                 this.Stararr.push(1);
                                 this.time.events.add(10, this.removeCelebration, this);
+                                 if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}                                                                                                                                                                                 
                             }
                             break;
                             case "Wednesday" :if(group=="wedgrp")
@@ -7603,6 +7654,10 @@ gotoEighthQuestion:function(){
                                 starsGroup.getChildAt(count1).frame = 1;
                                 this.Stararr.push(1);
                                 this.time.events.add(10, this.removeCelebration, this);
+                                  if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}        
                             }
                             break;
                             case "Thursday" :if(group=="thugrp")
@@ -7634,6 +7689,10 @@ gotoEighthQuestion:function(){
                                 starsGroup.getChildAt(count1).frame = 1;
                                 this.Stararr.push(1);
                                 this.time.events.add(10, this.removeCelebration, this);
+                                 if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}             
                             }
                             break;
                             case "Friday" : if(group=="frigrp")
@@ -7665,6 +7724,10 @@ gotoEighthQuestion:function(){
                                 starsGroup.getChildAt(count1).frame = 1;
                                 this.Stararr.push(1);
                                 this.time.events.add(10, this.removeCelebration, this);
+                                                                                        if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}
                             }
                             break;
 
@@ -7697,6 +7760,10 @@ gotoEighthQuestion:function(){
                                 starsGroup.getChildAt(count1).frame = 1;
                                 this.Stararr.push(1);
                                 this.time.events.add(10, this.removeCelebration, this);
+                                                                                        if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}                                
                             }
                             break;
                             case "firstDay" :    if(target.frame==1 && extraparam=="firstDay")
@@ -7743,6 +7810,10 @@ gotoEighthQuestion:function(){
                             starsGroup.getChildAt(count1).frame = 1;
                             this.Stararr.push(1);
                             this.time.events.add(10, this.removeCelebration, this);
+                                                                                     if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}                               
                         }
 
 
@@ -7772,6 +7843,10 @@ gotoEighthQuestion:function(){
                             starsGroup.getChildAt(count1).frame = 1;
                             this.Stararr.push(1);
                             this.time.events.add(10, this.removeCelebration, this);
+                                if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}
                         }
                     }
 
@@ -7797,6 +7872,10 @@ gotoEighthQuestion:function(){
                         starsGroup.getChildAt(count1).frame = 1;
                         this.Stararr.push(1);
                         this.time.events.add(10, this.removeCelebration, this);
+                        if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}      
                     }
                 }
                 if(months.name == "june"||months.name == "november"||months.name == "april")
@@ -7820,6 +7899,10 @@ gotoEighthQuestion:function(){
                 starsGroup.getChildAt(count1).frame = 1;
                 this.Stararr.push(1);
                 this.time.events.add(10, this.removeCelebration, this);
+                        if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}
             }
         }
         if(months.name == "september"){
@@ -7842,6 +7925,10 @@ gotoEighthQuestion:function(){
             starsGroup.getChildAt(count1).frame = 1;
             this.Stararr.push(1);
             this.time.events.add(10, this.removeCelebration, this);
+                if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}
         }
     }
 
@@ -7869,6 +7956,10 @@ gotoEighthQuestion:function(){
         starsGroup.getChildAt(count1).frame = 1;
         this.Stararr.push(1);
         this.time.events.add(10, this.removeCelebration, this);
+                                                                if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}
     }
     break;
     case "firstTuesday":if(extraparam=="firstTuesday")
@@ -7892,6 +7983,10 @@ gotoEighthQuestion:function(){
         starsGroup.getChildAt(count1).frame = 1;
         this.Stararr.push(1);
         this.time.events.add(10, this.removeCelebration, this);
+if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+    }
     }
     break;
     case "firstWednesday":if(extraparam=="firstWednesday")
@@ -7915,6 +8010,10 @@ gotoEighthQuestion:function(){
         starsGroup.getChildAt(count1).frame = 1;
         this.Stararr.push(1);
         this.time.events.add(10, this.removeCelebration, this);
+     if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}
     }
     break;
 
@@ -7938,6 +8037,10 @@ gotoEighthQuestion:function(){
         starsGroup.getChildAt(count1).frame = 1;
         this.Stararr.push(1);
         this.time.events.add(10, this.removeCelebration, this);
+     if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}
     }
     break;
     case "lastSaturday":if(extraparam=="lastSaturday")
@@ -7961,6 +8064,10 @@ gotoEighthQuestion:function(){
         starsGroup.getChildAt(count1).frame = 1;
         this.Stararr.push(1);
         this.time.events.add(10, this.removeCelebration, this);
+          if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}      
     }
     break;
     case "lastFriday":if(extraparam=="lastFriday")
@@ -7984,6 +8091,10 @@ gotoEighthQuestion:function(){
         starsGroup.getChildAt(count1).frame = 1;
         this.Stararr.push(1);
         this.time.events.add(10, this.removeCelebration, this);
+         if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}                        
     }
     break;
     case "first2Days":
@@ -8024,6 +8135,10 @@ gotoEighthQuestion:function(){
                                     starsGroup.getChildAt(count1).frame = 1;
                                     this.Stararr.push(1);
                                     this.time.events.add(10, this.removeCelebration, this);
+                                                                                                                                                     if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}                           
                                 }
                             }
 
@@ -8059,6 +8174,10 @@ gotoEighthQuestion:function(){
                                     starsGroup.getChildAt(count1).frame = 1;
                                     this.Stararr.push(1);
                                     this.time.events.add(10, this.removeCelebration, this);
+                                 if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}
                                 }
                                 
                             }
@@ -8100,6 +8219,10 @@ gotoEighthQuestion:function(){
                                     starsGroup.getChildAt(count1).frame = 1;
                                     this.Stararr.push(1);
                                     this.time.events.add(10, this.removeCelebration, this);
+                                    if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}                     
                                 }
                             }
                             else if(countboth1<2)
@@ -8132,6 +8255,10 @@ gotoEighthQuestion:function(){
                                     starsGroup.getChildAt(count1).frame = 1;
                                     this.Stararr.push(1);
                                     this.time.events.add(10, this.removeCelebration, this);
+                                     if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}                     
                                 }
                             }
                         break;
@@ -8203,6 +8330,10 @@ gotoEighthQuestion:function(){
                             starsGroup.getChildAt(count1).frame = 1;
                             this.Stararr.push(1);
                             this.time.events.add(10, this.removeCelebration, this);
+              if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}
                         }
                         break;
 
@@ -8226,6 +8357,10 @@ gotoEighthQuestion:function(){
                             starsGroup.getChildAt(count1).frame = 1;
                             this.Stararr.push(1);
                             this.time.events.add(10, this.removeCelebration, this);
+             if(window.quizQuest == true)
+									{
+										commonNavBar.updateScore(-5);
+									}
                         }
                         break;
                 }

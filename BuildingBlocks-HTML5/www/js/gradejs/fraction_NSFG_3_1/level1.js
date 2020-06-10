@@ -10,7 +10,10 @@ Game.fraction_NSFG_3_1level1.prototype={
 //        _this.gameid = "1.1B";
 
         this.Stararr = param;
-        this.score =parseInt(window.score);
+		this.score = score;
+		if(window.quizQuest == false)
+			this.score =parseInt(window.score);			  
+
         telInitializer2.gameIdInit2("NSFG3.1");
     },
 
@@ -402,6 +405,18 @@ Game.fraction_NSFG_3_1level1.prototype={
             }
         } 
         _this.starsGroup.getChildAt(0).frame = 2;
+      if(window.quizQuest == true)
+      {
+          this.starsGroup.visible = false;
+          
+          this.quiztext = this.add.text(120,24, "\n"+window.quizText+"\n");
+          this.quiztext.anchor.setTo(0.5);
+          this.quiztext.align = 'center';
+          this.quiztext.font = 'gradefont';
+          this.quiztext.fontWeight = 'normal';
+          this.quiztext.fontSize = 18;
+          this.quiztext.fill = '#ADFF2F';
+      }
     },
 
     addQuestion:function(no2)
@@ -449,7 +464,22 @@ Game.fraction_NSFG_3_1level1.prototype={
         _this.no11++;
         if(_this.no11 < 4)
         {
-            _this.getQuestion();
+            if(window.quizQuest == true)
+				{
+					var timerStopVar = commonNavBar.stopTimer();
+					commonNavBar.disableNavBar();
+                    commonNavBar.soundVar=null,
+					commonNavBar.questionArray=null,
+					commonNavBar.questionCount=null,
+					commonNavBar.soundUrl=null,
+					commonNavBar.speakerbtn=null,
+					
+					quizCommonFile.changeQuestions(this.Stararr,commonNavBar.getScore());
+				}
+				else
+				{
+					_this.getQuestion();
+				}
             _this.starsGroup.getChildAt(_this.count+1).frame = 2; 
             _this.count++;
         }
@@ -530,6 +560,10 @@ Game.fraction_NSFG_3_1level1.prototype={
         var anim4 = starAnim.animations.add('star');
         anim4.play();      
         target.events.onInputDown.removeAll();
+        if(window.quizQuest == true)
+		{
+			commonNavBar.updateScore(+5);
+		}                      
     },
 
     wrongAns1:function(target)
@@ -543,6 +577,10 @@ Game.fraction_NSFG_3_1level1.prototype={
         _this.starsGroup.getChildAt(_this.count).frame = 1;
         _this.time.events.add(500, _this.removeCelebration1, _this);
         target.events.onInputDown.removeAll();
+        if(window.quizQuest == true)
+			{
+				commonNavBar.updateScore(-5);
+			}
     },
 
 

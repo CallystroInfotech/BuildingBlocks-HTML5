@@ -40,6 +40,17 @@ Game.grade4_3CScore.prototype={
             nativeApp.ShareApp();
 			
 			},_this);
+			
+			var nextBtn = this.add.sprite(this.world.centerX+170,this.world.centerY,'CommonNextBtn');    
+		nextBtn.scale.setTo(1);
+        nextBtn.anchor.setTo(0.5);	
+		nextBtn.inputEnabled = true;
+		nextBtn.events.onInputDown.add(function(){
+			//this.cache.destroy();
+			var click = this.add.audio('ClickSound');
+            click.play();
+			this.state.start('conversion'); 
+		},this);
 		
 		/*var nextBtn = this.add.button(this.world.centerX+150,this.world.centerY,'CommonNextBtn',function(){
 			this.state.start('grade4_3Cpreloader');
