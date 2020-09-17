@@ -9,7 +9,68 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-x-toast": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "com.jjdltc.cordova.plugin.zip": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-zip": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "nl.madebymark.share": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-fullscreen": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-androidx": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-firebasex": {
+      "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
+      "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
+      "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "true",
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-native-spinner": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
     }
   },
-  "dependent_plugins": {}
+  "dependent_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-androidx-adapter": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    }
+  }
 }
